@@ -17,7 +17,9 @@
     "typescript": "^5.2.2"
   },
   "scripts": {
+    "gdpr": "node scripts/gdpr-generate.js",
     "dev": "next",
+    "prebuild": "npm run gdpr",
     "build": "next build",
     "start": "next start"
   },

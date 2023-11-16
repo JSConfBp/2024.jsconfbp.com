@@ -1,10 +1,15 @@
 
 .hello {
-    text-align: center;
-    font-family: sans-serif;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    overflow: hidden;
+  text-align: center;
+  font-family: sans-serif;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.text {
+  text-align: left;
+  font-family: sans-serif;
 }
