@@ -28,7 +28,7 @@ const team = [
   {
     name: 'Krisztina Závecz',
     image:
-      'https://media.licdn.com/dms/image/C4D03AQGKgs3RJh4fOw/profile-displayphoto-shrink_800_800/0/1571164362186?e=1706140800&v=beta&t=g4ket_L6wKByT2_cnwhsKmqO1mZWDexpPkA4ET9rfvw',
+      'https://pbs.twimg.com/profile_images/1027948395200237568/KkMN51Em_400x400.jpg',
     twitter: 'krisztizavecz',
   },
   {
