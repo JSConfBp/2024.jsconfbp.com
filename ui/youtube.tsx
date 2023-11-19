@@ -1,7 +1,4 @@
 import React from "react";
-import classnames from "classnames";
-
-import * as css from "./youtube.module.scss";
 
 const Youtube = ({ src, title = "", className = "" }) => {
   return (
