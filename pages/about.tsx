@@ -17,7 +17,7 @@ const team = [
     name: 'Dora Makszy',
     image:
       'https://jsconf.jp/2022/static/25aa690e8489a3691cd37a376dfd1373/8b8ba/dora.webp',
-    twitter: 'jsconfbp',
+    url: 'https://www.heydorka.rocks/',
   },
   {
     name: 'Norbert Srám',
@@ -124,16 +124,18 @@ const About = () => {
       </h2>
 
       <ul className={classnames('unstyled', styles.team)}>
-        {team.map((member) => (
-          <li key={member.name}>
-            <a href={`https://twitter.com/${member.twitter}`}>
+        {team.map((member) => {
+          const href = member.url || `https://twitter.com/${member.twitter}`
+          return (<li key={member.name}>
+            <a href={href} target='_blank'>
               <span>
                 <img alt={member.name} src={member.image} />
               </span>
               <span className={styles.name}>{member.name}</span>
             </a>
           </li>
-        ))}
+          )
+        })}
       </ul>
     </Layout >
   )
