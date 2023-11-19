@@ -14,9 +14,9 @@ const team = [
     twitter: '_nec',
   },
   {
-    name: 'Dorka',
+    name: 'Dora Makszy',
     image:
-      'https://pbs.twimg.com/profile_images/477984724741148672/4aHVf43A_400x400.png',
+      'https://jsconf.jp/2022/static/25aa690e8489a3691cd37a376dfd1373/8b8ba/dora.webp',
     twitter: '_puffancs',
   },
   {
@@ -28,13 +28,12 @@ const team = [
   {
     name: 'Krisztina Závecz',
     image:
-      'https://pbs.twimg.com/profile_images/477984724741148672/4aHVf43A_400x400.png',
-    twitter: '_puffancs',
+      'https://media.licdn.com/dms/image/C4D03AQGKgs3RJh4fOw/profile-displayphoto-shrink_800_800/0/1571164362186?e=1706140800&v=beta&t=g4ket_L6wKByT2_cnwhsKmqO1mZWDexpPkA4ET9rfvw',
   },
   {
     name: 'Gergő Nagy',
     image:
-      'https://pbs.twimg.com/profile_images/477984724741148672/4aHVf43A_400x400.png',
+      'https://pbs.twimg.com/profile_images/1726182395374669824/Te0vF7Or_400x400.jpg',
     twitter: '_puffancs',
   },
   {
