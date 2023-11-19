@@ -11,14 +11,14 @@ const Footer = ({ className = '' }) => (
       <p>JSConf Budapest welcomes everybody, please be nice to each other.</p>
       <nav>
         <ul className="unstyled">
-          {/* <li>
+          <li>
             <Link href={'/about'}>About Us</Link>
           </li>
           <li>
-            <Link href={'/covid'}>COVID-19 Guidelines</Link>
-          </li>
-          <li>
             <Link href={'/code-of-conduct'}>Code of Conduct</Link>
+          </li>
+          {/* <li>
+            <Link href={'/covid'}>COVID-19 Guidelines</Link>
           </li>
           <li>
             <Link href={'/privacy-policy'}>Privacy Policy</Link>
