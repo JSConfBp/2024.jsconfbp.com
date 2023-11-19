@@ -1,0 +1,159 @@
+@charset 'utf-8';
+
+@import "./styles/colors.scss";
+@import "./styles/fonts.scss";
+@import "./styles/sizes.scss";
+
+html,
+body {
+  font-family: $primary-font;
+  font-size: 18px;
+  line-height: calc(1.6 * 18px);
+  font-weight: 200;
+
+  @media (max-width: 480px) {
+    font-size: 16px;
+    line-height: calc(1.8 * 16px);
+  }
+
+  p {
+    margin-bottom: 1rem;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+    color: $color-purple;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: $heading-font;
+    color: $color-rebeccapurple;
+    font-weight: 700;
+    font-variant-ligatures: no-common-ligatures;
+  }
+
+  h1 {
+    font-size: $text-h1;
+    line-height: $text-h1 * 1.4;
+    margin-bottom: 3rem;
+
+    @media (max-width: 480px) {
+      line-height: $text-h1 * 1.2;
+    }
+  }
+
+  h2 {
+    font-size: $text-h2;
+    line-height: $text-h2 * 1.4;
+    margin-bottom: 1rem;
+
+    @media (max-width: 480px) {
+      line-height: $text-h2 * 1.2;
+    }
+  }
+
+  h3 {
+    font-size: $text-h3;
+    line-height: $text-h3 * 1.4;
+    margin-bottom: 1rem;
+
+    @media (max-width: 480px) {
+      line-height: $text-h3 * 1.2;
+    }
+  }
+
+  h4 {
+    font-size: $text-h4;
+    line-height: $text-h4 * 1.4;
+    margin-bottom: 1rem;
+
+    @media (max-width: 480px) {
+      line-height: $text-h4 * 1.2;
+    }
+  }
+
+  p + h2,
+  ul + h2,
+  ol + h2 {
+    margin-top: 3rem;
+  }
+
+  p + h3,
+  ul + h3,
+  ol + h3 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  ul + p,
+  ol + p {
+    margin-top: 1rem;
+  }
+
+  h3,
+  h4,
+  h5 {
+    font-family: $heading-font;
+  }
+
+  ul:not(.unstyled) li {
+    position: relative;
+    margin-left: 1.2rem;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+
+    &::before {
+      content: "\25AA";
+      font-size: 0.8rem;
+      color: $color-rebeccapurple;
+      position: absolute;
+      left: -1.2rem;
+      top: -0.05rem;
+    }
+  }
+
+  ul:not(.unstyled) li ul {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    li::before {
+      content: "▫︎";
+      color: lighten($color-rebeccapurple, 20);
+      position: absolute;
+      left: -1.2rem;
+      top: -0.05rem;
+    }
+  }
+
+  ul.small li {
+    font-size: 16px;
+    line-height: calc(1.4 * 16px);
+
+    &:not(:last-child) {
+      margin-bottom: 0;
+    }
+  }
+
+  ul.small li ul {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  ul.columns {
+    columns: 2;
+
+    @media (min-width: 481px) {
+      columns: 3;
+    }
+  }
+}
