@@ -17,7 +17,7 @@ const team = [
     name: 'Dora Makszy',
     image:
       'https://jsconf.jp/2022/static/25aa690e8489a3691cd37a376dfd1373/8b8ba/dora.webp',
-    twitter: '_puffancs',
+    twitter: 'jsconfbp',
   },
   {
     name: 'Norbert Srám',
@@ -29,6 +29,7 @@ const team = [
     name: 'Krisztina Závecz',
     image:
       'https://media.licdn.com/dms/image/C4D03AQGKgs3RJh4fOw/profile-displayphoto-shrink_800_800/0/1571164362186?e=1706140800&v=beta&t=g4ket_L6wKByT2_cnwhsKmqO1mZWDexpPkA4ET9rfvw',
+    twitter: 'jsconfbp',
   },
   {
     name: 'Gergő Nagy',
