@@ -1,6 +1,6 @@
 import React from 'react'
 
-import * as css from './layout.module.scss'
+import styles from './layout.module.scss'
 
 import Header from './header'
 // TODO: reafctor meta from gatsby
@@ -18,7 +18,7 @@ const Layout = ({
   skipHeader = false,
   children,
 }) => (
-  <div className={css.layout}>
+  <div className={styles.layout}>
     {!skipHeader && <Header className={headerClassName} pathName={pathName} />}
     {/* <Meta
       title={title}
@@ -27,7 +27,7 @@ const Layout = ({
       image={image}
     /> */}
 
-    <main className={[mainClassName, css.main].join(' ')}>{children}</main>
+    <main className={[mainClassName, styles.main].join(' ')}>{children}</main>
 
     <Footer className={footerClassName} />
   </div>

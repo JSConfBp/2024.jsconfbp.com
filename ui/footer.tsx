@@ -1,12 +1,12 @@
 import React from 'react'
 import classnames from 'classnames'
 
-import * as css from './footer.module.scss'
+import styles from './footer.module.scss'
 import Logo from './logo'
 import Link from 'next/link'
 
 const Footer = ({ className = '' }) => (
-  <footer className={classnames(className, css.footer)}>
+  <footer className={classnames(className, styles.footer)}>
     <section>
       <p>JSConf Budapest welcomes everybody, please be nice to each other.</p>
       <nav>
@@ -36,11 +36,11 @@ const Footer = ({ className = '' }) => (
       </nav>
 
       <Link href={'/'}>
-        <Logo className={css.logo} />
+        <Logo className={styles.logo} />
       </Link>
-      <small className={css.jsconfbp}>JSConf Budapest</small>
+      <small className={styles.jsconfbp}>JSConf Budapest</small>
       <nav>
-        <ul className={classnames('unstyled', css.years)}>
+        <ul className={classnames('unstyled', styles.years)}>
           <li>
             <a href="https://2015.jsconfbp.com">2015</a>
           </li>

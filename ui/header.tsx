@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import classnames from 'classnames'
 import Link from 'next/link'
 
-import * as css from './header.module.scss'
+import styles from './header.module.scss'
 import Logo from './logo'
 
 
@@ -42,7 +42,7 @@ const Header = ({ pathName }) => {
       loop
       muted
       playsInline
-      className={css.heroContent}
+      className={styles.heroContent}
       poster="/video/hero-poster.jpg"
     >
       {source}
@@ -50,41 +50,41 @@ const Header = ({ pathName }) => {
   )
 
   return (
-    <header className={classnames(css.header, !isHomePage && css.subpage)}>
-      <div className={css.inner}>
-        <div className={css.title}>
+    <header className={classnames(styles.header, !isHomePage && styles.subpage)}>
+      <div className={styles.inner}>
+        <div className={styles.title}>
           <Link href={'/'}>
-            <Logo className={css.logoSvg} polygonClassName={css.polygons} />
+            <Logo className={styles.logoSvg} polygonClassName={styles.polygons} />
           </Link>
 
-          <h1 className={css.jsconfBp}>
+          <h1 className={styles.jsconfBp}>
             <Link href={'/'}>
-              <span className={css.jsconf}>
-                <span className={css.logo}>JS</span>
-                <span className={css.conf}>Conf</span>
+              <span className={styles.jsconf}>
+                <span className={styles.logo}>JS</span>
+                <span className={styles.conf}>Conf</span>
               </span>
-              <span className={css.budapest}>Budapest</span>
+              <span className={styles.budapest}>Budapest</span>
             </Link>
           </h1>
 
-          <div className={css.date}>
+          <div className={styles.date}>
             27-28 June
-            <span className={css.year}>2024</span>
+            <span className={styles.year}>2024</span>
           </div>
         </div>
 
-        <div className={css.hero}>
-          <div className={css.cta}>
-            <span className={css.button}>
+        <div className={styles.hero}>
+          <div className={styles.cta}>
+            <span className={styles.button}>
               Coming soon!
               <small>See you in person!</small>
             </span>
           </div>
 
-          <div className={css.mask}>
-            <div className={css.content}>
+          <div className={styles.mask}>
+            <div className={styles.content}>
               <DecorVideo source={videoSource} autoPlay={autoPlay} />
-              <div className={css.shadow}></div>
+              <div className={styles.shadow}></div>
             </div>
           </div>
         </div>
@@ -92,7 +92,7 @@ const Header = ({ pathName }) => {
         <input
           id="MobileMenuTrigger"
           type="checkbox"
-          className={css.triggerCheckbox}
+          className={styles.triggerCheckbox}
           aria-hidden="true"
         />
         {/* <nav className={css.navigation}>
@@ -119,7 +119,7 @@ const Header = ({ pathName }) => {
         </nav> */}
         <label
           htmlFor="MobileMenuTrigger"
-          className={css.mobileMenuTrigger}
+          className={styles.mobileMenuTrigger}
           aria-hidden="true"
         >
           <span>Open Menu</span>

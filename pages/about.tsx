@@ -2,7 +2,7 @@ import React from 'react'
 import classnames from 'classnames'
 import { useHeadingDecorator } from '../hooks/useHeadingDecorator'
 
-import * as css from './about.module.scss'
+import styles from './about.module.scss'
 
 import Layout from '../ui/layout'
 import Youtube from '../ui/youtube'
@@ -123,14 +123,14 @@ const About = () => {
         The Team
       </h2>
 
-      <ul className={classnames('unstyled', css.team)}>
+      <ul className={classnames('unstyled', styles.team)}>
         {team.map((member) => (
           <li key={member.name}>
             <a href={`https://twitter.com/${member.twitter}`}>
               <span>
                 <img alt={member.name} src={member.image} />
               </span>
-              <span className={css.name}>{member.name}</span>
+              <span className={styles.name}>{member.name}</span>
             </a>
           </li>
         ))}

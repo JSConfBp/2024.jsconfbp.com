@@ -1,9 +1,9 @@
 import React from 'react'
 import classnames from 'classnames'
-import * as css from './logo.module.scss'
+import styles from './logo.module.scss'
 
 const Logo = ({ className, polygonClassName }) => (
-  <div className={classnames(css.wrap, className)}>
+  <div className={classnames(styles.wrap, className)}>
     <svg
       version="1.1"
       id="Layer_1"
@@ -12,7 +12,7 @@ const Logo = ({ className, polygonClassName }) => (
       y="0px"
       viewBox="0 0 720 720"
       enableBackground="new 0 0 720 720"
-      className={css.svg}
+      className={styles.svg}
     >
       <g id="Yellow_square" className={polygonClassName}>
         <path d="M577.1,577H142.8V142.7h434.3V577z M144.8,575h430.3V144.7H144.8V575z" />
