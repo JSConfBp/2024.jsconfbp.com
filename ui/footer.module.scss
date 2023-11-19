@@ -1,0 +1,138 @@
+@charset 'utf-8';
+@import "../styles/colors.scss";
+@import "../styles/fonts.scss";
+@import "../styles/sizes.scss";
+
+.footer {
+  position: relative;
+  z-index: 10;
+  height: 20.125rem;
+  margin-top: 8rem;
+  background: $color-darkpurple;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 26rem;
+    height: 40rem;
+    bottom: 100%;
+    left: -20rem;
+    background: $color-lightpurple;
+    --offset: calc(calc(100vw - 108rem) * 0.35);
+    transform: rotate(-13deg); //translateY(-60.1%) translateX(var(--offset));
+    transform-origin: 100% 100%;
+
+    @media screen and (max-width: 1280px) {
+      left: -23rem;
+    }
+    @media screen and (max-width: 480px) {
+      left: -24.5rem;
+    }
+  }
+
+  section {
+    padding-top: 2rem;
+    max-width: 60rem;
+    text-align: center;
+    color: $color-white;
+    font-weight: 300;
+    font-size: $text-small;
+
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media screen and (max-width: 480px) {
+      width: 100vw;
+
+      padding: 2rem 2rem 0;
+    }
+
+    nav ul {
+      display: inline-block;
+      margin-bottom: 2rem;
+
+      @media screen and (max-width: 480px) {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      li {
+        display: inline-block;
+        font-weight: 200;
+
+        &::before {
+          position: absolute;
+          content: "\2022";
+          color: $color-white;
+          transform: translateX(-1.1rem);
+        }
+
+        &:first-child::before {
+          display: none;
+        }
+        &:first-child {
+          margin-left: 0;
+        }
+        &:not(:last-child) {
+          padding-right: 2rem;
+        }
+
+        a {
+          color: $color-orange;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        @media screen and (max-width: 480px) {
+          padding: 0 0.5rem;
+
+          &:not(:last-child) {
+            padding-right: 0.5rem;
+          }
+
+          &::before {
+            display: none;
+          }
+        }
+      }
+
+      &.years {
+        font-size: 0.7rem;
+        li {
+          &::before {
+            display: none;
+          }
+
+          &:not(:last-child) {
+            padding-right: 1rem;
+          }
+        }
+      }
+    }
+
+    .jsconfbp {
+      font-size: 0.7rem;
+    }
+
+    .logo {
+      width: 3rem;
+      height: 3rem;
+      margin-bottom: 1rem;
+      fill: $color-white;
+    }
+  }
+}
