@@ -11,15 +11,14 @@ const Layout = ({
   pathName,
   title = '',
   description = '',
-  image,
+  image = 'default-social.jpg',
   mainClassName = '',
   footerClassName = '',
-  headerClassName = '',
   skipHeader = false,
   children,
 }) => (
   <div className={styles.layout}>
-    {!skipHeader && <Header className={headerClassName} pathName={pathName} />}
+    {!skipHeader && <Header pathName={pathName} />}
     {/* <Meta
       title={title}
       description={description}

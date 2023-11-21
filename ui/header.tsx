@@ -5,49 +5,14 @@ import Link from 'next/link'
 import styles from './header.module.scss'
 import Logo from './logo'
 
-
 const Header = ({ pathName }) => {
-  const [videoSource, setVideoSource] = useState('')
-  const [autoPlay, setAutoPlay] = useState('')
   const [isHomePage, setIsHomePage] = useState(pathName === '/')
-
-  const DecorVideoSource = () => (
-    <>
-      <source src="/video/hero-2.webm" type="video/webm" />
-      <source src="/video/hero-2.mp4" type="video/mp4" />
-    </>
-  )
 
   useEffect(() => {
     const onHomePage = pathName === '/'
 
-    const connection = navigator.connection ||
-      navigator.mozConnection ||
-      navigator.webkitConnection || { effectiveType: '4g' }
-    const isFastNetwork = !/[23]g/.test(connection.effectiveType)
-
-    const allowMotion = !matchMedia('(prefers-reduced-motion)').matches
-
     setIsHomePage(onHomePage)
-    // not happy, but
-    if (window.innerWidth > 480 && isFastNetwork) {
-      setVideoSource(<DecorVideoSource />)
-      setAutoPlay(onHomePage && allowMotion)
-    }
   }, [pathName])
-
-  const DecorVideo = ({ source, autoPlay }) => (
-    <video
-      autoPlay={autoPlay}
-      loop
-      muted
-      playsInline
-      className={styles.heroContent}
-      poster="/video/hero-poster.jpg"
-    >
-      {source}
-    </video>
-  )
 
   return (
     <header className={classnames(styles.header, !isHomePage && styles.subpage)}>
@@ -83,7 +48,6 @@ const Header = ({ pathName }) => {
 
           <div className={styles.mask}>
             <div className={styles.content}>
-              <DecorVideo source={videoSource} autoPlay={autoPlay} />
               <div className={styles.shadow}></div>
             </div>
           </div>

@@ -2,7 +2,7 @@ import React from 'react'
 import classnames from 'classnames'
 import styles from './logo.module.scss'
 
-const Logo = ({ className, polygonClassName }) => (
+const Logo = ({ className, polygonClassName = "" }) => (
   <div className={classnames(styles.wrap, className)}>
     <svg
       version="1.1"
