@@ -1,0 +1,31 @@
+@import "../styles/colors.scss";
+
+.team {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 60vw;
+  }
+
+  li {
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+
+    .name {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      padding: 0.2rem 0.5rem;
+      display: inline-block;
+      background-color: $color-purple;
+      color: $color-white;
+      font-weight: bold;
+      font-size: 1.3rem;
+    }
+  }
+}

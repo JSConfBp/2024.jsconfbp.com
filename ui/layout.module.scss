@@ -1,0 +1,37 @@
+@charset 'utf-8';
+@import "../styles/colors.scss";
+@import "../styles/fonts.scss";
+@import "../styles/sizes.scss";
+
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 480px) {
+    max-width: 100%;
+    width: 100%;
+    overflow-y: hidden;
+  }
+}
+// @include decorated();
+
+.main {
+  max-width: 53.333rem;
+  width: 100%;
+  padding: {
+    top: 3rem;
+    left: 2rem;
+    right: 2rem;
+  }
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+    padding: 0 1.5rem;
+    position: relative;
+    z-index: 11;
+  }
+}
