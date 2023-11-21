@@ -1,8 +1,11 @@
 import React from "react";
+import classnames from "classnames";
+
+import styles from "./youtube.module.scss";
 
 const Youtube = ({ src, title = "", className = "" }) => {
   return (
-    <div>
+    <div className={classnames(styles.embed, className)}>
       <iframe
         title={`Embed video ${title}`}
         src={`https://www.youtube.com/embed/${src}`}
