@@ -6,7 +6,7 @@ const WideImage = ({ src, alt = '' }) => (
   <div className={styles.wideimage}>
     <Image
       fill
-      src={`/${src}`}
+      src={src}
       alt={alt}
       className={styles.image}
     />

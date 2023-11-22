@@ -1,7 +1,4 @@
 @charset 'utf-8';
-@import "../styles/colors.scss";
-@import "../styles/fonts.scss";
-@import "../styles/sizes.scss";
 
 .layout {
   display: flex;
@@ -17,7 +14,6 @@
     overflow-y: hidden;
   }
 }
-// @include decorated();
 
 .main {
   max-width: 53.333rem;
