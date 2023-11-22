@@ -28,7 +28,7 @@ const HeaderLeftPolygon = () => {
     ];
 
     return (
-        <svg className={styles.header_left} width="397" height="517" viewBox="0 0 397 517" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.header_left} viewBox="0 0 397 517" fill="none" xmlns="http://www.w3.org/2000/svg">
             {paths.map((path, index) => {
                 const color = getColor(Math.random() < 0.5 ? "primary" : "secondary");
                 const hasFill = Math.random() < 0.5;
@@ -72,7 +72,7 @@ const HeaderRightPolygon = () => {
     ];
 
     return (
-        <svg className={styles.header_right} width="396" height="472" viewBox="0 0 396 472" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={styles.header_right} viewBox="0 0 396 472" fill="none" xmlns="http://www.w3.org/2000/svg">
             {paths.map((path, index) => {
                 const color = getColor(Math.random() < 0.5 ? "primary" : "secondary");
                 const hasFill = Math.random() < 0.5;
