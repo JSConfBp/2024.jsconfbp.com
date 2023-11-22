@@ -1,24 +1,22 @@
 import React from 'react'
+import Head from 'next/head'
 
 import styles from './layout.module.scss'
-
 import Header from './header'
+
 // TODO: reafctor meta from gatsby
 // import Meta from './meta'
-import Footer from './footer'
 
 const Layout = ({
   pathName,
   title = '',
-  description = '',
-  image = 'default-social.jpg',
-  mainClassName = '',
-  footerClassName = '',
-  skipHeader = false,
-  children,
+  children = undefined,
 }) => (
   <div className={styles.layout}>
-    {!skipHeader && <Header pathName={pathName} />}
+    <Head>
+      <title>{title}</title>
+    </Head>
+    <Header />
     {/* <Meta
       title={title}
       description={description}
@@ -26,9 +24,8 @@ const Layout = ({
       image={image}
     /> */}
 
-    <main className={[mainClassName, styles.main].join(' ')}>{children}</main>
+    <main className={styles.main}>{children}</main>
 
-    <Footer className={footerClassName} />
   </div>
 )
 
