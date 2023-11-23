@@ -1,5 +1,10 @@
 .main {
-  .header_container {
+  .mobile_header {
+    width: 100vw;
+    height: 42vw;
+  }
+
+  .desktop_header {
     display: flex;
     justify-content: space-between;
 
