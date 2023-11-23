@@ -1,28 +1,4 @@
 .main {
   width: 100vw;
-
-  .cfp_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      width: 36.6vw;
-      height: 5.5vw;
-
-      margin: 3rem;
-
-      background-color: var(--secondary-dark);
-      color: var(--background);
-      border-radius: 3rem;
-
-      font-family: var(--font-shrikhand);
-      text-decoration: none;
-      font-size: 2rem;
-    }
-  }
+  margin-bottom: 1rem;
 }
