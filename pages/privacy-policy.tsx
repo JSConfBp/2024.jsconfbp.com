@@ -1,7 +1,7 @@
 import privacyPolicy from './privacy-policy.json'
 import Layout from '../ui/layout'
 
-const PrivacyPolicy = () => {
+function PrivacyPolicy() {
   return (
     <div>
       <Layout title="Privacy Policy - JSConf Budapest 2024" pathName="/privacy-policy">

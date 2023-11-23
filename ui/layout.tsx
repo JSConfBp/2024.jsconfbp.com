@@ -7,26 +7,28 @@ import Header from './header'
 // TODO: reafctor meta from gatsby
 // import Meta from './meta'
 
-const Layout = ({
+function Layout({
   pathName,
   title = '',
   children = undefined,
-}) => (
-  <div className={styles.layout}>
-    <Head>
-      <title>{title}</title>
-    </Head>
-    <Header />
-    {/* <Meta
+}) {
+  return (
+    <div className={styles.layout}>
+      <Head>
+        <title>{title}</title>
+      </Head>
+      <Header />
+      {/* <Meta
       title={title}
       description={description}
       pathName={pathName}
       image={image}
     /> */}
 
-    <main className={styles.main}>{children}</main>
+      <main className={styles.main}>{children}</main>
 
-  </div>
-)
+    </div>
+  )
+}
 
 export default Layout

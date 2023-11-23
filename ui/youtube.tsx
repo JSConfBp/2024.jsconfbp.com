@@ -3,7 +3,7 @@ import classnames from "classnames";
 
 import styles from "./youtube.module.scss";
 
-const Youtube = ({ src, title = "", className = "" }) => {
+function Youtube({ src, title = "", className = "" }) {
   return (
     <div className={classnames(styles.embed, className)}>
       <iframe

@@ -1,7 +1,7 @@
 import Layout from "../ui/layout"
 
 
-const Sponsors = () => {
+function Sponsors() {
     return (
         <Layout title="Sponsors" pathName="/sponsorts" />
     )

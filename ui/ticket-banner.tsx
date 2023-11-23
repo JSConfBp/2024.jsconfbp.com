@@ -2,7 +2,7 @@ import Link from "next/link"
 
 import styles from './ticket-banner.module.scss'
 
-const TicketBanner = () => {
+function TicketBanner() {
     return (
         <div className={styles.main}>
             <div className={styles.box}>

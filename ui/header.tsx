@@ -7,7 +7,7 @@ import Logo from './logo'
 import Polygon from './polygon'
 import TicketBanner from "../ui/ticket-banner"
 
-const Header = () => {
+function DesktopHeader() {
   return (
     <div className={styles.main}>
       <header className={styles.header_container}>
