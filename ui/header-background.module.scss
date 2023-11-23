@@ -1,11 +1,7 @@
 .main {
-  width: 100vw;
-
-  padding: 2vw;
-  margin-bottom: 1.5rem;
+  padding: 0.5rem;
 
   @media only screen and (min-width: 768px) {
     padding: 1rem;
-    margin-bottom: 3rem;
   }
 }

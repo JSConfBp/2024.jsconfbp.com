@@ -6,13 +6,12 @@ body,
 main {
   font-family: var(--font-jetbrains-mono);
   font-weight: 300;
+  line-height: 1.5;
 
   font-size: 14px;
-  line-height: 20px;
 
   @media only screen and (min-width: 768px) {
     font-size: 20px;
-    line-height: 30px;
   }
 }
 
