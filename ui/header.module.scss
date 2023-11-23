@@ -9,11 +9,21 @@
     padding: 1rem;
     margin-bottom: 3rem;
 
+    .left_polygon {
+      width: 23vw;
+    }
+
+    .right_polygon {
+      width: 23vw;
+    }
+
     .logo {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       align-items: center;
+
+      width: 15.5vw;
     }
   }
 

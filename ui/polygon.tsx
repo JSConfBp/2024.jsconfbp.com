@@ -1,5 +1,3 @@
-import styles from './polygon.module.scss'
-
 function getColor(color: "primary" | "secondary") {
     switch (color) {
         case "primary":
@@ -9,7 +7,7 @@ function getColor(color: "primary" | "secondary") {
     }
 }
 
-const HeaderLeftPolygon = () => {
+const HeaderLeftPolygon = ({ className = "" }) => {
     const paths = [
         "M355.753 308.122L318.069 345.806V270.438L355.753 308.122Z",
         "M345.5 212.5L238.207 212.5L345.5 105.207L345.5 212.5Z",
@@ -28,7 +26,7 @@ const HeaderLeftPolygon = () => {
     ];
 
     return (
-        <svg className={styles.header_left} viewBox="0 0 397 517" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={className} viewBox="0 0 397 517" fill="none" xmlns="http://www.w3.org/2000/svg">
             {paths.map((path, index) => {
                 const color = getColor(Math.random() < 0.5 ? "primary" : "secondary");
                 const hasFill = Math.random() < 0.5;
@@ -53,7 +51,7 @@ const HeaderLeftPolygon = () => {
     )
 }
 
-const HeaderRightPolygon = () => {
+const HeaderRightPolygon = ({ className = "" }) => {
     const paths = [
         "M0.5 206.5H67.7929L0.5 273.793L0.5 206.5Z",
         "M103.206 250.702L150.082 297.579H56.3299L103.206 250.702Z",
@@ -72,7 +70,7 @@ const HeaderRightPolygon = () => {
     ];
 
     return (
-        <svg className={styles.header_right} viewBox="0 0 396 472" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg className={className} viewBox="0 0 396 472" fill="none" xmlns="http://www.w3.org/2000/svg">
             {paths.map((path, index) => {
                 const color = getColor(Math.random() < 0.5 ? "primary" : "secondary");
                 const hasFill = Math.random() < 0.5;
@@ -96,12 +94,12 @@ const HeaderRightPolygon = () => {
     )
 }
 
-const Polygon = ({ type }: { type: PolygonTypes }) => {
+const Polygon = ({ type, className = "" }: { type: PolygonTypes, className?: string }) => {
     switch (type) {
         case "header-left":
-            return <HeaderLeftPolygon />
+            return <HeaderLeftPolygon className={className} />
         case "header-right":
-            return <HeaderRightPolygon />
+            return <HeaderRightPolygon className={className} />
     }
 }
 
