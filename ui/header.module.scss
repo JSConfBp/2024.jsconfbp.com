@@ -1,39 +1,4 @@
 .main {
-  .mobile_header {
-    width: 100vw;
-    height: 42vw;
-
-    margin-bottom: 1.5rem;
-  }
-
-  .desktop_header {
-    display: flex;
-    justify-content: space-between;
-
-    width: 100vw;
-    height: 25vw;
-
-    padding: 1rem;
-    margin-bottom: 3rem;
-
-    .left_polygon {
-      width: 23vw;
-    }
-
-    .right_polygon {
-      width: 23vw;
-    }
-
-    .logo {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-
-      width: 15.5vw;
-    }
-  }
-
   .cfp_container {
     display: flex;
     justify-content: center;
