@@ -1,14 +1,12 @@
-import Head from 'next/head'
-import styles from './index.module.scss'
 import privacyPolicy from './privacy-policy.json'
+import Layout from '../ui/layout'
 
 const PrivacyPolicy = () => {
   return (
-    <div className={styles.text}>
-      <Head>
-        <title>Privacy Policy - JSConf Budapest 2024</title>
-      </Head>
-      <div dangerouslySetInnerHTML={{ __html: privacyPolicy.content }}></div>
+    <div>
+      <Layout title="Privacy Policy - JSConf Budapest 2024" pathName="/privacy-policy">
+        <div dangerouslySetInnerHTML={{ __html: privacyPolicy.content }}></div>
+      </Layout>
     </div>
   )
 }

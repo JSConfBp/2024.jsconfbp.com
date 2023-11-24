@@ -1,19 +1,8 @@
-import Head from 'next/head'
-
-import styles from './index.module.scss'
-
-
+import Layout from '../ui/layout'
 
 const Home = () => {
   return (
-    <div className={styles.hello}>
-      <Head>
-        <title>JSConf Budapest 2024</title>
-      </Head>
-      <h1>JSConf Budapest <br /> 2024</h1>
-
-      <p>June 27-28 2024, Budapest, Hungary</p>
-    </div>
+    <Layout title="June 26-28, JSConfBP 2024" pathName="/" />
   )
 }
 

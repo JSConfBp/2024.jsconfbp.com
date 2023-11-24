@@ -1,0 +1,55 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    width: 84vw;
+    height: 12vw;
+
+    padding: 2rem 3rem 4rem 3rem;
+
+    border-radius: 10rem;
+    border: 2px solid var(--text-color, #878787);
+
+    font-size: 1.35rem;
+    line-height: 2.25rem;
+    font-weight: 200;
+
+    p {
+      text-align: center;
+    }
+  }
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 36.6vw;
+    height: 5.5vw;
+
+    margin-top: -2.75vw;
+
+    color: var(--background, #fff);
+    border-radius: 15rem;
+    background: linear-gradient(
+      96deg,
+      var(--secondary) 0%,
+      var(--primary) 100%
+    );
+
+    font-family: var(--font-shrikhand);
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 2.75rem;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+}

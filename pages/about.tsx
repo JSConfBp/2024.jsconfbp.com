@@ -1,6 +1,5 @@
 import React from 'react'
 import classnames from 'classnames'
-import { useHeadingDecorator } from '../hooks/useHeadingDecorator'
 
 import styles from './about.module.scss'
 
@@ -46,10 +45,9 @@ const team = [
 ]
 
 const About = () => {
-  const [, getClassName] = useHeadingDecorator()
   return (
     <Layout title="About us" pathName="/about">
-      <h1 className={getClassName({ color: 'purple', side: 'left' })}>
+      <h1>
         SZIA! ПРИВІТ! CZEŚĆ! SALUT! ЋАО! AHOJ! DOBRÝ DEN! ΓΕΙΆ ΣΟΥ! HOI! BUNĂ!
         ЗДРАВЕЙТЕ! ПРИВЕТ! HELLO!
       </h1>
@@ -68,7 +66,7 @@ const About = () => {
 
       <Youtube src="mJoS_pLbiWc" title="JSConf Budapest 2016 Mood video" />
 
-      <h2 className={getClassName({ color: 'orange', side: 'right' })}>
+      <h2>
         JSConf Budapest so far
       </h2>
 
@@ -119,7 +117,7 @@ const About = () => {
         </a>
       </p>
 
-      <h2 className={getClassName({ color: 'lightorange', side: 'left' })}>
+      <h2>
         The Team
       </h2>
 

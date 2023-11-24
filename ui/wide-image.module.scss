@@ -1,6 +1,3 @@
-@import "../styles/colors.scss";
-@import "../styles/fonts.scss";
-
 .wideimage {
   position: relative;
   margin-top: 4rem;
@@ -33,7 +30,8 @@
     font-style: italic;
     font-family: "Libre Franklin", sans-serif;
     font-size: 0.8rem;
-    color: lighten($color-black, 50%);
+    color: var(--text-color);
+    // color: lighten($color-black, 50%);
     text-align: left;
     line-height: 1.3em;
     padding-bottom: 1rem;
