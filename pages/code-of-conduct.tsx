@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '../ui/layout'
 
-const CodeOfConduct = () => {
+function CodeOfConduct() {
     return (
         <Layout
             title="Code of Conduct"

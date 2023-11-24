@@ -1,44 +1,4 @@
 .main {
-  .header_container {
-    display: flex;
-    justify-content: space-between;
-
-    width: 100vw;
-    height: 25vw;
-
-    padding: 1rem;
-    margin-bottom: 3rem;
-
-    .logo {
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: center;
-    }
-  }
-
-  .cfp_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-
-      width: 36.6vw;
-      height: 5.5vw;
-
-      margin: 3rem;
-
-      background-color: var(--secondary-dark);
-      color: var(--background);
-      border-radius: 3rem;
-
-      font-family: var(--font-shrikhand);
-      text-decoration: none;
-      font-size: 2rem;
-    }
-  }
+  width: 100vw;
+  margin-bottom: 1rem;
 }

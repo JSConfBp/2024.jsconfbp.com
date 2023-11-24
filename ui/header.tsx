@@ -1,30 +1,21 @@
-import React from 'react'
-import Link from 'next/link'
+import React from 'react';
 
 import styles from './header.module.scss'
 
-import Logo from './logo'
-import Polygon from './polygon'
 import TicketBanner from "../ui/ticket-banner"
+import HeaderBackground from './header-background';
+import CfpButton from './cfp-button';
+import Link from 'next/link';
 
-const Header = () => {
+function Header() {
   return (
     <div className={styles.main}>
-      <header className={styles.header_container}>
-        <Polygon type="header-left" />
-        <Link href="/" className={styles.logo}>
-          <Logo />
-        </Link>
-        <Polygon type="header-right" />
-      </header>
+      <Link href={typeof window !== 'undefined' ? window.location.href : "/"}>
+        <HeaderBackground />
+      </Link>
       <TicketBanner />
-      {false && <div className={styles.cfp_container}>
-        <Link href="/" >
-          Call for Papers
-        </Link>
-      </div>
-      }
-    </div>
+      {false && <CfpButton />}
+    </div >
   )
 }
 

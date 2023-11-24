@@ -1,0 +1,28 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 12em;
+    height: 2em;
+
+    background-color: var(--secondary-dark);
+    border-radius: 60px;
+    color: var(--background);
+
+    font-size: 1.7rem;
+    font-family: var(--font-shrikhand);
+    text-decoration: none;
+
+    margin: 2rem;
+
+    @media only screen and (min-width: 768px) {
+      margin: 1rem;
+    }
+  }
+}

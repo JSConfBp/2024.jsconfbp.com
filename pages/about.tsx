@@ -44,7 +44,7 @@ const team = [
   },
 ]
 
-const About = () => {
+function About() {
   return (
     <Layout title="About us" pathName="/about">
       <h1>
