@@ -11,7 +11,7 @@ function Header() {
     <div className={styles.main}>
       <HeaderBackground />
       <TicketBanner />
-      {true && <CfpButton />}
+      {false && <CfpButton />}
     </div >
   )
 }
