@@ -26,11 +26,11 @@ function SymmetricLine({ color = 'var(--secondary)' }) {
 type DividerProps = {
     className?: string;
     type?: "asymmetric" | "symmetric";
-    color: OmitFirstTwoChars<keyof typeof CSSVariableColors>;
+    color?: OmitFirstTwoChars<keyof typeof CSSVariableColors>;
     children?: React.ReactNode | React.ReactNode[];
 }
 
-export function Divider({ className = "", type = "asymmetric", color = "secondary", children }: DividerProps) {
+export default function Divider({ className = "", type = "asymmetric", color = "secondary", children }: DividerProps) {
 
     let firstChild: React.ReactNode | undefined = undefined;
 
