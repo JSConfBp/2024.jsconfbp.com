@@ -7,11 +7,11 @@ main {
   font-family: var(--font-jetbrains-mono);
   font-weight: 300;
   line-height: 1.5;
-
-  font-size: 14px;
+  font-size: var(--base-font-size);
 
   @media only screen and (min-width: 768px) {
     font-size: 20px;
+    line-height: 1.7;
   }
 }
 
@@ -22,4 +22,19 @@ main {
   --secondary-dark: #6a0ca4;
   --text-color: #878787;
   --background: #fff;
+  --section-background: #eaeaea;
+  --base-font-size: 1rem;
+  --h2-font-size: 30px; // in Doc: 1.5rem, in pages design: 30px
+  --list-item-indentation: 20px;
+}
+
+p {
+  margin-bottom: calc(1.5 * var(--base-font-size));
+}
+
+h2 {
+  font-family: var(--font-shrikhand);
+  font-size: var(--h2-font-size);
+  color: var(--primary-dark);
+  margin-bottom: calc(1.5 * var(--h2-font-size));
 }
