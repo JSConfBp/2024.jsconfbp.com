@@ -1,29 +1,30 @@
 .main {
-  width: 100vw;
-  position: relative;
-  left: -50%;
-
-  padding: calc(1em + 1rem) 0;
-
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
+  // Break out of the layout container and fill the screen
+  position: relative;
+  left: -10vw;
+  width: 100vw;
+
+  font-size: 2rem;
+
+  @media only screen and (min-width: 1280px) {
+    font-size: 2.5rem;
+    margin: -1em 0;
+  }
+
   .text {
     position: absolute;
 
     * {
-      padding: 0 calc(1em + 1rem);
       font-family: var(--font-shrikhand);
       color: var(--secondary);
       background-color: var(--background);
-
-      font-size: 2rem;
-
-      @media only screen and (min-width: 1280px) {
-        font-size: 2.5rem;
-      }
+      padding: 0 calc(1em + 1rem);
+      font-size: inherit;
     }
   }
 }
