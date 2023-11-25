@@ -13,7 +13,6 @@ function Header() {
       <Link href={typeof window !== 'undefined' ? window.location.href : "/"}>
         <HeaderBackground />
       </Link>
-      <TicketBanner />
       {false && <CfpButton />}
     </div >
   )
