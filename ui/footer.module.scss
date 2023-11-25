@@ -7,13 +7,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  padding: 2.15rem 2.85rem;
-
-  width: 60vw;
-  height: 21vw;
-
   text-align: center;
+
+  width: 70vw;
+  padding: 2.15rem 2.85rem;
 
   border: 1px solid var(--text-color, #878787);
   border-radius: 200px;
@@ -21,4 +18,8 @@
 
 .footer_polygons {
   width: 50vw;
+
+  @media only screen and (min-width: 768px) {
+    width: 25vw;
+  }
 }
