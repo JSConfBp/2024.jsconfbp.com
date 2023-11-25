@@ -25,12 +25,12 @@ function SymmetricLine({ color = 'var(--secondary)' }) {
 
 type DividerProps = {
     className?: string;
-    type?: "asymmetric" | "symmetric";
+    type?: "asym" | "sym";
     color?: ColorNames
     children?: React.ReactNode | React.ReactNode[];
 }
 
-export default function Divider({ className = "", type = "asymmetric", color = "secondary", children }: DividerProps) {
+export default function Divider({ className = "", type = "asym", color = "secondary", children }: DividerProps) {
 
     let firstChild: React.ReactNode | undefined = undefined;
 
@@ -45,8 +45,8 @@ export default function Divider({ className = "", type = "asymmetric", color = "
 
     return (
         <div className={classNames(styles.main, className)}>
-            {type === "asymmetric" ? <AsymmetricLine color={`var(--${color})`} /> : <SymmetricLine color={`var(--${color})`} />}
-            {firstChild && <div className={classNames(styles.text, styles[type])}>
+            {type === "asym" ? <AsymmetricLine color={`var(--${color})`} /> : <SymmetricLine color={`var(--${color})`} />}
+            {firstChild && <div className={classNames(styles.text)}>
                 {firstChild}
             </div>
             }
