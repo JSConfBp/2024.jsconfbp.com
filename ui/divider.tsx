@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import { CSSVariableColors, OmitFirstTwoChars } from '../pages/_app';
+import { ColorNames } from '../pages/_app';
 
 import styles from './divider.module.scss';
 import React from 'react';
@@ -26,7 +26,7 @@ function SymmetricLine({ color = 'var(--secondary)' }) {
 type DividerProps = {
     className?: string;
     type?: "asymmetric" | "symmetric";
-    color?: OmitFirstTwoChars<keyof typeof CSSVariableColors>;
+    color?: ColorNames
     children?: React.ReactNode | React.ReactNode[];
 }
 

@@ -26,6 +26,8 @@ export const CSSVariableColors = {
 
 export type OmitFirstTwoChars<S extends string> = S extends `${infer _}${infer _}${infer Rest}` ? Rest : S;
 
+export type ColorNames = OmitFirstTwoChars<keyof typeof CSSVariableColors>;
+
 export default function App({ Component, pageProps }) {
   return (
     <main className={`${jetbrains_mono.variable} ${shrikhand.variable}`} style={CSSVariableColors as CSSProperties}>
