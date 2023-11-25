@@ -6,7 +6,7 @@
 
   // Break out of the layout container and fill the screen
   position: relative;
-  left: -10vw;
+  left: calc(-1 * (100vw - 100%) / 2);
   width: 100vw;
 
   font-size: 2rem;
