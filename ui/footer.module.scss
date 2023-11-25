@@ -1,0 +1,24 @@
+.divider_override {
+  margin: calc(1.5em) 0;
+}
+
+.coc_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 2.15rem 2.85rem;
+
+  width: 60vw;
+  height: 21vw;
+
+  text-align: center;
+
+  border: 1px solid var(--text-color, #878787);
+  border-radius: 200px;
+}
+
+.footer_polygons {
+  width: 50vw;
+}
