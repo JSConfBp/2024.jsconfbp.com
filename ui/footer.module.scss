@@ -88,3 +88,28 @@
     }
   }
 }
+
+.past_years {
+  padding: 1rem;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+
+    a {
+      text-decoration: underline;
+      color: var(--secondary);
+      font-size: 1.285rem;
+      font-weight: bold;
+    }
+
+    @media only screen and (min-width: 768px) {
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+}
