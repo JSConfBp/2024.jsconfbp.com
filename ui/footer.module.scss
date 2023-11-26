@@ -19,6 +19,7 @@
   text-align: center;
 
   padding: 2.15rem 2.85rem;
+  margin: 0 1.5rem;
 
   border: 1px solid var(--border-color, #878787);
   border-radius: 200px;
@@ -27,7 +28,7 @@
 .footer_menu {
   display: flex;
   width: 100vw;
-  padding: 1rem;
+  padding: 1.5rem;
 
   nav {
     flex: 1;
@@ -44,12 +45,12 @@
       align-items: left;
 
       li {
-        padding-left: 8vw;
-
-        font-size: 3vw;
-        font-family: var(--font-shrikhand);
+        padding-left: 1vw;
 
         a {
+          font-size: 1.285rem;
+          font-weight: bold;
+          font-family: var(--font-shrikhand);
           color: var(--text-color, black);
           text-decoration: none;
         }

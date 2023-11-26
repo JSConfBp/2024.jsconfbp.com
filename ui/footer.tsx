@@ -57,9 +57,9 @@ export function Footer() {
             <section className={styles.footer_menu}>
                 <nav>
                     <ul>
-                        <li><a href="/about">About Us</a></li>
                         <li><a href="/code-of-conduct">Code of Conduct</a></li>
                         <li><a href="/privacy-policy">Privacy Policy</a></li>
+                        <li><a href="/about">About Us</a></li>
                         <li><a href="/budapest-guide">Budapest Guide</a></li>
                     </ul>
                 </nav>
