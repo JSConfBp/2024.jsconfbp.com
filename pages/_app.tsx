@@ -20,8 +20,9 @@ export const CSSVariableColors = {
   "--primary-dark": "#05747b",
   "--secondary": "#9e19ef",
   "--secondary-dark": "#6a0ca4",
-  "--text-color": "#878787",
+  "--text-color": "#000",
   "--background": "#fff",
+  "--border-color": "#878787",
 } as const;
 
 export type OmitFirstTwoChars<S extends string> = S extends `${infer _}${infer _}${infer Rest}` ? Rest : S;

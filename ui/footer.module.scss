@@ -1,5 +1,14 @@
 .divider_override {
-  margin: calc(1.5em) 0;
+  padding: calc(1.5em) 0;
+
+  .footer_separator_polygons {
+    width: 50vw;
+    padding: 0;
+
+    @media only screen and (min-width: 768px) {
+      width: 25vw;
+    }
+  }
 }
 
 .coc_box {
@@ -12,14 +21,39 @@
   width: 70vw;
   padding: 2.15rem 2.85rem;
 
-  border: 1px solid var(--text-color, #878787);
+  border: 1px solid var(--border-color, #878787);
   border-radius: 200px;
 }
 
-.footer_polygons {
-  width: 50vw;
+.footer_menu {
+  display: flex;
+  width: 100vw;
+  padding: 1rem;
 
-  @media only screen and (min-width: 768px) {
-    width: 25vw;
+  nav {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    li {
+      padding-top: calc(1em);
+
+      a {
+        font-family: var(--font-shrikhand);
+        text-decoration: none;
+        color: var(--text-color, black);
+      }
+    }
+  }
+
+  .footer_polygons {
+    flex: 1;
+    width: 36.7vw;
+    @media only screen and (min-width: 768px) {
+      display: none;
+    }
   }
 }
