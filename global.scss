@@ -9,7 +9,13 @@ main {
   line-height: 1.5;
   font-size: var(--base-font-size);
 
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 1024px) {
+    font-size: 16px;
+  }
+  @media only screen and (min-width: 1280px) {
+    font-size: 18px;
+  }
+  @media only screen and (min-width: 1920px) {
     font-size: 20px;
     line-height: 1.7;
   }
@@ -24,17 +30,70 @@ main {
   --background: #fff;
   --section-background: #eaeaea;
   --base-font-size: 1rem;
-  --h2-font-size: 30px; // in Doc: 1.5rem, in pages design: 30px
   --list-item-indentation: 20px;
 }
 
-p {
-  margin-bottom: calc(1.5 * var(--base-font-size));
+h1 {
+  font-family: var(--font-shrikhand);
+  color: var(--secondary);
+  font-size: 2rem;
+  @media only screen and (min-width: 1280px) {
+    font-size: 2.5rem;
+  }
 }
 
 h2 {
   font-family: var(--font-shrikhand);
-  font-size: var(--h2-font-size);
   color: var(--primary-dark);
-  margin-bottom: calc(1.5 * var(--h2-font-size));
+  font-size: 1.5rem;
+  margin-bottom: calc(1.5em);
+}
+
+h3 {
+  font-family: var(--font-jetbrains-mono);
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.85rem;
+  @media only screen and (min-width: 1024px) {
+    font-size: 1.125rem;
+    line-height: 1.83rem; // TODO: Check back later. This was 1.183rem in the design.
+  }
+  @media only screen and (min-width: 1280px) {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+  }
+  @media only screen and (min-width: 1920px) {
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+
+h4 {
+  font-family: var(--font-jetbrains-mono);
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  @media only screen and (min-width: 1024px) {
+    line-height: 1.5rem;
+    line-height: 1.875rem;
+  }
+  @media only screen and (min-width: 1280px) {
+    font-size: 1rem;
+    line-height: 1.5rem; // TODO: Check back later. This was 1rem in the design.
+  }
+  @media only screen and (min-width: 1920px) {
+    font-size: 1rem;
+    line-height: 2rem; // TODO: Check back later. This was 1rem in the design.
+  }
+}
+
+a {
+  font-family: var(--font-jetbrains-mono);
+  text-decoration: underline;
+  color: var(--secondary);
+  font-size: 1rem;
+}
+
+p {
+  margin-bottom: calc(1.5 * var(--base-font-size));
 }

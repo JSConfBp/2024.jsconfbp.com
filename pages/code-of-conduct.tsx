@@ -1,5 +1,6 @@
 import React from 'react'
 import Layout from '../ui/layout'
+import Divider from '../ui/divider'
 
 function CodeOfConduct() {
     return (
@@ -7,9 +8,11 @@ function CodeOfConduct() {
             title="Code of Conduct"
             pathName="/code-of-conduct"
         >
-            <h1>
-                Code of Conduct of JSConf Budapest
-            </h1>
+            <Divider>
+                <h1>
+                    Code of Conduct
+                </h1>
+            </Divider>
             <p>
                 All attendees, speakers, sponsors and volunteers at JSConf Budapest are
                 required to agree with the following code of conduct. Organizers will

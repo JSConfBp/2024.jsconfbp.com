@@ -6,24 +6,13 @@
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
-  box-sizing: border-box;
+  padding-bottom: 2rem;
 
   @media screen and (max-width: 480px) {
-    max-width: 100%;
-    width: 100%;
     overflow-y: hidden;
   }
 }
 
 .main {
-  // TBD: rather set it on inner elements, ie. many sections need to be full-width
-  // max-width: 53.333rem;
-  width: 100%;
-
-  @media screen and (max-width: 480px) {
-    width: 100%;
-    padding: 0 1.5rem;
-    position: relative;
-    z-index: 11;
-  }
+  width: 80vw;
 }

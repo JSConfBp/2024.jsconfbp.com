@@ -1,0 +1,30 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  // Break out of the layout container and fill the screen
+  position: relative;
+  left: calc(-1 * (100vw - 100%) / 2);
+  width: 100vw;
+
+  font-size: 2rem;
+
+  @media only screen and (min-width: 1024px) {
+    font-size: 2.5rem;
+    margin: -1em 0;
+  }
+
+  .text {
+    position: absolute;
+
+    * {
+      font-family: var(--font-shrikhand);
+      color: var(--secondary);
+      background-color: var(--background);
+      padding: 0 calc(1em + 1rem);
+      font-size: inherit;
+    }
+  }
+}

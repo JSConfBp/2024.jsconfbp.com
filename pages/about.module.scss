@@ -20,8 +20,10 @@
       bottom: 0;
       padding: 0.2rem 0.5rem;
       display: inline-block;
-      background-color: var(--primary);
-      color: var(--secondary-dark);
+      border-radius: 10px;
+      margin: 0 0 -0.5rem -2rem;
+      background-color: var(--secondary);
+      color: var(--background);
       font-weight: bold;
       font-size: 1.3rem;
     }

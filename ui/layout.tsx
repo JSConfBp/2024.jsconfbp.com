@@ -3,6 +3,7 @@ import Head from 'next/head'
 
 import styles from './layout.module.scss'
 import Header from './header'
+import { Footer } from './footer'
 
 // TODO: reafctor meta from gatsby
 // import Meta from './meta'
@@ -17,7 +18,6 @@ function Layout({
       <Head>
         <title>{title}</title>
       </Head>
-      <Header />
       {/* <Meta
       title={title}
       description={description}
@@ -25,8 +25,11 @@ function Layout({
       image={image}
     /> */}
 
-      <main className={styles.main}>{children}</main>
-
+      <Header />
+      <main className={styles.main}>
+        {children}
+      </main>
+      <Footer />
     </div>
   )
 }
