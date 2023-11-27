@@ -4,9 +4,10 @@ import styles from "./cfp-button.module.scss";
 
 interface CfpButtonProps {
   children?: string;
+  [propName: string]: any;
 }
 
-function CfpButton({ children }: CfpButtonProps) {
+function CfpButton({ children, ...props }: CfpButtonProps) {
   const buttonText = "Submit your talk proposal with Google Forms"
 
   if (typeof children !== "string" && typeof children !== "undefined") {
@@ -15,7 +16,7 @@ function CfpButton({ children }: CfpButtonProps) {
   }
 
   return (
-    <div className={styles.main}>
+    <div className={styles.main} {...props}>
       <Link href="https://forms.gle/y3RN28awvwjkm2ws6" target="_blank" className={styles.button}>
         {children}
       </Link>
