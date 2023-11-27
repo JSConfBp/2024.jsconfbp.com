@@ -7,8 +7,7 @@ main {
   font-family: var(--font-jetbrains-mono);
   font-weight: 300;
   line-height: 1.5;
-
-  font-size: 14px;
+  font-size: var(--base-font-size);
 
   @media only screen and (min-width: 1024px) {
     font-size: 16px;
@@ -18,7 +17,13 @@ main {
   }
   @media only screen and (min-width: 1920px) {
     font-size: 20px;
+    line-height: 1.7;
   }
+}
+
+:root {
+  --container-width-mobile: 90vw;
+  --container-width: 80vw;
 }
 
 h1 {
@@ -32,8 +37,9 @@ h1 {
 
 h2 {
   font-family: var(--font-shrikhand);
-  color: var(--primary-dark);
+  color: var(--primary);
   font-size: 1.5rem;
+  margin: 1.5rem 0;
 }
 
 h3 {
@@ -77,6 +83,10 @@ h4 {
 a {
   font-family: var(--font-jetbrains-mono);
   text-decoration: underline;
-  color: var(--secondary);
+  color: var(--secondary-dark);
   font-size: 1rem;
+}
+
+p {
+  margin: 1rem 0;
 }
