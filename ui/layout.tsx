@@ -12,9 +12,10 @@ function Layout({
   pathName,
   title = '',
   children = undefined,
+  ...props
 }) {
   return (
-    <div className={styles.layout}>
+    <div className={styles.layout} {...props}>
       <Head>
         <title>{title}</title>
       </Head>

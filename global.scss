@@ -22,15 +22,8 @@ main {
 }
 
 :root {
-  --primary: #07bdbd;
-  --primary-dark: #05747b;
-  --secondary: #9e19ef;
-  --secondary-dark: #6a0ca4;
-  --text-color: #878787;
-  --background: #fff;
-  --section-background: #eaeaea;
-  --base-font-size: 1rem;
-  --list-item-indentation: 20px;
+  --container-width-mobile: 90vw;
+  --container-width: 80vw;
 }
 
 h1 {
@@ -44,9 +37,9 @@ h1 {
 
 h2 {
   font-family: var(--font-shrikhand);
-  color: var(--primary-dark);
+  color: var(--primary);
   font-size: 1.5rem;
-  margin-bottom: calc(1.5em);
+  margin: 1.5rem 0;
 }
 
 h3 {
@@ -90,10 +83,10 @@ h4 {
 a {
   font-family: var(--font-jetbrains-mono);
   text-decoration: underline;
-  color: var(--secondary);
+  color: var(--secondary-dark);
   font-size: 1rem;
 }
 
 p {
-  margin-bottom: calc(1.5 * var(--base-font-size));
+  margin: 1rem 0;
 }
