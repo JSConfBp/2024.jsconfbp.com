@@ -1,0 +1,168 @@
+import Link from "next/link";
+import Image from "next/image";
+
+import Layout from "../ui/layout";
+import Divider from "../ui/divider";
+
+import appImage from "../public/app-example.jpg";
+
+<Divider>
+  <h1>600+ proposals?!</h1>
+</Divider>
+
+From time to time we receive feedback, that the use of Google Forms as a CFP input
+can be tedious for speakers. The reasons behind these concerns are unfortunately
+true. For example, to copy/paste similar fields all the time and keeping track of
+spontaneous updates in the abstract can be an overhead for those who like to keep
+a speaker profile, and follow many CFP submissions at the same time.
+
+The other question we receive sometimes is how can we pick 20 talks from over 600 submissions.
+
+In this post we would like to show you:
+
+- the process of how we read and rate every CFP we’ve received
+- the tools for this task
+- the reason behind our chosen tools.
+
+## The most important point
+
+- **The selection process must be as anonymous and bias-free as possible.**
+  When we start discussing the final talks, then we'll de-anonymize the talks.
+- **Focusing on inclusivity and diversity is important.** People with varying backgrounds have distinctive perspectives
+  and interesting highlights. If we encourage these fellows to submit their ideas, we'll have a huge variety of topics and ideas.
+- Experienced CFP submitters know how to write successful CFPs. In contrast, first-time submitters can get inspired
+  by the [Global Diversity CFP workshops](https://www.globaldiversitycfpday.com/). Our approach gives space for both.
+
+The process was fine-tuned over the years by the team behind JSConf.EU and CSSConf.EU. It’s worth reading
+[their post explaining the details](https://blog.cssconf.eu/2015/08/15/a-talk-selection-process-explained/).
+Julia Evans from !!Con [wrote a great article](https://jvns.ca/blog/2014/06/06/should-my-conference-do-anonymous-review/) on
+the benefits of anonymized voting. It really works and results in a wonderful and diverse line-up.
+
+We are proud that we have at least one first-time international speaker each year on our line-up. Even more proud to see the
+career path of these people rise, and see them later at conferences all over the world.
+
+## The talk and the curator
+
+You can’t read through 600 CFPs and recall that one’s was a bit better than the other. So we don’t compare them to each other,
+that is the last step when we see the finalists. Instead, we aim to evaluate the talk as an attendee, a developer, and a curious mind.
+Questions we ask ourselves are like:
+
+- Is the topic too advanced - or the opposite, too simple?
+- In any case of the above, is the talk could be a good learning experience for most people?
+- Could the talk dive deep enough the topic in 30 minutes, or scratch the surface?
+- Is the topic worthwhile, to raise awareness to it, is it inspiring?
+
+As the backgrounds of the speakers differ, the background of the curator team differs as well. That's why we use two basic questions
+that help during brainstorming.
+
+- Would I attend this talk If I’ve paid for a conference?
+- Would I pay for a conference if this talk would be on the schedule?
+
+## Requirements
+
+To help us evaluate in a way we see optimal, we need the best tool that supports us. Last years' experience serves as a basis to collect
+and summarize the requirements.
+
+- Completely anonymized through the whole process until the very end.
+- We need total control over what fields we put in the CFP form.
+- Can’t see other team member votes, to avoid further bias.
+- Everybody should be able to vote on every submission. Can’t make an honest decision if someone omits even 1% of the talks.
+- It should handle privacy, adhere to GDPR. The more data handlers we include, the more convoluted is our data privacy policy.
+  The safest data stored and moved is data without personal details.
+- It’s easy to access. Every time from everywhere, on every device.
+- Easy to read.
+- Easy to score.
+
+## The Curator Experience
+
+As members of a team who organize and curate a non-profit conference for free, we’re all busy otherwise. We have to do this in our spare time.
+During the daily commute, queue at the groceries, dedicated time in a day - we're all different. Either way, the tool that helps in evaluation
+has to be the smallest obstacle. We don't get discouraged from reading and scoring or annoyed by anything else.
+
+At a very low level, the selection work itself is a UX issue:
+
+- Mobile-friendly, so we can read submissions at any time and place on our mobiles.
+- Clean, no cluttering, no distractions, only the submission, and the curator.
+- Simple to read and to give a score.
+- Keeps track of our progress, pause and continue any time, so we don’t feel pressured and frustrated.
+
+## The CFP tool landscape
+
+_"Avoid re-inventing the wheel"_ - this might also be true for CFP evaluation tools. We've looked around several times, and keep an eye on the
+development of some CFP services.
+
+Let's summarize what we've found so far:
+
+**Google Forms**
+
+- It’s a free form builder and can have as many fields in many ways as we want.
+- Not anonym, unless we copy field columns by hand or by some script.
+- Google handles personal data.
+- Relatively easy to access.
+- Terrible to read and use as an evaluation tool, even worse on mobile.
+- Score field can be equivocal, hard to evaluate later.
+- Has an API via the Google Sheets API.
+
+**Sessionize**
+
+- Developers at Sessionize have put a lot of effort into their product, so it looks great and promising.
+- Almost free form editor, certain fields are not removable or sortable.
+- It has an anonymous mode for users almost perfect, except in some points.
+- Submission dates are still visibly tied to submission titles. This could be problematic if someone emails us, saying “I’ve submitted something on this day …”
+- We can see if someone submits many talks, even without names.
+- Can’t control what fields of the form editor are visible in the anonymous mode.
+- Offers a solution for evaluating, but it goes in the opposite direction from ours
+- “The simplest way to evaluate submitted sessions by a content team is to compare them side by side.” That’s the last step we do.
+- Has an API but it seems it’s only for the final schedule, not for fetching submitted talks.
+- It does not care if an event has a CoC or not, which is discouraging.
+
+**PaperCall**
+
+PaperCall.io was the first CFP / Event handling service we encountered. It provides a simpler solution than Sessionize.
+
+- No or limited control over the fields.
+- Has a field for Code of Conduct, pre-populated from http://confcodeofconduct.com
+- Support anonymized rating and processing of submissions.
+- Can pick a rating style between stars and some phrases that tie to scores.
+- It has webhooks and an API to access submitted CFPs. These are only in the paid Professional package. There is no documentation on it without purchasing a license.
+
+All in all, it seemed that none of these were matching our requirements. After struggling with CFP evaluation for some years, we’ve rolled out our own.
+
+## Our CFP evaluation app
+
+[Here it is, you can try it out with a GitHub user](https://cfp-vote.herokuapp.com/), the demo version has 200 randomly generated CFPs uploaded.
+
+<Link href="https://cfp-vote.herokuapp.com/" target="_blank">
+  <Image
+    src={appImage}
+    alt="Some screens saved from our demo CFP app"
+    style={{ width: "100%", height: "auto" }}
+  />
+</Link>
+
+The code for the app is on [GitHub](https://github.com/JSConfBp/cfp-vote). You can instantly deploy to your event using Heroku if you wish to try it out with your setup.
+
+We still needed a form system to collect the submissions. One, that is maintainable, usable, meets our requirements and has an API for the data. This is why we’re currently using Google Forms, it has everything for this task.
+
+Our team enjoyed the talk evaluation, they said it was nice and effective.
+
+- The app handles talk evaluating and scoring and keep track of our progress.
+- It fetches CFP submissions from Google Sheets.
+- It keeps the CFP submissions anonymized as it fetches only selected fields.
+- This is also GDPR compliant, as it does not transfer personal information to Heroku.
+- The users of the app can vote once on each submission. No skipping talks and no going back and updating votes.
+- After a vote was cast, the app shows the next submission, until we vote on each one of them.
+- We can put our mobiles away any time, and the next time we return to the app, continue from where we left.
+
+As for the team, we can see the progress of the team members, in percentages, and the histogram of votes for talks. Managing team members happens in GitHub - or any GitHub user can open it (like in our demo).
+
+We are thinking about making the progress percentage public. So we can use that information on our site or on social media.
+
+If you’re curious, [try it out](https://cfp-vote.herokuapp.com/). We welcome any feedback, questions, and suggestions. If you run an event and decide to handle your CFP the same way, we’re happy to help you!
+
+We hope this way more conferences can have a diverse lineup, like the ones in the JSConf Family 💖
+
+export default function MDXPage({ children }) {
+  return <Layout>{children}</Layout>;
+
+}
