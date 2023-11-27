@@ -3,24 +3,14 @@
   justify-content: center;
   align-items: center;
 
-  button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    background-color: var(--secondary-dark);
+  .button {
+    padding: 0.5rem 2.5rem;
+    background-color: var(--secondary);
     border-radius: 60px;
-    border: 0;
     color: var(--background);
-
-    font-size: 30px;
+    font-size: 1.5rem;
     font-family: var(--font-shrikhand);
     text-decoration: none;
     cursor: pointer;
-
-    padding: 10px 30px;
-
-    @media only screen and (min-width: 768px) {
-    }
   }
 }

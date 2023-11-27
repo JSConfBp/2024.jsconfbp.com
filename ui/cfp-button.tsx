@@ -1,25 +1,26 @@
 import Link from "next/link";
 
 import styles from "./cfp-button.module.scss";
-import { ReactNode } from "react";
 
 interface CfpButtonProps {
-  url?: string;
-  children: ReactNode;
+  children?: string;
 }
 
-function CfpButton({url, children}: CfpButtonProps) {
-    return (
-        <div className={styles.main}>
-          <button className={styles.button}>
-              {url ?
-                (<Link href="" className={styles.button}>
-                  {children}
-                </Link>)
-                : <>{children}</>
-              }
-          </button>
-        </div>)
+function CfpButton({ children }: CfpButtonProps) {
+  const buttonText = "Submit your talk proposal with Google Forms"
+
+  if (typeof children !== "string" && typeof children !== "undefined") {
+    console.error('Yo, CfpButton.tsx here: we expect the text for the button. You gave me something else. I\'m just gonna use a default value.')
+    children = buttonText;
+  }
+
+  return (
+    <div className={styles.main}>
+      <Link href="https://forms.gle/y3RN28awvwjkm2ws6" target="_blank" className={styles.button}>
+        {children}
+      </Link>
+    </div>
+  )
 }
 
 export default CfpButton;
