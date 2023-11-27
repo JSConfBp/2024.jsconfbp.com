@@ -131,3 +131,5 @@ dist
 
 sw.js*
 workbox*
+
+.DS_Store
