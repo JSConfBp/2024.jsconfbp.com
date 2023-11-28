@@ -50,7 +50,7 @@ export default function App({ Component, pageProps }) {
   const socialImgAbsoluteUrl = 'https://jsconfbp.com/social-share.png';
 
   return (
-    <div className={`${jetbrains_mono.variable} ${shrikhand.variable} layout`} style={CSSVariableColors as CSSProperties}>
+    <div className={`${jetbrains_mono.variable} ${shrikhand.variable} layout responsive_text`} style={CSSVariableColors as CSSProperties}>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} key="description" />
