@@ -54,6 +54,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} key="description" />
+        <meta name="keyworkds" content="jsconf, 2024, javascript, jsconfbp, conference, budapest, jsconf budapest, diversity, inclusivity, community" key="keywords" />
         <meta name="theme-color" content="#07bdbd" key="theme-color" />
         <meta name="viewport" content="width=device-width, initial-scale=1" key="viewport" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"></link>
