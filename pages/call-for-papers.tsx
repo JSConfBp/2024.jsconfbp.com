@@ -12,25 +12,28 @@ function CallForPapers() {
         <h2>JSConf Budapest 2024 Call for Speakers</h2>
         <p>We are inviting the JavaScript community to submit talks for the upcoming JSConf Budapest (June 27-28, 2024, Budapest, Hungary).</p>
         <strong>This Call for Speakers closes on January 26th, 2024!</strong>
-        <p>Before you submit - please make absolutely sure you do not include any personal details about yourself in the abstract and the description of your talk. <br />
+        
+        <p>
+          Before you submit - please make absolutely sure you do not include any personal details about yourself in the abstract and the description of your talk. 
+        </p>
+        <p>
           We're aiming at the most bias-free selection process as possible, our evaluation process aims to anonymize all submissions, so we ask you to help us. Omit any detail, url, company name from your the title and abstracts - for such details, we provide a separate field on the CFP form, which we'll check when we de-anonimize the talks at the end of the evaluation process.
         </p>
-        <CfpButton>Submit your talk proposal with Google Forms</CfpButton>
+        <CfpButton>Submit your talk proposal</CfpButton>
       </ConfSection>
 
       <ConfSection background="light-section">
         <h2>Topics</h2>
         <p>We like to see anything that fits into the topics like:</p>
         <ul>
-          <li>How did the web help us get through COVID. Tools, services that made it easier to cope with the many aspects of a world-wide pandemic.</li>
-          <li>Cutting-edge technological advances in the world of JavaScript or computer science in general, if somehow applicable to JavaScript.</li>
+          <li>Latest cutting-edge technological advances in the world of JavaScript or computer science in general, if somehow applicable to JavaScript.</li>
           <li>Wild Ideas & Mind-bending Hacks</li>
           <li>Developer Culture, improving JavaScript developers’ lives.</li>
           <li>Security and Privacy on the Web</li>
           <li>Machine Learning & JS</li>
-          <li>Mobile & JS</li>
-          <li>Hardware & JS</li>
-          <li>Modern re-visit of JavaScript Fundamentals</li>
+          <li>Mobile, Hardware, IoT with web technologies</li>
+          <li>Modern re-visit of programming fundamentals or software architectures using JS / TS and the Web</li>
+          <li>Crossroads of Technologies</li>
           <li>...Anything you want, that you feel passionate about and relates to the Web or JavaScript</li>
         </ul>
       </ConfSection>
@@ -48,7 +51,7 @@ function CallForPapers() {
         <strong>Your stay in Budapest covered + and extra weekend to explore our city</strong>
         <ul>
           <li>
-            In a great hotel near the venue (including free WiFi) for the days of the conference, a day before, and the weekend after (i.e. Sept 28th-29th). If you want to stay longer, we can arrange things, just let us know, but you may have to cover extra nights, though.
+            In a great hotel near the venue (including free WiFi) for the days of the conference, a day before, and the weekend after (i.e. June 29-30th). If you want to stay longer, we can arrange things, just let us know, but you may have to cover extra nights, though.
           </li>
         </ul>
         <strong>Entrance to the conference</strong>
@@ -72,7 +75,7 @@ function CallForPapers() {
         <strong>Submit your proposal by January 26th 2024, 23:59:59 CEST.</strong>
         <p>We're aiming at the most bias-free selection process as possible, so we ask you to help us. Omit any detail, url, company name from your the title and abstracts - for such details, we provide a separate field on the CFP form.</p>
         <strong>All talks are in English.</strong>
-        <p>Talks are usually 30 minutes long (for longer talks we’d get in touch with you directly). There will be no Q&A after the talks - we encourage attendees and speakers to talk to each in the breaks, after the sessions.</p>
+        <p>Talks are usually 30 minutes long (for longer talks we’d get in touch with you directly). There will be no Q&A on stage after the talks - we encourage attendees and speakers to talk to each in the breaks, after the sessions.</p>
         <p>Make sure you care, and make sure we see you care. Typos, sloppy formatting and all-lowercase submissions make our reading of your proposal tedious. These things will definitely count against your proposal.</p>
         <p>Don’t overdo it either. If you need more than two paragraphs to get to the point of your topic, we need to ask you to slim things down. With the amount of submissions we get, the quicker you can to make a good impression, the better.</p>
         <p>Original topics - one of the things we like to do with JSConf Budapest is to push the community forward. We can’t do this if the same people keep talking about the same things all the time. Thus, we favor original content. If you want to discuss a topic that you have talked about elsewhere, try to add a twist, or new research, or development, something unique. Of course, if your talk is plain awesome as-is, go for that :)</p>
@@ -115,7 +118,7 @@ function CallForPapers() {
         </p>
       </ConfSection>
 
-      <CfpButton>Submit your talk proposal with Google Forms</CfpButton>
+      <CfpButton>Submit your talk proposal</CfpButton>
     </>
   )
 }
