@@ -26,7 +26,7 @@ const team = [
   {
     name: 'Krisztina Závecz',
     image:
-      'https://pbs.twimg.com/profile_images/1027948395200237568/KkMN51Em_400x400.jpg',
+      'https://avatars.githubusercontent.com/u/21139399?s=400&u=51d06e4714439f7d1e45281f3929e0716c6cf328&v=4',
     twitter: 'krisztizavecz',
   },
   {
