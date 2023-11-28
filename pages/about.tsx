@@ -34,7 +34,7 @@ const team = [
     name: 'Gergő Nagy',
     image:
       'https://pbs.twimg.com/profile_images/1726182395374669824/Te0vF7Or_400x400.jpg',
-    twitter: '_puffancs',
+    twitter: '_gregnagy',
   },
   {
     name: 'Daniel Liptak',
