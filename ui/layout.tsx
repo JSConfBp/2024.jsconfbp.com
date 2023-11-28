@@ -20,9 +20,11 @@ function Layout({
         <title>{title}</title>
         <meta property="og:title" content={title} />
         <meta property="og:image" content="/social-share.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@jsconfbp" />
         <meta name="twitter:title" content={title} />
+        <meta name="twitter:description" content="JSConfBP website" />
         <meta name="twitter:image" content="/social-share.png" />
-
       </Head>
       {/* <Meta
       title={title}
