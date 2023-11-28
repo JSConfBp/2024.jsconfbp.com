@@ -1,11 +1,15 @@
 .divider_override {
-  padding: calc(1.5em) 0;
+  margin: 2rem 0;
 
   .footer_separator_polygons {
     width: 40vw;
     padding: 0;
+  }
 
-    @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 768px) {
+    margin: 0;
+
+    .footer_separator_polygons {
       width: 25vw;
     }
   }
