@@ -3,7 +3,6 @@ import classnames from 'classnames'
 
 import styles from './about.module.scss'
 
-import Layout from '../ui/layout'
 import Youtube from '../ui/youtube'
 
 const team = [
@@ -46,7 +45,7 @@ const team = [
 
 function About() {
   return (
-    <Layout title="About us" pathName="/about">
+    <>
       <h1>
         SZIA! ПРИВІТ! CZEŚĆ! SALUT! ЋАО! AHOJ! DOBRÝ DEN! ΓΕΙΆ ΣΟΥ! HOI! BUNĂ!
         ЗДРАВЕЙТЕ! ПРИВЕТ! HELLO!
@@ -135,7 +134,7 @@ function About() {
           )
         })}
       </ul>
-    </Layout >
+    </>
   )
 }
 
