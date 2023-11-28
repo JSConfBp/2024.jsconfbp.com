@@ -1,12 +1,11 @@
 import Link from "next/link";
 import CfpButton from "../ui/cfp-button";
 import Divider from "../ui/divider";
-import Layout from "../ui/layout"
 import ConfSection from "../ui/conf-section";
 
 function CallForPapers() {
   return (
-    <Layout title="Call for papers" pathName="/call-for-papers">
+    <>
       <Divider><h1>Call For Papers</h1></Divider>
 
       <ConfSection>
@@ -117,7 +116,7 @@ function CallForPapers() {
       </ConfSection>
 
       <CfpButton>Submit your talk proposal with Google Forms</CfpButton>
-    </Layout >
+    </>
   )
 }
 

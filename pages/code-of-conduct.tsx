@@ -1,13 +1,9 @@
 import React from 'react'
-import Layout from '../ui/layout'
 import Divider from '../ui/divider'
 
 function CodeOfConduct() {
     return (
-        <Layout
-            title="Code of Conduct"
-            pathName="/code-of-conduct"
-        >
+        <>
             <Divider>
                 <h1>
                     Code of Conduct
@@ -171,7 +167,7 @@ function CodeOfConduct() {
                 , <a href="https://wealljs.org/code-of-conduct">WeAllJS</a>, and{' '}
                 <a href="http://confcodeofconduct.com/">Conference Code of Conduct</a>.
             </p>
-        </Layout>
+        </>
     )
 }
 
