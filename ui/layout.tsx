@@ -18,6 +18,11 @@ function Layout({
     <div className={styles.layout} {...props}>
       <Head>
         <title>{title}</title>
+        <meta property="og:title" content={title} />
+        <meta property="og:image" content="/social-share.png" />
+        <meta name="twitter:title" content={title} />
+        <meta name="twitter:image" content="/social-share.png" />
+
       </Head>
       {/* <Meta
       title={title}
