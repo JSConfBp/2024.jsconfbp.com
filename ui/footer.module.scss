@@ -2,7 +2,7 @@
   padding: calc(1.5em) 0;
 
   .footer_separator_polygons {
-    width: 50vw;
+    width: 40vw;
     padding: 0;
 
     @media only screen and (min-width: 768px) {
@@ -80,8 +80,7 @@
   }
 
   .footer_polygons {
-    flex: 1;
-    width: 36.7vw;
+    width: 30vw;
 
     @media only screen and (min-width: 768px) {
       display: none;

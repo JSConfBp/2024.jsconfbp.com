@@ -5,15 +5,22 @@ html,
 body,
 main {
   font-family: var(--font-jetbrains-mono);
+  color: var(--text-color);
   font-weight: 300;
-  line-height: 1.5;
-  font-size: var(--base-font-size);
 
+  font-size: 14px;
+  line-height: 1.5;
+
+  @media only screen and (min-width: 768px) {
+    line-height: 1.714;
+  }
   @media only screen and (min-width: 1024px) {
     font-size: 16px;
+    line-height: 1.875;
   }
   @media only screen and (min-width: 1280px) {
     font-size: 18px;
+    line-height: 1.556;
   }
   @media only screen and (min-width: 1920px) {
     font-size: 20px;
@@ -47,9 +54,13 @@ h3 {
   color: var(--text-color);
   font-size: 1rem;
   line-height: 1.85rem;
+  @media only screen and (min-width: 768px) {
+    font-size: 1.143rem;
+    line-height: 1.5rem;
+  }
   @media only screen and (min-width: 1024px) {
     font-size: 1.125rem;
-    line-height: 1.83rem; // TODO: Check back later. This was 1.183rem in the design.
+    line-height: 1.833rem;
   }
   @media only screen and (min-width: 1280px) {
     font-size: 1.4rem;
@@ -72,11 +83,11 @@ h4 {
   }
   @media only screen and (min-width: 1280px) {
     font-size: 1rem;
-    line-height: 1.5rem; // TODO: Check back later. This was 1rem in the design.
+    line-height: 1.5rem;
   }
   @media only screen and (min-width: 1920px) {
     font-size: 1rem;
-    line-height: 2rem; // TODO: Check back later. This was 1rem in the design.
+    line-height: 2rem;
   }
 }
 
