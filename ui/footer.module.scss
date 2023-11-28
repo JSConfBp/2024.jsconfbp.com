@@ -35,6 +35,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding-left: calc((100vw - 400px) / 5);
 
     ul {
       height: 60%;
@@ -43,6 +44,7 @@
       flex-direction: column;
       justify-content: space-between;
       align-items: left;
+      gap: 1rem;
 
       li {
         padding-left: 1vw;
@@ -63,6 +65,8 @@
     }
 
     @media only screen and (min-width: 768px) {
+      padding-left: unset;
+
       ul {
         height: auto;
 
@@ -80,7 +84,7 @@
   }
 
   .footer_polygons {
-    width: 30vw;
+    height: 200px;
 
     @media only screen and (min-width: 768px) {
       display: none;
