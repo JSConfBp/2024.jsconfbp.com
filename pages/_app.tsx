@@ -43,11 +43,6 @@ export default function App({ Component, pageProps }) {
         <meta name="theme-color" content="#07bdbd" key="theme-color" />
         <meta name="viewport" content="width=device-width, initial-scale=1" key="viewport" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"></link>
-        <meta name="twitter:card" content="summary_large_image" key="twitter:card" />
-        <meta name="twitter:site" content="@jsconfbp" key="twitter:site" />
-        <meta name="twitter:creator" content="@_gregnagy" key="twitter:creator" />
-        <meta property="twitter:image:alt" content="JSConf Budapest June 26-28, 2024 logo" key="twitter:image:alt" />
-        <meta property="og:image:alt" content="JSConf Budapest June 26-28, 2024 logo" key="og:image:alt" />
       </Head>
       <div className={`${jetbrains_mono.variable} ${shrikhand.variable} layout responsive_text`} style={CSSVariableColors as CSSProperties}>
         <Header />
