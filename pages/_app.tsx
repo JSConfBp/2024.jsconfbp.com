@@ -50,7 +50,7 @@ export default function App({ Component, pageProps }) {
   const socialImgAbsoluteUrl = 'https://jsconfbp.com/social-share.png';
 
   return (
-    <div className={`${jetbrains_mono.variable} ${shrikhand.variable} layout responsive_text`} style={CSSVariableColors as CSSProperties}>
+    <>
       <Head>
         <title>{title}</title>
         <meta name="description" content={description} key="description" />
@@ -72,15 +72,13 @@ export default function App({ Component, pageProps }) {
         <meta name="twitter:image" content={socialImgAbsoluteUrl} key="twitter:image" />
         <meta property="twitter:image:alt" content="JSConf Budapest June 26-28, 2024 logo" key="twitter:image:alt" />
       </Head>
-
-      <Header />
-
-      <main className="main">
-        <Component {...pageProps} />
-      </main>
-
-      <Footer />
-
-    </div>
+      <div className={`${jetbrains_mono.variable} ${shrikhand.variable} layout responsive_text`} style={CSSVariableColors as CSSProperties}>
+        <Header />
+        <main className="main">
+          <Component {...pageProps} />
+        </main>
+        <Footer />
+      </div>
+    </>
   );
 }
