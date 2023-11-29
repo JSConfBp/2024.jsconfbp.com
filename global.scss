@@ -14,22 +14,24 @@
   overflow-x: hidden;
   padding-bottom: 2rem;
 
+  font-family: var(--font-jetbrains-mono);
+  color: var(--text-color);
+
   @media screen and (max-width: 480px) {
     overflow-y: hidden;
   }
-}
 
-.main {
-  width: var(--container-width-mobile);
+  .main {
+    width: var(--container-width-mobile);
 
-  @media only screen and (min-width: 768px) {
-    width: var(--container-width);
+    @media only screen and (min-width: 768px) {
+      width: var(--container-width);
+    }
   }
 }
 
-.responsive_text {
-  font-family: var(--font-jetbrains-mono);
-  color: var(--text-color);
+html,
+body {
   font-weight: 300;
 
   font-size: 14px;

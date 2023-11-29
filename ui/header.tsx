@@ -2,7 +2,6 @@ import React from 'react';
 
 import styles from './header.module.scss'
 
-import TicketBanner from "../ui/ticket-banner"
 import HeaderBackground from './header-background';
 import CfpButton from './cfp-button';
 import Link from 'next/link';
