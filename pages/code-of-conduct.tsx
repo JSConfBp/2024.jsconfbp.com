@@ -1,9 +1,13 @@
 import React from 'react'
 import Divider from '../ui/divider'
+import SocialShare from '../ui/social-share'
 
 function CodeOfConduct() {
     return (
         <>
+            <SocialShare
+              title="Code of Conduct"
+            />
             <Divider>
                 <h1>
                     Code of Conduct
