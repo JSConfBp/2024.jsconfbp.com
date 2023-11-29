@@ -2,19 +2,25 @@ import Link from "next/link";
 import CfpButton from "../ui/cfp-button";
 import Divider from "../ui/divider";
 import ConfSection from "../ui/conf-section";
+import SocialShare from "../ui/social-share";
 
 function CallForPapers() {
   return (
     <>
+      <SocialShare
+        title="Call For Papers"
+        description="Our CFP is open until 26th January 2024!"
+        socialShareImage="social-share-cfp.png"
+      />
       <Divider><h1>Call For Papers</h1></Divider>
 
       <ConfSection>
         <h2>JSConf Budapest 2024 Call for Speakers</h2>
         <p>We are inviting the JavaScript community to submit talks for the upcoming JSConf Budapest (June 27-28, 2024, Budapest, Hungary).</p>
         <strong>This Call for Speakers closes on January 26th, 2024!</strong>
-        
+
         <p>
-          Before you submit - please make absolutely sure you do not include any personal details about yourself in the abstract and the description of your talk. 
+          Before you submit - please make absolutely sure you do not include any personal details about yourself in the abstract and the description of your talk.
         </p>
         <p>
           We're aiming at the most bias-free selection process as possible, our evaluation process aims to anonymize all submissions, so we ask you to help us. Omit any detail, url, company name from your the title and abstracts - for such details, we provide a separate field on the CFP form, which we'll check when we de-anonimize the talks at the end of the evaluation process.
