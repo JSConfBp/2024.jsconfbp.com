@@ -39,7 +39,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <meta name="keyworkds" content="jsconf, 2024, javascript, jsconfbp, conference, budapest, jsconf budapest, diversity, inclusivity, community" key="keywords" />
+        <meta name="keywords" content="jsconf, javascript, jsconfbp, conference, web conference, js conference, budapest, jsconf budapest, diversity, inclusivity, community" key="keywords" />
         <meta name="theme-color" content="#07bdbd" key="theme-color" />
         <meta name="viewport" content="width=device-width, initial-scale=1" key="viewport" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"></link>
