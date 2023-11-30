@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './wide-image.module.scss'
 import Image from 'next/image'
 
-function WideImage({ src, alt = '' }) {
+function WideImage({ src, alt = '', priority = false }) {
   return (
     <div className={styles.wide_image}>
       <Image
@@ -12,6 +12,7 @@ function WideImage({ src, alt = '' }) {
         placeholder='blur'
         quality={25}
         fill
+        priority={priority}
       />
     </div>
   )
