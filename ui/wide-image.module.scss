@@ -1,16 +1,11 @@
-.wideimage {
+.wide_image {
   position: relative;
-  margin-top: 4rem;
-  margin-bottom: 4rem;
-  padding-bottom: 1rem;
-  z-index: -1;
+  left: calc(-1 * (100vw - 100%) / 2);
+
+  margin: 4rem 0;
 
   width: 100vw;
   height: calc(100vw / 3.5);
-
-  // position parent so Image fill works correctly
-  left: 50%;
-  transform: translateX(-50%);
 
   @media (max-width: 480px) {
     height: calc(100vw / 1.2);
@@ -20,25 +15,7 @@
     height: calc(100vw / 2.5);
   }
 
-  .image {
+  img {
     object-fit: cover;
-    overflow: hidden;
-  }
-
-  .description {
-    display: block;
-    font-style: italic;
-    font-family: "Libre Franklin", sans-serif;
-    font-size: 0.8rem;
-    color: var(--text-color);
-    // color: lighten($color-black, 50%);
-    text-align: left;
-    line-height: 1.3em;
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
-
-    @media (max-width: 480px) {
-      font-size: 1.2rem;
-    }
   }
 }

@@ -4,12 +4,14 @@ import Image from 'next/image'
 
 function WideImage({ src, alt = '' }) {
   return (
-    <div className={styles.wideimage}>
+    <div className={styles.wide_image}>
       <Image
-        fill
         src={src}
         alt={alt}
-        className={styles.image}
+        sizes='100vw'
+        placeholder='blur'
+        quality={25}
+        fill
       />
     </div>
   )
