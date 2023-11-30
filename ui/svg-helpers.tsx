@@ -12,7 +12,7 @@ export function getTrianglesWithColorAndFill(paths: string[]) {
     const color = getColor(Math.random() < 0.5 ? "primary" : "secondary");
     const hasFill = Math.random() < 0.5;
     return (
-      <path key={index} d={path} stroke={color} fill={hasFill ? color : ""} />
+      <path key={index} d={path} stroke={color} fill={hasFill ? color : "var(--background)"} />
     );
   });
 }
