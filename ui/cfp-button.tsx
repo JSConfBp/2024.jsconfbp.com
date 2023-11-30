@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import styles from "./cfp-button.module.scss";
 
-interface CfpButtonProps {
+type CfpButtonProps = {
   children?: string;
   [propName: string]: any;
 }
