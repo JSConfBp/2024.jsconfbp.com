@@ -1,15 +1,15 @@
 import classNames from "classnames"
 
-import styles from "./conf-section.module.scss"
+import styles from "./colored-section.module.scss"
 import { ColorNames } from "../pages/_app";
 
-interface ColoredSectionProps {
+type ColoredSectionProps = {
     children?: React.ReactNode | React.ReactNode[];
     background?: ColorNames;
     className?: string;
 }
 
-function ConfSection({
+function ColoredSection({
     children = undefined,
     background = "background",
     className = "",
@@ -27,8 +27,8 @@ function ConfSection({
             {...props}
         >
             {children}
-        </section>
+        </section >
     )
 }
 
-export default ConfSection
+export default ColoredSection
