@@ -7,6 +7,7 @@ type ColoredSectionProps = {
     children?: React.ReactNode | React.ReactNode[];
     background?: ColorNames;
     className?: string;
+    [key: string]: any;
 }
 
 function ColoredSection({
