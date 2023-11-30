@@ -17,14 +17,6 @@
   @media screen and (max-width: 480px) {
     overflow-y: hidden;
   }
-
-  .main {
-    width: var(--container-width-mobile);
-
-    @media only screen and (min-width: 768px) {
-      width: var(--container-width);
-    }
-  }
 }
 
 html,
@@ -112,8 +104,12 @@ h4 {
 a {
   font-family: var(--font-jetbrains-mono);
   text-decoration: underline;
-  color: var(--secondary-dark);
+  color: var(--secondary);
   font-size: 1rem;
+
+  &:hover {
+    color: var(--primary);
+  }
 }
 
 p {
