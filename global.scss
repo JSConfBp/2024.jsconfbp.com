@@ -1,10 +1,7 @@
 @charset 'utf-8';
 @import "./ui/reset.scss";
 
-:root {
-  --container-width-mobile: 90vw;
-  --container-width: 80vw;
-}
+@import "./ui/utilities.scss";
 
 .layout {
   display: flex;
