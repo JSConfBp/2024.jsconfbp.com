@@ -7,7 +7,7 @@ import Youtube from '../ui/youtube'
 
 const team = [
   {
-    name: 'Szabolcs Szabolcsi-Tóth',
+    name: 'Szabolcs Szabolcsi&#8209;Tóth',
     image: 'https://nec.is/nec.png',
     twitter: '_nec',
   },
@@ -128,7 +128,7 @@ function About() {
               <span>
                 <img alt={member.name} src={member.image} />
               </span>
-              <span className={styles.name}>{member.name}</span>
+              <span className={styles.name} dangerouslySetInnerHTML={{ __html: member.name }}></span>
             </a>
           </li>
           )
