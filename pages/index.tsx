@@ -7,7 +7,7 @@ function Home() {
     <>
       <SocialShare />
       <TicketBanner />
-      <CfpButton />
+      <CfpButton href="/call-for-papers" target="_self">Our CFP is open!</CfpButton>
     </>
   )
 }
