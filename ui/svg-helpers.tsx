@@ -1,18 +1,19 @@
-function getColor(color: "primary" | "secondary") {
-  switch (color) {
-    case "primary":
-      return "var(--primary, #07BDBD)";
-    case "secondary":
-      return "var(--secondary, #9E19EF)";
-  }
-}
+import { useEffect, useState } from "react";
 
 export function getTrianglesWithColorAndFill(paths: string[]) {
+  const [isMounted, setIsMounted] = useState(false);
+
+  useEffect(() => {
+    setIsMounted(true);
+  }, []);
+
   return paths.map((path, index) => {
-    const color = getColor(Math.random() < 0.5 ? "primary" : "secondary");
+    const color = Math.random() < 0.5 ? "var(--primary, #07BDBD)" : "var(--secondary, #9E19EF)";
     const hasFill = Math.random() < 0.5;
     return (
-      <path key={index} d={path} stroke={color} fill={hasFill ? color : "var(--background)"} />
+      <>
+        {isMounted && <path key={index} d={path} stroke={color} fill={hasFill ? color : "var(--background)"} />}
+      </>
     );
   });
 }
