@@ -7,7 +7,7 @@ interface CfpButtonProps {
   [propName: string]: any;
 }
 
-function CfpButton({ children, ...props }: CfpButtonProps) {
+function CfpButton({ children, href = "https://forms.gle/y3RN28awvwjkm2ws6", target = "_blank", ...props }: CfpButtonProps) {
   const buttonText = "Submit your talk proposal"
 
   if (typeof children !== "string" && typeof children !== "undefined") {
@@ -17,10 +17,10 @@ function CfpButton({ children, ...props }: CfpButtonProps) {
 
   return (
     <div className={styles.main} {...props}>
-      <Link href="https://forms.gle/y3RN28awvwjkm2ws6" target="_blank" className={styles.button}>
+      <Link href={href} target={target} className={styles.button}>
         {children || buttonText}
       </Link>
-    </div>
+    </div >
   )
 }
 
