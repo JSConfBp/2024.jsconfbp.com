@@ -7,7 +7,7 @@ type ContainerProps = {
     children?: React.ReactNode | React.ReactNode[];
     elementType?: keyof JSX.IntrinsicElements;
     className?: string;
-
+    [key: string]: any;
 }
 
 export default function Container({ children, elementType: Element = "div", className = '', ...props }: ContainerProps) {
