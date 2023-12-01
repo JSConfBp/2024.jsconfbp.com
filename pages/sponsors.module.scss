@@ -1,0 +1,75 @@
+.attendee_charts {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+
+  @media only screen and (min-width: 768px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  h3 {
+    color: var(--background);
+    font-size: 1.5rem;
+    white-space: nowrap;
+    font-size: 1.75rem;
+
+    @media only screen and (min-width: 768px) {
+      flex-direction: row;
+      font-size: 1.15rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      font-size: 1.5rem;
+    }
+
+    @media only screen and (min-width: 1280px) {
+    }
+  }
+
+  .chart {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    gap: 2rem;
+
+    @media only screen and (min-width: 768px) {
+      width: auto;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100vw;
+
+      @media only screen and (min-width: 768px) {
+        width: auto;
+      }
+    }
+  }
+
+  .position {
+    @media only screen and (max-width: 768px) {
+      h3 {
+        margin-left: 4rem;
+      }
+
+      div {
+        margin-left: -4rem;
+      }
+    }
+  }
+
+  .knowledge {
+    @media only screen and (max-width: 768px) {
+      h3 {
+        margin-left: 3rem;
+      }
+
+      div {
+        margin-left: -3rem;
+      }
+    }
+  }
+}
