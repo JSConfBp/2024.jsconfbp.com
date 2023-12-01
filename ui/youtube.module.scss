@@ -1,6 +1,10 @@
 .embed {
   position: relative;
-  padding-bottom: 54%;
+  padding-bottom: 60%;
+
+  @media only screen and (min-width: 768px) {
+    padding-bottom: 70%;
+  }
 
   iframe {
     width: 100%;
