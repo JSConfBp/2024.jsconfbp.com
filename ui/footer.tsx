@@ -21,7 +21,7 @@ export function Footer() {
                         <li><a href="/budapest-guide">Budapest Guide</a></li>
                     </ul>
                 </nav>
-                <Polygons type="footer-separator" aria-hidden="true" />
+                <Polygons type="footer" aria-hidden="true" />
             </section>
             <nav className={styles.past_years}>
                 <ul>
