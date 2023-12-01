@@ -3,12 +3,12 @@ import classnames from "classnames";
 
 import styles from "./youtube.module.scss";
 
-function Youtube({ src, title = "", className = "" }) {
+function Youtube({ videoId, title = "", className = "" }) {
   return (
     <div className={classnames(styles.embed, className)}>
       <iframe
         title={`Embed video ${title}`}
-        src={src}
+        src={`https://www.youtube.com/embed/${videoId}`}
         // @ts-expect-error https://stackoverflow.com/questions/46934039/what-is-the-gesture-media-html-attribute
         gesture="media"
         frameBorder="0"

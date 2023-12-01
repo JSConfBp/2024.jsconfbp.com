@@ -59,11 +59,11 @@ function About() {
         technologies, ideas and culture.
       </p>
 
-      <Youtube src="WPj0fDUqt1M" title="JSConf Budapest 2022 Mood video" />
+      <Youtube videoId="WPj0fDUqt1M" title="JSConf Budapest 2022 Mood video" />
 
-      <Youtube src="oWmPuKDiRV4" title="JSConf Budapest 2019 Mood video" />
+      <Youtube videoId="oWmPuKDiRV4" title="JSConf Budapest 2019 Mood video" />
 
-      <Youtube src="mJoS_pLbiWc" title="JSConf Budapest 2016 Mood video" />
+      <Youtube videoId="mJoS_pLbiWc" title="JSConf Budapest 2016 Mood video" />
 
       <h2>
         JSConf Budapest so far
