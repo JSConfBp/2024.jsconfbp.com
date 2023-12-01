@@ -1,9 +1,9 @@
-.item-start {
-  align-items: flex-start;
+.w-50vw {
+  width: 50%;
 }
 
-.item-center {
-  align-items: center;
+.w-100p {
+  width: 100%;
 }
 
 .mt-0 {
@@ -12,4 +12,102 @@
 
 .mb-0 {
   margin-bottom: 0 !important;
+}
+
+.relative {
+  position: relative;
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.col-md {
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.row-md {
+  @media only screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+  }
+}
+
+.item-start {
+  align-items: flex-start;
+}
+
+.item-center {
+  align-items: center;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.gap-1p5 {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.gap-2p5 {
+  display: flex;
+  gap: 2.5rem;
+}
+
+.gap-3 {
+  gap: 3rem;
+}
+
+.px-3 {
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+.py-1p5 {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.color-bg {
+  color: var(--background);
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.m-0 {
+  margin: 0 !important;
+}
+
+.fs-1 {
+  font-size: 1rem;
+}
+
+.fs-1p5 {
+  font-size: 1.5rem;
+}
+
+.fs-2 {
+  font-size: 2rem;
+}
+
+.fw-700 {
+  font-weight: 700;
 }
