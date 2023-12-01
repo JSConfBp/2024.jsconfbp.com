@@ -81,7 +81,14 @@ function Sponsors() {
                 <div id="video">VIDEO</div>
                 <ColoredSection background="primary" className="pb-2">
                     <div id="attendees">attendees</div>
-                    <div id="top-countries">top countries</div>
+                    <div id="top-countries" className="col center w-80vw">
+                        <h1 className="color-bg">Top countries</h1>
+                        <p className="color-bg">
+                            Netherlands, Germany, Hungary, United States, United Kingdom
+                            <br />
+                            Portugal, Slovakia, Romania, Poland, Serbia
+                        </p>
+                    </div>
                     <Divider type="sym" color="background" />
                     <div id="reach" className="w-80vw col center gap-1p5">
                         <h1 className="center color-bg">REACH</h1>
