@@ -82,7 +82,7 @@ function Sponsors() {
                         </div>
                     </div>
                 </ColoredSection>
-                <Youtube src="https://www.youtube.com/embed/oWmPuKDiRV4" title="JSConf Budapest Mood video" className="x-fill my-n1p5"></Youtube>
+                <Youtube videoId="WPj0fDUqt1M" title="JSConf Budapest Mood video" className="x-fill my-n1p5"></Youtube>
                 <ColoredSection background="primary" className="py-2 mt-n4">
                     <div id="attendees gap-2">
                         <div className="col center gap-2p5">
