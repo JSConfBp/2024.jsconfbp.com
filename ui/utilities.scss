@@ -20,7 +20,7 @@
   flex: 1;
 }
 
-.col-md {
+.md-col {
   @media only screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -34,7 +34,7 @@
   flex: 1;
 }
 
-.row-md {
+.md-row {
   @media only screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
@@ -54,6 +54,12 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.start {
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
 }
 
 .color-bg {
@@ -85,10 +91,10 @@ $types: (("m", "margin"), ("p", "padding"));
 $sides: (("t", "top"), ("b", "bottom"), ("l", "left"), ("r", "right"));
 $axes: ("x", "y");
 
-// 0rem, 0p25rem, 0p5rem ... 3p75rem
-@for $i from 0 through (4 * 4) {
+// 0rem, 0p25rem, 0p5rem ... 6rem
+@for $i from -24 through 24 {
   // 0.25 -> 0p25
-  $class-name: str-replace(#{0.25 * $i}, ".", "p");
+  $class-name: str-replace(str-replace(#{0.25 * $i}, ".", "p"), "-", "n");
   $size: $i * 0.25rem;
 
   .fs-#{$class-name} {
@@ -108,11 +114,23 @@ $axes: ("x", "y");
       #{$prop}: $size;
     }
 
+    .md-#{$typeAbbr}-#{$class-name} {
+      @media only screen and (min-width: 768px) {
+        #{$prop}: $size;
+      }
+    }
+
     @each $side in $sides {
       $sideAbbr: nth($side, 1);
       $sideName: nth($side, 2);
       .#{$typeAbbr}#{$sideAbbr}-#{$class-name} {
         #{$prop}-#{$sideName}: $size;
+      }
+
+      .md-#{$typeAbbr}#{$sideAbbr}-#{$class-name} {
+        @media only screen and (min-width: 768px) {
+          #{$prop}-#{$sideName}: $size;
+        }
       }
     }
 
@@ -124,6 +142,18 @@ $axes: ("x", "y");
         } @else if $axis == "y" {
           #{$prop}-top: $size;
           #{$prop}-bottom: $size;
+        }
+      }
+
+      .md-#{$typeAbbr}#{$axis}-#{$class-name} {
+        @media only screen and (min-width: 768px) {
+          @if $axis == "x" {
+            #{$prop}-left: $size;
+            #{$prop}-right: $size;
+          } @else if $axis == "y" {
+            #{$prop}-top: $size;
+            #{$prop}-bottom: $size;
+          }
         }
       }
     }
