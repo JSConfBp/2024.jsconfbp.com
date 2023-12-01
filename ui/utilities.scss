@@ -6,8 +6,20 @@
   width: 80vw;
 }
 
+.w-100vw {
+  width: 100vw;
+}
+
 .w-100p {
   width: 100%;
+}
+
+.h-100p {
+  height: 100%;
+}
+
+.absolute {
+  position: absolute;
 }
 
 .relative {
@@ -18,6 +30,12 @@
   display: flex;
   flex-direction: column;
   flex: 1;
+}
+
+.x-fill {
+  width: 100vw;
+  position: relative;
+  left: calc(-1 * (100vw - 100%) / 2);
 }
 
 .md-col {
