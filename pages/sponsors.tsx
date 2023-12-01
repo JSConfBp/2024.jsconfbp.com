@@ -31,24 +31,24 @@ function Sponsors() {
             <Container>
                 <div className="mt-3">Our common goal with every Sponsor is to make the experience even better for Attendees at the conference. We believe that Sponsor booths and activities could be part of the whole event, the hallway track, and even afterparties.</div>
                 <nav className="my-3">
-                    <ul className="flex-col center col md-row gap-2p5">
+                    <ul className={`flex-col center col md-row gap-2p5 ${styles.menu}`}>
                         <li>
-                            <a className="fs-1p5" href="#attendees">Attendees</a>
+                            <a href="#attendees">Attendees</a>
                         </li>
                         <li>
-                            <a className="fs-1p5" href="#reach">Reach</a>
+                            <a href="#reach">Reach</a>
                         </li>
                         <li>
-                            <a className="fs-1p5" href="#packages">Packages</a>
+                            <a href="#packages">Packages</a>
                         </li>
                         <li>
-                            <a className="fs-1p5" href="#perks">Perks</a>
+                            <a href="#perks">Perks</a>
                         </li>
                         <li>
-                            <a className="fs-1p5" href="#workshops">Workshops</a>
+                            <a href="#workshops">Workshops</a>
                         </li>
                         <li>
-                            <a className="fs-1p5" href="#scholarships">Scholarships</a>
+                            <a href="#scholarships">Scholarships</a>
                         </li>
                     </ul>
                 </nav>
