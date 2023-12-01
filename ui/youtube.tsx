@@ -8,7 +8,7 @@ function Youtube({ src, title = "", className = "" }) {
     <div className={classnames(styles.embed, className)}>
       <iframe
         title={`Embed video ${title}`}
-        src={`https://www.youtube.com/embed/${src}`}
+        src={src}
         // @ts-expect-error https://stackoverflow.com/questions/46934039/what-is-the-gesture-media-html-attribute
         gesture="media"
         frameBorder="0"
