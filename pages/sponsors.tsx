@@ -15,6 +15,7 @@ import twitter from "../public/icons/twitter.png"
 import youtube from "../public/icons/youtube.png"
 import facebook from "../public/icons/facebook.png"
 import classNames from "classnames"
+import Youtube from "../ui/youtube";
 
 function Sponsors() {
     return (
@@ -27,9 +28,9 @@ function Sponsors() {
                 <h1>Sponsorship</h1>
             </Divider>
 
-            <Container className="gap-3">
-                <div>Our common goal with every Sponsor is to make the experience even better for Attendees at the conference. We believe that Sponsor booths and activities could be part of the whole event, the hallway track, and even afterparties.</div>
-                <nav>
+            <Container>
+                <div className="mt-3">Our common goal with every Sponsor is to make the experience even better for Attendees at the conference. We believe that Sponsor booths and activities could be part of the whole event, the hallway track, and even afterparties.</div>
+                <nav className="my-3">
                     <ul className="flex-col center col md-row gap-2p5">
                         <li>
                             <a className="fs-1p5" href="#attendees">Attendees</a>
@@ -51,7 +52,7 @@ function Sponsors() {
                         </li>
                     </ul>
                 </nav>
-                <ColoredSection background="secondary" className="gap-1p5 px-3 py-1p5">
+                <ColoredSection background="secondary" className="gap-1p5 px-3 py-1p5 m-0">
                     <h1 className="center color-bg">OUR PAST YEARS WERE AWESOME!</h1>
                     <h3 className="center color-bg">Here’s what happened so far in our past 4 events:</h3>
                     <div className="w-50vw col md-row center">
@@ -81,8 +82,8 @@ function Sponsors() {
                         </div>
                     </div>
                 </ColoredSection>
-                <div id="video">VIDEO</div>
-                <ColoredSection background="primary" className="py-2">
+                <Youtube src="https://www.youtube.com/embed/oWmPuKDiRV4" title="JSConf Budapest Mood video" className="x-fill my-n1p5"></Youtube>
+                <ColoredSection background="primary" className="py-2 mt-n4">
                     <div id="attendees gap-2">
                         <div className="col center gap-2p5">
                             <h1 className="color-bg center">OUR ATTENDEES</h1>
