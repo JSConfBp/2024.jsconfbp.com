@@ -1,0 +1,16 @@
+.footer_separator_polygons {
+  width: 40vw;
+  padding: 0;
+
+  @media only screen and (min-width: 768px) {
+    width: 25vw;
+  }
+}
+
+.footer_polygons {
+  height: 200px;
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+}
