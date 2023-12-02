@@ -3,7 +3,6 @@ import Image from "next/image"
 import styles from "./sponsors.module.scss";
 
 import ColoredSection from "../ui/colored-section"
-import Container from "../ui/container"
 import Divider from "../ui/divider"
 import SocialShare from "../ui/social-share"
 
@@ -28,10 +27,10 @@ function Sponsors() {
                 <h1>Sponsorship</h1>
             </Divider>
 
-            <Container>
+            <div className="col x-container">
                 <div className="mt-3">Our common goal with every Sponsor is to make the experience even better for Attendees at the conference. We believe that Sponsor booths and activities could be part of the whole event, the hallway track, and even afterparties.</div>
                 <nav className="my-3">
-                    <ul className={`flex-col center col md-row gap-2p5 ${styles.menu}`}>
+                    <ul className={`col md-row center gap-2p5 ${styles.menu}`}>
                         <li>
                             <a href="#attendees">Attendees</a>
                         </li>
@@ -212,7 +211,7 @@ function Sponsors() {
                 <ColoredSection background="background">
                     <div id="impressum">impressum</div>
                 </ColoredSection>
-            </Container >
+            </div>
         </>
     )
 }
