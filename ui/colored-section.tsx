@@ -23,7 +23,7 @@ function ColoredSection({
 
     return (
         <section
-            className={classNames(styles.main, className)}
+            className={classNames(styles.main, className, "x-fill py-2 col center")}
             style={{ backgroundColor: `var(--${background})` }}
             {...props}
         >

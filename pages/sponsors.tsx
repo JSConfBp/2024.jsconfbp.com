@@ -29,7 +29,7 @@ function Sponsors() {
             </Divider>
 
             <div className="col x-container">
-                <div className="mt-3">Our common goal with every Sponsor is to make the experience even better for Attendees at the conference. We believe that Sponsor booths and activities could be part of the whole event, the hallway track, and even afterparties.</div>
+                <div>Our common goal with every Sponsor is to make the experience even better for Attendees at the conference. We believe that Sponsor booths and activities could be part of the whole event, the hallway track, and even afterparties.</div>
                 <nav className="my-3">
                     <ul className={`col md-row center gap-2p5 ${styles.menu}`}>
                         <li>
@@ -52,7 +52,7 @@ function Sponsors() {
                         </li>
                     </ul>
                 </nav>
-                <ColoredSection background="secondary" className="gap-1p5 px-3 py-1p5 m-0">
+                <ColoredSection background="secondary" className="gap-1p5 px-3">
                     <h1 className="center color-bg">OUR PAST YEARS WERE AWESOME!</h1>
                     <h3 className="center color-bg">Here’s what happened so far in our past 4 events:</h3>
                     <div className="w-50vw col md-row center">
@@ -83,8 +83,8 @@ function Sponsors() {
                     </div>
                 </ColoredSection>
                 <Youtube videoId="WPj0fDUqt1M" title="JSConf Budapest Mood video" className="x-fill my-n1p5"></Youtube>
-                <ColoredSection background="primary" className="py-2 mt-n4">
-                    <div id="attendees gap-2">
+                <ColoredSection background="primary">
+                    <div id="attendees">
                         <div className="col center gap-2p5">
                             <h1 className="color-bg center">OUR ATTENDEES</h1>
                             <div className={styles.attendee_charts}>
