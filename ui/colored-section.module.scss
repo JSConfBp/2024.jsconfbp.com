@@ -1,16 +1,4 @@
 .main {
-  width: 100vw;
-  position: relative;
-  left: calc(-1 * (100vw - 100%) / 2);
-
-  margin: 1.5rem 0;
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: left;
-
   strong {
     display: block;
     font-weight: 700;

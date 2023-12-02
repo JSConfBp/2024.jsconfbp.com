@@ -14,8 +14,8 @@ function CallForPapers() {
       />
       <Divider><h1>Call For Papers</h1></Divider>
 
-      <ColoredSection className="mb-0">
-        <div className="x-container">
+      <ColoredSection className="mt-n2">
+        <div className="x-container text-left ">
           <h2>JSConf Budapest 2024 Call for Speakers</h2>
           <p>We are inviting the JavaScript community to submit talks for the upcoming JSConf Budapest (June 27-28, 2024, Budapest, Hungary).</p>
           <strong>This Call for Speakers closes on January 26th, 2024!</strong>
@@ -29,10 +29,10 @@ function CallForPapers() {
         </div>
       </ColoredSection>
 
-      <CfpButton>Submit your talk proposal</CfpButton>
+      <CfpButton className="mb-2">Submit your talk proposal</CfpButton>
 
       <ColoredSection background="light-section">
-        <div className="x-container">
+        <div className="x-container text-left">
           <h2>Topics</h2>
           <p>We like to see anything that fits into the topics like:</p>
           <ul>
@@ -51,7 +51,7 @@ function CallForPapers() {
 
 
       <ColoredSection>
-        <div className="x-container">
+        <div className="x-container text-left">
           <h2>Perks</h2>
           <p>If you get selected as a speaker at JSConf Budapest, here’s what we provide:</p>
           <strong>Your travel to Budapest covered</strong>
@@ -84,7 +84,7 @@ function CallForPapers() {
       </ColoredSection>
 
       <ColoredSection background="light-section">
-        <div className="x-container">
+        <div className="x-container text-left">
           <h2>Guidelines</h2>
           <strong>Submit your proposal by January 26th 2024, 23:59:59 CEST.</strong>
           <p>We're aiming at the most bias-free selection process as possible, so we ask you to help us. Omit any detail, url, company name from your the title and abstracts - for such details, we provide a separate field on the CFP form.</p>
@@ -98,7 +98,7 @@ function CallForPapers() {
       </ColoredSection>
 
       <ColoredSection >
-        <div className="x-container">
+        <div className="x-container text-left">
           <h2>Selection process</h2>
           <p>Here’s how we pick our talks:</p>
           <ul>
@@ -123,7 +123,7 @@ function CallForPapers() {
       </ColoredSection>
 
       <ColoredSection background="light-section">
-        <div className="x-container">
+        <div className="x-container text-left">
           <h2>We're here to help!</h2>
           <p>Not everybody is a natural talent on stage. Not everybody can produce kick-ass slide-decks. Not everybody is a live-demo-god. Not everybody knows they have something great to talk about. There are about a million reasons why you don’t consider yourself a speaker.</p>
           <p>We are here to prove you wrong.If all you have is a gut feeling that you should be on stage, we are here to reach out and help you to develop or hone the skills you think you lack to deliver a great presentation.</p>
@@ -137,7 +137,7 @@ function CallForPapers() {
         </div>
       </ColoredSection>
 
-      <CfpButton>Submit your talk proposal</CfpButton>
+      <CfpButton className="mt-2">Submit your talk proposal</CfpButton>
     </>
   )
 }
