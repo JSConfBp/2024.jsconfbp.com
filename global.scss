@@ -115,3 +115,29 @@ a {
 p {
   margin: 1rem 0;
 }
+
+.x-fill {
+  width: 100vw;
+  position: relative;
+  left: calc(-1 * (100vw - 100%) / 2);
+}
+
+.x-container {
+  width: 90vw;
+
+  @media only screen and (min-width: 768px) {
+    width: 80vw;
+  }
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.start {
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+}
