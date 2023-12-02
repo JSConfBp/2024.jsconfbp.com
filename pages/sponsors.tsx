@@ -15,6 +15,7 @@ import youtube from "../public/icons/youtube.png"
 import facebook from "../public/icons/facebook.png"
 import classNames from "classnames"
 import Youtube from "../ui/youtube";
+import { AbbyyLogo, Auth0Logo, EpamLogo, ExadelLogo, GenesysLogo, HasuraLogo, HotjarLogo, LittleDataLogo, NewRelicLogo, OracleLogo, StatelyLogo, SuperChargeLogo, TalonOneLogo, ThisDotLogo, TwilloLogo, WrikeLogo, XataLogo } from "../ui/sponsor-logos";
 
 function Sponsors() {
     return (
@@ -187,8 +188,35 @@ function Sponsors() {
                     </div>
                 </ColoredSection>
                 <div id="pictures">PICTURES</div>
-                <ColoredSection background="secondary">
-                    <div id="past-sponsors">past sponsors</div>
+                <ColoredSection background="secondary" className="col gap-2 py-2">
+                    <div id="past-sponsors" className="col gap-2">
+                        <h1 className="color-bg center">PAST SPONSORS</h1>
+                        <div className={styles.level_1}>
+                            <OracleLogo />
+                            <WrikeLogo />
+                            <GenesysLogo />
+                            <XataLogo />
+                            <NewRelicLogo />
+                        </div>
+                        <div className={styles.level_2}>
+                            <StatelyLogo />
+                            <ExadelLogo />
+                            <HasuraLogo />
+                            <SuperChargeLogo />
+                            <AbbyyLogo />
+                        </div>
+                        <div className={styles.level_3}>
+                            <EpamLogo />
+                            <Auth0Logo />
+                            <LittleDataLogo />
+                            <ThisDotLogo />
+                        </div>
+                        <div className={styles.level_4}>
+                            <TwilloLogo />
+                            <TalonOneLogo />
+                            <HotjarLogo />
+                        </div>
+                    </div>
                     <Divider type="sym" color="background" />
                     <div id="coming-up">coming up next</div>
                 </ColoredSection>
