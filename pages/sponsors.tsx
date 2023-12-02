@@ -140,7 +140,7 @@ function Sponsors() {
                             </div>
                         </div>
                     </div>
-                    <div id="top-countries" className="col center w-80vw mt-3 mb-n3">
+                    <div id="top-countries" className="col center w-80vw mt-3">
                         <h1 className="color-bg">Top countries</h1>
                         <p className="color-bg">
                             Netherlands, Germany, Hungary, United States, United Kingdom
@@ -149,7 +149,7 @@ function Sponsors() {
                         </p>
                     </div>
                     <Divider type="sym" color="background" />
-                    <div id="reach" className="w-80vw col center gap-1p5 mt-n1 ">
+                    <div id="reach" className="w-80vw col center gap-1p5 mt-1">
                         <h1 className="center color-bg">REACH</h1>
                         <h3 className="center color-bg">100% relevance in the JavaScript community</h3>
                         <div className={`col md-row center gap-1p5 w-100p py-2 ${styles.reach_icons}`}>
