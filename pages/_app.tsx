@@ -6,7 +6,6 @@ import "../global.scss";
 
 import Header from '../ui/header'
 import { Footer } from '../ui/footer'
-import Container from '../ui/container';
 
 
 const jetbrains_mono = JetBrains_Mono({
@@ -47,9 +46,9 @@ export default function App({ Component, pageProps }) {
       </Head>
       <div className={`${jetbrains_mono.variable} ${shrikhand.variable} layout responsive_text`} style={CSSVariableColors as CSSProperties}>
         <Header />
-        <Container elementType='main'>
+        <main className='col x-container'>
           <Component {...pageProps} />
-        </Container>
+        </main>
         <Footer />
       </div >
     </>

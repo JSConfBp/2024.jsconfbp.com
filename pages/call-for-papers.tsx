@@ -3,7 +3,6 @@ import CfpButton from "../ui/cfp-button";
 import Divider from "../ui/divider";
 import ColoredSection from "../ui/colored-section";
 import SocialShare from "../ui/social-share";
-import Container from "../ui/container";
 
 function CallForPapers() {
   return (
@@ -16,7 +15,7 @@ function CallForPapers() {
       <Divider><h1>Call For Papers</h1></Divider>
 
       <ColoredSection className="mb-0">
-        <Container className="item-start">
+        <div className="x-container">
           <h2>JSConf Budapest 2024 Call for Speakers</h2>
           <p>We are inviting the JavaScript community to submit talks for the upcoming JSConf Budapest (June 27-28, 2024, Budapest, Hungary).</p>
           <strong>This Call for Speakers closes on January 26th, 2024!</strong>
@@ -27,13 +26,13 @@ function CallForPapers() {
           <p>
             We're aiming at the most bias-free selection process as possible, our evaluation process aims to anonymize all submissions, so we ask you to help us. Omit any detail, url, company name from your the title and abstracts - for such details, we provide a separate field on the CFP form, which we'll check when we de-anonimize the talks at the end of the evaluation process.
           </p>
-        </Container>
+        </div>
       </ColoredSection>
 
       <CfpButton>Submit your talk proposal</CfpButton>
 
       <ColoredSection background="light-section">
-        <Container className="item-start">
+        <div className="x-container">
           <h2>Topics</h2>
           <p>We like to see anything that fits into the topics like:</p>
           <ul>
@@ -47,12 +46,12 @@ function CallForPapers() {
             <li>Crossroads of Technologies</li>
             <li>...Anything you want, that you feel passionate about and relates to the Web or JavaScript</li>
           </ul>
-        </Container>
+        </div>
       </ColoredSection>
 
 
       <ColoredSection>
-        <Container className="item-start">
+        <div className="x-container">
           <h2>Perks</h2>
           <p>If you get selected as a speaker at JSConf Budapest, here’s what we provide:</p>
           <strong>Your travel to Budapest covered</strong>
@@ -81,11 +80,11 @@ function CallForPapers() {
           </ul>
           <p>If your employer can cover your travel and hotel, we are happy to list them as an awesome company sponsor. The money we save will be used to make the conference more fabulous.</p>
           <p>If you have any special requirements, non-return trips, just let us know, we can usually work these things out.</p>
-        </Container>
+        </div>
       </ColoredSection>
 
       <ColoredSection background="light-section">
-        <Container className="item-start">
+        <div className="x-container">
           <h2>Guidelines</h2>
           <strong>Submit your proposal by January 26th 2024, 23:59:59 CEST.</strong>
           <p>We're aiming at the most bias-free selection process as possible, so we ask you to help us. Omit any detail, url, company name from your the title and abstracts - for such details, we provide a separate field on the CFP form.</p>
@@ -95,11 +94,11 @@ function CallForPapers() {
           <p>Don’t overdo it either. If you need more than two paragraphs to get to the point of your topic, we need to ask you to slim things down. With the amount of submissions we get, the quicker you can to make a good impression, the better.</p>
           <p>Original topics - one of the things we like to do with JSConf Budapest is to push the community forward. We can’t do this if the same people keep talking about the same things all the time. Thus, we favor original content. If you want to discuss a topic that you have talked about elsewhere, try to add a twist, or new research, or development, something unique. Of course, if your talk is plain awesome as-is, go for that :)</p>
           <p>Simply assume this: the audience has infinite intelligence but zero knowledge.</p>
-        </Container>
+        </div>
       </ColoredSection>
 
       <ColoredSection >
-        <Container className="item-start">
+        <div className="x-container">
           <h2>Selection process</h2>
           <p>Here’s how we pick our talks:</p>
           <ul>
@@ -120,11 +119,11 @@ function CallForPapers() {
           <p>
             Check out our <Link href="/600-proposals">blogpost on how we manage to evaluate the CFP submissions.</Link>
           </p>
-        </Container>
+        </div>
       </ColoredSection>
 
       <ColoredSection background="light-section">
-        <Container className="item-start">
+        <div className="x-container">
           <h2>We're here to help!</h2>
           <p>Not everybody is a natural talent on stage. Not everybody can produce kick-ass slide-decks. Not everybody is a live-demo-god. Not everybody knows they have something great to talk about. There are about a million reasons why you don’t consider yourself a speaker.</p>
           <p>We are here to prove you wrong.If all you have is a gut feeling that you should be on stage, we are here to reach out and help you to develop or hone the skills you think you lack to deliver a great presentation.</p>
@@ -135,7 +134,7 @@ function CallForPapers() {
             <br />
             (just please don’t use this address to submit a proposal).
           </p>
-        </Container>
+        </div>
       </ColoredSection>
 
       <CfpButton>Submit your talk proposal</CfpButton>
