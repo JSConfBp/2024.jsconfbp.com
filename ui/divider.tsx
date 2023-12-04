@@ -6,7 +6,7 @@ import React from 'react';
 
 function AsymmetricLine({ color = "var(--secondary)" }) {
     return (
-        <svg viewBox="0 0 1728 300" xmlns="http://www.w3.org/2000/svg">
+        <svg viewBox="0 0 1728 152" xmlns="http://www.w3.org/2000/svg">
             <line x1="1572" y1="150" x2="1728" y2="0" stroke={color} />
             <line x1="0" y1="150" x2="1572" y2="150" stroke={color} />
         </svg>
@@ -44,9 +44,9 @@ export default function Divider({ className = "", type = "asym", color = "second
     }
 
     return (
-        <div className={classNames(styles.main, className)}>
+        <div className={classNames(className, "x-fill col align-center justify-center")}>
             {type === "asym" ? <AsymmetricLine color={`var(--${color})`} /> : <SymmetricLine color={`var(--${color})`} />}
-            {firstChild && <div className={classNames(styles.text)}>
+            {firstChild && <div className={classNames(styles[type])}>
                 {firstChild}
             </div>
             }
