@@ -1,3 +1,4 @@
+import classNames from "classnames"
 import Image from "next/image"
 
 import styles from "./sponsors.module.scss";
@@ -5,6 +6,7 @@ import styles from "./sponsors.module.scss";
 import ColoredSection from "../ui/colored-section"
 import Divider from "../ui/divider"
 import SocialShare from "../ui/social-share"
+import Youtube from "../ui/youtube";
 
 import mic from "../public/icons/mic.png"
 import attendees from "../public/icons/attendees.png"
@@ -13,8 +15,10 @@ import countries from "../public/icons/countries.png"
 import twitter from "../public/icons/twitter.png"
 import youtube from "../public/icons/youtube.png"
 import facebook from "../public/icons/facebook.png"
-import classNames from "classnames"
-import Youtube from "../ui/youtube";
+
+import confVibe from "../public/conf-vibe.png"
+import partyVibe from "../public/party-vibe.png"
+
 import { AbbyyLogo, Auth0Logo, EpamLogo, ExadelLogo, GenesysLogo, HasuraLogo, HotjarLogo, LittleDataLogo, NewRelicLogo, OracleLogo, StatelyLogo, SuperChargeLogo, TalonOneLogo, ThisDotLogo, TwilloLogo, WrikeLogo, XataLogo } from "../ui/sponsor-logos";
 
 function Sponsors() {
@@ -169,7 +173,13 @@ function Sponsors() {
                     <p className="color-bg">Viewers spend more than 1,742,000 minutes watching the talks online</p>
                 </div>
             </ColoredSection>
-            <div id="pictures">PICTURES</div>
+            <Image
+                src={confVibe}
+                alt="Shots from the past conf."
+                sizes="100vw"
+                style={{ width: "100vw", height: "auto" }}
+                className="x-fill mb-n0p75"
+            ></Image>
             <ColoredSection id="past-sponsors" background="secondary" className="col gap-2 text-center">
                 <h1 className="color-bg">PAST SPONSORS</h1>
                 <div className={styles.level_1}>
@@ -200,7 +210,13 @@ function Sponsors() {
                 <Divider type="sym" color="background" />
                 <div id="coming-up">coming up next</div>
             </ColoredSection>
-            <div id="party-pic">party pic</div>
+            <Image
+                src={partyVibe}
+                alt="Picture a party at the conf."
+                sizes="100vw"
+                style={{ width: "100vw", height: "auto" }}
+                className="x-fill mb-n0p75"
+            ></Image>
             <ColoredSection background="background">
                 <div id="packages">packages</div>
             </ColoredSection>
