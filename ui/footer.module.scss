@@ -40,6 +40,7 @@
       justify-content: space-between;
       align-items: left;
       gap: 1rem;
+      list-style: none;
 
       li {
         padding-left: 1vw;
@@ -88,12 +89,17 @@
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
+    list-style: none;
 
     a {
       text-decoration: underline;
       color: var(--secondary);
       font-size: 1.285rem;
       font-weight: bold;
+
+      &:hover {
+        color: var(--primary);
+      }
     }
 
     @media only screen and (min-width: 768px) {
