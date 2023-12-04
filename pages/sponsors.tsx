@@ -7,6 +7,7 @@ import ColoredSection from "../ui/colored-section"
 import Divider from "../ui/divider"
 import SocialShare from "../ui/social-share"
 import Youtube from "../ui/youtube";
+import SponsorLogos from "../ui/sponsor-logos";
 
 import mic from "../public/icons/mic.png"
 import attendees from "../public/icons/attendees.png"
@@ -18,8 +19,6 @@ import facebook from "../public/icons/facebook.png"
 
 import confVibe from "../public/conf-vibe.png"
 import partyVibe from "../public/party-vibe.png"
-
-import { AbbyyLogo, Auth0Logo, EpamLogo, ExadelLogo, GenesysLogo, HasuraLogo, HotjarLogo, LittleDataLogo, NewRelicLogo, OracleLogo, StatelyLogo, SuperChargeLogo, TalonOneLogo, ThisDotLogo, TwilloLogo, WrikeLogo, XataLogo } from "../ui/sponsor-logos";
 
 function Sponsors() {
     return (
@@ -180,34 +179,14 @@ function Sponsors() {
                 style={{ width: "100vw", height: "auto" }}
                 className="x-fill mb-n0p75"
             ></Image>
-            <ColoredSection id="past-sponsors" background="secondary" className="col gap-2 text-center">
+            <ColoredSection id="past-sponsors" background="secondary-dark" className="col align-center">
                 <h1 className="color-bg">PAST SPONSORS</h1>
-                <div className={styles.level_1}>
-                    <OracleLogo />
-                    <WrikeLogo />
-                    <GenesysLogo />
-                    <XataLogo />
-                    <NewRelicLogo />
-                </div>
-                <div className={styles.level_2}>
-                    <StatelyLogo />
-                    <ExadelLogo />
-                    <HasuraLogo />
-                    <SuperChargeLogo />
-                    <AbbyyLogo />
-                </div>
-                <div className={styles.level_3}>
-                    <EpamLogo />
-                    <Auth0Logo />
-                    <LittleDataLogo />
-                    <ThisDotLogo />
-                </div>
-                <div className={styles.level_4}>
-                    <TwilloLogo />
-                    <TalonOneLogo />
-                    <HotjarLogo />
-                </div>
+                <SponsorLogos color="sponsor-logo-dark" />
+            </ColoredSection>
+            <ColoredSection background="secondary-dark" className="my-n2">
                 <Divider type="sym" color="background" />
+            </ColoredSection>
+            <ColoredSection id="coming-up" background="secondary-dark">
                 <div id="coming-up">coming up next</div>
             </ColoredSection>
             <Image
