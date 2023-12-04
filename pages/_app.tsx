@@ -46,7 +46,7 @@ export default function App({ Component, pageProps }) {
       </Head>
       <div className={`${jetbrains_mono.variable} ${shrikhand.variable} layout responsive_text`} style={CSSVariableColors as CSSProperties}>
         <Header />
-        <main className='col x-container'>
+        <main className='x-container'>
           <Component {...pageProps} />
         </main>
         <Footer />
