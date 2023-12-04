@@ -1,6 +1,5 @@
 import classNames from "classnames"
 
-import styles from "./colored-section.module.scss"
 import { ColorNames } from "../pages/_app";
 
 type ColoredSectionProps = {
@@ -14,6 +13,7 @@ function ColoredSection({
     children = undefined,
     background = "background",
     className = "",
+    sectionClassName = "",
     ...props
 }: ColoredSectionProps) {
 
@@ -23,11 +23,13 @@ function ColoredSection({
 
     return (
         <section
-            className={classNames(styles.main, className, "x-fill py-2 col center")}
+            className={classNames(sectionClassName, "x-fill pb-2 col align-center")}
             style={{ backgroundColor: `var(--${background})` }}
             {...props}
         >
-            {children}
+            <div className={classNames(className, "x-container")}>
+                {children}
+            </div>
         </section >
     )
 }
