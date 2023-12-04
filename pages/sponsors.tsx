@@ -1,3 +1,4 @@
+import Link from "next/link";
 import classNames from "classnames"
 import Image from "next/image"
 
@@ -36,7 +37,7 @@ function Sponsors() {
                 <ul className="col md-row justify-center align-center gap-2p5 reset">
                     {["attendees", "reach", "packages", "perks", "workshops", "scholarships"].map(item => (
                         <li>
-                            <a href={`#${item}`} className="fw-700 capitalize">{item}</a>
+                            <Link href={`#${item}`} className="fw-700 capitalize">{item}</Link>
                         </li>
                     ))}
                 </ul>

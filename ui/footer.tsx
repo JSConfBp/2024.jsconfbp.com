@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Divider from "./divider";
 
 import styles from "./footer.module.scss";
@@ -15,10 +16,10 @@ export function Footer() {
             <section className={styles.footer_menu}>
                 <nav>
                     <ul>
-                        <li><a href="/code-of-conduct">Code of Conduct</a></li>
-                        <li><a href="/privacy-policy">Privacy Policy</a></li>
-                        <li><a href="/about-us">About Us</a></li>
-                        <li><a href="/budapest-guide">Budapest Guide</a></li>
+                        <li><Link href="/code-of-conduct">Code of Conduct</Link></li>
+                        <li><Link href="/privacy-policy">Privacy Policy</Link></li>
+                        <li><Link href="/about-us">About Us</Link></li>
+                        <li><Link href="/budapest-guide">Budapest Guide</Link></li>
                     </ul>
                 </nav>
                 <Polygons type="footer" aria-hidden="true" />
@@ -26,19 +27,19 @@ export function Footer() {
             <nav className={styles.past_years}>
                 <ul>
                     <li>
-                        <a href="https://2015.jsconfbp.com" target="_blank">2015</a>
+                        <Link href="https://2015.jsconfbp.com" target="_blank">2015</Link>
                     </li>
                     <li>
-                        <a href="https://2016.jsconfbp.com" target="_blank">2016</a>
+                        <Link href="https://2016.jsconfbp.com" target="_blank">2016</Link>
                     </li>
                     <li>
-                        <a href="https://2017.jsconfbp.com" target="_blank">2017</a>
+                        <Link href="https://2017.jsconfbp.com" target="_blank">2017</Link>
                     </li>
                     <li>
-                        <a href="https://2019.jsconfbp.com" target="_blank">2019</a>
+                        <Link href="https://2019.jsconfbp.com" target="_blank">2019</Link>
                     </li>
                     <li>
-                        <a href="https://2022.jsconfbp.com" target="_blank">2022</a>
+                        <Link href="https://2022.jsconfbp.com" target="_blank">2022</Link>
                     </li>
                 </ul>
             </nav>
