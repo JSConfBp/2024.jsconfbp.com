@@ -19,6 +19,10 @@
   }
 }
 
+// * {
+// outline: 1px solid orange;
+// }
+
 html,
 body {
   font-weight: 300;
@@ -46,6 +50,8 @@ body {
 h1 {
   font-family: var(--font-shrikhand);
   color: var(--secondary);
+  margin: 2rem 0;
+
   font-size: 2rem;
   @media only screen and (min-width: 1280px) {
     font-size: 2.5rem;
@@ -56,11 +62,14 @@ h2 {
   font-family: var(--font-shrikhand);
   color: var(--primary);
   font-size: 1.5rem;
+  margin: 2rem 0;
 }
 
 h3 {
   font-family: var(--font-jetbrains-mono);
   color: var(--text-color);
+  margin: 1rem 0;
+
   font-size: 1rem;
   line-height: 1.85rem;
   @media only screen and (min-width: 768px) {
@@ -81,25 +90,6 @@ h3 {
   }
 }
 
-h4 {
-  font-family: var(--font-jetbrains-mono);
-  color: var(--text-color);
-  font-size: 1rem;
-  line-height: 1.5rem;
-  @media only screen and (min-width: 1024px) {
-    line-height: 1.5rem;
-    line-height: 1.875rem;
-  }
-  @media only screen and (min-width: 1280px) {
-    font-size: 1rem;
-    line-height: 1.5rem;
-  }
-  @media only screen and (min-width: 1920px) {
-    font-size: 1rem;
-    line-height: 2rem;
-  }
-}
-
 a {
   font-family: var(--font-jetbrains-mono);
   text-decoration: underline;
@@ -111,8 +101,29 @@ a {
   }
 }
 
-p {
-  margin-top: 1rem;
+p,
+ul {
+  margin: 1rem 0;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  list-style: inherit;
+  list-style-position: outside;
+  padding-left: 2rem;
+}
+
+.reset {
+  list-style: none;
+  padding: unset;
+  margin: unset;
+}
+
+strong {
+  font-weight: 700;
 }
 
 .x-fill {
@@ -127,16 +138,4 @@ p {
   @media only screen and (min-width: 768px) {
     width: 80vw;
   }
-}
-
-.center {
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.start {
-  justify-content: flex-start;
-  align-items: flex-start;
-  text-align: start;
 }
