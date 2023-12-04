@@ -31,25 +31,12 @@ function Sponsors() {
             <div className="col x-container">
                 <div>Our common goal with every Sponsor is to make the experience even better for Attendees at the conference. We believe that Sponsor booths and activities could be part of the whole event, the hallway track, and even afterparties.</div>
                 <nav className="my-3">
-                    <ul className={`col md-row center gap-2p5 ${styles.menu}`}>
-                        <li>
-                            <a href="#attendees">Attendees</a>
-                        </li>
-                        <li>
-                            <a href="#reach">Reach</a>
-                        </li>
-                        <li>
-                            <a href="#packages">Packages</a>
-                        </li>
-                        <li>
-                            <a href="#perks">Perks</a>
-                        </li>
-                        <li>
-                            <a href="#workshops">Workshops</a>
-                        </li>
-                        <li>
-                            <a href="#scholarships">Scholarships</a>
-                        </li>
+                    <ul className="col md-row center gap-2p5 list-none">
+                        {["attendees", "reach", "packages", "perks", "workshops", "scholarships"].map(item => (
+                            <li>
+                                <a href={`#${item}`} className="fs-1p5 fw-700 capitalize">{item}</a>
+                            </li>
+                        ))}
                     </ul>
                 </nav>
                 <ColoredSection background="secondary" className="gap-1p5 px-3">
