@@ -6,16 +6,54 @@
   font-weight: 700;
 }
 
-.item-start {
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.align-start {
   align-items: flex-start;
 }
 
-.item-center {
+.align-center {
   align-items: center;
 }
 
 .text-left {
   text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.list-none {
+  list-style: none;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.w-auto {
+  width: auto;
+}
+
+.md-w-auto {
+  @media only screen and (min-width: 768px) {
+    width: auto;
+  }
 }
 
 // === Config ===
