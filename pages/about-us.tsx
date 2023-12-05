@@ -120,7 +120,7 @@ function About() {
         The Team
       </h2>
 
-      <ul className={classnames('unstyled', styles.team)}>
+      <ul className={classnames('reset', styles.team)}>
         {team.map((member) => {
           const href = member.url || `https://twitter.com/${member.twitter}`
           return (<li key={member.name}>
