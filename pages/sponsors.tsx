@@ -181,7 +181,7 @@ function Sponsors() {
                 style={{ width: "100vw", height: "auto" }}
                 className="x-fill mb-n0p75"
             ></Image>
-            <ColoredSection id="past-sponsors" background="secondary-dark" className="col align-center">
+            <ColoredSection id="past-sponsors" background="secondary-dark" className="text-center">
                 <h1 className="color-bg">PAST SPONSORS</h1>
                 <SponsorLogos color="sponsor-logo-dark" />
             </ColoredSection>
@@ -204,7 +204,7 @@ function Sponsors() {
                 </div>
 
             </ColoredSection>
-            <ColoredSection id="venue" background="secondary-dark" className="col align-center mt-n2">
+            <ColoredSection id="venue" background="secondary-dark" className="text-center mt-n2">
                 <h1 className="color-bg">Venue</h1>
                 <p className="color-bg">Akvárium Klub</p>
                 <p className="color-bg text-center">Center of the city, 580 square meters of exhibition space, literally under a pool.</p>
@@ -219,10 +219,56 @@ function Sponsors() {
             <ColoredSection background="background">
                 <div id="packages">packages</div>
             </ColoredSection>
-            <ColoredSection background="light-section">
-                <div id="perks">perks</div>
+            <ColoredSection id="perks" background="light-section">
+                <h2 className="text-center">Perks</h2>
+                <p>
+                    Exclusive perks, brand tailored to your Company, each sold once.These are dedicated enhancements for our attendees, like better catering, coffee, or a great party.
+                </p>
+                <p>Example: Lunch by COMPANY.</p>
+                <div className={styles.perks_table}>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>Live captioning</td>
+                                <td>€ 5,000</td>
+                            </tr>
+                            <tr>
+                                <td>Specialty coffee</td>
+                                <td>€ 4,000</td>
+                            </tr>
+                            <tr>
+                                <td>First night party</td>
+                                <td>€ 5,000</td>
+                            </tr>
+                            <tr>
+                                <td>Dinner</td>
+                                <td>€ 4,000</td>
+                            </tr>
+                            <tr>
+                                <td>JS closing party</td>
+                                <td>€ 5,000</td>
+                            </tr>
+                            <tr>
+                                <td>WiFi pass</td>
+                                <td>€ 3,000</td>
+                            </tr>
+                            <tr>
+                                <td>Guitar Hero</td>
+                                <td>€ 2,000</td>
+                            </tr>
+                            <tr>
+                                <td>Sketch notes</td>
+                                <td>€ 2,000</td>
+                            </tr>
+                            <tr>
+                                <td>Lanyard</td>
+                                <td>€ 2,000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </ColoredSection>
-            <ColoredSection id="workshops" background="background">
+            <ColoredSection id="workshops" background="background" className="text-center">
                 <h2>Sponsor with Workshops!</h2>
                 <p>
                     If your company has a product or a service, you can sponsor us by bringing a full-day, or half-day workshop to our planned 0th day "Workshop day". These Workshops will be free for every ticket holder, they can sign on one of them on first-come-first serve basis, and gain hands-on knowledge of the techniques, services or products you offer.
@@ -234,7 +280,7 @@ function Sponsors() {
                     For ideas and more information don't hesitate to <Link target="_blank" href="mailto:team@jsconfbp.com?subject=We could bring you a Workshop!">contact us!</Link>
                 </p>
             </ColoredSection>
-            <ColoredSection id="scholarships" background="light-section">
+            <ColoredSection id="scholarships" background="light-section" className="text-center">
                 <h2>Scholarship</h2>
                 <p>
                     From every package we put 10% directly to our Scholarship Fund - this fund will be used to sponsor individuals or students from underrepresented groups in tech, to travel and attend the conference
@@ -246,12 +292,12 @@ function Sponsors() {
             <ColoredSection background="secondary">
                 <div id="talk">let's talk</div>
             </ColoredSection>
-            <ColoredSection id="impressum" background="background" className="col align-center">
+            <ColoredSection id="impressum" background="background" className="col align-center text-center">
                 <h1>Impressum</h1>
-                <p className="text-center">
+                <p>
                     JSConf Budapest and CSSConf Budapest is organized by a team from the local Hungarian developer community.
                 </p>
-                <ul className="reset col align-center gap-0p25">
+                <ul className="reset">
                     <li>The Legal entity behind the event is:</li>
                     <li>JSSC Rendezvényszervező Kft</li>
                     <li>Budapest 1365 Pf. 717.</li>

@@ -73,3 +73,38 @@
     }
   }
 }
+
+.perks_table {
+  display: flex;
+  justify-content: center;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+
+  table {
+    width: 63vw;
+    border-collapse: collapse;
+  }
+
+  tr {
+    height: 2rem;
+    border: #e3e3e3 2px solid;
+    border-left: none;
+
+    td {
+      padding: 1.5rem;
+    }
+
+    td:first-child {
+      min-width: 40vw;
+      text-align: right;
+    }
+
+    td:last-child {
+      text-align: center;
+      background-color: #eaeaea;
+      padding: 0 5rem;
+    }
+  }
+}
