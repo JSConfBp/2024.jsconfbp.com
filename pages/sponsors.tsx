@@ -22,6 +22,9 @@ import facebook from "../public/icons/facebook.png"
 import confVibe from "../public/conf-vibe.png"
 import partyVibe from "../public/party-vibe.png"
 
+import nec from "../public/team/nec.png"
+import norbi from "../public/team/norbi.png"
+
 function Sponsors() {
     return (
         <>
@@ -43,7 +46,7 @@ function Sponsors() {
                     ))}
                 </ul>
             </nav>
-            <ColoredSection background="secondary" className="col align-center text-center">
+            <ColoredSection background="secondary-dark" className="col align-center text-center">
                 <h1 className="color-bg">OUR PAST YEARS WERE AWESOME!</h1>
                 <h3 className="color-bg">Here’s what happened so far in our past 4 events:</h3>
                 <div className="w-100p col md-row justify-center align-center">
@@ -289,8 +292,41 @@ function Sponsors() {
                     Your support can really make a difference!
                 </p>
             </ColoredSection>
-            <ColoredSection background="secondary">
-                <div id="talk">let's talk</div>
+            <ColoredSection id="talk" background="secondary-dark" className="col align-center text-center">
+                <h1 className="color-bg">LET'S TALK!</h1>
+                <p className="color-bg mb-5">As a non-profit conference, we are always looking for sponsors to make our events awesome.</p>
+                <div className={styles.lets_talk}>
+                    <svg className={styles.left_polygon} viewBox="0 0 161 146" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.48445 128.781L16.7773 113.488L16.7773 144.074L1.48445 128.781Z" fill="white" stroke="white" />
+                        <path d="M75.7236 37.789L58.8228 20.8882L92.6244 20.8882L75.7236 37.789Z" fill="white" stroke="white" />
+                        <path d="M69.7891 80.625L69.7891 54.7554L95.6587 80.625L69.7891 80.625Z" stroke="white" />
+                        <path d="M160.413 46.5039L116.102 46.5039L160.413 1.22961L160.413 46.5039Z" stroke="white" />
+                        <path d="M64.5937 87.6836L64.5937 108.428L43.8492 87.6836L64.5937 87.6836Z" stroke="white" />
+                    </svg>
+                    {[
+                        { src: norbi, alt: "Profile picture of Norbert Srám.", firstName: "Norbert", lastName: "Srám" },
+                        { src: nec, alt: "Profile picture of Szabolcs Szabolcsi-Tóth.", firstName: "Szabolcs", lastName: "Szabolcsi-Tóth" },
+                    ].map(({ src, alt, firstName, lastName }) => (
+                        <div>
+                            <Image
+                                src={src}
+                                alt={alt}
+                            />
+                            <div>
+                                <p className="color-bg m-0 fs-1p75 lh-2p5">{firstName}</p>
+                                <p className="color-bg m-0 fs-1p5 lh-2p5">{lastName}</p>
+                            </div>
+                        </div>
+                    )
+                    )}
+                    <svg className={styles.right_polygon} viewBox="0 0 129 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M76.6021 45.0253L60.183 28.6064L93.0211 28.6064L76.6021 45.0253Z" stroke="white" />
+                        <path d="M57.3179 78.4727L68.1026 67.6881L68.1026 89.2572L57.3179 78.4727Z" stroke="white" />
+                        <path d="M65.5373 63.2168L33.9843 94.7696L33.9843 31.664L65.5373 63.2168Z" stroke="white" />
+                        <path d="M118.202 0.984448L127.723 10.5054L108.681 10.5054L118.202 0.984448Z" fill="white" stroke="white" />
+                    </svg>
+
+                </div>
             </ColoredSection>
             <ColoredSection id="impressum" background="background" className="col align-center text-center">
                 <h1>Impressum</h1>

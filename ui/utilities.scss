@@ -84,6 +84,8 @@
 $widthsAndHeights: (
   vw: (
     "50",
+    "60",
+    "70",
     "80",
     "90",
     "100",
@@ -93,6 +95,7 @@ $widthsAndHeights: (
   ),
   "rem": (
     "10",
+    "20",
   ),
 );
 
@@ -217,6 +220,10 @@ $_end: (1 / $step) * $largest;
   .gap-#{$class-name} {
     display: flex;
     gap: $size;
+  }
+
+  .lh-#{$class-name} {
+    line-height: $size;
   }
 }
 
