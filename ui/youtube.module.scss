@@ -1,14 +1,21 @@
+// https://stackoverflow.com/a/47782152
+.ratio_16x9 {
+  padding-bottom: calc(100% / (16 / 9));
+}
+
+.ratio_4x3 {
+  padding-bottom: calc(100% / (4 / 3));
+}
+
 .embed {
   position: relative;
-  padding-bottom: 60%;
-
-  @media only screen and (min-width: 768px) {
-    padding-bottom: 70%;
-  }
+  height: 0;
 
   iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    position: absolute;
   }
 }
