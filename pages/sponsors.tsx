@@ -222,17 +222,42 @@ function Sponsors() {
             <ColoredSection background="light-section">
                 <div id="perks">perks</div>
             </ColoredSection>
-            <ColoredSection background="background">
-                <div id="workshops">workshops</div>
+            <ColoredSection id="workshops" background="background">
+                <h2>Sponsor with Workshops!</h2>
+                <p>
+                    If your company has a product or a service, you can sponsor us by bringing a full-day, or half-day workshop to our planned 0th day "Workshop day". These Workshops will be free for every ticket holder, they can sign on one of them on first-come-first serve basis, and gain hands-on knowledge of the techniques, services or products you offer.
+                </p>
+                <p>
+                    We can help you find venue and catering for the workshop, but you need to cover it's expenses - since it's still a sponsorship. In return we give you a Gold level package for FREE, so you can be present at the conference as well!
+                </p>
+                <p>
+                    For ideas and more information don't hesitate to <Link target="_blank" href="mailto:team@jsconfbp.com?subject=We could bring you a Workshop!">contact us!</Link>
+                </p>
             </ColoredSection>
-            <ColoredSection background="light-section">
-                <div id="scholarships">scholarships</div>
+            <ColoredSection id="scholarships" background="light-section">
+                <h2>Scholarship</h2>
+                <p>
+                    From every package we put 10% directly to our Scholarship Fund - this fund will be used to sponsor individuals or students from underrepresented groups in tech, to travel and attend the conference
+                </p>
+                <p>
+                    Your support can really make a difference!
+                </p>
             </ColoredSection>
             <ColoredSection background="secondary">
                 <div id="talk">let's talk</div>
             </ColoredSection>
-            <ColoredSection background="background">
-                <div id="impressum">impressum</div>
+            <ColoredSection id="impressum" background="background" className="col align-center">
+                <h1>Impressum</h1>
+                <p className="text-center">
+                    JSConf Budapest and CSSConf Budapest is organized by a team from the local Hungarian developer community.
+                </p>
+                <ul className="reset col align-center gap-0p25">
+                    <li>The Legal entity behind the event is:</li>
+                    <li>JSSC Rendezvényszervező Kft</li>
+                    <li>Budapest 1365 Pf. 717.</li>
+                    <li>VAT No.: HU25966330</li>
+                    <li>Reg.#: 01-09-299007</li>
+                </ul>
             </ColoredSection>
         </>
     )
