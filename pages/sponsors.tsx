@@ -32,7 +32,7 @@ function Sponsors() {
                 <h1>Sponsorship</h1>
             </Divider>
 
-            <p className="m-0">Our common goal with every Sponsor is to make the experience even better for Attendees at the conference. We believe that Sponsor booths and activities could be part of the whole event, the hallway track, and even afterparties.</p>
+            <p>Our common goal with every Sponsor is to make the experience even better for Attendees at the conference. We believe that Sponsor booths and activities could be part of the whole event, the hallway track, and even afterparties.</p>
             <nav className="my-2 row justify-center w-100p">
                 <ul className="col md-row justify-center align-center gap-2p5 reset">
                     {["attendees", "reach", "packages", "perks", "workshops", "scholarships"].map(item => (
@@ -43,8 +43,8 @@ function Sponsors() {
                 </ul>
             </nav>
             <ColoredSection background="secondary" className="col align-center text-center">
-                <h1 className="mb-0 mt-2 color-bg">OUR PAST YEARS WERE AWESOME!</h1>
-                <h3 className="my-1 color-bg">Here’s what happened so far in our past 4 events:</h3>
+                <h1 className="color-bg">OUR PAST YEARS WERE AWESOME!</h1>
+                <h3 className="color-bg">Here’s what happened so far in our past 4 events:</h3>
                 <div className="w-50vw col md-row justify-center align-center">
                     <div className="col align-center">
                         <Image
@@ -127,8 +127,8 @@ function Sponsors() {
                 </div>
             </ColoredSection>
             <ColoredSection id="top-countries" background="primary" className="col align-center text-center">
-                <h1 className="mb-0 color-bg">Top countries</h1>
-                <p className="m-0 color-bg">
+                <h1 className="color-bg">Top countries</h1>
+                <p className="color-bg">
                     Netherlands, Germany, Hungary, United States, United Kingdom
                     <br />
                     Portugal, Slovakia, Romania, Poland, Serbia
@@ -138,8 +138,8 @@ function Sponsors() {
                 <Divider type="sym" color="background" />
             </ColoredSection>
             <ColoredSection id="reach" background="primary" className="col align-center text-center">
-                <h1 className="my-0 color-bg">REACH</h1>
-                <h3 className="mt-0 color-bg">100% relevance in the JavaScript community</h3>
+                <h1 className="color-bg">REACH</h1>
+                <h3 className="color-bg">100% relevance in the JavaScript community</h3>
                 <div className={`col md-row align-center justify-center gap-1p5 w-100p py-2`}>
                     <div className="col align-center">
                         <Image
@@ -168,10 +168,8 @@ function Sponsors() {
                         <p className="m-0 color-bg fs-1p25">people reached</p>
                     </div>
                 </div>
-                <div>
-                    <p className="color-bg">Our videos were watched over 242,000 times on YouTube</p>
-                    <p className="color-bg">Viewers spend more than 1,742,000 minutes watching the talks online</p>
-                </div>
+                <p className="color-bg">Our videos were watched over 242,000 times on YouTube</p>
+                <p className="color-bg">Viewers spend more than 1,742,000 minutes watching the talks online</p>
             </ColoredSection>
             <Image
                 src={confVibe}
