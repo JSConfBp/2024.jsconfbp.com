@@ -50,11 +50,12 @@ body {
 h1 {
   font-family: var(--font-shrikhand);
   color: var(--secondary);
-  margin: 2rem 0;
 
   font-size: 2rem;
+  margin: 2rem 0;
   @media only screen and (min-width: 1280px) {
     font-size: 2.5rem;
+    margin: 2.5rem 0;
   }
 }
 
@@ -68,25 +69,29 @@ h2 {
 h3 {
   font-family: var(--font-jetbrains-mono);
   color: var(--text-color);
-  margin: 1rem 0;
 
   font-size: 1rem;
   line-height: 1.85rem;
+  margin: 1rem 0;
   @media only screen and (min-width: 768px) {
     font-size: 1.143rem;
     line-height: 1.5rem;
+    margin: 1.43rem 0;
   }
   @media only screen and (min-width: 1024px) {
     font-size: 1.125rem;
     line-height: 1.833rem;
+    margin: 1.125rem 0;
   }
   @media only screen and (min-width: 1280px) {
     font-size: 1.4rem;
     line-height: 1.5rem;
+    margin: 1.4rem 0;
   }
   @media only screen and (min-width: 1920px) {
     font-size: 1.4rem;
     line-height: 2rem;
+    margin: 1.4rem 0;
   }
 }
 
@@ -101,6 +106,12 @@ a {
   }
 }
 
+ul {
+  list-style: inherit;
+  list-style-position: outside;
+  padding-left: 2rem;
+}
+
 p,
 ul {
   margin: 1rem 0;
@@ -110,20 +121,20 @@ ul {
   }
 }
 
-ul {
-  list-style: inherit;
-  list-style-position: outside;
-  padding-left: 2rem;
+// Margin collapse is nice, but we prefer to have the
+// same default spacing in all display types. So we explicitly
+// remove the duplications and not rely on margin collapse.
+/* prettier-ignore */
+h1 + h2, h1 + h3, h2 + h3, 
+h1 + p, h2 + p, h3 + p, p + p, ul + p
+h1 + ul, h2 + ul, h3 + ul, ul + ul, p + ul {
+  margin-top: 0;
 }
 
 .reset {
   list-style: none;
   padding: unset;
   margin: unset;
-}
-
-strong {
-  font-weight: 700;
 }
 
 .x-fill {
