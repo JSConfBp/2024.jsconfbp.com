@@ -9,6 +9,7 @@ import Divider from "../ui/divider"
 import SocialShare from "../ui/social-share"
 import Youtube from "../ui/youtube";
 import SponsorLogos from "../ui/sponsor-logos";
+import { OldLogo } from "../ui/logo";
 
 import mic from "../public/icons/mic.png"
 import attendees from "../public/icons/attendees.png"
@@ -45,7 +46,7 @@ function Sponsors() {
             <ColoredSection background="secondary" className="col align-center text-center">
                 <h1 className="color-bg">OUR PAST YEARS WERE AWESOME!</h1>
                 <h3 className="color-bg">Here’s what happened so far in our past 4 events:</h3>
-                <div className="w-50vw col md-row justify-center align-center">
+                <div className="w-100p col md-row justify-center align-center">
                     <div className="col align-center">
                         <Image
                             src={mic}
@@ -136,11 +137,11 @@ function Sponsors() {
                     Portugal, Slovakia, Romania, Poland, Serbia
                 </p>
             </ColoredSection>
-            <ColoredSection background="primary" className="my-n2">
+            <ColoredSection background="primary" className="mb-n2 md-mt-n2">
                 <Divider type="sym" color="background" />
             </ColoredSection>
             <ColoredSection id="reach" background="primary" className="col align-center text-center">
-                <h1 className="color-bg">REACH</h1>
+                <h1 className="md-mt-0 color-bg">REACH</h1>
                 <h3 className="color-bg">100% relevance in the JavaScript community</h3>
                 <div className={`col md-row align-center justify-center gap-1p5 w-100p py-2`}>
                     <div className="col align-center">
@@ -184,11 +185,29 @@ function Sponsors() {
                 <h1 className="color-bg">PAST SPONSORS</h1>
                 <SponsorLogos color="sponsor-logo-dark" />
             </ColoredSection>
-            <ColoredSection background="secondary-dark" className="my-n2">
+            <ColoredSection background="secondary-dark" sectionClassName="mb-n2 md-mt-n2">
                 <Divider type="sym" color="background" />
             </ColoredSection>
-            <ColoredSection id="coming-up" background="secondary-dark">
-                <div id="coming-up">coming up next</div>
+            <ColoredSection id="coming-up" background="secondary-dark" className="col align-center">
+                <h1 className="md-mt-0 color-bg">COMING UP NEXT</h1>
+                <h2 className="color-bg fw-400">26-28 June, 2024</h2>
+                <div className="col md-row align-center justify-center gap-1p5 md-gap-4p5">
+                    <OldLogo className="w-10rem" />
+                    <div className="min-h-10rem col align-center md-align-start justify-around">
+                        {[
+                            "Single track",
+                            "500+ attendees",
+                            "25 speakers",
+                            "2 parties"
+                        ].map(i => (<p className="color-bg m-0">{i}</p>))}
+                    </div>
+                </div>
+
+            </ColoredSection>
+            <ColoredSection id="venue" background="secondary-dark" className="col align-center mt-n2">
+                <h1 className="color-bg">Venue</h1>
+                <p className="color-bg">Akvárium Klub</p>
+                <p className="color-bg text-center">Center of the city, 580 square meters of exhibition space, literally under a pool.</p>
             </ColoredSection>
             <Image
                 src={partyVibe}

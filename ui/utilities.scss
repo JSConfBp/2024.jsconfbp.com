@@ -2,6 +2,10 @@
   color: var(--background);
 }
 
+.fw-400 {
+  font-weight: 400;
+}
+
 .fw-700 {
   font-weight: 700;
 }
@@ -12,6 +16,14 @@
 
 .justify-center {
   justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.content-around {
+  align-content: space-around;
 }
 
 .align-start {
@@ -50,15 +62,26 @@
   width: auto;
 }
 
-.md-w-auto {
-  @media only screen and (min-width: 768px) {
+.h-auto {
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .md-w-auto {
     width: auto;
+  }
+  .md-h-auto {
+    height: auto;
+  }
+
+  .md-align-start {
+    align-items: start;
   }
 }
 
 // === Config ===
 
-$widths: (
+$widthsAndHeights: (
   vw: (
     "50",
     "80",
@@ -67,6 +90,9 @@ $widths: (
   ),
   "p": (
     "100",
+  ),
+  "rem": (
+    "10",
   ),
 );
 
@@ -84,15 +110,45 @@ $step: 0.25;
 
 // === Sizing ===
 
-@each $type, $values in $widths {
+@each $type, $values in $widthsAndHeights {
   $unit: if($type == "p", "%", $type);
 
   @each $value in $values {
+    .min-h-#{$value}#{$type} {
+      min-height: #{$value}#{$unit};
+    }
+
+    .h-#{$value}#{$type} {
+      height: #{$value}#{$unit};
+    }
+
+    .min-w-#{$value}#{$type} {
+      min-width: #{$value}#{$unit};
+    }
+
     .w-#{$value}#{$type} {
       width: #{$value}#{$unit};
     }
   }
   @each $value in $values {
+    .md-min-h-#{$value}#{$type} {
+      @media only screen and (min-width: 768px) {
+        min-height: #{$value}#{$unit};
+      }
+    }
+
+    .md-h-#{$value}#{$type} {
+      @media only screen and (min-width: 768px) {
+        height: #{$value}#{$unit};
+      }
+    }
+
+    .md-min-w-#{$value}#{$type} {
+      @media only screen and (min-width: 768px) {
+        min-width: #{$value}#{$unit};
+      }
+    }
+
     .md-w-#{$value}#{$type} {
       @media only screen and (min-width: 768px) {
         width: #{$value}#{$unit};
@@ -167,6 +223,19 @@ $_end: (1 / $step) * $largest;
   .gap-#{$class-name} {
     display: flex;
     gap: $size;
+  }
+}
+
+@for $i from $_start through $_end {
+  // 0.25 -> 0p25 && -1 -> n1
+  $class-name: str-replace(str-replace(#{0.25 * $i}, ".", "p"), "-", "n");
+  $size: $i * 0.25rem;
+
+  .md-gap-#{$class-name} {
+    @media only screen and (min-width: 768px) {
+      display: flex;
+      gap: $size;
+    }
   }
 }
 
