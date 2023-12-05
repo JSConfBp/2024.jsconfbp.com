@@ -150,7 +150,7 @@ function Sponsors() {
                     <div className="col align-center">
                         <Image
                             src={twitter}
-                            alt="microphone icon"
+                            alt="twitter logo"
                         />
                         <div>
                             <p className="m-0 fw-700 color-bg fs-2p25">2.1k</p>
@@ -160,7 +160,7 @@ function Sponsors() {
                     <div className="col align-center relative">
                         <Image
                             src={youtube}
-                            alt="attendees icon"
+                            alt="youtube logo"
                         />
                         <p className="m-0 fw-700 color-bg fs-2p25">142k</p>
                         <p className="m-0  color-bg fs-1p25">subscribers</p>
@@ -168,7 +168,7 @@ function Sponsors() {
                     <div className="col align-center relative">
                         <Image
                             src={facebook}
-                            alt="countries icon"
+                            alt="facebook logo"
                         />
                         <p className="m-0 fw-700 color-bg fs-2p25">34k</p>
                         <p className="m-0 color-bg fs-1p25">people reached</p>
@@ -183,6 +183,8 @@ function Sponsors() {
                 sizes="100vw"
                 style={{ width: "100vw", height: "auto" }}
                 className="x-fill mb-n0p75"
+                placeholder='blur'
+                quality={25}
             ></Image>
             <ColoredSection id="past-sponsors" background="secondary-dark" className="text-center">
                 <h1 className="color-bg">PAST SPONSORS</h1>
@@ -218,6 +220,8 @@ function Sponsors() {
                 sizes="100vw"
                 style={{ width: "100vw", height: "auto" }}
                 className="x-fill mb-n0p75"
+                placeholder="blur"
+                quality={50}
             ></Image>
             <ColoredSection background="background">
                 <div id="packages">packages</div>
@@ -311,6 +315,7 @@ function Sponsors() {
                             <Image
                                 src={src}
                                 alt={alt}
+                                placeholder='blur'
                             />
                             <div>
                                 <p className="color-bg m-0 fs-1p75 lh-2p5">{firstName}</p>
