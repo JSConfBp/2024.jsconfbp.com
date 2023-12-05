@@ -72,7 +72,9 @@ function Sponsors() {
                     </div>
                 </div>
             </ColoredSection>
-            <Youtube videoId="WPj0fDUqt1M" title="JSConf Budapest Mood video" className="x-fill"></Youtube>
+            <div className="x-fill">
+                <Youtube videoId="WPj0fDUqt1M" title="JSConf Budapest Mood video" className=""></Youtube>
+            </div>
             <ColoredSection id="attendees" background="primary" className="col align-center text-center">
                 <h1 className="color-bg">OUR ATTENDEES</h1>
                 <div className={styles.attendee_charts}>

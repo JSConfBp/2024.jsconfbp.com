@@ -5,7 +5,7 @@ import styles from "./youtube.module.scss";
 
 function Youtube({ videoId, title = "", className = "" }) {
   return (
-    <div className={classnames(styles.embed, className)}>
+    <div className={classnames(styles.embed, className, styles.ratio_16x9)}>
       <iframe
         title={`Embed video ${title}`}
         src={`https://www.youtube.com/embed/${videoId}`}
@@ -15,7 +15,7 @@ function Youtube({ videoId, title = "", className = "" }) {
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
         allowFullScreen
       ></iframe>
-    </div>
+    </div >
   );
 };
 
