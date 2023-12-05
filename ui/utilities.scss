@@ -131,26 +131,20 @@ $step: 0.25;
     }
   }
   @each $value in $values {
-    .md-min-h-#{$value}#{$type} {
-      @media only screen and (min-width: 768px) {
+    @media only screen and (min-width: 768px) {
+      .md-min-h-#{$value}#{$type} {
         min-height: #{$value}#{$unit};
       }
-    }
 
-    .md-h-#{$value}#{$type} {
-      @media only screen and (min-width: 768px) {
+      .md-h-#{$value}#{$type} {
         height: #{$value}#{$unit};
       }
-    }
 
-    .md-min-w-#{$value}#{$type} {
-      @media only screen and (min-width: 768px) {
+      .md-min-w-#{$value}#{$type} {
         min-width: #{$value}#{$unit};
       }
-    }
 
-    .md-w-#{$value}#{$type} {
-      @media only screen and (min-width: 768px) {
+      .md-w-#{$value}#{$type} {
         width: #{$value}#{$unit};
       }
     }
