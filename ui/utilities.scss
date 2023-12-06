@@ -66,6 +66,10 @@
   height: auto;
 }
 
+.no-underline {
+  text-decoration-line: none;
+}
+
 @media only screen and (min-width: 768px) {
   .md-w-auto {
     width: auto;
