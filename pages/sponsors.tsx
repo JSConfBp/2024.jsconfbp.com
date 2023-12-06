@@ -366,8 +366,8 @@ function Sponsors() {
                     </table>
                 </div>
             </ColoredSection>
-            <ColoredSection id="workshops" background="light-section" className="text-center">
-                <h2>Sponsor with Workshops!</h2>
+            <ColoredSection id="workshops" background="light-section">
+                <h2 className="text-center">Sponsor with Workshops!</h2>
                 <p>
                     If your company has a product or a service, you can sponsor us by bringing a full-day, or half-day workshop to our planned 0th day "Workshop day". These Workshops will be free for every ticket holder, they can sign on one of them on first-come-first serve basis, and gain hands-on knowledge of the techniques, services or products you offer.
                 </p>
@@ -378,8 +378,8 @@ function Sponsors() {
                     For ideas and more information don't hesitate to <Link target="_blank" href="mailto:team@jsconfbp.com?subject=We could bring you a Workshop!">contact us!</Link>
                 </p>
             </ColoredSection>
-            <ColoredSection id="scholarships" className="text-center">
-                <h2>Scholarship</h2>
+            <ColoredSection id="scholarships" >
+                <h2 className="text-center">Scholarship</h2>
                 <p>
                     From every package we put 10% directly to our Scholarship Fund - this fund will be used to sponsor individuals or students from underrepresented groups in tech, to travel and attend the conference
                 </p>

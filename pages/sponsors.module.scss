@@ -79,13 +79,13 @@
     display: none;
   }
 
-  max-width: 95vw;
+  width: 95vw;
 
   @media only screen and (min-width: 1024px) {
-    max-width: 80vw;
+    width: 80vw;
   }
   @media only screen and (min-width: 1280px) {
-    max-width: 70vw;
+    width: 70vw;
   }
 
   border-collapse: collapse;
@@ -198,7 +198,7 @@
   }
 
   table {
-    width: 63vw;
+    width: 40rem;
     border-collapse: collapse;
     text-wrap: nowrap;
   }
@@ -213,7 +213,7 @@
     }
 
     td:first-child {
-      min-width: 40vw;
+      width: 20rem;
       text-align: right;
     }
 
