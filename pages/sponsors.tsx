@@ -223,8 +223,99 @@ function Sponsors() {
                 placeholder="blur"
                 quality={50}
             ></Image>
-            <ColoredSection background="background">
-                <div id="packages">packages</div>
+            <ColoredSection id="packages" background="background" className="col align-center text-center">
+                <h1>Packages</h1>
+                <p>Help us make this event a better experience for our attendees!</p>
+                <table className={styles.packages_table}>
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>
+                                <p>Silver</p>
+                                <p>€ 3,000</p>
+                            </th>
+                            <th className={styles.spacer}></th>
+                            <th>
+                                <p>Gold</p>
+                                <p>€ 6,000</p>
+                            </th>
+                            <th className={styles.spacer}></th>
+                            <th className={styles.workshops_header}>
+                                <p>Workshop</p>
+                                <Link href="#workshops">Contact us</Link>
+                            </th>
+                            <th className={styles.spacer}></th>
+                            <th>
+                                <p>Platinum</p>
+                                <p>€ 8,000</p>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Branding, logo on site, between sessions, on videos</td>
+                            <td>yes</td>
+                            <td className={styles.spacer}></td>
+                            <td>yes</td>
+                            <td className={styles.spacer}></td>
+                            <td>yes</td>
+                            <td className={styles.spacer}></td>
+                            <td>yes</td>
+                        </tr>
+                        <tr>
+                            <td>Discount on tickets for your employees</td>
+                            <td>5</td>
+                            <td className={styles.spacer}></td>
+                            <td>10</td>
+                            <td className={styles.spacer}></td>
+                            <td>10</td>
+                            <td className={styles.spacer}></td>
+                            <td>15</td>
+                        </tr>
+                        <tr>
+                            <td>Booth at the exhibition area</td>
+                            <td>no</td>
+                            <td className={styles.spacer}></td>
+                            <td>3m2</td>
+                            <td className={styles.spacer}></td>
+                            <td>3m2</td>
+                            <td className={styles.spacer}></td>
+                            <td>12m2</td>
+                        </tr>
+                        <tr>
+                            <td>Add a slide to the reel between sessions</td>
+                            <td>no</td>
+                            <td className={styles.spacer}></td>
+                            <td>no</td>
+                            <td className={styles.spacer}></td>
+                            <td>yes</td>
+                            <td className={styles.spacer}></td>
+                            <td>yes</td>
+                        </tr>
+                        <tr>
+                            <td>HR package</td>
+                            <td>no</td>
+                            <td className={styles.spacer}></td>
+                            <td>no</td>
+                            <td className={styles.spacer}></td>
+                            <td>no</td>
+                            <td className={styles.spacer}></td>
+                            <td>yes</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p className="text-center mt-2">
+                    There's more! Using <Link href="#perks">perks</Link>, you can customize your package!
+                </p>
+            </ColoredSection>
+            <ColoredSection id="we-can-help" background="light-section">
+                <h2 className="text-center">We can help with your presence!</h2>
+                <p>
+                    Sponsorship packages with booths include a wide screen TV and a backdrop, with your design, which we will provide for your exhibition booth - so you can travel light, if needed.
+                </p>
+                <p>
+                    If you need ideas on how to make your booth more appealing for the attendees, <Link href="#lets-talk">let's talk</Link>, we have tons of ideas
+                </p>
             </ColoredSection>
             <ColoredSection id="perks">
                 <h2 className="text-center">Perks</h2>
