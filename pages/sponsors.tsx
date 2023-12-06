@@ -226,6 +226,48 @@ function Sponsors() {
             <ColoredSection id="packages" background="background" className="col align-center text-center">
                 <h1>Packages</h1>
                 <p>Help us make this event a better experience for our attendees!</p>
+                <div className={styles.packages_mobile}>
+                    <div>
+                        <h3>Silver</h3>
+                        <ul>
+                            <li>Branding, logo on site, between sessions, on videos</li>
+                            <li>5% discount on ticket for your employees</li>
+                        </ul>
+                        <p>€ 3,000</p>
+                    </div>
+                    <div>
+                        <h3>Gold</h3>
+                        <ul>
+                            <li>Branding, logo on site, between sessions, on videos</li>
+                            <li>10% discount on ticket for your employees</li>
+                            <li>3m2 booth at the exhibition area</li>
+                        </ul>
+                        <p>€ 6,000</p>
+                    </div>
+                    <div>
+                        <h3>Workshops</h3>
+                        <ul>
+                            <li>Branding, logo on site, between sessions, on videos</li>
+                            <li>10% discount on ticket for your employees</li>
+                            <li>3m2 booth at the exhibition area</li>
+                            <li>Add a slide to the reel between sessions</li>
+                        </ul>
+                        <p>
+                            <Link href="mailto:team@jsconfbp.com?subject=We want to become a sponsor!" target="_blank">Contact us</Link>
+                        </p>
+                    </div>
+                    <div>
+                        <h3>Platinum</h3>
+                        <ul>
+                            <li>Branding, logo on site, between sessions, on videos</li>
+                            <li>10% discount on ticket for your employees</li>
+                            <li>3m2 booth at the exhibition area</li>
+                            <li>Add a slide to the reel between sessions</li>
+                            <li>Get contact details for attendees, who have signed up for our HR list</li>
+                        </ul>
+                        <p>€ 8,000</p>
+                    </div>
+                </div>
                 <table className={styles.packages_table}>
                     <thead>
                         <tr>
@@ -307,7 +349,7 @@ function Sponsors() {
                 <p className="text-center mt-2">
                     There's more! Using <Link href="#perks">perks</Link>, you can customize your package!
                 </p>
-            </ColoredSection>
+            </ColoredSection >
             <ColoredSection id="we-can-help" background="light-section">
                 <h2 className="text-center">We can help with your presence!</h2>
                 <p>
