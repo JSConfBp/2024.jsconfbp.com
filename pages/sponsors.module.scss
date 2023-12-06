@@ -74,6 +74,121 @@
   }
 }
 
+.packages_table {
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+
+  max-width: 95vw;
+
+  @media only screen and (min-width: 1024px) {
+    max-width: 80vw;
+  }
+  @media only screen and (min-width: 1280px) {
+    max-width: 70vw;
+  }
+
+  border-collapse: collapse;
+
+  .spacer {
+    width: 2.5rem;
+  }
+
+  .workshops_header {
+    position: relative;
+
+    a {
+      width: 11rem;
+
+      text-decoration: none;
+      text-wrap: nowrap;
+      text-align: center;
+
+      font-family: var(--font-shrikhand);
+      font-size: 1.2rem;
+
+      color: var(--background);
+      background: var(--secondary);
+
+      padding: 0.2rem 0;
+      border-radius: 200px;
+
+      position: absolute;
+      left: -0.5rem;
+    }
+  }
+
+  td {
+    border-top: var(--table-border);
+    border-bottom: var(--table-border);
+    padding: 1rem 0;
+    vertical-align: middle;
+  }
+
+  th {
+    p {
+      margin: 1rem 0;
+    }
+
+    // package price
+    p:nth-child(2) {
+      font-family: var(--font-shrikhand);
+      font-size: 1.4rem;
+      color: var(--secondary);
+    }
+  }
+
+  // description column
+  td:first-child {
+    text-align: right;
+    padding-right: 1rem;
+    width: 25rem;
+  }
+
+  // data column
+  td:nth-of-type(2n) {
+    min-width: 10rem;
+  }
+
+  // Silver grey background
+  tr:nth-of-type(1),
+  tr:nth-of-type(2),
+  tr:nth-of-type(3) {
+    th:nth-of-type(2),
+    td:nth-of-type(2) {
+      background: var(--table-light-bg);
+    }
+  }
+
+  // Gold grey background
+  thead tr th:nth-of-type(4) {
+    background: var(--table-bg);
+  }
+
+  tr:not(:last-child):not(:nth-last-child(2)) {
+    td:nth-of-type(4) {
+      background: var(--table-bg);
+    }
+  }
+
+  // Workshops grey background
+  thead tr th:nth-of-type(6) {
+    background: var(--table-dark-bg);
+  }
+  tr:not(:last-child) {
+    th:nth-of-type(6),
+    td:nth-of-type(6) {
+      background: var(--table-dark-bg);
+    }
+  }
+
+  // Platinum grey background
+  th:nth-of-type(8),
+  td:nth-of-type(8) {
+    background: var(--table-darkest-bg);
+  }
+}
+
 .perks_table {
   display: flex;
   justify-content: center;
