@@ -260,6 +260,12 @@
     height: 40vw;
   }
 
+  a:hover {
+    p {
+      color: var(--primary);
+    }
+  }
+
   @media only screen and (min-width: 768px) {
     flex-direction: row;
 
