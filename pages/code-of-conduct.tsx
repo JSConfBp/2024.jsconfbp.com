@@ -6,7 +6,7 @@ function CodeOfConduct() {
     return (
         <>
             <SocialShare
-              title="Code of Conduct"
+                title="Code of Conduct"
             />
             <Divider>
                 <h1>
@@ -14,7 +14,7 @@ function CodeOfConduct() {
                 </h1>
             </Divider>
             <p>
-                All attendees, speakers, sponsors and volunteers at JSConf Budapest are
+                All attendees, speakers, partners and volunteers at JSConf Budapest are
                 required to agree with the following code of conduct. Organizers will
                 enforce this code throughout the event. We are expecting cooperation
                 from all participants to help ensuring a safe environment for everybody.
@@ -51,8 +51,8 @@ function CodeOfConduct() {
                 conference organizers.
             </p>
             <p>
-                Sponsors are also subject to the anti-harassment policy. In particular,
-                sponsors should not use sexualized images, activities, or other
+                Partners are also subject to the anti-harassment policy. In particular,
+                partners should not use sexualized images, activities, or other
                 material. Booth staff (including volunteers) should not use sexualized
                 clothing/uniforms/costumes, or otherwise create a sexualized
                 environment.
