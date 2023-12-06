@@ -2,13 +2,13 @@ import Link from "next/link";
 import classNames from "classnames"
 import Image from "next/image"
 
-import styles from "./sponsors.module.scss";
+import styles from "./partners.module.scss";
 
 import ColoredSection from "../ui/colored-section"
 import Divider from "../ui/divider"
 import SocialShare from "../ui/social-share"
 import Youtube from "../ui/youtube";
-import SponsorLogos from "../ui/sponsor-logos";
+import PartnerLogos from "../ui/partner-logos";
 import { OldLogo } from "../ui/logo";
 
 import mic from "../public/icons/mic.png"
@@ -25,18 +25,18 @@ import partyVibe from "../public/party-vibe.png"
 import nec from "../public/team/nec.png"
 import norbi from "../public/team/norbi.png"
 
-function Sponsors() {
+function Partners() {
     return (
         <>
             <SocialShare
-                title="Sponsorship"
+                title="Partnership"
             />
 
             <Divider>
-                <h1>Sponsorship</h1>
+                <h1>Partnership</h1>
             </Divider>
 
-            <p>Our common goal with every Sponsor is to make the experience even better for Attendees at the conference. We believe that Sponsor booths and activities could be part of the whole event, the hallway track, and even afterparties.</p>
+            <p>Our common goal with every Partner is to make the experience even better for Attendees at the conference.We believe that Partner booths and activities could be part of the whole event, the hallway track, and even afterparties.</p>
             <nav className="my-2 row justify-center w-100p">
                 <ul className="col md-row justify-center align-center gap-2p5 reset">
                     {["attendees", "reach", "packages", "perks", "workshops", "scholarships"].map(item => (
@@ -188,9 +188,9 @@ function Sponsors() {
                 placeholder='blur'
                 quality={25}
             ></Image>
-            <ColoredSection id="past-sponsors" background="secondary" className="text-center">
-                <h1 className="color-bg">PAST SPONSORS</h1>
-                <SponsorLogos color="sponsor-logo-light" />
+            <ColoredSection id="past-partners" background="secondary" className="text-center">
+                <h1 className="color-bg">PAST PARTNERS</h1>
+                <PartnerLogos color="partner-logo-light" />
             </ColoredSection>
             <ColoredSection background="secondary" sectionClassName="mb-n2 md-mt-n2">
                 <Divider type="sym" color="background" />
@@ -255,7 +255,7 @@ function Sponsors() {
                             <li>Add a slide to the reel between sessions</li>
                         </ul>
                         <p>
-                            <Link href="mailto:team@jsconfbp.com?subject=We want to become a sponsor!" target="_blank">Contact us</Link>
+                            <Link href="mailto:team@jsconfbp.com?subject=We want to become a partner!" target="_blank">Contact us</Link>
                         </p>
                     </div>
                     <div>
@@ -286,7 +286,7 @@ function Sponsors() {
                             <th className={styles.spacer}></th>
                             <th className={styles.workshops_header}>
                                 <p>Workshop</p>
-                                <Link href="mailto:team@jsconfbp.com?subject=We want to become a sponsor!" target="_blank">Contact us</Link>
+                                <Link href="mailto:team@jsconfbp.com?subject=We want to become a partner!" target="_blank">Contact us</Link>
                             </th>
                             <th className={styles.spacer}></th>
                             <th>
@@ -355,7 +355,7 @@ function Sponsors() {
             <ColoredSection id="we-can-help" background="light-section">
                 <h2 className="text-center">We can help with your presence!</h2>
                 <p>
-                    Sponsorship packages with booths include a wide screen TV and a backdrop, with your design, which we will provide for your exhibition booth - so you can travel light, if needed.
+                    Partnership packages with booths include a wide screen TV and a backdrop, with your design, which we will provide for your exhibition booth - so you can travel light, if needed.
                 </p>
                 <p>
                     If you need ideas on how to make your booth more appealing for the attendees, <Link href="#lets-talk">let's talk</Link>, we have tons of ideas
@@ -411,12 +411,12 @@ function Sponsors() {
                 </div>
             </ColoredSection>
             <ColoredSection id="workshops" background="light-section">
-                <h2 className="text-center">Sponsor with Workshops!</h2>
+                <h2 className="text-center">Support with Workshops!</h2>
                 <p>
-                    If your company has a product or a service, you can sponsor us by bringing a full-day, or half-day workshop to our planned 0th day "Workshop day". These Workshops will be free for every ticket holder, they can sign on one of them on first-come-first serve basis, and gain hands-on knowledge of the techniques, services or products you offer.
+                    If your company has a product or a service, you can support us by bringing a full-day, or half-day workshop to our planned 0th day "Workshop day". These Workshops will be free for every ticket holder, they can sign on one of them on first-come-first serve basis, and gain hands-on knowledge of the techniques, services or products you offer.
                 </p>
                 <p>
-                    We can help you find venue and catering for the workshop, but you need to cover it's expenses - since it's still a sponsorship. In return we give you a Gold level package for FREE, so you can be present at the conference as well!
+                    We can help you find venue and catering for the workshop, but you need to cover it's expenses - since it's still a partnership. In return we give you a Gold level package for FREE, so you can be present at the conference as well!
                 </p>
                 <p>
                     For ideas and more information don't hesitate to <Link target="_blank" href="mailto:team@jsconfbp.com?subject=We could bring you a Workshop!">contact us!</Link>
@@ -425,7 +425,7 @@ function Sponsors() {
             <ColoredSection id="scholarships" >
                 <h2 className="text-center">Scholarship</h2>
                 <p>
-                    From every package we put 10% directly to our Scholarship Fund - this fund will be used to sponsor individuals or students from underrepresented groups in tech, to travel and attend the conference
+                    From every package we put 10% directly to our Scholarship Fund - this fund will be used to fund individuals or students from underrepresented groups in tech, to travel and attend the conference
                 </p>
                 <p>
                     Your support can really make a difference!
@@ -433,7 +433,7 @@ function Sponsors() {
             </ColoredSection>
             <ColoredSection id="lets-talk" background="secondary" className="col align-center text-center">
                 <h1 className="color-bg">LET'S TALK!</h1>
-                <p className="color-bg mb-5">As a non-profit conference, we are always looking for sponsors to make our events awesome.</p>
+                <p className="color-bg mb-5">As a non-profit conference, we are always looking for partners to make our events awesome.</p>
                 <div className={styles.lets_talk}>
                     <svg className={styles.left_polygon} viewBox="0 0 161 146" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.48445 128.781L16.7773 113.488L16.7773 144.074L1.48445 128.781Z" fill="white" stroke="white" />
@@ -446,7 +446,7 @@ function Sponsors() {
                         { src: norbi, alt: "Profile picture of Norbert Srám.", firstName: "Norbert", lastName: "Srám" },
                         { src: nec, alt: "Profile picture of Szabolcs Szabolcsi-Tóth.", firstName: "Szabolcs", lastName: "Szabolcsi-Tóth" },
                     ].map(({ src, alt, firstName, lastName }) => (
-                        <Link href="mailto:team@jsconfbp.com?subject=We want to become a sponsor!" target="_blank">
+                        <Link href="mailto:team@jsconfbp.com?subject=We want to become a partner!" target="_blank">
                             <Image
                                 src={src}
                                 alt={alt}
@@ -483,4 +483,4 @@ function Sponsors() {
     )
 }
 
-export default Sponsors
+export default Partners

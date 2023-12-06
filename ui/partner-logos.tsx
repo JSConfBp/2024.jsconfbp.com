@@ -1,8 +1,8 @@
-import styles from "./sponsor-logos.module.scss";
+import styles from "./partner-logos.module.scss";
 import { ColorNames } from "../pages/_app";
 
 
-type SponsorLogoProps = {
+type PartnerLogoProps = {
     color?: ColorNames,
     opacity?: number,
     lvl1ClassNames?: string;
@@ -11,7 +11,7 @@ type SponsorLogoProps = {
     lvl4ClassNames?: string;
 }
 
-function SponsorLogos({ color = "sponsor-logo-light", opacity = 0.6, lvl1ClassNames = "", lvl2ClassNames = "", lvl3ClassNames = "", lvl4ClassNames = "" }: SponsorLogoProps) {
+function PartnerLogos({ color = "partner-logo-light", opacity = 0.6, lvl1ClassNames = "", lvl2ClassNames = "", lvl3ClassNames = "", lvl4ClassNames = "" }: PartnerLogoProps) {
     return (
         <div className="col align-center justify-center gap-2p5">
             <div className={`${styles.level_1} ${lvl1ClassNames}`}>
@@ -43,11 +43,11 @@ function SponsorLogos({ color = "sponsor-logo-light", opacity = 0.6, lvl1ClassNa
     )
 }
 
-export default SponsorLogos;
+export default PartnerLogos;
 
-// sponsor logo svgs below
+// Partner logo svgs below
 
-function OracleLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function OracleLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 113 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity={opacity} d="M102.213 12.0759C100.082 12.0759 98.2897 10.6827 97.7334 8.79227H109.552L111.192 6.3184H97.7334C98.2741 4.41782 100.082 3.01449 102.213 3.01449H110.35L111.975 0.551813H102.027C98.0455 0.551813 94.8263 3.68237 94.8263 7.54732C94.8263 11.4082 98.0455 14.5458 102.027 14.5458H110.564L112.187 12.0759H102.213ZM68.3505 14.5458C64.3764 14.5458 61.153 11.4082 61.153 7.54732C61.153 3.68237 64.3764 0.551813 68.3505 0.551813H78.2955L76.6679 3.01449H68.531C65.9621 3.01449 63.8744 5.05001 63.8744 7.54732C63.8744 10.0505 65.9621 12.0759 68.531 12.0759H78.5177L76.8862 14.5458H68.3505ZM15.7861 12.0759C18.3615 12.0759 20.4555 10.0505 20.4555 7.54732C20.4555 5.05001 18.3615 3.01449 15.7861 3.01449H7.79538C5.22738 3.01449 3.13858 5.05001 3.13858 7.54732C3.13858 10.0505 5.22738 12.0759 7.79538 12.0759H15.7861ZM7.61682 14.5458C3.63537 14.5458 0.416138 11.4082 0.416138 7.54732C0.416138 3.68237 3.63537 0.551813 7.61682 0.551813H15.9731C19.9481 0.551813 23.1673 3.68237 23.1673 7.54732C23.1673 11.4082 19.9481 14.5458 15.9731 14.5458H7.61682ZM36.7534 10.0172C39.453 10.0172 41.6231 7.89023 41.6231 5.28439C41.6231 2.67369 39.453 0.551813 36.7534 0.551813H24.6446V14.5458H27.415V3.01449H36.5751C37.8517 3.01449 38.9006 4.03331 38.9006 5.28439C38.9006 6.53061 37.8517 7.54732 36.5751 7.54732L28.774 7.53908L37.0247 14.5458H41.0448L35.4946 10.0172H36.7534ZM82.54 12.0759V0.552869H79.78V13.1971C79.78 13.5544 79.9208 13.8811 80.1817 14.1429C80.4562 14.3925 80.8216 14.5437 81.1922 14.5437H93.8188L95.4599 12.0759H82.54ZM48.6619 9.60817H56.0577L52.162 3.48853L44.9844 14.5458H41.7287L50.4366 1.27734C50.8174 0.738684 51.4554 0.420898 52.162 0.420898C52.828 0.420898 53.4586 0.730449 53.8375 1.24989L62.5822 14.5458H59.3073L57.7707 12.0738H50.2894L48.6619 9.60817Z" fill={`var(--${color})`} />
@@ -55,7 +55,7 @@ function OracleLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
     )
 }
 
-function WrikeLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function WrikeLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 109 23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2090_2417)">
@@ -78,7 +78,7 @@ function WrikeLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
     )
 }
 
-function GenesysLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function GenesysLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 113 23" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2090_2429)">
@@ -104,7 +104,7 @@ function GenesysLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
 
     )
 }
-function XataLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function XataLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 116 41" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M60.1315 13.0651V13.9445C60.1315 15.8308 59.6238 17.5514 58.6084 19.1063C57.6183 20.6612 56.2856 21.8338 54.6101 22.624C56.2856 23.4142 57.6183 24.5868 58.6084 26.1417C59.6238 27.6966 60.1315 29.4172 60.1315 31.3035V32.183H57.1614V31.3035C57.1614 30.3859 56.9837 29.5319 56.6283 28.7417C56.2983 27.926 55.8286 27.2251 55.2193 26.6388C54.6354 26.027 53.95 25.5554 53.1631 25.2241C52.3761 24.8672 51.5257 24.6888 50.6118 24.6888C49.6979 24.6888 48.8474 24.8672 48.0605 25.2241C47.2736 25.5554 46.5754 26.027 45.9662 26.6388C45.3822 27.2251 44.9127 27.926 44.5572 28.7417C44.2272 29.5319 44.0622 30.3859 44.0622 31.3035V32.183H41.092V31.3035C41.092 29.4172 41.5871 27.6966 42.5771 26.1417C43.5925 24.5868 44.938 23.4142 46.6135 22.624C44.938 21.8338 43.5925 20.6612 42.5771 19.1063C41.5871 17.5514 41.092 15.8308 41.092 13.9445V13.0651H44.0622V13.9445C44.0622 14.8622 44.2272 15.7161 44.5572 16.5063C44.9127 17.2965 45.3822 17.9975 45.9662 18.6093C46.5754 19.1956 47.2736 19.6671 48.0605 20.024C48.8474 20.3553 49.6979 20.5211 50.6118 20.5211C51.5257 20.5211 52.3761 20.3553 53.1631 20.024C53.95 19.6671 54.6354 19.1956 55.2193 18.6093C55.8286 17.9975 56.2983 17.2965 56.6283 16.5063C56.9837 15.7161 57.1614 14.8622 57.1614 13.9445V13.0651H60.1315ZM80.2373 32.183H77.2671V22.624C77.2671 21.8083 77.1277 21.0436 76.8482 20.3299C76.5946 19.6162 76.226 18.9789 75.7439 18.4181C75.2616 17.8318 74.6777 17.3475 73.9923 16.9651C73.3322 16.5573 72.6087 16.2769 71.8218 16.1239C71.0349 15.9965 70.2606 16.0092 69.499 16.1622C68.7628 16.2897 68.0647 16.5445 67.4046 16.9269C66.77 17.3093 66.1988 17.7936 65.6911 18.3799C65.2088 18.9662 64.828 19.6416 64.5487 20.4064C64.2949 21.1711 64.1679 21.9358 64.1679 22.7005C64.1679 23.4652 64.2949 24.2045 64.5487 24.9182C64.828 25.6319 65.2088 26.2947 65.6911 26.9064C66.1988 27.4927 66.7954 27.977 67.4808 28.3594C68.4962 28.9202 69.5751 29.2006 70.7175 29.2006C71.6822 29.2006 72.5961 28.9966 73.4592 28.5888C74.3477 28.181 75.1219 27.5819 75.782 26.7917V30.6918C74.2335 31.6859 72.5326 32.183 70.6794 32.183C69.4863 32.183 68.3312 31.9663 67.2142 31.533C66.0972 31.0996 65.0818 30.4496 64.1679 29.5829C63.381 28.8437 62.7463 28.0025 62.264 27.0594C61.7817 26.1163 61.4643 25.1348 61.312 24.1152C61.1597 23.0956 61.1597 22.0633 61.312 21.0181C61.4897 19.9475 61.8451 18.9406 62.3782 17.9975C63.2413 16.4426 64.4091 15.2318 65.8815 14.3651C67.3793 13.4985 68.9786 13.0651 70.6794 13.0651C71.9995 13.0651 73.2307 13.32 74.3731 13.8298C75.5408 14.3141 76.5565 14.9896 77.4194 15.8563C78.2823 16.6975 78.9677 17.7044 79.4757 18.8769C79.9836 20.024 80.2373 21.273 80.2373 22.624V32.183ZM84.9484 16.0857V22.624C84.9484 23.5417 85.1129 24.3956 85.4434 25.1858C85.7983 25.976 86.2682 26.677 86.8523 27.2888C87.4616 27.8751 88.1592 28.3466 88.9467 28.7035C89.7334 29.0349 90.5841 29.2006 91.498 29.2006V32.183C90.1774 32.183 88.9337 31.9408 87.7662 31.4565C86.6239 30.9467 85.6209 30.2584 84.758 29.3918C83.8944 28.5251 83.2089 27.5182 82.7017 26.3711C82.2189 25.1986 81.9782 23.9495 81.9782 22.624V2.43555H84.9484V13.1033H91.498V16.0857H84.9484ZM112.366 32.183H109.397V22.624C109.397 21.8083 109.256 21.0436 108.978 20.3299C108.723 19.6162 108.356 18.9789 107.873 18.4181C107.391 17.8318 106.807 17.3475 106.122 16.9651C105.462 16.5573 104.738 16.2769 103.951 16.1239C103.164 15.9965 102.39 16.0092 101.629 16.1622C100.892 16.2897 100.194 16.5445 99.5342 16.9269C98.899 17.3093 98.3278 17.7936 97.8206 18.3799C97.3378 18.9662 96.957 19.6416 96.6782 20.4064C96.4239 21.1711 96.2974 21.9358 96.2974 22.7005C96.2974 23.4652 96.4239 24.2045 96.6782 24.9182C96.957 25.6319 97.3378 26.2947 97.8206 26.9064C98.3278 27.4927 98.9249 27.977 99.6103 28.3594C100.626 28.9202 101.705 29.2006 102.847 29.2006C103.811 29.2006 104.725 28.9966 105.589 28.5888C106.477 28.181 107.251 27.5819 107.912 26.7917V30.6918C106.362 31.6859 104.662 32.183 102.809 32.183C101.616 32.183 100.46 31.9663 99.3438 31.533C98.2265 31.0996 97.2113 30.4496 96.2974 29.5829C95.51 28.8437 94.8756 28.0025 94.3935 27.0594C93.9107 26.1163 93.5938 25.1348 93.4415 24.1152C93.2892 23.0956 93.2892 22.0633 93.4415 21.0181C93.619 19.9475 93.9746 18.9406 94.5077 17.9975C95.3706 16.4426 96.5381 15.2318 98.011 14.3651C99.5083 13.4985 101.108 13.0651 102.809 13.0651C104.129 13.0651 105.36 13.32 106.503 13.8298C107.67 14.3141 108.685 14.9896 109.549 15.8563C110.412 16.6975 111.097 17.7044 111.605 18.8769C112.112 20.024 112.366 21.273 112.366 22.624V32.183Z" fill={`var(--${color})`} />
@@ -118,7 +118,7 @@ function XataLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
 
     )
 }
-function NewRelicLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function NewRelicLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 109 20" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2090_2451)">
@@ -143,7 +143,7 @@ function NewRelicLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
 
     )
 }
-function StatelyLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function StatelyLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 94 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2090_2465)">
@@ -167,7 +167,7 @@ function StatelyLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
     )
 }
 
-function ExadelLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function ExadelLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 93 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2090_2478)">
@@ -189,7 +189,7 @@ function ExadelLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
     )
 }
 
-function HasuraLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function HasuraLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 94 29" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2090_2486)">
@@ -211,7 +211,7 @@ function HasuraLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
 
     )
 }
-function SuperChargeLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function SuperChargeLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 91 28" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2090_2496)">
@@ -240,7 +240,7 @@ function SuperChargeLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
 
     )
 }
-function AbbyyLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function AbbyyLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 92 29" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2090_2528)">
@@ -259,7 +259,7 @@ function AbbyyLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
 
     )
 }
-function EpamLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function EpamLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 89 33" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2090_2536)">
@@ -280,7 +280,7 @@ function EpamLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
     )
 }
 
-function Auth0Logo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function Auth0Logo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 88 26" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2090_2544)">
@@ -296,7 +296,7 @@ function Auth0Logo({ color = "sponsor-logo-light", opacity = 0.6 }) {
     )
 }
 
-function LittleDataLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function LittleDataLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 85 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2090_2546)">
@@ -328,7 +328,7 @@ function LittleDataLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
 
     )
 }
-function ThisDotLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function ThisDotLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 63 15" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2090_2565)">
@@ -363,7 +363,7 @@ function ThisDotLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
 
     )
 }
-function TwilloLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function TwilloLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 72 22" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2090_2588)">
@@ -378,7 +378,7 @@ function TwilloLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
 
     )
 }
-function TalonOneLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function TalonOneLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 72 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2090_2590)">
@@ -404,7 +404,7 @@ function TalonOneLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
 
     )
 }
-function HotjarLogo({ color = "sponsor-logo-light", opacity = 0.6 }) {
+function HotjarLogo({ color = "partner-logo-light", opacity = 0.6 }) {
     return (
         <svg opacity={opacity} viewBox="0 0 72 18" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clipPath="url(#clip0_2090_2605)">

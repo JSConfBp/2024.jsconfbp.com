@@ -73,7 +73,7 @@ function CallForPapers() {
             You can bring your significant other, bring your kid(s), they'll stay with you at the hotel. If you need child-care to be sorted out for the time of the conference, please also get in touch. We are here to make this as easy for you as possible!
           </li>
         </ul>
-        <p>If your employer can cover your travel and hotel, we are happy to list them as an awesome company sponsor. The money we save will be used to make the conference more fabulous.</p>
+        <p>If your employer can cover your travel and hotel, we are happy to list them as an awesome company partner. The money we save will be used to make the conference more fabulous.</p>
         <p>If you have any special requirements, non-return trips, just let us know, we can usually work these things out.</p>
       </ColoredSection>
 
