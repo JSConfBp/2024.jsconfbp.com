@@ -242,7 +242,7 @@ function Sponsors() {
                             <th className={styles.spacer}></th>
                             <th className={styles.workshops_header}>
                                 <p>Workshop</p>
-                                <Link href="#workshops">Contact us</Link>
+                                <Link href="mailto:team@jsconfbp.com?subject=We want to become a sponsor!" target="_blank">Contact us</Link>
                             </th>
                             <th className={styles.spacer}></th>
                             <th>
@@ -402,17 +402,15 @@ function Sponsors() {
                         { src: norbi, alt: "Profile picture of Norbert Srám.", firstName: "Norbert", lastName: "Srám" },
                         { src: nec, alt: "Profile picture of Szabolcs Szabolcsi-Tóth.", firstName: "Szabolcs", lastName: "Szabolcsi-Tóth" },
                     ].map(({ src, alt, firstName, lastName }) => (
-                        <div>
+                        <Link href="mailto:team@jsconfbp.com?subject=We want to become a sponsor!" target="_blank">
                             <Image
                                 src={src}
                                 alt={alt}
                                 placeholder='blur'
                             />
-                            <div>
-                                <p className="color-bg m-0 fs-1p75 lh-2p5">{firstName}</p>
-                                <p className="color-bg m-0 fs-1p5 lh-2p5">{lastName}</p>
-                            </div>
-                        </div>
+                            <p className="color-bg m-0 fs-1p75 lh-2p5">{firstName}</p>
+                            <p className="color-bg m-0 fs-1p5 lh-2p5">{lastName}</p>
+                        </Link>
                     )
                     )}
                     <svg className={styles.right_polygon} viewBox="0 0 129 96" fill="none" xmlns="http://www.w3.org/2000/svg">
