@@ -85,11 +85,12 @@
   table {
     width: 63vw;
     border-collapse: collapse;
+    text-wrap: nowrap;
   }
 
   tr {
     height: 2rem;
-    border: #e3e3e3 2px solid;
+    border: var(--table-border);
     border-left: none;
 
     td {

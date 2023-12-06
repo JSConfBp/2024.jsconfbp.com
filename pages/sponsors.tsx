@@ -46,7 +46,7 @@ function Sponsors() {
                     ))}
                 </ul>
             </nav>
-            <ColoredSection background="secondary-dark" className="col align-center text-center">
+            <ColoredSection background="secondary" className="col align-center text-center">
                 <h1 className="color-bg">OUR PAST YEARS WERE AWESOME!</h1>
                 <h3 className="color-bg">Here’s what happened so far in our past 4 events:</h3>
                 <div className="w-100p col md-row justify-center align-center">
@@ -186,14 +186,14 @@ function Sponsors() {
                 placeholder='blur'
                 quality={25}
             ></Image>
-            <ColoredSection id="past-sponsors" background="secondary-dark" className="text-center">
+            <ColoredSection id="past-sponsors" background="secondary" className="text-center">
                 <h1 className="color-bg">PAST SPONSORS</h1>
-                <SponsorLogos color="sponsor-logo-dark" />
+                <SponsorLogos color="sponsor-logo-light" />
             </ColoredSection>
-            <ColoredSection background="secondary-dark" sectionClassName="mb-n2 md-mt-n2">
+            <ColoredSection background="secondary" sectionClassName="mb-n2 md-mt-n2">
                 <Divider type="sym" color="background" />
             </ColoredSection>
-            <ColoredSection id="coming-up" background="secondary-dark" className="col align-center">
+            <ColoredSection id="coming-up" background="secondary" className="col align-center">
                 <h1 className="md-mt-0 color-bg">COMING UP NEXT</h1>
                 <h2 className="color-bg fw-400">26-28 June, 2024</h2>
                 <div className="col md-row align-center justify-center gap-1p5 md-gap-4p5">
@@ -209,7 +209,7 @@ function Sponsors() {
                 </div>
 
             </ColoredSection>
-            <ColoredSection id="venue" background="secondary-dark" className="text-center mt-n2">
+            <ColoredSection id="venue" background="secondary" className="text-center mt-n2">
                 <h1 className="color-bg">Venue</h1>
                 <p className="color-bg">Akvárium Klub</p>
                 <p className="color-bg text-center">Center of the city, 580 square meters of exhibition space, literally under a pool.</p>
@@ -226,7 +226,7 @@ function Sponsors() {
             <ColoredSection background="background">
                 <div id="packages">packages</div>
             </ColoredSection>
-            <ColoredSection id="perks" background="light-section">
+            <ColoredSection id="perks">
                 <h2 className="text-center">Perks</h2>
                 <p>
                     Exclusive perks, brand tailored to your Company, each sold once.These are dedicated enhancements for our attendees, like better catering, coffee, or a great party.
@@ -275,7 +275,7 @@ function Sponsors() {
                     </table>
                 </div>
             </ColoredSection>
-            <ColoredSection id="workshops" background="background" className="text-center">
+            <ColoredSection id="workshops" background="light-section" className="text-center">
                 <h2>Sponsor with Workshops!</h2>
                 <p>
                     If your company has a product or a service, you can sponsor us by bringing a full-day, or half-day workshop to our planned 0th day "Workshop day". These Workshops will be free for every ticket holder, they can sign on one of them on first-come-first serve basis, and gain hands-on knowledge of the techniques, services or products you offer.
@@ -287,7 +287,7 @@ function Sponsors() {
                     For ideas and more information don't hesitate to <Link target="_blank" href="mailto:team@jsconfbp.com?subject=We could bring you a Workshop!">contact us!</Link>
                 </p>
             </ColoredSection>
-            <ColoredSection id="scholarships" background="light-section" className="text-center">
+            <ColoredSection id="scholarships" className="text-center">
                 <h2>Scholarship</h2>
                 <p>
                     From every package we put 10% directly to our Scholarship Fund - this fund will be used to sponsor individuals or students from underrepresented groups in tech, to travel and attend the conference
@@ -296,7 +296,7 @@ function Sponsors() {
                     Your support can really make a difference!
                 </p>
             </ColoredSection>
-            <ColoredSection id="talk" background="secondary-dark" className="col align-center text-center">
+            <ColoredSection id="lets-talk" background="secondary" className="col align-center text-center">
                 <h1 className="color-bg">LET'S TALK!</h1>
                 <p className="color-bg mb-5">As a non-profit conference, we are always looking for sponsors to make our events awesome.</p>
                 <div className={styles.lets_talk}>
@@ -339,11 +339,11 @@ function Sponsors() {
                     JSConf Budapest and CSSConf Budapest is organized by a team from the local Hungarian developer community.
                 </p>
                 <ul className="reset">
-                    <li>The Legal entity behind the event is:</li>
-                    <li>JSSC Rendezvényszervező Kft</li>
-                    <li>Budapest 1365 Pf. 717.</li>
-                    <li>VAT No.: HU25966330</li>
-                    <li>Reg.#: 01-09-299007</li>
+                    <li key="description">The Legal entity behind the event is:</li>
+                    <li key="company-name">JSSC Rendezvényszervező Kft</li>
+                    <li key="company-address">Budapest 1365 Pf. 717.</li>
+                    <li key="company-vat">VAT No.: HU25966330</li>
+                    <li key="company-reg-no">Reg.#: 01-09-299007</li>
                 </ul>
             </ColoredSection>
         </>

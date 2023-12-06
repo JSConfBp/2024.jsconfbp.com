@@ -22,15 +22,18 @@ const shrikhand = Shrikhand({
 
 export const CSSVariableColors = {
   "--primary": "#07bdbd",
-  "--primary-dark": "#05747b",
   "--secondary": "#9e19ef",
-  "--secondary-dark": "#6a0ca4",
   "--text-color": "#000",
   "--background": "#fff",
   "--light-section": "#f2f2f2",
-  "--border-color": "#878787",
-  "--sponsor-logo-light": "#D7AAFA",
-  "--sponsor-logo-dark": "#b485d1"
+  "--rounded-box-border-color": "#878787",
+  "--table-border": "2px solid #eaeaea",
+  "--table-light-bg": "#f2f2f2",
+  "--table-bg": "#eaeaea",
+  "--table-dark-bg": "#e3e3e3",
+  "--table-darkest-bg": "#dddddd",
+  "--sponsor-logo-light": "#fff",
+  "--sponsor-logo-dark": "#000",
 } as const;
 
 export type OmitFirstTwoChars<S extends string> = S extends `${infer _}${infer _}${infer Rest}` ? Rest : S;
