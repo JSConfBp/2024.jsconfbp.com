@@ -149,7 +149,7 @@ function Sponsors() {
                 <h1 className="md-mt-0 color-bg">REACH</h1>
                 <h3 className="color-bg">100% relevance in the JavaScript community</h3>
                 <div className={`col md-row align-center justify-center gap-1p5 w-100p py-2`}>
-                    <div className="col align-center">
+                    <Link href="https://twitter.com/jsconfbp" target="_blank" className="col align-center no-underline">
                         <Image
                             src={twitter}
                             alt="twitter logo"
@@ -158,23 +158,23 @@ function Sponsors() {
                             <p className="m-0 fw-700 color-bg fs-2p25">2.1k</p>
                             <p className="m-0 color-bg fs-1p25">followers</p>
                         </div>
-                    </div>
-                    <div className="col align-center relative">
+                    </Link>
+                    <Link href="https://www.youtube.com/@jsconf_" target="_blank" className="col align-center relative no-underline">
                         <Image
                             src={youtube}
                             alt="youtube logo"
                         />
-                        <p className="m-0 fw-700 color-bg fs-2p25">142k</p>
+                        <p className="m-0 fw-700 color-bg fs-2p25">271k</p>
                         <p className="m-0  color-bg fs-1p25">subscribers</p>
-                    </div>
-                    <div className="col align-center relative">
+                    </Link>
+                    <Link href="https://www.facebook.com/bp.jsconf" target="_blank" className="col align-center relative no-underline">
                         <Image
                             src={facebook}
                             alt="facebook logo"
                         />
                         <p className="m-0 fw-700 color-bg fs-2p25">34k</p>
                         <p className="m-0 color-bg fs-1p25">people reached</p>
-                    </div>
+                    </Link>
                 </div>
                 <p className="color-bg">Our videos were watched over 242,000 times on YouTube</p>
                 <p className="color-bg">Viewers spend more than 1,742,000 minutes watching the talks online</p>
