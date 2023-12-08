@@ -443,7 +443,7 @@ function Partners() {
                         <path d="M64.5937 87.6836L64.5937 108.428L43.8492 87.6836L64.5937 87.6836Z" stroke="white" />
                     </svg>
                     {[
-                        { src: norbi, alt: "Profile picture of Norbert Srám.", firstName: "Norbert", lastName: "Srám" },
+                        { src: norbi, alt: "Profile picture of Norbert Sram.", firstName: "Norbert", lastName: "Sram" },
                         { src: nec, alt: "Profile picture of Szabolcs Szabolcsi-Tóth.", firstName: "Szabolcs", lastName: "Szabolcsi-Tóth" },
                     ].map(({ src, alt, firstName, lastName }) => (
                         <Link href="mailto:team@jsconfbp.com?subject=We want to become a partner!" target="_blank">
