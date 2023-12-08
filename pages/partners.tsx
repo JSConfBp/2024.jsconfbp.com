@@ -41,7 +41,7 @@ function Partners() {
                 <ul className="col md-row justify-center align-center gap-2p5 reset">
                     {["attendees", "reach", "packages", "perks", "workshops", "scholarships"].map(item => (
                         <li key={item}>
-                            <Link href={`#${item}`} className="fw-700 capitalize">{item}</Link>
+                            <Link key={`a-${item}`} href={`#${item}`} className="fw-700 capitalize">{item}</Link>
                         </li>
                     ))}
                 </ul>
@@ -446,7 +446,7 @@ function Partners() {
                         { src: norbi, alt: "Profile picture of Norbert Sram.", firstName: "Norbert", lastName: "Sram" },
                         { src: nec, alt: "Profile picture of Szabolcs Szabolcsi-Tóth.", firstName: "Szabolcs", lastName: "Szabolcsi-Tóth" },
                     ].map(({ src, alt, firstName, lastName }) => (
-                        <Link href="mailto:team@jsconfbp.com?subject=We want to become a partner!" target="_blank">
+                        <Link key={firstName} href="mailto:team@jsconfbp.com?subject=We want to become a partner!" target="_blank">
                             <Image
                                 src={src}
                                 alt={alt}
