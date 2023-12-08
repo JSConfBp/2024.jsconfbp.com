@@ -40,7 +40,7 @@ function Partners() {
             <nav className="my-2 row justify-center w-100p">
                 <ul className="col md-row justify-center align-center gap-2p5 reset">
                     {["attendees", "reach", "packages", "perks", "workshops", "scholarships"].map(item => (
-                        <li>
+                        <li key={item}>
                             <Link href={`#${item}`} className="fw-700 capitalize">{item}</Link>
                         </li>
                     ))}
@@ -206,7 +206,7 @@ function Partners() {
                             "500+ attendees",
                             "25 speakers",
                             "2 parties"
-                        ].map(i => (<p className="color-bg m-0">{i}</p>))}
+                        ].map((line, index) => (<p key={index} className="color-bg m-0">{line}</p>))}
                     </div>
                 </div>
 
