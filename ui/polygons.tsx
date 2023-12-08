@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Link from 'next/link';
+import { useRouter } from 'next/router'
 
 import styles from './polygons.module.scss';
 
@@ -22,6 +23,8 @@ export function getTrianglesWithColorAndFill(paths: string[]) {
 }
 
 function HeaderBackgroundDesktop() {
+  const router = useRouter()
+
   const trianglePaths = [
     "M1284.5 206.5H1351.79L1284.5 273.793V206.5Z",
     "M1387.21 250.702L1434.08 297.579H1340.33L1387.21 250.702Z",
@@ -54,7 +57,7 @@ function HeaderBackgroundDesktop() {
   ]
 
   return (
-    <Link href={typeof window !== 'undefined' ? window.location.href : "/"}>
+    <Link href={router.asPath}>
       <svg viewBox="0 0 1680 570" fill="none" xmlns="http://www.w3.org/2000/svg">
         {getTrianglesWithColorAndFill(trianglePaths)}
 
@@ -105,6 +108,7 @@ function HeaderBackgroundDesktop() {
 }
 
 function HeaderBackgroundMobile() {
+  const router = useRouter()
   const trianglePaths = [
     "M290.595 41.3831L290.771 41.5599L290.948 41.3831L302.166 30.1657L302.592 29.739H301.989H279.554H278.951L279.377 30.1657L290.595 41.3831Z",
     "M11.8572 3.78115L11.6804 3.60437L11.5036 3.78115L3.19519 12.0897L2.76184 12.523L3.37466 12.5164L19.8147 12.3397L20.4092 12.3333L19.9888 11.9129L11.8572 3.78115Z",
@@ -126,7 +130,7 @@ function HeaderBackgroundMobile() {
   ]
 
   return (
-    <Link href={typeof window !== 'undefined' ? window.location.href : "/"}>
+    <Link href={router.asPath}>
       <svg viewBox="0 0 415 170" fill="none" xmlns="http://www.w3.org/2000/svg">
         {getTrianglesWithColorAndFill(trianglePaths)}
 
