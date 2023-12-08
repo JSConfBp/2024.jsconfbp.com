@@ -14,11 +14,11 @@ export function getTrianglesWithColorAndFill(paths: string[]) {
   return paths.map((path, index) => {
     const color = Math.random() < 0.5 ? "var(--primary, #07BDBD)" : "var(--secondary, #9E19EF)";
     const hasFill = Math.random() < 0.5;
-    return (
-      <>
-        {isMounted && <path key={index} d={path} stroke={color} fill={hasFill ? color : "var(--background)"} />}
-      </>
-    );
+
+    if (isMounted) {
+      return (<path key={index} d={path} stroke={color} fill={hasFill ? color : "var(--background)"} />)
+    }
+    return null;
   });
 }
 
@@ -226,7 +226,6 @@ function FooterSeparator() {
     <svg className={styles.footer_separator_polygons} viewBox="0 0 194 102" fill="none" xmlns="http://www.w3.org/2000/svg">
       {getTrianglesWithColorAndFill(trianglePaths)}
     </svg>
-
   )
 }
 
