@@ -29,11 +29,11 @@ function Partners() {
     return (
         <>
             <SocialShare
-                title="Partnership"
+                title="Partners"
             />
 
             <Divider>
-                <h1>Partnership</h1>
+                <h1>Partners</h1>
             </Divider>
 
             <p>Our common goal with every Partner is to make the experience even better for Attendees at the conference.We believe that Partner booths and activities could be part of the whole event, the hallway track, and even afterparties.</p>
