@@ -1,8 +1,8 @@
 import Link from "next/link";
 
-import styles from "./cfp-button.module.scss";
+import styles from "./centered-button.module.scss";
 
-type CfpButtonProps = {
+type CenteredButtonProps = {
   children?: string;
   href?: string;
   className?: string;
@@ -10,8 +10,8 @@ type CfpButtonProps = {
   [propName: string]: any;
 }
 
-function CfpButton({ children, className = "", href = "https://forms.gle/y3RN28awvwjkm2ws6", target = "_blank", ...props }: CfpButtonProps) {
-  const buttonText = "Submit your talk proposal"
+function CenteredButton({ children, className = "", href = "https://jsconfbp.com", target = "_blank", ...props }: CenteredButtonProps) {
+  const buttonText = "Simon says: click me!"
 
   if (typeof children !== "string" && typeof children !== "undefined") {
     console.error('Yo, CfpButton.tsx here: we expect the text for the button. You gave me something else. I\'m just gonna use a default value.')
@@ -27,4 +27,4 @@ function CfpButton({ children, className = "", href = "https://forms.gle/y3RN28a
   )
 }
 
-export default CfpButton;
+export default CenteredButton;

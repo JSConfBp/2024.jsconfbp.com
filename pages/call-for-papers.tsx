@@ -1,5 +1,5 @@
 import Link from "next/link";
-import CfpButton from "../ui/cfp-button";
+import CenteredButton from "../ui/centered-button";
 import Divider from "../ui/divider";
 import ColoredSection from "../ui/colored-section";
 import SocialShare from "../ui/social-share";
@@ -27,7 +27,7 @@ function CallForPapers() {
         </p>
       </ColoredSection>
 
-      <CfpButton className="mb-2">Submit your talk proposal</CfpButton>
+      <CenteredButton href="https://forms.gle/y3RN28awvwjkm2ws6" className="mb-2">Submit your talk proposal</CenteredButton>
 
       <ColoredSection background="light-section">
         <h2>Topics</h2>
@@ -125,7 +125,7 @@ function CallForPapers() {
         </p>
       </ColoredSection>
 
-      <CfpButton className="mt-2">Submit your talk proposal</CfpButton>
+      <CenteredButton href="https://forms.gle/y3RN28awvwjkm2ws6" className="mt-2">Submit your talk proposal</CenteredButton>
     </>
   )
 }
