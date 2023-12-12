@@ -13,6 +13,41 @@ function Home() {
       <div className={styles.cfp_container}>
         <CfpButton href="/call-for-papers" target="_self">Our CFP is open!</CfpButton>
       </div>
+      {false && (<section id="updates">
+        <Divider>
+          <h1>Updates</h1>
+        </Divider>
+
+        <div className="col md-row gap-2p5 mb-2">
+          <div>
+            <h2 className='mt-0'>02 May, 2024</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <div>
+            <h2 className='mt-0'>02 May, 2024</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+
+          <div>
+            <h2 className='mt-0'>02 May, 2024</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+              laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+        </div>
+      </section >)
+      }
       <section id="venue">
         <Divider >
           <h1>Venue</h1>
