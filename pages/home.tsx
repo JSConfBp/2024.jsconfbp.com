@@ -1,6 +1,6 @@
 import styles from './home.module.scss'
 
-import CfpButton from '../ui/cfp-button'
+import CenteredButton from '../ui/centered-button'
 import SocialShare from '../ui/social-share'
 import TicketBanner from '../ui/ticket-banner'
 
@@ -10,7 +10,7 @@ function Home() {
       <SocialShare />
       <TicketBanner />
       <div className={styles.cfp_container}>
-        <CfpButton href="/call-for-papers" target="_self">Our CFP is open!</CfpButton>
+        <CenteredButton href="/call-for-papers" target="_self">Our CFP is open!</CenteredButton>
       </div>
     </>
   )
