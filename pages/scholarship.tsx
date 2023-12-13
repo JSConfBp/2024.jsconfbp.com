@@ -136,11 +136,17 @@ function Scholarship() {
             </p>
 
             <p>
-                We, the organizers, do not take part in the jury process. In the past
-                years, we asked Green Fox Academy in Budapest to help us evaluate the
+                We, the organizers, do not take part in the jury process. Every
+                year we work with organizations that are specialized in career
+                development and education in tech. They help us to evaluate the
                 applications and select the awardees.
+
+                {/* In the past
+                years, we asked Green Fox Academy in Budapest to help us evaluate the
+                applications and select the awardees. */}
             </p>
 
+            {/* 
             <h4>Green Fox Academy</h4>
 
             <p>
@@ -157,7 +163,8 @@ function Scholarship() {
                 <Link target="_blank" href="http://www.greenfoxacademy.com/">
                     http://www.greenfoxacademy.com/
                 </Link>
-            </p>
+            </p> 
+*/}
         </>
     );
 }
