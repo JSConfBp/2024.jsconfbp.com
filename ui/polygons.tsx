@@ -134,12 +134,6 @@ function HeaderBackgroundMobile() {
       <svg viewBox="0 0 415 170" fill="none" xmlns="http://www.w3.org/2000/svg">
         {getTrianglesWithColorAndFill(trianglePaths)}
 
-        {/* menu background */}
-        <path d="M414.5 1.00001V0.500005H414L309 0.5H307.793L308.646 1.35355L413.646 106.354L414.5 107.207V106V1.00001Z" fill="#07BDBD" stroke="#07BDBD" />
-        {/* <path d="M368 19C368 17.3431 369.269 16 370.833 16H399.167C400.731 16 402 17.3431 402 19C402 20.6569 400.731 22 399.167 22H370.833C369.269 22 368 20.6569 368 19Z" fill="white" />
-            <path d="M368 30C368 28.3431 369.269 27 370.833 27H399.167C400.731 27 402 28.3431 402 30C402 31.6569 400.731 33 399.167 33H370.833C369.269 33 368 31.6569 368 30Z" fill="white" />
-            <path d="M368 41C368 39.3431 369.269 38 370.833 38H399.167C400.731 38 402 39.3431 402 41C402 42.6569 400.731 44 399.167 44H370.833C369.269 44 368 42.6569 368 41Z" fill="white" /> */}
-
         <Link href="/">
           <svg>
             <rect x="28" y="24" width="96" height="141" opacity="0" fill="white" />
