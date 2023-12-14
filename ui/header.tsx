@@ -10,11 +10,11 @@ function MenuItems({ onClick = () => undefined, className = "", ...props }) {
   const router = useRouter();
 
   const menuItems = [
-    { href: "/code-of-conduct", title: "Code of Conduct" },
     { href: "/scholarship", title: "Scholarship" },
     { href: "/partners", title: "Partners" },
+    { href: "/call-for-papers", title: "Call for Papers", liClassName: styles.cfp },
     { href: "/about-us", title: "About Us" },
-    { href: "/call-for-papers", title: "Call for Papers", liClassName: styles.cfp }
+    { href: "/#venue", title: "Venue" },
   ]
 
   return (
@@ -60,6 +60,14 @@ function MobileMenu() {
   )
 }
 
+function DesktopMenu() {
+  return (
+    <nav className={styles.desktop_menu}>
+      <MenuItems />
+    </nav>
+  )
+}
+
 function Header() {
   // Wanted to use the backgrounds as inline SVGs to be able to animate them
   const [isMobile, setIsMobile] = useState(false);
@@ -80,7 +88,7 @@ function Header() {
 
   return (
     <header className={styles.main}>
-      <MobileMenu />
+      {isMobile ? <MobileMenu /> : <DesktopMenu />}
       <Polygons type={`header-background-${isMobile ? "mobile" : "desktop"}`} />
     </header>
   );
