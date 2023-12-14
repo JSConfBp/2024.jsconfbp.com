@@ -1,9 +1,133 @@
 .main {
   width: 100vw;
   margin-bottom: 1rem;
-  padding: 0.5rem;
 
   @media only screen and (min-width: 768px) {
     padding: 1rem;
+  }
+}
+
+.mobile_menu {
+  legend,
+  label,
+  input,
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+  }
+  ul,
+  li {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  @media only screen and (min-width: 768px) {
+    display: none;
+  }
+
+  .input_toggler {
+    display: none;
+  }
+
+  .menu_background {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 26vw;
+    height: 26vw;
+    z-index: 90;
+  }
+
+  .toggler {
+    position: absolute;
+    right: 3.2vw;
+    top: 4vw;
+    width: 9vw;
+    height: 8vw;
+    z-index: 100;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+  }
+
+  .toggler_line {
+    width: 100%;
+    height: 1.8vw;
+    background: var(--background);
+    margin-bottom: 1.2vw;
+    position: relative;
+    transition: all 0.4s ease-out;
+    border-radius: 50px;
+  }
+
+  .input_toggler:checked ~ .toggler {
+    .toggler_line:nth-child(1) {
+      top: 1.5vw;
+      transform: rotate(45deg);
+    }
+
+    .toggler_line:nth-child(2) {
+      display: none;
+    }
+
+    .toggler_line:nth-child(3) {
+      top: -1.5vw;
+      transform: rotate(135deg);
+    }
+  }
+
+  .topbar {
+    z-index: 1;
+
+    position: absolute;
+    top: 0;
+    height: 55vh;
+    width: 100%;
+    background: var(--secondary);
+
+    transform: translateY(-100%);
+
+    transition: all 0.4s ease-out;
+  }
+
+  .input_toggler:checked ~ .topbar {
+    transform: translateY(0%);
+  }
+
+  .menu_items {
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    padding: 16vw 0 16vw 16vw;
+
+    .link {
+      color: var(--background);
+      font-family: var(--font-shrikhand);
+      font-size: 2rem;
+      line-height: 2;
+    }
+
+    .active {
+      text-decoration: underline;
+    }
+
+    .cfp {
+      margin: 0 0 0 -2rem;
+      background-color: var(--primary);
+      padding: 0 2rem;
+      border-radius: 50px;
+    }
   }
 }
