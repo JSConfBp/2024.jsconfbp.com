@@ -4,6 +4,7 @@ import CenteredButton from '../ui/centered-button'
 import SocialShare from '../ui/social-share'
 import TicketBanner from '../ui/ticket-banner'
 import Divider from '../ui/divider'
+import Link from 'next/link'
 
 function Home() {
   return (
@@ -13,41 +14,59 @@ function Home() {
       <div className={styles.cfp_container}>
         <CenteredButton href="/call-for-papers" target="_self">Our CFP is open!</CenteredButton>
       </div>
-      {false && (<section id="updates">
+      <section id="updates">
         <Divider>
           <h1>Updates</h1>
         </Divider>
 
         <div className="col md-row gap-2p5 mb-2">
-          <div>
-            <h2 className='mt-0'>02 May, 2024</h2>
+          <div className='col'>
+            <h2 className='mt-0'>Scholarship!</h2>
+            <h4 className='mt-n2 ml-0p25'>December 18, 2023</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              📬 We have opened the application for our Scholarship program!
+            </p>
+            <p>
+              The details are on our <Link href="/scholarship">🎓scholarship page</Link>
+            </p>
+            <p>
+              The application deadline is <strong>March 24, 2024</strong>.
             </p>
           </div>
 
-          <div>
-            <h2 className='mt-0'>02 May, 2024</h2>
+          <div className='col'>
+            <h2 className='mt-0'>Call for Speakers!</h2>
+            <h4 className='mt-n2 ml-0p25'>November 30, 2023</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              📢  We're looking for our Speakers for 2024!
+            </p>
+            <p>
+              <Link href="/call-for-papers">Our CFP is open</Link>, awaiting your talk proposals until the <strong>end of January 2024</strong>!
+            </p>
+            <p>
+              Send us your talk ideas and take the stage in 2024!
             </p>
           </div>
 
-          <div>
-            <h2 className='mt-0'>02 May, 2024</h2>
+          <div className='col'>
+            <h2 className='mt-0'>We are so back!</h2>
+            <h4 className='mt-n2 ml-0p25'>November 21, 2023</h4>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-              laboris nisi ut aliquip ex ea commodo consequat.
+              🌟 JSConf Budapest 2024 is a GO!
+            </p>
+            <p>
+              📆 Mark your calendars for <strong>June 26-28, 2024.</strong>
+            </p>
+            <p>
+              🎟️ Secure your early bird <Link href="https://buff.ly/47nfPaB" target="_blank">tickets now!</Link>
+            </p>
+            <p>
+              Join the JavaScript party – it’s going to be epic!
             </p>
           </div>
+
         </div>
-      </section >)
-      }
+      </section>
       <section id="venue">
         <Divider >
           <h1>Venue</h1>
