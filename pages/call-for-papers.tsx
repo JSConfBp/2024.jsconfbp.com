@@ -10,7 +10,7 @@ function CallForPapers() {
       <SocialShare
         title="Call For Papers"
         description="Our CFP is open until 26th January 2024!"
-        socialShareImage="social-share-cfp.png"
+        socialShareImage="social-share/cfp.png"
       />
       <Divider><h1>Call For Papers</h1></Divider>
 
