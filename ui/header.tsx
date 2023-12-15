@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 import styles from './header.module.scss'
 import Polygons from './polygons';
@@ -35,10 +35,26 @@ function MenuItems({ onClick = () => undefined, className = "", ...props }) {
 
 function MobileMenu() {
   const [isChecked, setIsChecked] = useState(false);
+  const overlayRef = useRef(null);
 
   const handleOnClick = () => {
     setIsChecked(!isChecked);
   };
+
+  useEffect(() => {
+    const overlay = overlayRef.current;
+
+    if (isChecked) {
+      overlay.style.display = 'block';
+    } else if (!isChecked && overlay.style.display === 'block') {
+      const handleAnimationEnd = () => {
+        overlay.style.display = 'none';
+      }
+
+      overlay.addEventListener('animationend', handleAnimationEnd, { once: true });
+    }
+
+  }, [isChecked]);
 
   return (
     <div className={styles.mobile_menu}>
@@ -47,7 +63,7 @@ function MobileMenu() {
         checked={isChecked}
         readOnly={true}
         className={styles.input_toggler} />
-      <div className={styles.overlay}></div>
+      <div ref={overlayRef} className={styles.overlay} style={{ display: "none" }}></div>
       <svg className={styles.menu_background} viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M105 0L105 105L7.62939e-06 -4.5897e-06L105 0Z" fill="var(--primary)" />
       </svg>
