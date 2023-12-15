@@ -24,6 +24,33 @@
     text-decoration: none;
   }
 
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    z-index: 1;
+    overflow: hidden;
+    touch-action: none;
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 0.5;
+    }
+  }
+
+  .input_toggler:checked ~ .overlay {
+    display: block;
+    animation: fadeIn 0.5s ease forwards;
+  }
+
   @media only screen and (min-width: 768px) {
     display: none;
   }
