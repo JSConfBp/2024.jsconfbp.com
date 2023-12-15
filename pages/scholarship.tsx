@@ -52,7 +52,7 @@ function Scholarship() {
                 <p className="text-center mt-2">
                     <strong>The application period is closed on March 24th, Sunday midnight.</strong>
                 </p>
-                <CenteredButton href="https://forms.gle/vfq4gGkT6VCeTd476">
+                <CenteredButton href="https://forms.gle/iJnzqp4mXMuf8x3V7">
                     Apply for a Scholarship now!
                 </CenteredButton>
             </ColoredSection>
@@ -184,7 +184,7 @@ function Scholarship() {
                 <p className="text-center">
                     <strong>The application period is closed on March 24th, Sunday midnight.</strong>
                 </p>
-                <CenteredButton href="https://forms.gle/vfq4gGkT6VCeTd476">
+                <CenteredButton href="https://forms.gle/iJnzqp4mXMuf8x3V7">
                     Apply for a Scholarship now!
                 </CenteredButton>
             </ColoredSection>
