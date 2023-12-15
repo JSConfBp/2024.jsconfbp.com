@@ -7,7 +7,11 @@ import ColoredSection from "../ui/colored-section";
 function Scholarship() {
     return (
         <>
-            <SocialShare title="Partners" />
+            <SocialShare
+                title="Scholarship"
+                description="Scholarship application is open until 24th March 2024!"
+                socialShareImage="social-share/scholarship.png"
+            />
 
             <Divider>
                 <h1>
