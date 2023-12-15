@@ -33,9 +33,7 @@ function Scholarship() {
                     This Scholarship is made for you if you wished to attend JSConf
                     Budapest, but you could not afford it for some reason.
                 </p>
-            </ColoredSection>
 
-            <ColoredSection background="light-section">
                 <h2>Travel Support</h2>
 
                 <p>
@@ -46,9 +44,7 @@ function Scholarship() {
                     Budapest, let us know, and more people will have the opportunity to
                     receive a Scholarship.
                 </p>
-            </ColoredSection>
 
-            <ColoredSection>
                 <p className="text-center mt-2">
                     <strong>The application period is closed on March 24th, Sunday midnight.</strong>
                 </p>
