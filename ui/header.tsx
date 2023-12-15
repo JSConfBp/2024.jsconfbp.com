@@ -19,8 +19,8 @@ function MenuItems({ onClick = () => undefined, className = "", ...props }) {
 
   return (
     <ul className={classNames(styles.menu_items, className)} {...props}>
-      {menuItems.map(({ href, title, liClassName = "" }) => (
-        <li className={liClassName}>
+      {menuItems.map(({ href, title, liClassName = "" }, idx) => (
+        <li className={liClassName} key={idx}>
           <Link className={`${styles.link} ${href === router.asPath ? `${styles.active}` : ""}`}
             onClick={onClick}
             href={href}
@@ -42,11 +42,16 @@ function MobileMenu() {
 
   return (
     <div className={styles.mobile_menu}>
-      <input type="checkbox" id="toggle" checked={isChecked} className={styles.input_toggler} />
+      <input type="checkbox"
+        id="toggle"
+        checked={isChecked}
+        readOnly={true}
+        className={styles.input_toggler} />
+      <div className={styles.overlay}></div>
       <svg className={styles.menu_background} viewBox="0 0 105 105" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M105 0L105 105L7.62939e-06 -4.5897e-06L105 0Z" fill="var(--primary)" />
       </svg>
-      <label htmlFor="toggle" onClick={() => handleOnClick()} className={styles.toggler}>
+      <label htmlFor="toggle" onClick={handleOnClick} className={styles.toggler}>
         <span className={styles.toggler_line}></span>
         <span className={styles.toggler_line}></span>
         <span className={styles.toggler_line}></span>
