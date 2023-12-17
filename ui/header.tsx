@@ -14,7 +14,7 @@ function MenuItems({ onClick = () => undefined, className = "", ...props }) {
     { href: "/partners", title: "Partners" },
     { href: "/call-for-papers", title: "Call for Papers", liClassName: styles.cfp },
     { href: "/about-us", title: "About Us" },
-    { href: "/#venue", title: "Venue" },
+    { href: "/code-of-conduct", title: "Code of Conduct" },
   ]
 
   return (
