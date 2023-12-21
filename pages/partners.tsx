@@ -276,12 +276,12 @@ function Partners() {
                             <th></th>
                             <th>
                                 <p>Silver</p>
-                                <p>€ 3,000</p>
+                                <p>€ 4,000</p>
                             </th>
                             <th className={styles.spacer}></th>
                             <th>
                                 <p>Gold</p>
-                                <p>€ 6,000</p>
+                                <p>€ 8,000</p>
                             </th>
                             <th className={styles.spacer}></th>
                             <th className={styles.workshops_header}>
@@ -291,7 +291,7 @@ function Partners() {
                             <th className={styles.spacer}></th>
                             <th>
                                 <p>Platinum</p>
-                                <p>€ 8,000</p>
+                                <p>€ 10,000</p>
                             </th>
                         </tr>
                     </thead>
