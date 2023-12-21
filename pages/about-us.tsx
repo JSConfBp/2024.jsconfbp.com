@@ -10,36 +10,42 @@ const team = [
     name: 'Szabolcs Szabolcsi&#8209;Tóth',
     image: 'https://nec.is/nec.png',
     twitter: '_nec',
+    memberIntro: 'Staff Engineer, IBM alumni, TC39 Emeriti and geek'
   },
   {
     name: 'Dora Makszy',
     image:
       'https://jsconf.jp/2022/static/25aa690e8489a3691cd37a376dfd1373/8b8ba/dora.webp',
     url: 'https://www.heydorka.rocks/',
+    memberIntro: 'Product design lead, design teacher and management coach, strategic thinker'
   },
   {
-    name: 'Norbert Srám',
+    name: 'Norbert Sram',
     image:
       'https://pbs.twimg.com/profile_images/1189845618518310913/8uVbKoZr_400x400.jpg',
     twitter: 'snorbi07',
+    memberIntro: '...'
   },
   {
     name: 'Krisztina Závecz',
     image:
       'https://avatars.githubusercontent.com/u/21139399?s=400&u=51d06e4714439f7d1e45281f3929e0716c6cf328&v=4',
     twitter: 'krisztizavecz',
+    memberIntro: '...'
   },
   {
     name: 'Gergő Nagy',
     image:
       'https://pbs.twimg.com/profile_images/1726182395374669824/Te0vF7Or_400x400.jpg',
     twitter: '_gregnagy',
+    memberIntro: 'Software Architect, Tech Lead @tally.cash, Imagineer at Dhammaworks'
   },
   {
     name: 'Daniel Liptak',
     image:
       'https://pbs.twimg.com/profile_images/867028857441931265/HJdtCgrz_400x400.jpg',
     twitter: 'daniliptak',
+    memberIntro: '...'
   },
 ]
 
