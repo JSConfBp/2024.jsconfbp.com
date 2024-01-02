@@ -6,6 +6,7 @@ import styles from './about.module.scss'
 import Youtube from '../ui/youtube'
 import ColoredSection from '../ui/colored-section'
 import { ColorNames } from './_app'
+import kriszti from "../public/team/kriszti.png"
 
 const team = [
   {
@@ -15,7 +16,7 @@ const team = [
     memberIntro: 'Staff Engineer, IBM alumni, TC39 Emeriti and geek'
   },
   {
-    name: 'Dora Makszy',
+    name: 'Dóra Makszy',
     image:
       'https://jsconf.jp/2022/static/25aa690e8489a3691cd37a376dfd1373/8b8ba/dora.webp',
     url: 'https://www.heydorka.rocks/',
@@ -30,10 +31,9 @@ const team = [
   },
   {
     name: 'Krisztina Závecz',
-    image:
-      'https://avatars.githubusercontent.com/u/21139399?s=400&u=51d06e4714439f7d1e45281f3929e0716c6cf328&v=4',
+    image: kriszti.src,
     twitter: 'krisztizavecz',
-    memberIntro: '...'
+    memberIntro: 'Frontend Developer'
   },
   {
     name: 'Gergő Nagy',
@@ -43,7 +43,7 @@ const team = [
     memberIntro: 'Software Architect, Tech Lead @tally.cash, Imagineer at Dhammaworks'
   },
   {
-    name: 'Daniel Liptak',
+    name: 'Dániel Lipták',
     image:
       'https://pbs.twimg.com/profile_images/867028857441931265/HJdtCgrz_400x400.jpg',
     twitter: 'daniliptak',
