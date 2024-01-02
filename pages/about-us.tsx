@@ -51,6 +51,34 @@ const team = [
   },
 ]
 
+const earlierEvents = [
+  {
+    year: 2022,
+    siteHref: "https://2022.jsconfbp.com",
+    videosLink: "https://www.youtube.com/watch?v=SdV9Xy0E4CM&list=PL37ZVnwpeshGuMZrOZzEo8QLBjjpbtBGm"
+  },
+  {
+    year: 2019,
+    siteHref: "https://2019.jsconfbp.com",
+    videosLink: "https://www.youtube.com/watch?v=OkovPZ1mVBI&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0"
+  },
+  {
+    year: 2017,
+    siteHref: "https://2017.jsconfbp.com",
+    videosLink: "https://www.youtube.com/watch?v=aHVdJ0QT5rM&list=PL37ZVnwpeshH9ztZfHqvQhF1_Zm4VcCTD"
+  },
+  {
+    year: 2016,
+    siteHref: "https://2016.jsconfbp.com",
+    videosLink: "https://www.youtube.com/watch?v=CL8_nlqTcw0&list=PL37ZVnwpeshE6PbF5GB4hvtU3A4HqMfxf"
+  },
+  {
+    year: 2015,
+    siteHref: "https://2015.jsconfbp.com",
+    videosLink: "https://www.youtube.com/watch?v=1zj7M1LnJV4&list=PLFZ5NyC0xHDaaTy6tY9p0C0jd_rRRl5Zm"
+  },
+]
+
 function About() {
   return (
     <>
@@ -68,7 +96,6 @@ function About() {
           technologies, ideas and culture.
         </p>
 
-
         <Youtube videoId="WPj0fDUqt1M" title="JSConf Budapest 2022 Mood video" className="my-2" />
 
         <Youtube videoId="oWmPuKDiRV4" title="JSConf Budapest 2019 Mood video" className="my-2" />
@@ -76,58 +103,18 @@ function About() {
         <Youtube videoId="mJoS_pLbiWc" title="JSConf Budapest 2016 Mood video" className="my-2" />
       </section>
 
+      <ColoredSection className={styles["jsconf-earlier"]} background='light-section'>
+        <h1>JSConf Budapest so far...</h1>
 
-      <ColoredSection className='jsconf-earlier' background='light-section'>
-        <h1>
-          JSConf Budapest so far
-        </h1>
-
-        <p>Check out our earlier events!</p>
-
-        <h3>2022</h3>
-
-        <p>
-          <a href="https://2022.jsconfbp.com">Site & Speakers</a>,<br />
-          <a href="https://www.youtube.com/watch?v=SdV9Xy0E4CM&list=PL37ZVnwpeshGuMZrOZzEo8QLBjjpbtBGm">
-            Videos of 2022
-          </a>
-        </p>
-
-        <h3>2019</h3>
-
-        <p>
-          <a href="https://2019.jsconfbp.com">Site & Speakers</a>,<br />
-          <a href="https://www.youtube.com/watch?v=OkovPZ1mVBI&list=PL37ZVnwpeshEMCvdYDdZ09Sy-toTftWu0">
-            Videos of 2019
-          </a>
-        </p>
-
-        <h3>2017</h3>
-
-        <p>
-          <a href="http://2017.jsconfbp.com">Site & Speakers</a>,<br />
-          <a href="https://www.youtube.com/watch?v=aHVdJ0QT5rM&list=PL37ZVnwpeshH9ztZfHqvQhF1_Zm4VcCTD">
-            Videos of 2017
-          </a>
-        </p>
-
-        <h3>2016</h3>
-
-        <p>
-          <a href="http://2016.jsconfbp.com">Site & Speakers</a>,<br />
-          <a href="https://www.youtube.com/watch?v=CL8_nlqTcw0&list=PL37ZVnwpeshE6PbF5GB4hvtU3A4HqMfxf">
-            Videos of 2016
-          </a>
-        </p>
-
-        <h3>2015</h3>
-
-        <p>
-          <a href="http://2015.jsconfbp.com">Site & Speakers</a>,<br />
-          <a href="https://www.youtube.com/watch?v=1zj7M1LnJV4&list=PLFZ5NyC0xHDaaTy6tY9p0C0jd_rRRl5Zm">
-            Videos of 2015
-          </a>
-        </p>
+        <div className={styles["all-earlier-events"]}>
+          {earlierEvents.map(conf => (
+            <div className='single-event' key={`conf-${conf.year}`}>
+              <h3>{conf.year}</h3>
+              <a href={conf.siteHref}>Site and Speakers</a>
+              <a href={conf.videosLink}>Videos</a>
+            </div>
+          ))}
+        </div>
       </ColoredSection>
 
       <section>
