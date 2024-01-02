@@ -1,3 +1,28 @@
+.jsconf-earlier {
+  .all-earlier-events {
+    h3 {
+      color: var(--primary);
+      font-family: var(--font-shrikhand);
+      font-size: 1.5rem;
+    }
+    a {
+      display: block;
+      &:last-child {
+        margin-top: 10px;
+      }
+    }
+  }
+  @media screen and (min-width: 800px) {
+    h1 {
+      text-align: center;
+    }
+    .all-earlier-events {
+      display: flex;
+      gap: 40px;
+    }
+  }
+
+}
 .team {
   display: grid;
   row-gap: 20px;
