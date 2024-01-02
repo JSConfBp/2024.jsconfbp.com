@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import classnames from 'classnames'
 
 import styles from './about.module.scss'
 
 import Youtube from '../ui/youtube'
 import ColoredSection from '../ui/colored-section'
-import { ColorNames } from './_app'
+import Polygons from '../ui/polygons'
 import kriszti from "../public/team/kriszti.png"
 
 const team = [
@@ -79,7 +79,26 @@ const earlierEvents = [
   },
 ]
 
+const breakpoints = [[0, 799], [800, 1023], [1024, 1279], [1280, 1919], [1920, Infinity]];
+
 function About() {
+  const [lowerBreakpoint, setLowerBreakpoint] = useState(0);
+
+  useEffect(() => {
+    const handleResize = () => {
+      const currentBreakpointRange = breakpoints.find(b => window.innerWidth >= b[0] && window.innerWidth <= b[1])
+      setLowerBreakpoint(currentBreakpointRange[0]);
+    };
+
+    if (typeof window !== 'undefined') {
+      handleResize();
+      window.addEventListener('resize', handleResize);
+    }
+
+    // Cleanup listener on unmount
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
   return (
     <>
       <section className='intro'>
@@ -118,15 +137,19 @@ function About() {
       </ColoredSection>
 
       <section>
-        <h1>
+        <h1 className={styles["team-header"]}>
           The Team
         </h1>
         <ul className={classnames('reset', styles.team)}>
           {team.map((member) => {
             const href = member.url || `https://twitter.com/${member.twitter}`
             const hrefDisplay = member.url || `@${member.twitter}`
+            console.log(member.image)
             return (<li key={member.name}>
-              <img alt={member.name} src={member.image} />
+              <div className={styles["img-wrapper"]}>
+                <Polygons type="team-image-decoration" breakpoint={lowerBreakpoint} />
+                <img alt={member.name} src={member.image} />
+              </div>
               <div className={styles["member-info"]}>
                 <h2 className='my-0' dangerouslySetInnerHTML={{ __html: member.name }}></h2>
                 <p className={styles["member-intro"]} dangerouslySetInnerHTML={{ __html: member.memberIntro }}></p>
