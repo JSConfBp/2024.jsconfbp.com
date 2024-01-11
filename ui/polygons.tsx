@@ -222,11 +222,11 @@ function FooterSeparator() {
   )
 }
 
-function TeamImageDecoration(breakpoint: number) {
+function TeamImageDecoration(breakpoint: number, className: string) {
   let resultSvg: React.ReactElement;
   switch (breakpoint) {
     case 0:
-      resultSvg = (<svg width="159" height="145" viewBox="0 0 159 145" fill="none" xmlns="http://www.w3.org/2000/svg">
+      resultSvg = (<svg width="159" height="145" viewBox="0 0 159 145" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
         <g id="Polygons">
           <path id="Polygon 16" d="M20 143.934L1.70711 143.934L20 125.641L20 143.934Z" fill="#9E19EF" stroke="#9E19EF"/>
           <path id="Polygon 37" d="M12.1476 128.871L9.93547 131.31L9.93547 126.432L12.1476 128.871Z" stroke="#07BDBD"/>
@@ -236,8 +236,9 @@ function TeamImageDecoration(breakpoint: number) {
         </g>
       </svg>)
       break;
+    case 375:
     case 800:
-      resultSvg = (<svg width="70" height="156" viewBox="0 0 70 156" fill="none" xmlns="http://www.w3.org/2000/svg">
+      resultSvg = (<svg width="70" height="156" viewBox="0 0 70 156" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
         <g id="Polygons">
           <path id="Polygon 16" d="M33.3483 154.977L1.25159 154.977L33.3483 124.442L33.3483 154.977Z" fill="#9E19EF" stroke="#9E19EF"/>
           <path id="Polygon 37" d="M16.9358 127.828L11.4087 133.086L11.4087 122.57L16.9358 127.828Z" stroke="#07BDBD"/>
@@ -248,7 +249,7 @@ function TeamImageDecoration(breakpoint: number) {
       </svg>)
       break;
     case 1024:
-      resultSvg = (<svg width="96" height="192" viewBox="0 0 96 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+      resultSvg = (<svg width="96" height="192" viewBox="0 0 96 192" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
         <g id="Polygons">
           <path id="Polygon 16" d="M46 191.156L1.7071 191.156L46 146.863L46 191.156Z" fill="#9E19EF" stroke="#9E19EF"/>
           <path id="Polygon 37" d="M23.7929 148.656L15.8076 156.642L15.8076 140.671L23.7929 148.656Z" stroke="#07BDBD"/>
@@ -259,7 +260,7 @@ function TeamImageDecoration(breakpoint: number) {
       </svg>)
       break;
     case 1280:
-      resultSvg = (<svg width="95" height="201" viewBox="0 0 95 201" fill="none" xmlns="http://www.w3.org/2000/svg">
+      resultSvg = (<svg width="95" height="201" viewBox="0 0 95 201" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
         <g id="Polygons">
           <path id="Polygon 16" d="M45.5 199.742L1.2071 199.742L45.5 155.449L45.5 199.742Z" fill="#9E19EF" stroke="#9E19EF"/>
           <path id="Polygon 37" d="M23.2929 170.242L15.3076 178.227L15.3076 162.257L23.2929 170.242Z" stroke="#07BDBD"/>
@@ -270,7 +271,7 @@ function TeamImageDecoration(breakpoint: number) {
       </svg>)
       break;
       case 1920:
-        resultSvg = (<svg width="97" height="304" viewBox="0 0 97 304" fill="none" xmlns="http://www.w3.org/2000/svg">
+        resultSvg = (<svg width="97" height="304" viewBox="0 0 97 304" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
         <g id="Polygons">
           <path d="M46.5 302.598L2.18898 302.598L46.5 257.323L46.5 302.598Z" fill="#9E19EF" stroke="#9E19EF"/>
           <path d="M25.8144 267.312L17.841 275.286L17.6677 259.166L25.8144 267.312Z" stroke="#07BDBD"/>
@@ -287,12 +288,36 @@ function TeamImageDecoration(breakpoint: number) {
   return resultSvg
 }
 
-type PolygonsProps = {
-  type: "header-background-desktop" | "header-background-mobile" | "footer" | "footer-separator" | "team-image-decoration",
-  breakpoint?: number
+function SpeakerImageBackground (elementType, className) {
+  let resultSvg: React.ReactElement;
+
+  switch (elementType) {
+    case "speaker-background-left":
+      resultSvg = (<svg width="216" height="217" viewBox="0 0 216 217" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+        <path d="M8.78174 208.244L8.78174 0.764648L215.598 207.831L8.78174 208.244Z" fill="#07BDBD"/>
+        <path d="M204.409 215.682L1 216.089L1 12.0271L204.409 215.682Z" stroke="#07BDBD" stroke-width="2"/>
+      </svg>);
+      break;
+    case "speaker-background-right":
+      resultSvg = (<svg width="226" height="226" viewBox="0 0 226 226" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+        <path d="M215.766 1.91319L216.194 216.323L1.35554 216.323L215.766 1.91319Z" fill="#9E19EF" stroke="#9E19EF"/>
+        <path d="M223.683 14.7041L224.101 224L14.387 224L223.683 14.7041Z" stroke="#9E19EF" stroke-width="4"/>
+      </svg>);
+      break;
+    default:
+      break;
+  }
+
+  return resultSvg
 }
 
-function Polygons({ type: elementType, breakpoint }: PolygonsProps) {
+type PolygonsProps = {
+  type: "header-background-desktop" | "header-background-mobile" | "footer" | "footer-separator" | "team-image-decoration" | "speaker-background-right" | "speaker-background-left",
+  breakpoint?: number
+  className?: string;
+}
+
+function Polygons({ type: elementType, breakpoint, className }: PolygonsProps) {
   let Element: React.ElementType;
 
   switch (elementType) {
@@ -308,8 +333,12 @@ function Polygons({ type: elementType, breakpoint }: PolygonsProps) {
     case "footer-separator":
       Element = FooterSeparator;
       break;
+    case "speaker-background-right":
+    case "speaker-background-left":
+      Element = () => SpeakerImageBackground(elementType, className);
+      break;
     case "team-image-decoration":
-      Element = () => TeamImageDecoration(breakpoint);
+      Element = () => TeamImageDecoration(breakpoint, className);
       break;
     default:
       throw new Error("Invalid type provided to Polygons component");
