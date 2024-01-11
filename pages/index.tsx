@@ -5,6 +5,7 @@ import SocialShare from '../ui/social-share'
 import TicketBanner from '../ui/ticket-banner'
 import Divider from '../ui/divider'
 import Link from 'next/link'
+import MCList from '../ui/mc-list'
 
 function Home() {
   return (
@@ -14,6 +15,12 @@ function Home() {
       <div className={styles.cfp_container}>
         <CenteredButton href="/call-for-papers" target="_self">Our CFP is open!</CenteredButton>
       </div>
+      <section id="emcees">
+        <Divider>
+          <h1>MCs</h1>
+        </Divider>
+        <MCList />
+      </section>
       <section id="updates">
         <Divider>
           <h1>Updates</h1>

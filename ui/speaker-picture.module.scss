@@ -1,0 +1,122 @@
+.image {
+  width: 212px;
+  height: 241px;
+  position: relative;
+
+  img {
+    z-index: 10;
+  }
+}
+.image-right img {
+  transform: translate(4px, -24px);
+}
+.image-left img {
+  transform: translate(9px, -33px);
+}
+
+@media only screen and (max-width: 1280px) {
+  .image {
+    width: 129px;
+    height: 144px;
+  }
+  .image-left img {
+    transform: translate(5px, -2px);
+  }
+  .image-right img {
+    transform: translate(1px, -3px);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .image {
+    width: 102px;
+    height: 115px;
+  }
+}
+
+.background-left,
+.background-right {
+  position: relative;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1280px) {
+  .background-left {
+    width: 135px;
+    height: 157px;
+  }
+  .background-right {
+    width: 135px;
+    height: 157px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .background-left {
+    width: 113px;
+    height: 123px;
+  }
+  .background-right {
+    width: 108px;
+    height: 126px;
+  }
+}
+
+
+.decoration-left,
+.decoration-right {
+  position: absolute;
+  height: 310px;
+  width: 160px;
+  bottom: 0;
+}
+.decoration-left {
+  transform: scaleX(-1) translate(-175px, -23px);
+}
+.decoration-right {
+  transform: translate(-110px, -14px);
+}
+@media only screen and (max-width: 1280px) {
+  .decoration-left,
+  .decoration-right {
+    height: 192px;
+    width: 96px;
+  }
+
+  .decoration-left {
+    transform: scaleX(-1) translate(-110px, 2px);
+  }
+
+  .decoration-right {
+    transform: translate(-72px, 0px);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .decoration-left,
+  .decoration-right {
+    height: 152px;
+    width: 75px;
+  }
+  .decoration-left {
+    transform: scaleX(-1) translate(-92px, 2px);
+  }
+  .decoration-right {
+    transform: translate(-54px, 0px);
+  }
+}
+
+
+@media only screen and (max-width: 375px) {
+  .decoration-left,
+  .decoration-right {
+    height: 162px;
+    width: 162px;
+  }
+  .decoration-right {
+    transform: translate(-39px, 9px);
+  }
+  .decoration-left {
+    transform: scaleX(-1) translate(14px, 9px);
+  }
+}
