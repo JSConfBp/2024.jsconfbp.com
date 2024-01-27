@@ -27,6 +27,18 @@ function Home() {
         </Divider>
 
         <div className="col md-row gap-2p5 mb-2">
+
+         <div className='col'>
+            <h2 className='mt-0'>Our Call for Speakers is closed!</h2>
+            <h4 className='mt-n2 ml-0p25'>January 27, 2027</h4>
+            <p>
+              We've received 387 talk idea submissions from the developer community. Thank you so much!
+            </p>
+            <p>
+              Stay tuned for the CFP voting results and the speaker selection process soon!
+            </p>
+          </div>
+
           <div className='col'>
             <h2 className='mt-0'>Scholarship!</h2>
             <h4 className='mt-n2 ml-0p25'>December 18, 2023</h4>
@@ -38,20 +50,6 @@ function Home() {
             </p>
             <p>
               The application deadline is <strong>March 24, 2024</strong>.
-            </p>
-          </div>
-
-          <div className='col'>
-            <h2 className='mt-0'>Call for Speakers!</h2>
-            <h4 className='mt-n2 ml-0p25'>November 30, 2023</h4>
-            <p>
-              📢  We're looking for our Speakers for 2024!
-            </p>
-            <p>
-              <Link href="/call-for-papers">Our CFP is open</Link>, awaiting your talk proposals until the <strong>end of January 2024</strong>!
-            </p>
-            <p>
-              Send us your talk ideas and take the stage in 2024!
             </p>
           </div>
 
