@@ -12,7 +12,7 @@ function MenuItems({ onClick = () => undefined, className = "", ...props }) {
   const menuItems = [
     { href: "/scholarship", title: "Scholarship" },
     { href: "/partners", title: "Partners" },
-    { href: "/call-for-papers", title: "Call for Papers", liClassName: styles.cfp },
+    { href: "https://ti.to/jsconf-bp/jsconf-budapest-2024", title: "Tickets", liClassName: styles.cfp },
     { href: "/about-us", title: "About Us" },
     { href: "/code-of-conduct", title: "Code of Conduct" },
   ]
