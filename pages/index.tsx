@@ -12,9 +12,6 @@ function Home() {
     <>
       <SocialShare />
       <TicketBanner />
-      <div className={styles.cfp_container}>
-        <CenteredButton href="/call-for-papers" target="_self">Our CFP is open!</CenteredButton>
-      </div>
       <section id="emcees">
         <Divider>
           <h1>MCs</h1>
