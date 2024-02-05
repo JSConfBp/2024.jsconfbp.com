@@ -294,14 +294,14 @@ function SpeakerImageBackground (elementType, className) {
   switch (elementType) {
     case "speaker-background-left":
       resultSvg = (<svg viewBox="0 0 475 476" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-        <path d="M20.3086 454.907L20.3086 3.3214L471.893 454.005L20.3086 454.907Z" fill="#07BDBD" stroke="#07BDBD" stroke-width="2"/>
-        <path d="M0.999998 474.334L1 22.7482L452.585 473.432L0.999998 474.334Z" stroke="#07BDBD" stroke-width="2"/>
+        <path d="M20.3086 454.907L20.3086 3.3214L471.893 454.005L20.3086 454.907Z" fill="#07BDBD" stroke="#07BDBD" strokeWidth="2"/>
+        <path d="M0.999998 474.334L1 22.7482L452.585 473.432L0.999998 474.334Z" stroke="#07BDBD" strokeWidth="2"/>
       </svg>);
       break;
     case "speaker-background-right":
       resultSvg = (<svg viewBox="0 0 473 472" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
-        <path d="M454.906 453.999L3.32042 453.999L454.004 2.41413L454.906 453.999Z" fill="#9E19EF" stroke="#9E19EF" stroke-width="2"/>
-        <path d="M471.947 470.617L20.3614 470.617L471.045 19.0323L471.947 470.617Z" stroke="#9E19EF" stroke-width="2"/>
+        <path d="M454.906 453.999L3.32042 453.999L454.004 2.41413L454.906 453.999Z" fill="#9E19EF" stroke="#9E19EF" strokeWidth="2"/>
+        <path d="M471.947 470.617L20.3614 470.617L471.045 19.0323L471.947 470.617Z" stroke="#9E19EF" strokeWidth="2"/>
       </svg>);
       break;
     default:
