@@ -48,33 +48,33 @@ export function Footer() {
                         <Link href="https://2022.jsconfbp.com" target="_blank">2022</Link>
                     </li>
                 </ul>
-            <ul>
-                <li>
-                    <Link href="https://www.facebook.com/bp.jsconf" target="_blank">
-                        <Image src={facebook} alt="Facebook" />
-                    </Link>
-                </li>
-                <li>
-                    <Link href="https://www.instagram.com/jsconfbp/" target="_blank">
-                        <Image src={instagram} alt="Instagram" />
-                    </Link>
-                </li>
-                <li>
-                    <Link href="https://www.linkedin.com/company/jsconfbp" target="_blank">
-                        <Image src={linkedin} alt="Linkedin" />
-                    </Link>
-                </li>
-                <li>
-                    <Link href="https://mstdn.social/@jsconfbp" target="_blank">
-                        <Image src={mastodon} alt="Mastodon" />
-                    </Link>
-                </li>
-                <li>
-                    <Link href="https://twitter.com/jsconfbp" target="_blank">
-                        <Image src={x} alt="X" />
-                    </Link>
-                </li>
-            </ul>
+                <ul>
+                    <li>
+                        <Link href="https://www.facebook.com/bp.jsconf" target="_blank">
+                            <Image src={facebook} alt="Facebook" />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="https://www.instagram.com/jsconfbp/" target="_blank">
+                            <Image src={instagram} alt="Instagram" />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="https://www.linkedin.com/company/jsconfbp" target="_blank">
+                            <Image src={linkedin} alt="Linkedin" />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="https://mstdn.social/@jsconfbp" target="_blank">
+                            <Image src={mastodon} alt="Mastodon" />
+                        </Link>
+                    </li>
+                    <li>
+                        <Link href="https://twitter.com/jsconfbp" target="_blank">
+                            <Image src={x} alt="X" />
+                        </Link>
+                    </li>
+                </ul>
             </nav>
         </>
     );
