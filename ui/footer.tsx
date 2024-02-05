@@ -1,8 +1,14 @@
 import Link from "next/link";
 import Divider from "./divider";
+import Image from "next/image";
 
 import styles from "./footer.module.scss";
 import Polygons from "./polygons";
+import facebook from "../public/icons/round-facebook.png";
+import x from "../public/icons/round-x.png";
+import instagram from "../public/icons/round-instagram.png";
+import linkedin from "../public/icons/round-linkedin.png";
+import mastodon from "../public/icons/round-mastodon.png";
 
 export function Footer() {
     return (
@@ -42,6 +48,33 @@ export function Footer() {
                         <Link href="https://2022.jsconfbp.com" target="_blank">2022</Link>
                     </li>
                 </ul>
+            <ul>
+                <li>
+                    <Link href="https://www.facebook.com/bp.jsconf" target="_blank">
+                        <Image src={facebook} alt="Facebook" />
+                    </Link>
+                </li>
+                <li>
+                    <Link href="https://www.instagram.com/jsconfbp/" target="_blank">
+                        <Image src={instagram} alt="Instagram" />
+                    </Link>
+                </li>
+                <li>
+                    <Link href="https://www.linkedin.com/company/jsconfbp" target="_blank">
+                        <Image src={linkedin} alt="Linkedin" />
+                    </Link>
+                </li>
+                <li>
+                    <Link href="https://mstdn.social/@jsconfbp" target="_blank">
+                        <Image src={mastodon} alt="Mastodon" />
+                    </Link>
+                </li>
+                <li>
+                    <Link href="https://twitter.com/jsconfbp" target="_blank">
+                        <Image src={x} alt="X" />
+                    </Link>
+                </li>
+            </ul>
             </nav>
         </>
     );
