@@ -37,8 +37,10 @@ function CodeOfConduct() {
         JSConf Budapest is dedicated to providing a harassment-free conference
         experience for everyone, regardless of gender, sexual orientation,
         disability, physical appearance, body size, race, or religion. We do not
-        tolerate harassment of conference participants in any form. Sexual
-        language and imagery is not appropriate for any conference venue,
+        tolerate harassment of conference participants in any form.
+      </p>
+      <p>
+        Sexual language and imagery is not appropriate for any conference venue,
         including talks, workshops, parties, Twitter and other online media.
       </p>
       <p>
@@ -56,7 +58,7 @@ function CodeOfConduct() {
       <h2>Reporting</h2>
       <p>
         If someone makes you or anyone else feel unsafe or unwelcome, please
-        report it as soon as possible. If you see or hear someone do something,
+        report it as soon as possible. If you see or hear someone do something
         that might violate this Code of Conduct, please report it.
       </p>
       <p>You can make a personal report by:</p>
@@ -67,8 +69,8 @@ function CodeOfConduct() {
         </li>
         <li>Twitter direct messages: our DMs on twitter are always open</li>
         <li>
-          Email - but it might take up a few hours or a day before we can
-          respond on email during or after the event.
+          Email - but it might take a few hours or a day before we can respond
+          during or after the event.
         </li>
       </ul>
       <h2>Enforcement</h2>
@@ -103,6 +105,25 @@ function CodeOfConduct() {
         <li>Unwelcome sexual attention</li>
         <li>Advocating for, or encouraging, any of the above behaviour</li>
       </ul>
+      <h2>Attribution</h2>
+      <p>
+        This Code of Conduct was based on{" "}
+        <a href="https://2018.jsconf.eu">JSConf EU</a>,{" "}
+        <a href="http://2018.jsconfau.com/">CSSConf / JSConf AU</a>,{" "}
+        <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">
+          The Geek Feminism wiki
+        </a>
+        , the work of{" "}
+        <a href="https://frameshiftconsulting.com/code-of-conduct-training/">
+          Valerie Aurora
+        </a>
+        , <a href="https://wealljs.org/code-of-conduct">WeAllJS</a>, and{" "}
+        <a href="http://confcodeofconduct.com/">Conference Code of Conduct</a>.
+      </p>
+
+      <Divider>
+        <h1>Community guidelines</h1>
+      </Divider>
       <h2>Photo policy</h2>
       <p>
         We will have colored lanyards for attendees to indicate their comfort
@@ -151,21 +172,6 @@ function CodeOfConduct() {
         <a href="http://geekfeminism.wikia.com/wiki/Nonsexist_language">
           Geek Feminism wiki guide.
         </a>
-      </p>
-      <h2>Attribution</h2>
-      <p>
-        This Code of Conduct was based on{" "}
-        <a href="https://2018.jsconf.eu">JSConf EU</a>,{" "}
-        <a href="http://2018.jsconfau.com/">CSSConf / JSConf AU</a>,{" "}
-        <a href="http://geekfeminism.wikia.com/wiki/Conference_anti-harassment/Policy">
-          The Geek Feminism wiki
-        </a>
-        , the work of{" "}
-        <a href="https://frameshiftconsulting.com/code-of-conduct-training/">
-          Valerie Aurora
-        </a>
-        , <a href="https://wealljs.org/code-of-conduct">WeAllJS</a>, and{" "}
-        <a href="http://confcodeofconduct.com/">Conference Code of Conduct</a>.
       </p>
     </>
   );
