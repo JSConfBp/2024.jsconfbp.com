@@ -1,7 +1,8 @@
 .level_1,
 .level_2,
 .level_3,
-.level_4 {
+.level_4,
+.community_partners {
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -10,6 +11,30 @@
   align-items: center;
   margin: 0;
   padding: 0;
+}
+
+.community_partners {
+  flex-direction: column;
+  gap: 1.5rem;
+
+  a {
+    width: 80vw;
+    height: 20vw;
+    position: relative;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    flex-direction: row;
+
+    a {
+      width: 9vw;
+      height: 9vw;
+    }
+  }
 }
 
 .level_1 {
