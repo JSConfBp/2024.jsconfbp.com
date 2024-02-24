@@ -1,6 +1,15 @@
 import styles from "./partner-logos.module.scss";
+
+import Image from "next/image";
+import Link from "next/link";
+
 import { ColorNames } from "../pages/_app";
 
+import BudapestJSLogo from "../public/community-partner-logos/budapestjs.webp"
+import FrontendMeetupBudapestLogo from "../public/community-partner-logos/frontend-meetup-budapest.svg"
+import FutureFrontendLogo from "../public/community-partner-logos/future-frontend.svg"
+import RevoJsLogo from "../public/community-partner-logos/revo-js.svg"
+import ReactParisLogo from "../public/community-partner-logos/react-paris.png"
 
 type PartnerLogoProps = {
     color?: ColorNames,
@@ -9,6 +18,30 @@ type PartnerLogoProps = {
     lvl2ClassNames?: string;
     lvl3ClassNames?: string;
     lvl4ClassNames?: string;
+}
+
+export function CommunityPartnerLogos() {
+    return (
+    <div className="col justify-center x-fill">
+      <div className={styles.community_partners}>
+        <Link href="https://www.meetup.com/budapest-js/" target="_blank">
+          <Image src={BudapestJSLogo} alt="Logo for the Budapest JS meetup" fill />
+        </Link>
+        <Link href="https://www.meetup.com/frontend-meetup-budapest/" target="_blank">
+          <Image src={FrontendMeetupBudapestLogo} alt="Logo for the frontend meetup budapest" fill />
+        </Link>
+        <Link href="https://futurefrontend.com/" target="_blank">
+          <Image src={FutureFrontendLogo} alt="Logo for the Future Frontend" fill />
+        </Link>
+        <Link href="https://revojs.ro/" target="_blank">
+          <Image src={RevoJsLogo} alt="Logo for the Revo.js" fill />
+        </Link>
+        <Link href="https://react.paris/" target="_blank">
+          <Image src={ReactParisLogo} alt="Logo for the React Paris" fill />
+        </Link>
+      </div>
+    </div>
+    )
 }
 
 function PartnerLogos({ color = "partner-logo-light", opacity = 0.6, lvl1ClassNames = "", lvl2ClassNames = "", lvl3ClassNames = "", lvl4ClassNames = "" }: PartnerLogoProps) {
