@@ -311,8 +311,30 @@ function SpeakerImageBackground (elementType, className) {
   return resultSvg
 }
 
+function SpeakerDetailsDecoration (elementType, className) {
+  let resultSvg: React.ReactElement;
+
+  switch (elementType) {
+    case "speaker-details-top":
+      resultSvg = (<svg width="65" height="40" viewBox="0 0 65 40" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+        <path d="M44.5229 39.5L44.523 21.2071L62.8158 39.5L44.5229 39.5Z" stroke="#9E19EF"/>
+        <path d="M39.5229 0.5L39.5229 38.7929L1.23006 0.499998L39.5229 0.5Z" stroke="#07BDBD"/>
+      </svg>
+      );
+      break;
+    case "speaker-details-bottom":
+      resultSvg = (<svg width="92" height="73" viewBox="0 0 90 73" fill="none" xmlns="http://www.w3.org/2000/svg" className={className}>
+        <path d="M68.3521 57.9998L54.2099 43.8576L54.2099 72.1419L68.3521 57.9998Z" fill="#07BDBD"/>
+        <path d="M25.4038 12.1102L1.90933 35.6047L48.8983 35.6047L25.4038 12.1102Z" stroke="#07BDBD"/>
+        <path d="M56.5577 35.4998L89.9988 68.9409L89.9988 2.05863L56.5577 35.4998Z" stroke="#9E19EF"/>
+      </svg>);
+      break;
+  }
+  return resultSvg
+}
+
 type PolygonsProps = {
-  type: "header-background-desktop" | "header-background-mobile" | "footer" | "footer-separator" | "team-image-decoration" | "speaker-background-right" | "speaker-background-left",
+  type: "header-background-desktop" | "header-background-mobile" | "footer" | "footer-separator" | "team-image-decoration" | "speaker-background-right" | "speaker-background-left" | "speaker-details-bottom" | "speaker-details-top",
   breakpoint?: number
   className?: string;
 }
@@ -339,6 +361,12 @@ function Polygons({ type: elementType, breakpoint, className }: PolygonsProps) {
       break;
     case "team-image-decoration":
       Element = () => TeamImageDecoration(breakpoint, className);
+      break;
+    case "speaker-details-top":
+      Element = () => SpeakerDetailsDecoration(elementType, className);
+      break;
+    case "speaker-details-bottom":
+      Element = () => SpeakerDetailsDecoration(elementType, className);
       break;
     default:
       throw new Error("Invalid type provided to Polygons component");
