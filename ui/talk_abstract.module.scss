@@ -1,0 +1,8 @@
+.talk_abstract {
+  color: var(--secondary);
+  margin-bottom: 6rem;
+
+  @media only screen and (max-width: 375px) {
+    margin-bottom: 3rem;
+  }
+}
