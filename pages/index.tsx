@@ -1,11 +1,11 @@
 import styles from './index.module.scss'
 
-import CenteredButton from '../ui/centered-button'
 import SocialShare from '../ui/social-share'
 import TicketBanner from '../ui/ticket-banner'
 import Divider from '../ui/divider'
 import Link from 'next/link'
 import MCList from '../ui/mc-list'
+import { CommunityPartnerLogos } from '../ui/partner-logos'
 
 function Home() {
   return (
@@ -94,6 +94,12 @@ function Home() {
             </p>
           </div>
         </div>
+      </section>
+      <section id="venue">
+        <Divider >
+          <h1>Community partners</h1>
+        </Divider>
+        <CommunityPartnerLogos />
       </section>
     </>
   )
