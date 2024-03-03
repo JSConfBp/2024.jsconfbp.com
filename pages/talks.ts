@@ -6,8 +6,7 @@ const TALKS = [
       name: "John Doe",
       pronouns: "they/them",
       url: "https://twitter.com/kilian",
-      profilePictureURL:
-        "https://pbs.twimg.com/profile_images/1189845618518310913/8uVbKoZr_400x400.jpg",
+      profilePicturePath: "/speakers/tejas.png",
       bio: "I've given this talk at a few different places, and I've gotten everyone from juniors to CTOs to tell me they learned something from the talk they can implement straight away. It really fires people up to build or improve something.",
       location: "Amsterdam, NL",
       socialMediaHandle: "@kilian",
@@ -35,8 +34,7 @@ const TALKS = [
       name: "John Doe",
       pronouns: "they/them",
       url: "https://twitter.com/kilian",
-      profilePictureURL:
-        "https://pbs.twimg.com/profile_images/1189845618518310913/8uVbKoZr_400x400.jpg",
+      profilePicturePath: "/speakers/anjana.png",
       bio: "I've given this talk at a few different places, and I've gotten everyone from juniors to CTOs to tell me they learned something from the talk they can implement straight away. It really fires people up to build or improve something.",
       location: "Amsterdam, NL",
       socialMediaHandle: "@kilian",
