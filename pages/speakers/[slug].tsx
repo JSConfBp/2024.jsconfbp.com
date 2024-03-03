@@ -6,7 +6,7 @@ import Divider from "../../ui/divider";
 import TalkAbstract from "../../ui/talk-abstract";
 import SpeakerDetails from "../../ui/speaker-details";
 
-import TALKS from "../talks";
+import TALKS from "../../data/talks";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import { useRouter } from "next/router";
 
