@@ -10,7 +10,6 @@ import TALKS from "../talks";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import { useRouter } from "next/router";
 
-
 export const getStaticPaths = (async () => {
   // We want to generate the published speaker pages at build time 
   return {
@@ -37,7 +36,6 @@ export default function SpeakerPage({ data }: InferGetStaticPropsType<typeof get
   // not sure why we need this, but in dev mode, data is often undefined
   if (!data) return null;
 
-  console.log(data)
   const { published, speaker, talk } = data;
 
   if (!published) {
@@ -59,7 +57,7 @@ export default function SpeakerPage({ data }: InferGetStaticPropsType<typeof get
 
       <SpeakerDetails
         name={speaker.name}
-        image={speaker.profilePictureURL}
+        image={speaker.profilePicturePath}
         imageAlign="right"
         location={speaker.location}
         socialMediaHandle={speaker.socialMediaHandle}
