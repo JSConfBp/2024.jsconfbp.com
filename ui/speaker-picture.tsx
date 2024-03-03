@@ -1,13 +1,13 @@
 
 import classNames from "classnames";
-import Image from 'next/image'
+import Image, { StaticImageData } from 'next/image'
 import styles from './speaker-picture.module.scss'
 import { ColorNames } from "../pages/_app";
 import Polygons from "./polygons";
 import { useEffect, useState } from "react";
 
 type SpeakerPictureProps = {
-  image?: string;
+  image?: StaticImageData | string;
   color?: ColorNames;
   align?: 'left' | 'right';
   alt?: string;
@@ -42,7 +42,7 @@ function SpeakerPicture({
   }, []);
 
   if (typeof image === "undefined") {
-      return null;
+    return null;
   }
 
   return (
