@@ -7,13 +7,12 @@ import Polygons from './polygons';
 
 type SpeakerDetailsProps = {
   name: string;
-  image: StaticImageData;
+  image: StaticImageData | string;
   imageAlign?: "left" | "right";
   children?: React.ReactNode | React.ReactNode[];
   location?: string;
   socialMediaHandle?: string;
   socialMediaUrl?: string;
-  socialMediaType?: "twitter" | "mastodon" | "bluesky" | "facebook" | "threads";
   website?: string;
   work?: string;
   workURL?: string;
@@ -29,7 +28,6 @@ function SpeakerDetails(props: SpeakerDetailsProps) {
     location,
     socialMediaHandle,
     socialMediaUrl,
-    socialMediaType,
     website,
     work,
     workURL
@@ -38,37 +36,37 @@ function SpeakerDetails(props: SpeakerDetailsProps) {
   return (
     <div className={styles.speaker_details}>
 
-      <h2 className={styles.name}>{ name }</h2>
+      <h2 className={styles.name}>{name}</h2>
 
       <SpeakerPicture
-        image={image.src}
+        image={image}
         align={imageAlign ?? "left"}
         className={`${styles.image}`}
       />
 
       <div className={styles.details}>
         <div className={styles.details_wrapper}>
-        <Polygons type="speaker-details-top" className={styles.details_decoration_top} />
-        <ul>
-          {location && (<li className={styles.location}>
-            <Link href={`https://www.google.com/maps/place/${location}`}>{location}</Link>
-          </li>)}
-          {socialMediaHandle && (<li>
-            <Link href={socialMediaUrl}>{socialMediaHandle}</Link>
-          </li>)}
-          {website && (<li className={styles.website}>
-            <Link href={website}>Website</Link>
-          </li>)}
-          {work && (<li className={styles.work}>
-            {workURL ? (<Link href={workURL}>{work}</Link>) : work}
-          </li>)}
-        </ul>
-        <Polygons type="speaker-details-bottom" className={styles.details_decoration_bottom} />
+          <Polygons type="speaker-details-top" className={styles.details_decoration_top} />
+          <ul>
+            {location && (<li className={styles.location}>
+              <Link href={`https://www.google.com/maps/place/${location}`}>{location}</Link>
+            </li>)}
+            {socialMediaHandle && (<li>
+              <Link href={socialMediaUrl}>{socialMediaHandle}</Link>
+            </li>)}
+            {website && (<li className={styles.website}>
+              <Link href={website}>Website</Link>
+            </li>)}
+            {work && (<li className={styles.work}>
+              {workURL ? (<Link href={workURL}>{work}</Link>) : work}
+            </li>)}
+          </ul>
+          <Polygons type="speaker-details-bottom" className={styles.details_decoration_bottom} />
         </div>
       </div>
 
       <div className={styles.bio}>
-        { children }
+        {children}
       </div>
 
 

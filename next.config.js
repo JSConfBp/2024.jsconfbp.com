@@ -13,6 +13,16 @@ const nextConfig = {
     locales: ["en"],
     defaultLocale: "en",
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "pbs.twimg.com",
+        port: "",
+        pathname: "/profile_images/**",
+      },
+    ],
+  },
 };
 
 // Example mdx and pwa config together: https://dev.to/j471n/convert-nextjs-app-to-pwa-3fd#comment-247la
