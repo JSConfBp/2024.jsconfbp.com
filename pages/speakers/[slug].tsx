@@ -10,8 +10,11 @@ import TALKS from "../../data/talks";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import { useRouter } from "next/router";
 
+import styles from './speakers.module.scss'
+import classNames from "classnames";
+
 export const getStaticPaths = (async () => {
-  // We want to generate the published speaker pages at build time 
+  // We want to generate the published speaker pages at build time
   return {
     paths: TALKS.filter(t => t.published).map(t => ({ params: { slug: t.slug } })),
     // https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-paths#generating-paths-on-demand
@@ -46,7 +49,7 @@ export default function SpeakerPage({ data }: InferGetStaticPropsType<typeof get
   return (
     <>
       <Divider>
-        <h1 className="text-center">
+        <h1 className={classNames("text-center", styles['speaker-topic'])}>
           {talk.title}
         </h1>
       </Divider>
