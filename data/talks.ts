@@ -15,11 +15,12 @@ const TALKS = [
       work: "CrabNebula",
       role: "DX Engineer",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "Are Signals worth the hype?",
       abstract: "From basically every framework across the board to TC39, signals are all the rage nowadays. A lot has been said about the performance benefits, but that's not all it is. Let's talk about how signals provides a better mental model to render user interfaces, and how they make developing apps more predictable and, likely, error-free.",
-      socialShareImage: "/social-share/atila.png",
+      socialShareImage: "social-share/atila.png",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -40,6 +41,7 @@ const TALKS = [
       work: "Excalidraw",
       role: "",
       workURL: "",
+      imageAlign: "left",
     },
     talk: {
       title: "Encrypting data in the Browser - Exploring Web Crypto APIs",
@@ -48,7 +50,7 @@ const TALKS = [
         How do Web Crypto APIs differ from the Crypto module in Node.js?
 
         In this talk I will be deep-diving into the world of Web Crypto APIs, starting from key generation, various encryption algorithms, implementation techniques, and more. The session will include live demos, coding examples, and a fun side project that I created as a result of learning about the Web Crypto APIs. Let’s set out on a collaborative learning adventure and delve into the functionalities of Web Crypto APIs.`,
-      socialShareImage: "/social-share/aakansha.png",
+      socialShareImage: "social-share/aakansha.png",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -69,6 +71,7 @@ const TALKS = [
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "Don't use JS for that: Moving features to CSS and HTML",
@@ -96,6 +99,7 @@ In this talk I go through common patterns, explain how they can be implemented i
       work: "OsmosisLabs",
       role: "Engineering Manager",
       workURL: "https://osmosis.zone/",
+      imageAlign: "right",
     },
     talk: {
       title: "The Platonic Paradox in Software Development: Ideal Forms vs. Practical Realities in JavaScript",
@@ -123,6 +127,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
       work: "Infobip",
       role: "Software Engineer",
       workURL: "https://www.infobip.com/",
+      imageAlign: "right",
     },
     talk: {
       title: "Hear! Hear! An accessibility tale from a hearing-impaired Senior Software Engineer",
@@ -130,6 +135,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
       socialShareImage: "/social-share/ante.png",
       youtubeId: "",
       flickrAlbumId: "",
+      imageAlign: "right",
     },
   },
   {
@@ -148,6 +154,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
       work: "PhonePe",
       role: "Software Architect",
       workURL: "https://www.phonepe.com",
+      imageAlign: "right",
     },
     talk: {
       title: "Safeguarding web applications against token theft: Fortifying security and trust in web browsers",
@@ -176,6 +183,7 @@ In my talk, I aim to introduce a fresh approach for generating and storing token
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "The actor model, behind the scenes",
@@ -201,6 +209,7 @@ In my talk, I aim to introduce a fresh approach for generating and storing token
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "Applied Psychology: Psychology-based UI improvements",
@@ -226,6 +235,7 @@ In my talk, I aim to introduce a fresh approach for generating and storing token
       work: "Wix",
       role: "Developer Advocate",
       workURL: "https://www.wix.com/",
+      imageAlign: "right",
     },
     talk: {
       title: "We're Not Robots: A Developer's Journey to Success, Creativity, and Avoiding Burnout",
@@ -253,6 +263,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       work: "Microsoft",
       role: "Software Engineer",
       workURL: "https://www.microsoft.com/",
+      imageAlign: "right",
     },
     talk: {
       title: "Building empathy and accessible apps",
@@ -278,6 +289,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "",
@@ -303,6 +315,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "",
@@ -328,6 +341,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "",
@@ -353,6 +367,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "",
@@ -378,6 +393,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "",
@@ -403,6 +419,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "",
@@ -428,6 +445,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "",
@@ -453,6 +471,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "",
@@ -478,6 +497,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "",
@@ -503,6 +523,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "",
@@ -528,6 +549,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "",
@@ -553,6 +575,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "",
@@ -578,6 +601,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       work: "",
       role: "",
       workURL: "",
+      imageAlign: "right",
     },
     talk: {
       title: "",
