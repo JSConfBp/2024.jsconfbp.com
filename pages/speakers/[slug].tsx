@@ -62,7 +62,7 @@ export default function SpeakerPage({ data }: InferGetStaticPropsType<typeof get
       <SpeakerDetails
         name={speaker.name}
         image={speaker.profilePicturePath}
-        imageAlign="right"
+        imageAlign={speaker.imageAlign as "left" | "right"}
         location={speaker.location}
         socialMediaHandle={speaker.socialMediaHandle}
         socialMediaUrl={speaker.socialMediaUrl}
