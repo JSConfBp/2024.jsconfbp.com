@@ -1,7 +1,3 @@
-// TODO:
-// - do we have photos of speakers?
-// - do we need custom social preview images?
-// - add line breaks to long titles and center them properly
 import Divider from "../../ui/divider";
 import TalkAbstract from "../../ui/talk-abstract";
 import SpeakerDetails from "../../ui/speaker-details";
