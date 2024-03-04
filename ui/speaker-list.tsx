@@ -10,7 +10,7 @@ type SpeakerListProps = {
 
 function SpeakerList({speakers}:SpeakerListProps) {
 
-  return (<div className={`col md-row mb-2 mt-4 ${styles['speaker-list']}`}>
+  return (<div className={`md-row mb-2 mt-4 ${styles['speaker-list']}`}>
     {speakers.map(({slug, speaker, talk}, i) => {
       const rowAlign = i % 2 === 0 ? 'md-row' : 'md-rrow';
       const line = Math.floor(i / 2);
