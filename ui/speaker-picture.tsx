@@ -10,6 +10,7 @@ type SpeakerPictureProps = {
   image?: StaticImageData | string;
   color?: ColorNames;
   align?: 'left' | 'right';
+  decorationAlign?: 'left' | 'right';
   alt?: string;
   className?: string;
   [key: string]: any;
@@ -21,6 +22,7 @@ function SpeakerPicture({
   image = undefined,
   color = "primary",
   align = "left",
+  decorationAlign="right",
   alt = "",
   className = "",
   ...props
@@ -53,7 +55,7 @@ function SpeakerPicture({
         fill
       />
       <Polygons type={`speaker-background-${align}`} className={styles[`background-${align}`]} />
-      <Polygons type="team-image-decoration" breakpoint={lowerBreakpoint} className={styles[`decoration-${align}`]} />
+      <Polygons type="team-image-decoration" breakpoint={lowerBreakpoint} className={styles[`decoration-${decorationAlign}`]} />
     </div>
 
   )

@@ -6,12 +6,22 @@ import Divider from '../ui/divider'
 import Link from 'next/link'
 import MCList from '../ui/mc-list'
 import { CommunityPartnerLogos } from '../ui/partner-logos'
+import TALKS from "../data/talks";
+import SpeakerList from '../ui/speaker-list'
 
 function Home() {
   return (
     <>
       <SocialShare />
       <TicketBanner />
+      {TALKS.some(t => t.published) &&
+        <section id="speakers">
+          <Divider>
+            <h1>Speakers</h1>
+          </Divider>
+          <SpeakerList speakers={TALKS.filter(t => t.published)} />
+        </section>
+      }
       <section id="emcees">
         <Divider>
           <h1>MCs</h1>
