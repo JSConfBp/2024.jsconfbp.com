@@ -19,6 +19,7 @@ const TALKS = [
     talk: {
       title: "Are Signals worth the hype?",
       abstract: "From basically every framework across the board to TC39, signals are all the rage nowadays. A lot has been said about the performance benefits, but that's not all it is. Let's talk about how signals provides a better mental model to render user interfaces, and how they make developing apps more predictable and, likely, error-free.",
+      socialShareImage: "/social-share/atila.png",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -47,6 +48,7 @@ const TALKS = [
         How do Web Crypto APIs differ from the Crypto module in Node.js?
 
         In this talk I will be deep-diving into the world of Web Crypto APIs, starting from key generation, various encryption algorithms, implementation techniques, and more. The session will include live demos, coding examples, and a fun side project that I created as a result of learning about the Web Crypto APIs. Let’s set out on a collaborative learning adventure and delve into the functionalities of Web Crypto APIs.`,
+      socialShareImage: "/social-share/aakansha.png",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -73,6 +75,7 @@ const TALKS = [
       abstract: `If you've been building websites for a while you ""know"" that some things require JS and that's just the way it is. Turns out, spec writers and browser makers both are working hard to find common JS patterns and implementing them in CSS and HTML. Things like accordions, auto-suggest, smooth scrolling, dialogs are all available without JS. Looking a little ahead, things like parallax scrolling, styleable selects and component-dependent styling are expected to make their CSS-debut as well.
 
 In this talk I go through common patterns, explain how they can be implemented in CSS and HTML, how that's better and what accessibility implications they have, both for features available today and feature available soon™️.`,
+      socialShareImage: "/social-share/kilian.png",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -97,6 +100,7 @@ In this talk I go through common patterns, explain how they can be implemented i
     talk: {
       title: "The Platonic Paradox in Software Development: Ideal Forms vs. Practical Realities in JavaScript",
       abstract: `This talk explores the intriguing parallels between Plato’s Theory of Forms and modern JavaScript software development practices. It critically examines how the pursuit of 'ideal' coding practices and architectures, inspired by Platonic philosophy, can both enhance and hinder practical software engineering.`,
+      socialShareImage: "/social-share/max.png",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -123,6 +127,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "Hear! Hear! An accessibility tale from a hearing-impaired Senior Software Engineer",
       abstract: `If someone is talking to you, you can hear them well, but what if you couldn’t? Explore the world of a hearing-impaired developers and understand the struggles, triumphs, and tips for inclusivity in this inspirational and experiential session. Join to hear an experiential story and an unique journey that shows that disability is no barrier to success in tech. Discover how to make your applications and content accessible to those with hearing loss, and learn how to collaborate effectively with hearing-impaired developers and support them. Don't miss this exciting opportunity to break down barriers and unlock the potential of inclusive development.`,
+      socialShareImage: "/social-share/ante.png",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -147,6 +152,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -171,6 +177,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -195,6 +202,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -219,6 +227,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -243,6 +252,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -267,6 +277,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -291,6 +302,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -315,6 +327,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -339,6 +352,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -363,6 +377,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -387,6 +402,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -411,6 +427,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -435,6 +452,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -459,6 +477,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -483,6 +502,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -507,6 +527,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -531,6 +552,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -555,6 +577,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     talk: {
       title: "",
       abstract: ``,
+      socialShareImage: "",
       youtubeId: "",
       flickrAlbumId: "",
     },
