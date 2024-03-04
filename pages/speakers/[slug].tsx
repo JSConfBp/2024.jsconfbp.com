@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 
 import styles from './speakers.module.scss'
 import classNames from "classnames";
+import SocialShare from "../../ui/social-share";
 
 export const getStaticPaths = (async () => {
   // We want to generate the published speaker pages at build time
@@ -44,6 +45,10 @@ export default function SpeakerPage({ data }: InferGetStaticPropsType<typeof get
 
   return (
     <>
+      <SocialShare
+        title={`${talk.title} by ${speaker.name}`}
+        socialShareImage={talk.socialShareImage}
+      />
       <Divider>
         <h1 className={classNames("text-center", styles['speaker-topic'])}>
           {talk.title}
