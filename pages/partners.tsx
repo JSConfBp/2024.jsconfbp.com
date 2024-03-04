@@ -191,8 +191,6 @@ function Partners() {
             <ColoredSection id="past-partners" background="secondary" className="text-center justify-center">
                 <h1 className="color-bg">PAST PARTNERS</h1>
                 <PartnerLogos color="partner-logo-light" />
-                <h1 className="color-bg">Community partners</h1>
-                <CommunityPartnerLogos />
             </ColoredSection>
             <ColoredSection background="secondary" sectionClassName="mb-n2 md-mt-n2">
                 <Divider type="sym" color="background" />
