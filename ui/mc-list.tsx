@@ -11,6 +11,7 @@ function MCList() {
       <SpeakerPicture
         image={anjana.src}
         align="right"
+        decorationAlign="right"
         className={`${styles['mc-list-image']}`}
       />
       <div className={styles.text}>
@@ -23,6 +24,7 @@ function MCList() {
       <SpeakerPicture
         image={tejas.src}
         align="left"
+        decorationAlign="left"
         className={`${styles['mc-list-image']}`}
       />
       <div className={styles.text}>
