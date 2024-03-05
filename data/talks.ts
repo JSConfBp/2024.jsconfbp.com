@@ -38,7 +38,7 @@ const TALKS = [
       socialMediaUrl: "https://twitter.com/aakansha1216",
       socialMediaType: "twitter",
       website: "https://aakansha.dev/",
-      work: "Excalidraw",
+      work: "Open-source",
       role: "",
       workURL: "",
       imageAlign: "left",
