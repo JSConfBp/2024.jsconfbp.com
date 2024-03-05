@@ -57,6 +57,34 @@ const TALKS = [
   },
   {
     published: true,
+    slug: "francisca-beatriz-medina-concha",
+    speaker: {
+      name: "Francisca Beatriz Medina Concha",
+      pronouns: "",
+      profilePicturePath: "/speakers/francisca.png",
+      bio: "Specialized in graphic design, UX/UI, media arte and web development, I have garnered experience in both corporate and educational sectors. As an active volunteer at JSConf Chile, Fundación Antonia, Technovation Girls, and Women Who Code, I am recognized for my communication skills, leadership, and commitment to inclusion in STEAM. I possess a proven track record in teaching and simplifying complex technical concepts. My active participation in tech communities and a unique perspective on user interaction design position me as an influential voice in merging algorithmic art with programming, particularly in JavaScript.",
+      location: "Santiago, Chile",
+      socialMediaHandle: "@frani.be",
+      socialMediaUrl: "https://www.instagram.com/frani.be/",
+      socialMediaType: "instagram",
+      website: "https://frani.be/",
+      work: "Cencosud S.A.",
+      role: "",
+      workURL: "https://www.cencosud.com/",
+      imageAlign: "right",
+    },
+    talk: {
+      title: "Infinite Patterns in the Digital Canvas: Unlreashing Creativity with JavaScript in Algorithmic Art",
+      abstract: `This talk highlights the transformative role of JavaScript in creating dynamic, self-generated artworks. Delve into how libraries like p5.js, Three.js, and Paper.js are empowering artists and programmers to push the boundaries of digital creativity.
+
+We'll journey through the evolution of algorithmic art, showcasing how JavaScript enables the creation of intricate patterns and complex visual compositions. The presentation will feature engaging examples and demonstrations, illuminating the power of JavaScript in crafting interactive, ever-evolving art pieces. Concluding with practical insights and resources, this talk is a gateway for anyone eager to explore the fusion of art and code in the digital age.`,
+      socialShareImage: "social-share/francisca.png",
+      youtubeId: "",
+      flickrAlbumId: "",
+    },
+  },
+  {
+    published: true,
     slug: "kilian-valkhof",
     speaker: {
       name: "Kilian Valkhof",
@@ -79,34 +107,6 @@ const TALKS = [
 
 In this talk I go through common patterns, explain how they can be implemented in CSS and HTML, how that's better and what accessibility implications they have, both for features available today and feature available soon™️.`,
       socialShareImage: "/social-share/kilian.png",
-      youtubeId: "",
-      flickrAlbumId: "",
-    },
-  },
-  {
-    published: true,
-    slug: "francisca-beatriz-medina-concha",
-    speaker: {
-      name: "Francisca Beatriz Medina Concha",
-      pronouns: "",
-      profilePicturePath: "/speakers/francisca.png",
-      bio: "Specialized in graphic design, UX/UI, media arte and web development, I have garnered experience in both corporate and educational sectors. As an active volunteer at JSConf Chile, Fundación Antonia, Technovation Girls, and Women Who Code, I am recognized for my communication skills, leadership, and commitment to inclusion in STEAM. I possess a proven track record in teaching and simplifying complex technical concepts. My active participation in tech communities and a unique perspective on user interaction design position me as an influential voice in merging algorithmic art with programming, particularly in JavaScript.",
-      location: "Santiago, Chile",
-      socialMediaHandle: "@frani.be",
-      socialMediaUrl: "https://www.instagram.com/frani.be/",
-      socialMediaType: "instagram",
-      website: "https://frani.be/",
-      work: "Cencosud S.A.",
-      role: "",
-      workURL: "https://www.cencosud.com/",
-      imageAlign: "left",
-    },
-    talk: {
-      title: "Infinite Patterns in the Digital Canvas: Unlreashing Creativity with JavaScript in Algorithmic Art",
-      abstract: `This talk highlights the transformative role of JavaScript in creating dynamic, self-generated artworks. Delve into how libraries like p5.js, Three.js, and Paper.js are empowering artists and programmers to push the boundaries of digital creativity.
-
-We'll journey through the evolution of algorithmic art, showcasing how JavaScript enables the creation of intricate patterns and complex visual compositions. The presentation will feature engaging examples and demonstrations, illuminating the power of JavaScript in crafting interactive, ever-evolving art pieces. Concluding with practical insights and resources, this talk is a gateway for anyone eager to explore the fusion of art and code in the digital age.`,
-      socialShareImage: "social-share/francisca.png",
       youtubeId: "",
       flickrAlbumId: "",
     },
