@@ -112,6 +112,62 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
     },
   },
   {
+    published: true,
+    slug: "david-khourshid",
+    speaker: {
+      name: "David Khourshid",
+      pronouns: "He/him",
+      profilePicturePath: "/speakers/david.png",
+      bio: "David is a software engineer who loves playing piano and is passionate about animations, state machines, cutting-edge user interfaces, and open-source. Previously at Microsoft, he is now the founder of Stately.ai, a startup focused on making even the most complex application logic visual and accessible to developers and non-developers alike.",
+      location: "Orlando, Florida, USA",
+      socialMediaHandle: "@davidkpiano",
+      socialMediaUrl: "https://twitter.com/davidkpiano",
+      socialMediaType: "",
+      website: "",
+      work: "",
+      role: "",
+      workURL: "",
+      imageAlign: "right",
+    },
+    talk: {
+      title: "The actor model, behind the scenes",
+      abstract: `Let's set the stage. You have a complicated application with many parts that need to work together, and you want to avoid making your code an unscripted mess. Enter the Actor Model, a very old concept that is relevant now more than ever. In this talk, you'll learn how the actor model orchestrates tasks, ensuring each actor knows its part, communicates effectively, and remains isolated from potential mishaps. We'll rehearse with some practical, visual demos showing how actors can be useful in the frontend, backstage (er, backend), and everywhere in-between, so that your code can give its very best performance.`,
+      socialShareImage: "social-share/david.png",
+      youtubeId: "",
+      flickrAlbumId: "",
+    },
+  },
+  {
+    published: true,
+    slug: "ayoub-alouane",
+    speaker: {
+      name: "Mohamed Ayoub Alouane",
+      pronouns: "He/Him",
+      profilePicturePath: "/speakers/ayoub.png",
+      bio: `I am Ayoub Alouane, working as a DevRel and TechLead in Adservio, Moroccan coming from Africa, starting a new journey in France, as a Speaker and Trainer, I'm trying to build a consciousness about web performance in our community.`,
+      location: "Paris, France",
+      socialMediaHandle: "@alouane_med",
+      socialMediaUrl: "https://twitter.com/alouane_med",
+      socialMediaType: "twitter",
+      website: "https://dev.to/ayoub_alouane",
+      work: "Adservio",
+      role: "DevRel and TechLead",
+      workURL: "https://www.adservio.fr/",
+      imageAlign: "left",
+    },
+    talk: {
+      title: "Web Performance: The African Case",
+      abstract: `We often assume that everyone has a good internet connection and hardware with high specifications. While this might be false in some regions, it is not the case worldwide. I want to draw attention to Africa, where many countries struggle with poor 3G connections that are costly, depending on the amount of data consumed. This is due to the continent's limited infrastructure, leading to a reliance on mobile connections.
+
+Given these circumstances, efficient data usage with a good web performance becomes a priority. So our session will focus on the challenges faced by African users and developers, and how downloading large amounts of JavaScript is exacerbating data consumption and performance issues. We will explore how existing frameworks tried to solve the problem and how Qwik did with its innovative approach to resumability, presents a transformative solution to these challenges. Unlike traditional SPAs, Qwik's resumability drastically reduces the initial JavaScript payload, enabling applications to become interactive more quickly, even on slow connections.`,
+      socialShareImage: "social-share/ayoub.png",
+      youtubeId: "",
+      flickrAlbumId: "",
+    },
+  },
+
+
+  {
     published: false,
     slug: "max-millington",
     speaker: {
@@ -194,32 +250,7 @@ In my talk, I aim to introduce a fresh approach for generating and storing token
       flickrAlbumId: "",
     },
   },
-  {
-    published: false,
-    slug: "david-khourshid",
-    speaker: {
-      name: "David Khourshid",
-      pronouns: "He/him",
-      profilePicturePath: "/speakers/david.png",
-      bio: "David is a software engineer who loves playing piano and is passionate about animations, state machines, cutting-edge user interfaces, and open-source. Previously at Microsoft, he is now the founder of Stately.ai, a startup focused on making even the most complex application logic visual and accessible to developers and non-developers alike.",
-      location: "Orlando, Florida, USA",
-      socialMediaHandle: "@davidkpiano",
-      socialMediaUrl: "https://twitter.com/davidkpiano",
-      socialMediaType: "",
-      website: "",
-      work: "",
-      role: "",
-      workURL: "",
-      imageAlign: "right",
-    },
-    talk: {
-      title: "The actor model, behind the scenes",
-      abstract: `Let's set the stage. You have a complicated application with many parts that need to work together, and you want to avoid making your code an unscripted mess. Enter the Actor Model, a very old concept that is relevant now more than ever. In this talk, you'll learn how the actor model orchestrates tasks, ensuring each actor knows its part, communicates effectively, and remains isolated from potential mishaps. We'll rehearse with some practical, visual demos showing how actors can be useful in the frontend, backstage (er, backend), and everywhere in-between, so that your code can give its very best performance.`,
-      socialShareImage: "/social-share/david.png",
-      youtubeId: "",
-      flickrAlbumId: "",
-    },
-  },
+
   {
     published: false,
     slug: "keren-kenzi",
@@ -440,34 +471,7 @@ In this talk, we’ll see
       flickrAlbumId: "",
     },
   },
-  {
-    published: false,
-    slug: "ayoub-alouane",
-    speaker: {
-      name: "Mohamed Ayoub Alouane",
-      pronouns: "He/Him",
-      profilePicturePath: "/speakers/ayoub.png",
-      bio: `I am Ayoub Alouane, working as a DevRel and TechLead in Adservio, Moroccan coming from Africa, starting a new journey in France, as a Speaker and Trainer, I'm trying to build a consciousness about web performance in our community.`,
-      location: "Paris, France",
-      socialMediaHandle: "@alouane_med",
-      socialMediaUrl: "https://twitter.com/alouane_med",
-      socialMediaType: "twitter",
-      website: "https://dev.to/ayoub_alouane",
-      work: "Adservio",
-      role: "DevRel and TechLead",
-      workURL: "https://www.adservio.fr/",
-      imageAlign: "right",
-    },
-    talk: {
-      title: "Web Performance: The African Case",
-      abstract: `We often assume that everyone has a good internet connection and hardware with high specifications. While this might be false in some regions, it is not the case worldwide. I want to draw attention to Africa, where many countries struggle with poor 3G connections that are costly, depending on the amount of data consumed. This is due to the continent's limited infrastructure, leading to a reliance on mobile connections.
 
-Given these circumstances, efficient data usage with a good web performance becomes a priority. So our session will focus on the challenges faced by African users and developers, and how downloading large amounts of JavaScript is exacerbating data consumption and performance issues. We will explore how existing frameworks tried to solve the problem and how Qwik did with its innovative approach to resumability, presents a transformative solution to these challenges. Unlike traditional SPAs, Qwik's resumability drastically reduces the initial JavaScript payload, enabling applications to become interactive more quickly, even on slow connections.`,
-      socialShareImage: "social-share/ayoub.png",
-      youtubeId: "",
-      flickrAlbumId: "",
-    },
-  },
   {
     published: false,
     slug: "toluwanimi-ajewole",
