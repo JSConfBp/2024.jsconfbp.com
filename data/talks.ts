@@ -172,7 +172,7 @@ Given these circumstances, efficient data usage with a good web performance beco
       name: "Daria Caraway",
       pronouns: "She/her",
       profilePicturePath: "/speakers/daria.png",
-      bio: `Daria is a Speaker, Scrum Master, and Software Engineer at Workday where she builds consumer-grade web experiences for the enterprise user. When not coding, Daria is often found traveling, eating good food, and traveling to eat good food.`,
+      bio: `Daria is a Speaker and Senior Software Engineer at Netflix where she builds web applications for Netflix Content Strategists. She has been an avid lover of TypeScript for the past 9 years and enjoys helping people level up their React and TypeScript skills. When not coding, Daria is often found traveling, eating good food, and traveling to eat good food.`,
       location: "Denver, Colorado, USA",
       socialMediaHandle: "@dariacaraway",
       socialMediaUrl: "https://twitter.com/dariacaraway",
@@ -219,6 +219,66 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
       flickrAlbumId: "",
     },
   },
+  {
+    published: true,
+    slug: "marcus-bointon",
+    speaker: {
+      name: "Marcus Bointon",
+      pronouns: "He/him",
+      profilePicturePath: "/speakers/marcus.png",
+      bio: `I'm the maintainer of [PHPMailer](https://github.com/PHPMailer/PHPMailer), possibly the most popular code for sending email in the world, a top-10 PHP project on GitHub (with over 9,900 forks and 21,000 stars, and 56 million downloads on packagist), and used in WordPress, Drupal, Yii, SugarCRM and many other projects. I have ansnwered over 1,000 questions about PHPMailer and email on StackOverflow (where I'm also the top answerer for the SPF and DKIM tags), so I'm very familiar with the kind of problems beginners in particular run into. PHPMailer is also at the heart of the privacy-first email marketing company I run, [smartmessages.net](https://info.smartmessages.net).`,
+      location: "Geneva, Switzerland",
+      socialMediaHandle: "@SynchroM",
+      socialMediaUrl: "https://twitter.com/SynchroM",
+      socialMediaType: "twitter",
+      website: "https://marcus.bointon.com/",
+      work: "",
+      role: "",
+      workURL: "",
+      imageAlign: "right",
+    },
+    talk: {
+      title: "Picking the low-hanging fruit – easy pentest wins",
+      abstract: `"Penetration tests are a critical step in securing web services, but often much of their effort is wasted reporting simple things that can easily be avoided in advance.
+We will look at security issues that are often found in pentests at all levels in the deployment stack, concentrating on those that can be resolved quickly and easily in one place (in any language), and show how to fix them, freeing up expensive pentester resources for tackling more complex challenges."`,
+      socialShareImage: "social-share/marcus.png",
+      youtubeId: "",
+      flickrAlbumId: "",
+    },
+  },
+  {
+    published: true,
+    slug: "toluwanimi-ajewole",
+    speaker: {
+      name: "Toluwanimi Ajewole",
+      pronouns: "She",
+      profilePicturePath: "/speakers/toluwanimi.png",
+      bio: `Toluwanimi Ajewole is an engineer who aspires to share her knowledge of programming and collaboration within software engineering teams. She currently works at N26 Bank as a senior web engineer in Berlin, Germany.`,
+      location: "",
+      socialMediaHandle: "toluwanimi-ajewole",
+      socialMediaUrl: "www.linkedin.com/in/toluwanimi-ajewole",
+      socialMediaType: "linkedin",
+      website: "https://github.com/akshatcoder-hash",
+      work: "N26",
+      role: "Engineer",
+      workURL: "https://n26.com",
+      imageAlign: "left",
+    },
+    talk: {
+      title: "Oh no I'm stuck! A guide to detangling a complex codebase",
+      abstract: `Good news: You are a new joiner in your dream company or picking up an exciting new JS project.
+
+Bad news: You are stuck trying to comprehend the whole system. Much like an actual spider web, complex codebases are intricate systems made up of lines of code, each telling their own story. Cue doubts and imposter syndrome.
+
+But even better news: The great news is that we are comfortable with breaking down complex problems and systems into smithereens as engineers, with a codebase being no exception. In this talk, we will discuss some strategies that are essential to understanding and finding clarity in complex codebases.
+`,
+      socialShareImage: "social-share/toluwanimi.png",
+      youtubeId: "",
+      flickrAlbumId: "",
+    },
+  },
+
+
   {
     published: false,
     slug: "max-millington",
@@ -355,33 +415,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       flickrAlbumId: "",
     },
   },
-  {
-    published: false,
-    slug: "marcus-bointon",
-    speaker: {
-      name: "Marcus Bointon",
-      pronouns: "He/him",
-      profilePicturePath: "/speakers/marcus.png",
-      bio: `I'm the maintainer of [PHPMailer](https://github.com/PHPMailer/PHPMailer), possibly the most popular code for sending email in the world, a top-10 PHP project on GitHub (with over 9,900 forks and 21,000 stars, and 56 million downloads on packagist), and used in WordPress, Drupal, Yii, SugarCRM and many other projects. I have ansnwered over 1,000 questions about PHPMailer and email on StackOverflow (where I'm also the top answerer for the SPF and DKIM tags), so I'm very familiar with the kind of problems beginners in particular run into. PHPMailer is also at the heart of the privacy-first email marketing company I run, [smartmessages.net](https://info.smartmessages.net).`,
-      location: "Geneva, Switzerland",
-      socialMediaHandle: "@SynchroM",
-      socialMediaUrl: "https://twitter.com/SynchroM",
-      socialMediaType: "twitter",
-      website: "https://marcus.bointon.com/",
-      work: "",
-      role: "",
-      workURL: "",
-      imageAlign: "right",
-    },
-    talk: {
-      title: "Picking the low-hanging fruit – easy pentest wins",
-      abstract: `"Penetration tests are a critical step in securing web services, but often much of their effort is wasted reporting simple things that can easily be avoided in advance.
-We will look at security issues that are often found in pentests at all levels in the deployment stack, concentrating on those that can be resolved quickly and easily in one place (in any language), and show how to fix them, freeing up expensive pentester resources for tackling more complex challenges."`,
-      socialShareImage: "social-share/marcus.png",
-      youtubeId: "",
-      flickrAlbumId: "",
-    },
-  },
+
   {
     published: false,
     slug: "kevin-maes",
@@ -496,37 +530,6 @@ In this talk, we’ll see
     },
   },
 
-  {
-    published: false,
-    slug: "toluwanimi-ajewole",
-    speaker: {
-      name: "Toluwanimi Ajewole",
-      pronouns: "She",
-      profilePicturePath: "/speakers/toluwanimi.png",
-      bio: `Toluwanimi Ajewole is an engineer who aspires to share her knowledge of programming and collaboration within software engineering teams. She currently works at N26 Bank as a senior web engineer in Berlin, Germany.`,
-      location: "",
-      socialMediaHandle: "toluwanimi-ajewole",
-      socialMediaUrl: "www.linkedin.com/in/toluwanimi-ajewole",
-      socialMediaType: "linkedin",
-      website: "https://github.com/akshatcoder-hash",
-      work: "N26",
-      role: "Engineer",
-      workURL: "https://n26.com",
-      imageAlign: "left",
-    },
-    talk: {
-      title: "Oh no I'm stuck! A guide to detangling a complex codebase",
-      abstract: `Good news: You are a new joiner in your dream company or picking up an exciting new JS project.
-
-Bad news: You are stuck trying to comprehend the whole system. Much like an actual spider web, complex codebases are intricate systems made up of lines of code, each telling their own story. Cue doubts and imposter syndrome.
-
-But even better news: The great news is that we are comfortable with breaking down complex problems and systems into smithereens as engineers, with a codebase being no exception. In this talk, we will discuss some strategies that are essential to understanding and finding clarity in complex codebases.
-`,
-      socialShareImage: "social-share/toluwanimi.png",
-      youtubeId: "",
-      flickrAlbumId: "",
-    },
-  },
   {
     published: false,
     slug: "leandro-ostera",
