@@ -226,7 +226,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
       name: "Marcus Bointon",
       pronouns: "He/him",
       profilePicturePath: "/speakers/marcus.png",
-      bio: `I'm the maintainer of [PHPMailer](https://github.com/PHPMailer/PHPMailer), possibly the most popular code for sending email in the world, a top-10 PHP project on GitHub (with over 9,900 forks and 21,000 stars, and 56 million downloads on packagist), and used in WordPress, Drupal, Yii, SugarCRM and many other projects. I have ansnwered over 1,000 questions about PHPMailer and email on StackOverflow (where I'm also the top answerer for the SPF and DKIM tags), so I'm very familiar with the kind of problems beginners in particular run into. PHPMailer is also at the heart of the privacy-first email marketing company I run, [smartmessages.net](https://info.smartmessages.net).`,
+      bio: `I'm the maintainer of PHPMailer, possibly the most popular code for sending email in the world, a top-10 PHP project on GitHub (with over 9,900 forks and 21,000 stars, and 56 million downloads on packagist), and used in WordPress, Drupal, Yii, SugarCRM and many other projects. I have ansnwered over 1,000 questions about PHPMailer and email on StackOverflow (where I'm also the top answerer for the SPF and DKIM tags), so I'm very familiar with the kind of problems beginners in particular run into. PHPMailer is also at the heart of the privacy-first email marketing company I run, smartmessages.net.`,
       location: "Geneva, Switzerland",
       socialMediaHandle: "@SynchroM",
       socialMediaUrl: "https://twitter.com/SynchroM",
