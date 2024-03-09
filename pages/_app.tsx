@@ -24,6 +24,7 @@ export const CSSVariableColors = {
   "--primary": "#07bdbd",
   "--secondary": "#9e19ef",
   "--text-color": "#000",
+  "--light-text": "#686868",
   "--background": "#fff",
   "--light-section": "#f2f2f2",
   "--rounded-box-border-color": "#878787",

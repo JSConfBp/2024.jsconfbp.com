@@ -18,68 +18,91 @@
     }
     .all-earlier-events {
       display: flex;
+      justify-content: space-between;
       gap: 40px;
     }
   }
-
 }
+
 .team-header {
   text-align: center;
 }
+
 .team {
   display: grid;
-  row-gap: 20px;
+  row-gap: 4rem;
+
   li {
-    display: grid;
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    text-align: left;
+
     .img-wrapper {
-      position: relative;
-      line-height: 0;
-      padding: 25px 15px 0 23px;
-      justify-self: center;
-      svg {
-        position: absolute;
-        top: 0;
-        left: 0;
-      }
-    }
-    img {
-      width: 120px;
-      aspect-ratio: 1;
-      line-height: 0;
+      width: 11rem;
+      height: 11rem;
     }
     h2 {
       color: var(--primary);
       text-align: center;
       margin: 10px 0;
+      text-align: left;
+    }
+    .member-role {
+      color: var(--primary);
+    }
+
+    .member-intro small {
+      display: block;
+      margin-top: .8rem;
+      color: var(--light-text);
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+      .member-info {
+        text-align: right;
+        h2 {
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 375px) {
+    li {
+      flex-direction: column;
+      align-items: center;
+
+      &:nth-child(even) {
+        flex-direction: column;
+        .member-info {
+          text-align: center;
+          h2 {
+            text-align: center;
+          }
+        }
+      }
+      .member-info {
+        text-align: center;
+        h2 {
+          text-align: center;
+        }
+        p.member-intro { text-align: left;}
+      }
     }
   }
 
   @media screen and (min-width: 800px) {
     li {
-      display: grid;
-      grid-template-areas: "image info";
-      grid-template-columns: auto 1fr;
-      gap: 20px;
-      .img-wrapper {
-        padding: 35px 0 15px 38px;
-      }
       &:nth-child(even) {
         grid-template-areas: "info image";
         grid-template-columns: 1fr auto;
-        .img-wrapper {
-          padding: 35px 38px 15px 0;
-          svg {
-            transform: scaleX(-1);
-            left: unset;
-            right: 0;
-          }
-        }
       }
       .member-info {
         grid-area: info;
-        padding-top: 35px;
+
         h2 {
-          text-align: initial;
           margin: 0;
         }
       }
@@ -89,53 +112,14 @@
     }
   }
 
-  @media screen and (min-width: 1024px) {
-    li {
-      .img-wrapper {
-        padding: 52px 0 20px 50px;
-        img {
-          width: 140px;
-        }
-      }
-      &:nth-child(even) {
-        .img-wrapper {
-          padding: 52px 52px 20px 0;
-        }
-      }
-      .member-info {
-        padding-top: 52px;
-      }
-    }
-  }
-
   @media screen and (min-width: 1280px) {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 40px;
-    column-gap: 30px;
+    row-gap: 6rem;
+    column-gap: 2rem;
     li {
-      .img-wrapper {
-        padding: 59px 0 20px 50px;
-        img {
-          width: 150px;
-        }
-        svg {
-          top: 9px;
-        }
-      }
       &:nth-child(even) {
         grid-template-areas: "image info";
         grid-template-columns: auto 1fr;
-        .img-wrapper {
-          padding: 59px 0 20px 50px;
-          svg {
-            transform: unset;
-            left: 0;
-            right: unset;
-          }
-        }
-      }
-      .member-info {
-        padding-top: 45px;
       }
     }
   }
@@ -143,31 +127,9 @@
   @media screen and (min-width: 1920px) {
     column-gap: 100px;
     li {
-      .img-wrapper {
-        padding: 53px 0 0 50px;
-        img {
-          width: 250px;
-        }
-        svg {
-          top: 0;
-        }
-      }
-      .member-info {
-        h2 {
-          padding-top: 20px;
-        }
-      }
       &:nth-child(even) {
         grid-template-areas: "info image";
         grid-template-columns: 1fr auto;
-        .img-wrapper {
-          padding: 53px 50px 0 0;
-          svg {
-            transform: scaleX(-1);
-            right: 0;
-            left: unset;
-          }
-        }
       }
     }
   }
