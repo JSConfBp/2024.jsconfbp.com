@@ -6,48 +6,118 @@ import styles from './about.module.scss'
 import Youtube from '../ui/youtube'
 import ColoredSection from '../ui/colored-section'
 import Polygons from '../ui/polygons'
-import kriszti from "../public/team/kriszti.png"
+
+import SpeakerPicture from '../ui/speaker-picture'
+
+import nec from '../public/team/nec.png'
+import gergo from '../public/team/gergo.png'
+import norbi from '../public/team/norbi.png'
+import ben from '../public/team/ben.png'
+import kriszti from '../public/team/kriszti.png'
+import dorka from '../public/team/dorka.png'
+import aniko from '../public/team/aniko.png'
+import freevo from '../public/team/freevo.png'
+import tim from '../public/team/tim.png'
 
 const team = [
   {
     name: 'Szabolcs Szabolcsi&#8209;Tóth',
-    image: 'https://nec.is/nec.png',
-    twitter: '_nec',
+    image: nec.src,
+    pronouns: 'he/him',
+    role: 'Main organiser, Curator',
+    social: {
+      label: '@_Nec',
+      link: 'https://twitter.com/_Nec'
+    },
     memberIntro: 'Staff Engineer, IBM alumni, TC39 Emeriti and geek'
   },
   {
-    name: 'Dóra Makszy',
-    image:
-      'https://jsconf.jp/2022/static/25aa690e8489a3691cd37a376dfd1373/8b8ba/dora.webp',
-    url: 'https://www.heydorka.rocks/',
-    memberIntro: 'Product design lead, design teacher and management coach, strategic thinker'
-  },
-  {
-    name: 'Norbert Sram',
-    image:
-      'https://pbs.twimg.com/profile_images/1189845618518310913/8uVbKoZr_400x400.jpg',
-    twitter: 'snorbi07',
-    memberIntro: '...'
-  },
-  {
-    name: 'Krisztina Závecz',
-    image: kriszti.src,
-    twitter: 'krisztizavecz',
-    memberIntro: 'Frontend Developer'
-  },
-  {
     name: 'Gergő Nagy',
-    image:
-      'https://pbs.twimg.com/profile_images/1726182395374669824/Te0vF7Or_400x400.jpg',
-    twitter: '_gregnagy',
+    image: gergo.src,
+    pronouns: 'he/him',
+    role: 'Website & Venue',
+    social: {
+      label: '@_gregnagy',
+      link: 'https://twitter.com/_gregnagy'
+    },
     memberIntro: 'Software Architect, Tech Lead @tally.cash, Imagineer at Dhammaworks'
   },
   {
-    name: 'Dániel Lipták',
-    image:
-      'https://pbs.twimg.com/profile_images/867028857441931265/HJdtCgrz_400x400.jpg',
-    twitter: 'daniliptak',
-    memberIntro: '...'
+    name: 'Kriszti Závecz',
+    image: kriszti.src,
+    pronouns: 'she/her',
+    role: 'Attendees & Curator',
+    social: {
+      label: '@krisztizavecz',
+      link: 'https://twitter.com/krisztizavecz'
+    },
+    memberIntro: 'Frontend developer & fitness addict, mother to 3 kids'
+  },
+  {
+    name: 'Norbert Sram',
+    image: norbi.src,
+    pronouns: 'he/him',
+    role: 'Sales, Workshops & Partners',
+    social: {
+      label: '@snorbi07',
+      link: 'https://twitter.com/snorbi07'
+    },
+    memberIntro: 'Avid JS meetup organizer, OSS and Linux enthusiast, founder and CEO'
+  },
+  {
+    name: 'Anikó Vera Fejes',
+    image: aniko.src,
+    pronouns: 'she/them',
+    role: 'Access & Belonging',
+    social: {
+      label: '@hubudibu',
+      link: 'https://www.threads.net/@hubudibu'
+    },
+    memberIntro: '1x engineer, girl moss, game master'
+  },
+  {
+    name: 'Dóra Makszy',
+    image: dorka.src,
+    pronouns: 'she/her',
+    role: 'Design & Social Media',
+    social: {
+      label: 'heydorka.rocks',
+      link: 'https://www.heydorka.rocks/'
+    },
+    memberIntro: 'Designer and strategic thinker. Fluent in English and sarcasm.'
+  },
+  {
+    name: 'Benedek Gagyi',
+    image: ben.src,
+    pronouns: 'he/him',
+    role: 'Curator',
+    social: {
+      label: 'benedek-gagyi',
+      link: 'https://hu.linkedin.com/in/benedek-gagyi'
+    },
+    memberIntro: 'Developer, teacher and sports-fanatic with a tea addiction.'
+  },
+  {
+    name: 'Péter Frivalszky-Mayer',
+    image: freevo.src,
+    pronouns: 'he/him',
+    role: 'Curator',
+    social: {
+      label: 'freevo',
+      link: 'https://bento.me/freevo'
+    },
+    memberIntro: 'Husband, father, IBMer, TC39 delegate. My dream pet project: a character builder for my own TTRPG built in Svelte.'
+  },
+  {
+    name: 'Tim Pietrusky',
+    image: tim.src,
+    pronouns: 'he/him',
+    role: 'Community lounge',
+    social: {
+      label: 'nerddisco',
+      link: 'https://nerddis.co/'
+    },
+    memberIntro: 'Co-Founder at Blibla, Developer, Artist, VJ, Mentor, Speaker, Father of 2 kids'
   },
 ]
 
@@ -141,19 +211,31 @@ function About() {
           The Team
         </h1>
         <ul className={classnames('reset', styles.team)}>
-          {team.map((member) => {
-            const href = member.url || `https://twitter.com/${member.twitter}`
-            const hrefDisplay = member.url || `@${member.twitter}`
-            console.log(member.image)
+          {team.map((member, i) => {
+            const line = Math.floor(i / 2);
+            let imageAlign;
+            if (line % 2 === 0) {
+              imageAlign = i % 2 === 0 ? 'left': 'right';
+            } else  {
+              imageAlign = i % 2 === 0 ? 'right': 'left';
+            }
+
             return (<li key={member.name}>
-              <div className={styles["img-wrapper"]}>
-                <Polygons type="team-image-decoration" breakpoint={lowerBreakpoint} />
-                <img alt={member.name} src={member.image} />
-              </div>
+              <SpeakerPicture
+                image={member.image}
+                align={imageAlign}
+                decorationAlign={i % 2 === 0 ? 'right': 'left'}
+                alt={member.name}
+               // className={`${styles["img-wrapper"]}`}
+              />
               <div className={styles["member-info"]}>
                 <h2 className='my-0' dangerouslySetInnerHTML={{ __html: member.name }}></h2>
-                <p className={styles["member-intro"]} dangerouslySetInnerHTML={{ __html: member.memberIntro }}></p>
-                <a href={href} target='_blank'>{hrefDisplay}</a>
+                <p className={styles['member-role']}>{member.role}</p>
+                <a href={member.social.link} target='_blank'>{member.social.label}</a>
+                <p className={styles["member-intro"]}>
+                  {member.memberIntro}
+                <small>{member.pronouns}</small>
+                </p>
               </div>
             </li>
             )
