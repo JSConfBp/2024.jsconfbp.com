@@ -102,7 +102,7 @@ In this talk I go through common patterns, explain how they can be implemented i
       imageAlign: "right",
     },
     talk: {
-      title: "Infinite Patterns in the Digital Canvas: Unlreashing Creativity with JavaScript in Algorithmic Art",
+      title: "Infinite Patterns in the Digital Canvas: Unleashing Creativity with JavaScript in Algorithmic Art",
       abstract: `This talk highlights the transformative role of JavaScript in creating dynamic, self-generated artworks. Delve into how libraries like p5.js, Three.js, and Paper.js are empowering artists and programmers to push the boundaries of digital creativity.
 
 We'll journey through the evolution of algorithmic art, showcasing how JavaScript enables the creation of intricate patterns and complex visual compositions. The presentation will feature engaging examples and demonstrations, illuminating the power of JavaScript in crafting interactive, ever-evolving art pieces. Concluding with practical insights and resources, this talk is a gateway for anyone eager to explore the fusion of art and code in the digital age.`,
