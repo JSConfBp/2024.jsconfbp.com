@@ -258,7 +258,7 @@ We will look at security issues that are often found in pentests at all levels i
       socialMediaHandle: "toluwanimi-ajewole",
       socialMediaUrl: "www.linkedin.com/in/toluwanimi-ajewole",
       socialMediaType: "linkedin",
-      website: "https://github.com/akshatcoder-hash",
+      website: "",
       work: "N26",
       role: "Engineer",
       workURL: "https://n26.com",
@@ -277,8 +277,60 @@ But even better news: The great news is that we are comfortable with breaking do
       flickrAlbumId: "",
     },
   },
+  {
+    published: true,
+    slug: "gyorgy-kovacs",
+    speaker: {
+      name: "György Kovács",
+      pronouns: "",
+      profilePicturePath: "/speakers/gyorgy.png",
+      bio: "I'm Gyuri, originally from Hungary, currently living in Austria and trying to get people to pronounce my name correctly. Eternally curious about all things programming, whether it's web frontends, CPU architectures, or hardcore database optimization. When away from a computer, I enjoy board games, bouldering, and books.",
+      location: "Graz, Austria",
+      socialMediaHandle: "@pkt_zer0",
+      socialMediaUrl: "https://twitter.com/pkt_zer0",
+      socialMediaType: "twitter",
+      website: "",
+      work: "DynaTrace",
+      role: "",
+      workURL: "https://www.dynatrace.com/",
+      imageAlign: "left",
+    },
+    talk: {
+      title: "Frameworkless, frictionless, free",
+      abstract: `You awaken in the barren wasteland of your mind. Released from the shackles of your NPM dependencies, you are alone, but free. With only your trusty TypeScript compiler at your side, how much can you build? How far can you go? And when you get there, will you find only despair... or joy?
 
-
+Time to find out.`,
+      socialShareImage: "social-share/gyorgy.png",
+      youtubeId: "",
+      flickrAlbumId: "",
+    },
+  },
+  {
+    published: true,
+    slug: "amanda-martin",
+    speaker: {
+      name: "Amanda Martin",
+      pronouns: "she/her",
+      profilePicturePath: "/speakers/amanda.png",
+      bio: "Amanda is a developer advocate for Wix and Open Source enthusiast supporting the EddieHub Community. She had worked previously in web and software development all over the stack. At her core, she is a creative problem solver and passionate about developer experience and success. In her free time you can find her spoiling her dogs, cycling, and testing new recipes.",
+      location: "Baltimore, MD USA",
+      socialMediaHandle: "@hey_amandam",
+      socialMediaUrl: "https://twitter.com/hey_amandam",
+      socialMediaType: "twitter",
+      website: "",
+      work: "Wix",
+      role: "Developer Advocate",
+      workURL: "https://www.wix.com/",
+      imageAlign: "right",
+    },
+    talk: {
+      title: "We're Not Robots: A Developer's Journey to Success, Creativity, and Avoiding Burnout",
+      abstract: `Ever pondered what it takes to unlock your full potential as a developer? Venture into the realm where hiring managers' expectations and social media buzz intersect. In a world that seemingly demands developers to live and breathe code 24/7, we will challenge the notion that perpetual coding is the sole path to success. In this session [speaker name] will explore [speaker gender] personal dev journey, challenging the notion that being a successful developer requires non-stop dedication.  Drawing from research insights, [speaker gender] will delve into the cognitive needs of our brains, emphasizing the importance of creating space for creativity and passion in every pursuit. We will also explore the developer workday, proposing strategies for both developers and managers to foster an environment that nurtures creativity and ensures a balanced and fulfilling professional life. Join us in reshaping the narrative around developer productivity, creativity, and burnout.`,
+      socialShareImage: "social-share/amanda.png",
+      youtubeId: "",
+      flickrAlbumId: "",
+    },
+  },
   {
     published: false,
     slug: "max-millington",
@@ -334,7 +386,6 @@ In my talk, I aim to introduce a fresh approach for generating and storing token
       flickrAlbumId: "",
     },
   },
-
   {
     published: false,
     slug: "keren-kenzi",
@@ -357,32 +408,6 @@ In my talk, I aim to introduce a fresh approach for generating and storing token
       title: "Applied Psychology: Psychology-based UI improvements",
       abstract: `As frontend developers, we implement given UI designs. But wouldn’t it be great if we could provide input and suggest psychology-based improvement ideas? And thus, making the product better and taking a more proactive role in the development process. In this talk, I will share with you knowledge from the field of cognitive psychology that you can apply to UI designs to improve them.`,
       socialShareImage: "/social-share/keren.png",
-      youtubeId: "",
-      flickrAlbumId: "",
-    },
-  },
-  {
-    published: false,
-    slug: "amanda-martin",
-    speaker: {
-      name: "Amanda Martin",
-      pronouns: "she/her",
-      profilePicturePath: "/speakers/amanda.png",
-      bio: "Amanda is a developer advocate for Wix and Open Source enthusiast supporting the EddieHub Community. She had worked previously in web and software development all over the stack. At her core, she is a creative problem solver and passionate about developer experience and success. In her free time you can find her spoiling her dogs, cycling, and testing new recipes.",
-      location: "Baltimore, MD USA",
-      socialMediaHandle: "@hey_amandam",
-      socialMediaUrl: "https://twitter.com/hey_amandam",
-      socialMediaType: "twitter",
-      website: "https://github.com/vorillaz",
-      work: "Wix",
-      role: "Developer Advocate",
-      workURL: "https://www.wix.com/",
-      imageAlign: "right",
-    },
-    talk: {
-      title: "We're Not Robots: A Developer's Journey to Success, Creativity, and Avoiding Burnout",
-      abstract: `Ever pondered what it takes to unlock your full potential as a developer? Venture into the realm where hiring managers' expectations and social media buzz intersect. In a world that seemingly demands developers to live and breathe code 24/7, we will challenge the notion that perpetual coding is the sole path to success. In this session [speaker name] will explore [speaker gender] personal dev journey, challenging the notion that being a successful developer requires non-stop dedication.  Drawing from research insights, [speaker gender] will delve into the cognitive needs of our brains, emphasizing the importance of creating space for creativity and passion in every pursuit. We will also explore the developer workday, proposing strategies for both developers and managers to foster an environment that nurtures creativity and ensures a balanced and fulfilling professional life. Join us in reshaping the narrative around developer productivity, creativity, and burnout.`,
-      socialShareImage: "/social-share/amanda.png",
       youtubeId: "",
       flickrAlbumId: "",
     },
@@ -415,7 +440,6 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       flickrAlbumId: "",
     },
   },
-
   {
     published: false,
     slug: "kevin-maes",
@@ -472,34 +496,6 @@ What new features can we use in 2024, and what can we expect soon? What are some
   },
   {
     published: false,
-    slug: "gyorgy-kovacs",
-    speaker: {
-      name: "György Kovács",
-      pronouns: "",
-      profilePicturePath: "/speakers/gyorgy.png",
-      bio: "I'm Gyuri, originally from Hungary, currently living in Austria and trying to get people to pronounce my name correctly. Eternally curious about all things programming, whether it's web frontends, CPU architectures, or hardcore database optimization. When away from a computer, I enjoy board games, bouldering, and books.",
-      location: "Graz, Austria",
-      socialMediaHandle: "@pkt_zer0",
-      socialMediaUrl: "https://twitter.com/pkt_zer0",
-      socialMediaType: "twitter",
-      website: "https://github.com/timpratim",
-      work: "DynaTrace",
-      role: "",
-      workURL: "https://www.dynatrace.com/",
-      imageAlign: "right",
-    },
-    talk: {
-      title: "Frameworkless, frictionless, free",
-      abstract: `You awaken in the barren wasteland of your mind. Released from the shackles of your NPM dependencies, you are alone, but free. With only your trusty TypeScript compiler at your side, how much can you build? How far can you go? And when you get there, will you find only despair... or joy?
-
-Time to find out.`,
-      socialShareImage: "social-share/gyorgy.png",
-      youtubeId: "",
-      flickrAlbumId: "",
-    },
-  },
-  {
-    published: false,
     slug: "pratim-bhosale",
     speaker: {
       name: "Pratim Bhosale",
@@ -529,7 +525,6 @@ In this talk, we’ll see
       flickrAlbumId: "",
     },
   },
-
   {
     published: false,
     slug: "leandro-ostera",
