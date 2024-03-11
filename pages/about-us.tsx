@@ -40,7 +40,7 @@ const team = [
       label: '@_gregnagy',
       link: 'https://twitter.com/_gregnagy'
     },
-    memberIntro: 'Software Architect, Tech Lead @tally.cash, Imagineer at Dhammaworks'
+    memberIntro: 'L6 engineer, Vipassana pracitioner, Imagineer at Dhammaworks'
   },
   {
     name: 'Kriszti Závecz',
