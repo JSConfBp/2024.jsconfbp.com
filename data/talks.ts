@@ -332,6 +332,62 @@ Time to find out.`,
     },
   },
   {
+    published: true,
+    slug: "leandro-ostera",
+    speaker: {
+      name: "Leandro Ostera",
+      pronouns: "he/him/they/them",
+      profilePicturePath: "/speakers/leandro.png",
+      bio: "Leandro is a neurodivergent Latin engineer, writer, leader and founder, living in Sweden. In his 10+ years in the industry he's worked at companies like Klarna, Spotify, Walnut, and several startups. In their spare time, Leandro enjoys building compilers and doing street photography.",
+      location: "Stockholm, Sweden",
+      socialMediaHandle: "@leostera",
+      socialMediaUrl: "https://twitter.com/leostera",
+      socialMediaType: "twitter",
+      website: "",
+      work: "Abstract Machines",
+      role: "Engineer",
+      workURL: "https://www.abstractmachines.dev/",
+      imageAlign: "right",
+    },
+    talk: {
+      title: "Types as Accessibility",
+      abstract: `Building software is hard, we all know that, but what exactly is hard about it? What cognitive load does it put on us?
+
+Join me on a journey that started with the λ calculus and continues almost 10 decades later, inventing new ways to deal with complexity as we become more and more aware of our inherent cognitive limitations.
+
+We'll learn about the history of programming languages, why type systems exist, how all typed languages have a lot more in common than we think, and how now I see Types as a Developer Accessibility tool that helps me keep complexity at bay when I work with complicated domains, growing teams, large codebases, and perhaps the most underestimated of enemies we have when building software products: time to market.`,
+      socialShareImage: "social-share/leandro.png",
+      youtubeId: "",
+      flickrAlbumId: "",
+    },
+  },
+  {
+    published: true,
+    slug: "aleksandra-sikora",
+    speaker: {
+      name: "Aleksandra Sikora",
+      pronouns: "she/her",
+      profilePicturePath: "/speakers/aleksandra.png",
+      bio: "Aleksandra is an open-source developer at The Guild based in Wrocław, Poland. Previously a tech lead for the Hasura Console and a lead maintainer of Blitz.js. Deeply passionate about open-source, TypeScript and dedicated to staying up to date with the JavaScript ecosystem. In love with all things climbing — hiking, via ferratas, rock climbing.",
+      location: "Poland, Wrocław",
+      socialMediaHandle: "@aleksandrasays",
+      socialMediaUrl: "https://twitter.com/aleksandrasays",
+      socialMediaType: "twitter",
+      website: "https://aleksandra.codes/",
+      work: "EdgeDB",
+      role: "",
+      workURL: "https://www.edgedb.com/",
+      imageAlign: "left",
+    },
+    talk: {
+      title: "Backend Essentials for Frontend Developers",
+      abstract: `With the rise of full-stack frameworks and the blurred line between frontend and backend, it's becoming more and more important to have a good understanding of backend mechanics. In this talk, we'll be diving into some key backend concepts like webhooks, background jobs, cron jobs, and more. These concepts are really important for front-end developers, especially as their applications start getting more complex. This talk will provide you with guidance on when, how, and why you should integrate these components into your projects.`,
+      socialShareImage: "solcial-share/aleksandra.png",
+      youtubeId: "",
+      flickrAlbumId: "",
+    },
+  },
+  {
     published: false,
     slug: "max-millington",
     speaker: {
@@ -525,62 +581,7 @@ In this talk, we’ll see
       flickrAlbumId: "",
     },
   },
-  {
-    published: false,
-    slug: "leandro-ostera",
-    speaker: {
-      name: "Leandro Ostera",
-      pronouns: "he/him/they/them",
-      profilePicturePath: "/speakers/leandro.png",
-      bio: "Leandro is a neurodivergent Latin engineer, writer, leader and founder, living in Sweden. In his 10+ years in the industry he's worked at companies like Klarna, Spotify, Walnut, and several startups. In their spare time, Leandro enjoys building compilers and doing street photography.",
-      location: "Stockholm, Sweden",
-      socialMediaHandle: "@leostera",
-      socialMediaUrl: "https://twitter.com/leostera",
-      socialMediaType: "twitter",
-      website: "https://github.com/pkt-zer0",
-      work: "Abstract Machines",
-      role: "Engineer",
-      workURL: "https://www.abstractmachines.dev/",
-      imageAlign: "right",
-    },
-    talk: {
-      title: "Types as Accessibility",
-      abstract: `Building software is hard, we all know that, but what exactly is hard about it? What cognitive load does it put on us?
 
-Join me on a journey that started with the λ calculus and continues almost 10 decades later, inventing new ways to deal with complexity as we become more and more aware of our inherent cognitive limitations.
-
-We'll learn about the history of programming languages, why type systems exist, how all typed languages have a lot more in common than we think, and how now I see Types as a Developer Accessibility tool that helps me keep complexity at bay when I work with complicated domains, growing teams, large codebases, and perhaps the most underestimated of enemies we have when building software products: time to market.`,
-      socialShareImage: "social-share/leandro.png",
-      youtubeId: "",
-      flickrAlbumId: "",
-    },
-  },
-  {
-    published: false,
-    slug: "aleksandra-sikora",
-    speaker: {
-      name: "Aleksandra Sikora",
-      pronouns: "she/her",
-      profilePicturePath: "/speakers/aleksandra.png",
-      bio: "Aleksandra is an open-source developer at The Guild based in Wrocław, Poland. Previously a tech lead for the Hasura Console and a lead maintainer of Blitz.js. Deeply passionate about open-source, TypeScript and dedicated to staying up to date with the JavaScript ecosystem. In love with all things climbing — hiking, via ferratas, rock climbing.",
-      location: "Poland, Wrocław",
-      socialMediaHandle: "@aleksandrasays",
-      socialMediaUrl: "https://twitter.com/aleksandrasays",
-      socialMediaType: "twitter",
-      website: "https://aleksandra.codes/",
-      work: "EdgeDB",
-      role: "",
-      workURL: "https://www.edgedb.com/",
-      imageAlign: "left",
-    },
-    talk: {
-      title: "Backend Essentials for Frontend Developers",
-      abstract: `With the rise of full-stack frameworks and the blurred line between frontend and backend, it's becoming more and more important to have a good understanding of backend mechanics. In this talk, we'll be diving into some key backend concepts like webhooks, background jobs, cron jobs, and more. These concepts are really important for front-end developers, especially as their applications start getting more complex. This talk will provide you with guidance on when, how, and why you should integrate these components into your projects.`,
-      socialShareImage: "solcial-share/aleksandra.png",
-      youtubeId: "",
-      flickrAlbumId: "",
-    },
-  },
 ];
 
 export default TALKS;
