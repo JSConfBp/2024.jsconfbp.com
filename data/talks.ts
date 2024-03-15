@@ -274,36 +274,32 @@ We will look at security issues that are often found in pentests at all levels i
   },
   {
     published: true,
-    slug: "toluwanimi-ajewole",
+    slug: "isabela-moreira",
     speaker: {
-      name: "Toluwanimi Ajewole",
-      pronouns: "She",
-      profilePicturePath: "/speakers/toluwanimi.png",
-      bio: `Toluwanimi Ajewole is an engineer who aspires to share her knowledge of programming and collaboration within software engineering teams. She currently works at N26 Bank as a senior web engineer in Berlin, Germany.`,
-      location: "",
-      socialMediaHandle: "toluwanimi-ajewole",
-      socialMediaUrl: "www.linkedin.com/in/toluwanimi-ajewole",
-      socialMediaType: "linkedin",
-      website: "",
-      work: "N26",
-      role: "Engineer",
-      workURL: "https://n26.com",
+      name: "Isabela Moreira",
+      pronouns: "she/her",
+      profilePicturePath: "/speakers/isabela.png",
+      bio: `Isabela is a software engineer at Microsoft, building a design system and component library to bring coherence to internal products. Previously at Google and various startups, she's found her home wearing many hats at Microsoft - from engineering, to design work, to community support and outreach.
+
+Isabela is a huge fan of the intersection of code and design and loves mechanical keyboards. As a Latina in tech, she's an advocate for other minorities and frequently speaks out on Twitter and provides tech resources on her blog.`,
+      location: "Seattle, WA, USA",
+      socialMediaHandle: "@isabelacmor",
+      socialMediaUrl: "https://twitter.com/isabelacmor",
+      socialMediaType: "twitter",
+      website: "https://github.com/fbmedina",
+      work: "Microsoft",
+      role: "Software Engineer",
+      workURL: "https://www.microsoft.com/",
       imageAlign: "left",
     },
     talk: {
-      title: "Oh no I'm stuck! A guide to detangling a complex codebase",
-      abstract: `Good news: You are a new joiner in your dream company or picking up an exciting new JS project.
-
-Bad news: You are stuck trying to comprehend the whole system. Much like an actual spider web, complex codebases are intricate systems made up of lines of code, each telling their own story. Cue doubts and imposter syndrome.
-
-But even better news: The great news is that we are comfortable with breaking down complex problems and systems into smithereens as engineers, with a codebase being no exception. In this talk, we will discuss some strategies that are essential to understanding and finding clarity in complex codebases.
-`,
-      socialShareImage: "social-share/toluwanimi.png",
+      title: "Building empathy and accessible apps",
+      abstract: `Everyone knows accessibility is important, but even with the best of intentions, we still might not be achieving an accessible design in our apps. In this talk, I'll help the audience build their empathy for disabled users through the eyes of someone in the disabled community (myself), while giving them the tools they need to tackle accessibility both from a design and implementation standpoint.`,
+      socialShareImage: "social-share/isabela.png",
       youtubeId: "",
       flickrAlbumId: "",
     },
   },
-
   {
     published: true,
     slug: "nicolo-ribaudo",
@@ -498,35 +494,38 @@ Time to find out.`,
     },
   },
   {
-    published: false,
-    slug: "isabela-moreira",
+    published: true,
+    slug: "toluwanimi-ajewole",
     speaker: {
-      name: "Isabela Moreira",
-      pronouns: "she/her",
-      profilePicturePath: "/speakers/isabela.png",
-      bio: `Isabela is a software engineer at Microsoft, building a design system and component library to bring coherence to internal products. Previously at Google and various startups, she's found her home wearing many hats at Microsoft - from engineering, to design work, to community support and outreach.
-
-Isabela is a huge fan of the intersection of code and design and loves mechanical keyboards. As a Latina in tech, she's an advocate for other minorities and frequently speaks out on Twitter and provides tech resources on her blog.`,
-      location: "Seattle, WA, USA",
-      socialMediaHandle: "@isabelacmor",
-      socialMediaUrl: "https://twitter.com/isabelacmor",
-      socialMediaType: "twitter",
-      website: "https://github.com/fbmedina",
-      work: "Microsoft",
-      role: "Software Engineer",
-      workURL: "https://www.microsoft.com/",
+      name: "Toluwanimi Ajewole",
+      pronouns: "She",
+      profilePicturePath: "/speakers/toluwanimi.png",
+      bio: `Toluwanimi Ajewole is an engineer who aspires to share her knowledge of programming and collaboration within software engineering teams. She currently works at N26 Bank as a senior web engineer in Berlin, Germany.`,
+      location: "",
+      socialMediaHandle: "toluwanimi-ajewole",
+      socialMediaUrl: "www.linkedin.com/in/toluwanimi-ajewole",
+      socialMediaType: "linkedin",
+      website: "",
+      work: "N26",
+      role: "Engineer",
+      workURL: "https://n26.com",
       imageAlign: "left",
     },
     talk: {
-      title: "Building empathy and accessible apps",
-      abstract: `Everyone knows accessibility is important, but even with the best of intentions, we still might not be achieving an accessible design in our apps. In this talk, I'll help the audience build their empathy for disabled users through the eyes of someone in the disabled community (myself), while giving them the tools they need to tackle accessibility both from a design and implementation standpoint.`,
-      socialShareImage: "/social-share/isabela.png",
+      title: "Oh no I'm stuck! A guide to detangling a complex codebase",
+      abstract: `Good news: You are a new joiner in your dream company or picking up an exciting new JS project.
+
+Bad news: You are stuck trying to comprehend the whole system. Much like an actual spider web, complex codebases are intricate systems made up of lines of code, each telling their own story. Cue doubts and imposter syndrome.
+
+But even better news: The great news is that we are comfortable with breaking down complex problems and systems into smithereens as engineers, with a codebase being no exception. In this talk, we will discuss some strategies that are essential to understanding and finding clarity in complex codebases.
+`,
+      socialShareImage: "social-share/toluwanimi.png",
       youtubeId: "",
       flickrAlbumId: "",
     },
   },
   {
-    published: false,
+    published: true,
     slug: "kevin-maes",
     speaker: {
       name: "Kevin Maes",
@@ -551,7 +550,6 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       flickrAlbumId: "",
     },
   },
-
   {
     published: false,
     slug: "pratim-bhosale",
