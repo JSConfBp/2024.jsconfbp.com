@@ -5,7 +5,7 @@ import TicketBanner from "../ui/ticket-banner";
 import Divider from "../ui/divider";
 import Link from "next/link";
 import MCList from "../ui/mc-list";
-import { CommunityPartnerLogos } from "../ui/partner-logos";
+import { CommunityPartnerLogos, PartnerLogos } from "../ui/partner-logos";
 import TALKS from "../data/talks";
 import SpeakerList from "../ui/speaker-list";
 
@@ -106,7 +106,13 @@ function Home() {
           </div>
         </div>
       </section>
-      <section id="venue">
+      <section id="partners">
+        <Divider>
+          <h1>Partners</h1>
+        </Divider>
+        <PartnerLogos />
+      </section>
+      <section id="community-partners">
         <Divider>
           <h1>Community partners</h1>
         </Divider>

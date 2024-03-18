@@ -11,14 +11,19 @@ import FutureFrontendLogo from "../public/partner-logos/future-frontend.svg";
 import RevoJsLogo from "../public/partner-logos/revo-js.svg";
 import ReactParisLogo from "../public/partner-logos/react-paris.png";
 
-type PartnerLogoProps = {
-  color?: ColorNames;
-  opacity?: number;
-  lvl1ClassNames?: string;
-  lvl2ClassNames?: string;
-  lvl3ClassNames?: string;
-  lvl4ClassNames?: string;
-};
+import JetBrainsLogo from "../public/partner-logos/jetbrains.svg";
+
+export function PartnerLogos() {
+  return (
+    <div className="col justify-center x-fill">
+      <div className={styles.community_partners}>
+        <Link href="https://www.jetbrains.com/" target="_blank">
+          <Image src={JetBrainsLogo} alt="Logo for JetBrains" fill />
+        </Link>
+      </div>
+    </div>
+  );
+}
 
 export function CommunityPartnerLogos() {
   return (
@@ -59,6 +64,15 @@ export function CommunityPartnerLogos() {
   );
 }
 
+type PastPartnerLogoProps = {
+  color?: ColorNames;
+  opacity?: number;
+  lvl1ClassNames?: string;
+  lvl2ClassNames?: string;
+  lvl3ClassNames?: string;
+  lvl4ClassNames?: string;
+};
+
 function PastPartnerLogos({
   color = "partner-logo-light",
   opacity = 0.6,
@@ -66,7 +80,7 @@ function PastPartnerLogos({
   lvl2ClassNames = "",
   lvl3ClassNames = "",
   lvl4ClassNames = "",
-}: PartnerLogoProps) {
+}: PastPartnerLogoProps) {
   return (
     <div className="col align-center justify-center gap-2p5">
       <div className={`${styles.level_1} ${lvl1ClassNames}`}>
