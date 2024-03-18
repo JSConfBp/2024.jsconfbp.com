@@ -19,7 +19,7 @@
     grid-template-columns: 9rem auto auto;
   }
 
-  @media only screen and (max-width: 375px) {
+  @media only screen and (max-width: 600px) {
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
@@ -32,7 +32,7 @@
   .image {
     grid-area: image;
 
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 600px) {
       width: 50%;
       height: auto;
       transform: translateX(50%);
@@ -44,7 +44,7 @@
     grid-area: name;
     margin-top: 0;
 
-    @media only screen and (max-width: 375px) {
+    @media only screen and (max-width: 600px) {
       text-align: center;
     }
   }
@@ -57,7 +57,7 @@
       margin-bottom: 5rem;
       padding: 0;
 
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 600px) {
         margin: 0 auto;
         width: 70%;
         margin-bottom: 3rem;
@@ -83,7 +83,7 @@
         position: absolute;
       }
 
-      @media only screen and (max-width: 375px) {
+      @media only screen and (max-width: 600px) {
         text-align: left;
         margin-left: 40px;
         margin-right: 0;
@@ -117,7 +117,7 @@
         top: -12px;
         transform: translateY(-100%);
 
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 600px) {
           transform: scale(-0.8, 0.8);
           left: -14px;
           top: 5px;
@@ -127,7 +127,7 @@
         bottom: -6px;
         transform: translateY(100%);
 
-        @media only screen and (max-width: 375px) {
+        @media only screen and (max-width: 600px) {
           transform: scale(-0.8, 0.8);
           right: -14px;
         }
