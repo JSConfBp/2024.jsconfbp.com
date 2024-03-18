@@ -1,27 +1,27 @@
-import styles from './index.module.scss'
+import styles from "./index.module.scss";
 
-import SocialShare from '../ui/social-share'
-import TicketBanner from '../ui/ticket-banner'
-import Divider from '../ui/divider'
-import Link from 'next/link'
-import MCList from '../ui/mc-list'
-import { CommunityPartnerLogos } from '../ui/partner-logos'
+import SocialShare from "../ui/social-share";
+import TicketBanner from "../ui/ticket-banner";
+import Divider from "../ui/divider";
+import Link from "next/link";
+import MCList from "../ui/mc-list";
+import { CommunityPartnerLogos } from "../ui/partner-logos";
 import TALKS from "../data/talks";
-import SpeakerList from '../ui/speaker-list'
+import SpeakerList from "../ui/speaker-list";
 
 function Home() {
   return (
     <>
       <SocialShare />
       <TicketBanner />
-      {TALKS.some(t => t.published) &&
+      {TALKS.some((t) => t.published) && (
         <section id="speakers">
           <Divider>
             <h1>Speakers</h1>
           </Divider>
-          <SpeakerList speakers={TALKS.filter(t => t.published)} />
+          <SpeakerList speakers={TALKS.filter((t) => t.published)} />
         </section>
-      }
+      )}
       <section id="emcees">
         <Divider>
           <h1>MCs</h1>
@@ -34,65 +34,65 @@ function Home() {
         </Divider>
 
         <div className="col md-row gap-2p5 mb-2">
-
-         <div className='col'>
-            <h2 className='mt-0'>Our Call for Speakers is closed!</h2>
-            <h4 className='mt-n2 ml-0p25'>January 27, 2027</h4>
+          <div className="col">
+            <h2 className="mt-0">Our Call for Speakers is closed!</h2>
+            <h4 className="mt-n2 ml-0p25">January 27, 2027</h4>
             <p>
-              We've received 387 talk idea submissions from the developer community. Thank you so much!
+              We've received 387 talk idea submissions from the developer
+              community. Thank you so much!
             </p>
             <p>
-              Stay tuned for the CFP voting results and the speaker selection process soon!
+              Stay tuned for the CFP voting results and the speaker selection
+              process soon!
             </p>
           </div>
 
-          <div className='col'>
-            <h2 className='mt-0'>Scholarship!</h2>
-            <h4 className='mt-n2 ml-0p25'>December 18, 2023</h4>
+          <div className="col">
+            <h2 className="mt-0">Scholarship!</h2>
+            <h4 className="mt-n2 ml-0p25">December 18, 2023</h4>
             <p>
               📬 We have opened the application for our Scholarship program!
             </p>
             <p>
-              The details are on our <Link href="/scholarship">🎓scholarship page</Link>
+              The details are on our{" "}
+              <Link href="/scholarship">🎓scholarship page</Link>
             </p>
             <p>
               The application deadline is <strong>March 24, 2024</strong>.
             </p>
           </div>
 
-          <div className='col'>
-            <h2 className='mt-0'>We are so back!</h2>
-            <h4 className='mt-n2 ml-0p25'>November 21, 2023</h4>
-            <p>
-              🌟 JSConf Budapest 2024 is a GO!
-            </p>
+          <div className="col">
+            <h2 className="mt-0">We are so back!</h2>
+            <h4 className="mt-n2 ml-0p25">November 21, 2023</h4>
+            <p>🌟 JSConf Budapest 2024 is a GO!</p>
             <p>
               📆 Mark your calendars for <strong>June 26-28, 2024.</strong>
             </p>
             <p>
-              🎟️ Secure your early bird <Link href="https://buff.ly/47nfPaB" target="_blank">tickets now!</Link>
+              🎟️ Secure your early bird{" "}
+              <Link href="https://buff.ly/47nfPaB" target="_blank">
+                tickets now!
+              </Link>
             </p>
-            <p>
-              Join the JavaScript party – it’s going to be epic!
-            </p>
+            <p>Join the JavaScript party – it’s going to be epic!</p>
           </div>
-
         </div>
       </section>
       <section id="venue">
-        <Divider >
+        <Divider>
           <h1>Venue</h1>
         </Divider>
         <div className="x-container col md-row gap-1p5">
           <iframe
             title="Venue area map"
-            style={{ pointerEvents: 'none' }}
+            style={{ pointerEvents: "none" }}
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.565701968758!2d19.052097751378795!3d47.49837330333867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc402a04eee3%3A0x6869564cd433693c!2sAkv%C3%A1rium+Klub!5e0!3m2!1sen!2sus!4v1448264513121"
             width="100%"
             height="340"
           />
           <div>
-            <p className='md-mt-0'>
+            <p className="md-mt-0">
               Akvárium Klub is more than a simple bar: it is a culture centre
               with a wide musical repertoire from mainstream to underground.
               There is always a good concert and a smashing exhibition,
@@ -100,19 +100,20 @@ function Home() {
               situated right in the city centre.
             </p>
             <p>
-              Literally under a pool of water, this great club is our venue in since 2016.
+              Literally under a pool of water, this great club is our venue in
+              since 2016.
             </p>
           </div>
         </div>
       </section>
       <section id="venue">
-        <Divider >
+        <Divider>
           <h1>Community partners</h1>
         </Divider>
         <CommunityPartnerLogos />
       </section>
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;

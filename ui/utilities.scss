@@ -104,7 +104,10 @@ $widthsAndHeights: (
   ),
 );
 
-$directions: (("row", "row") ("rrow", "row-reverse") ("col", "column") ("rcol", "column-reverse"));
+$directions: (
+  ("row", "row") ("rrow", "row-reverse") ("col", "column")
+    ("rcol", "column-reverse")
+);
 
 $positions: ("absolute", "relative");
 
