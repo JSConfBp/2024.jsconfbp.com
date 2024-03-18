@@ -19,7 +19,8 @@ const TALKS = [
     },
     talk: {
       title: "Are Signals worth the hype?",
-      abstract: "From basically every framework across the board to TC39, signals are all the rage nowadays. A lot has been said about the performance benefits, but that's not all it is. Let's talk about how signals provides a better mental model to render user interfaces, and how they make developing apps more predictable and, likely, error-free.",
+      abstract:
+        "From basically every framework across the board to TC39, signals are all the rage nowadays. A lot has been said about the performance benefits, but that's not all it is. Let's talk about how signals provides a better mental model to render user interfaces, and how they make developing apps more predictable and, likely, error-free.",
       socialShareImage: "social-share/atila.png",
       youtubeId: "",
       flickrAlbumId: "",
@@ -102,7 +103,8 @@ In this talk I go through common patterns, explain how they can be implemented i
       imageAlign: "right",
     },
     talk: {
-      title: "Infinite Patterns in the Digital Canvas: Unleashing Creativity with JavaScript in Algorithmic Art",
+      title:
+        "Infinite Patterns in the Digital Canvas: Unleashing Creativity with JavaScript in Algorithmic Art",
       abstract: `This talk highlights the transformative role of JavaScript in creating dynamic, self-generated artworks. Delve into how libraries like p5.js, Three.js, and Paper.js are empowering artists and programmers to push the boundaries of digital creativity.
 
 We'll journey through the evolution of algorithmic art, showcasing how JavaScript enables the creation of intricate patterns and complex visual compositions. The presentation will feature engaging examples and demonstrations, illuminating the power of JavaScript in crafting interactive, ever-evolving art pieces. Concluding with practical insights and resources, this talk is a gateway for anyone eager to explore the fusion of art and code in the digital age.`,
@@ -212,7 +214,8 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
       imageAlign: "right",
     },
     talk: {
-      title: "Hear! Hear! An accessibility tale from a hearing-impaired Senior Software Engineer",
+      title:
+        "Hear! Hear! An accessibility tale from a hearing-impaired Senior Software Engineer",
       abstract: `If someone is talking to you, you can hear them well, but what if you couldn’t? Explore the world of a hearing-impaired developers and understand the struggles, triumphs, and tips for inclusivity in this inspirational and experiential session. Join to hear an experiential story and an unique journey that shows that disability is no barrier to success in tech. Discover how to make your applications and content accessible to those with hearing loss, and learn how to collaborate effectively with hearing-impaired developers and support them. Don't miss this exciting opportunity to break down barriers and unlock the potential of inclusive development.`,
       socialShareImage: "social-share/ante.png",
       youtubeId: "",
@@ -403,7 +406,8 @@ We'll learn about the history of programming languages, why type systems exist, 
       imageAlign: "left",
     },
     talk: {
-      title: "The Platonic Paradox in Software Development: Ideal Forms vs. Practical Realities in JavaScript",
+      title:
+        "The Platonic Paradox in Software Development: Ideal Forms vs. Practical Realities in JavaScript",
       abstract: `This talk explores the intriguing parallels between Plato’s Theory of Forms and modern JavaScript software development practices. It critically examines how the pursuit of 'ideal' coding practices and architectures, inspired by Platonic philosophy, can both enhance and hinder practical software engineering.`,
       socialShareImage: "social-share/max.png",
       youtubeId: "",
@@ -429,7 +433,8 @@ We'll learn about the history of programming languages, why type systems exist, 
       imageAlign: "right",
     },
     talk: {
-      title: "Safeguarding web applications against token theft: Fortifying security and trust in web browsers",
+      title:
+        "Safeguarding web applications against token theft: Fortifying security and trust in web browsers",
       abstract: `While standards such as OAuth 2.0 have effectively established a robust framework for addressing the complexities of Authentication and Authorization, web developers all over the world often grapple with the challenge of securely storing and retrieving the tokens essential for these purposes, particularly in browsers.
 
 In my talk, I aim to introduce a fresh approach for generating and storing tokens known as DPoP (Demonstrating Proof of Possession). DPoP is an emerging standard that extends the current OAuth 2.0 framework, offering an innovative solution to the challenges faced by web developers in token management. This approach is a potential game changer, that can significantly elevate the security of prevalent authentication and authorization mechanisms on the web today.
@@ -458,7 +463,8 @@ In my talk, I aim to introduce a fresh approach for generating and storing token
       imageAlign: "right",
     },
     talk: {
-      title: "We're Not Robots: A Developer's Journey to Success, Creativity, and Avoiding Burnout",
+      title:
+        "We're Not Robots: A Developer's Journey to Success, Creativity, and Avoiding Burnout",
       abstract: `Ever pondered what it takes to unlock your full potential as a developer? Venture into the realm where hiring managers' expectations and social media buzz intersect. In a world that seemingly demands developers to live and breathe code 24/7, we will challenge the notion that perpetual coding is the sole path to success. In this session [speaker name] will explore [speaker gender] personal dev journey, challenging the notion that being a successful developer requires non-stop dedication.  Drawing from research insights, [speaker gender] will delve into the cognitive needs of our brains, emphasizing the importance of creating space for creativity and passion in every pursuit. We will also explore the developer workday, proposing strategies for both developers and managers to foster an environment that nurtures creativity and ensures a balanced and fulfilling professional life. Join us in reshaping the narrative around developer productivity, creativity, and burnout.`,
       socialShareImage: "social-share/amanda.png",
       youtubeId: "",
@@ -543,7 +549,8 @@ But even better news: The great news is that we are comfortable with breaking do
       imageAlign: "right",
     },
     talk: {
-      title: "Building Privacy-Friendly Applications with Ollama, Vector Functions, and LangChainJS",
+      title:
+        "Building Privacy-Friendly Applications with Ollama, Vector Functions, and LangChainJS",
       abstract: `Today, most AI applications send data to LLM cloud providers, raising privacy concerns. This talk introduces a new way to build AI applications that keep everything local on your computer. By running LLMs locally with Ollama, we avoid transmitting sensitive information to external cloud providers. We will highlight LangChain's ability to create versatile agents capable of handling tasks autonomously while protecting sensitive data.
 In this talk, we’ll see
 
@@ -574,7 +581,8 @@ In this talk, we’ll see
       imageAlign: "right",
     },
     talk: {
-      title: "Evolving JavaScript: Cultivating Genetic Algorithms for Creative Coding",
+      title:
+        "Evolving JavaScript: Cultivating Genetic Algorithms for Creative Coding",
       abstract: `When was the moment you first realized that coding was pure joy? We all need a well-deserved break from feature releases, meetings, bug fixes, tech debt, and 10X burnout! Join me in exploring delightful, interactive experiences, inspired by nature, that we as JavaScript developers can create with our everyday coding skills. We’ll learn about genetic algorithms, what they’re good for, and how to code with them, including a demo. Adding state machines and generative art into the mix, our small step into the world of AI programming will enable us to produce problem solving agents that are as intelligent as they are beautiful!`,
       socialShareImage: "social-share/kevin.png",
       youtubeId: "",
@@ -606,7 +614,8 @@ In this talk, we’ll see
       imageAlign: "left",
     },
     talk: {
-      title: "Unexpected monad. Is safe error handling possible in JavaScript/TypeScript?",
+      title:
+        "Unexpected monad. Is safe error handling possible in JavaScript/TypeScript?",
       abstract: `Error handling is an extremely hard part of every JavaScript project that can produce a lot of bugs. Usually, developers use just the try/catch as a standard approach for the error handling, which is not so ideal solution because this statement catches anything which was thrown by the “throw” statement, as results developer:
       1. need extra conditions for handling restricted classes of exceptions;
       2. should rethrow errors or it can be eaten up;

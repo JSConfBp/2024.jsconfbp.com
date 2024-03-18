@@ -1,5 +1,4 @@
 .speaker_details {
-
   margin-bottom: 3rem;
   display: grid;
 
@@ -29,7 +28,6 @@
       "details"
       "bio";
   }
-
 
   .image {
     grid-area: image;
@@ -75,7 +73,7 @@
       position: relative;
 
       &::after {
-        content: '';
+        content: "";
         display: block;
         width: 30px;
         height: 40px;
@@ -96,14 +94,14 @@
         }
       }
 
-      &.location::after  {
-        background-image: url('/icons/speaker-location.svg');
+      &.location::after {
+        background-image: url("/icons/speaker-location.svg");
       }
-      &.website::after  {
-        background-image: url('/icons/speaker-website.svg');
+      &.website::after {
+        background-image: url("/icons/speaker-website.svg");
       }
-      &.work::after  {
-        background-image: url('/icons/speaker-work.svg');
+      &.work::after {
+        background-image: url("/icons/speaker-work.svg");
       }
     }
 
@@ -114,14 +112,13 @@
       .details_decoration_bottom {
         position: absolute;
         right: 5px;
-
       }
       .details_decoration_top {
         top: -12px;
         transform: translateY(-100%);
 
         @media only screen and (max-width: 375px) {
-          transform: scale(-.8,.8);
+          transform: scale(-0.8, 0.8);
           left: -14px;
           top: 5px;
         }
@@ -131,7 +128,7 @@
         transform: translateY(100%);
 
         @media only screen and (max-width: 375px) {
-          transform: scale(-.8,.8);
+          transform: scale(-0.8, 0.8);
           right: -14px;
         }
       }
@@ -142,9 +139,8 @@
     grid-area: bio;
 
     p {
-     margin-top: 0;
-     margin-bottom: 1.4rem;
+      margin-top: 0;
+      margin-bottom: 1.4rem;
     }
   }
-
 }

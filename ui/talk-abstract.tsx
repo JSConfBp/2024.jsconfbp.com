@@ -1,12 +1,8 @@
-import React from 'react'
-import styles from './talk_abstract.module.scss'
+import React from "react";
+import styles from "./talk_abstract.module.scss";
 
 function TalkAbstract({ children }) {
-  return (
-    <div className={styles.talk_abstract}>
-      {children}
-    </div>
-  )
+  return <div className={styles.talk_abstract}>{children}</div>;
 }
 
-export default TalkAbstract
+export default TalkAbstract;
