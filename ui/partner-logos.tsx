@@ -5,11 +5,11 @@ import Link from "next/link";
 
 import { ColorNames } from "../pages/_app";
 
-import BudapestJSLogo from "../public/community-partner-logos/budapestjs.webp";
-import FrontendMeetupBudapestLogo from "../public/community-partner-logos/frontend-meetup-budapest.svg";
-import FutureFrontendLogo from "../public/community-partner-logos/future-frontend.svg";
-import RevoJsLogo from "../public/community-partner-logos/revo-js.svg";
-import ReactParisLogo from "../public/community-partner-logos/react-paris.png";
+import BudapestJSLogo from "../public/partner-logos/budapestjs.webp";
+import FrontendMeetupBudapestLogo from "../public/partner-logos/frontend-meetup-budapest.svg";
+import FutureFrontendLogo from "../public/partner-logos/future-frontend.svg";
+import RevoJsLogo from "../public/partner-logos/revo-js.svg";
+import ReactParisLogo from "../public/partner-logos/react-paris.png";
 
 type PartnerLogoProps = {
   color?: ColorNames;
@@ -59,7 +59,7 @@ export function CommunityPartnerLogos() {
   );
 }
 
-function PartnerLogos({
+function PastPartnerLogos({
   color = "partner-logo-light",
   opacity = 0.6,
   lvl1ClassNames = "",
@@ -98,7 +98,7 @@ function PartnerLogos({
   );
 }
 
-export default PartnerLogos;
+export default PastPartnerLogos;
 
 // Partner logo svgs below
 

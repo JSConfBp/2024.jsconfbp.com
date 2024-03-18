@@ -8,7 +8,7 @@ import ColoredSection from "../ui/colored-section";
 import Divider from "../ui/divider";
 import SocialShare from "../ui/social-share";
 import Youtube from "../ui/youtube";
-import PartnerLogos, { CommunityPartnerLogos } from "../ui/partner-logos";
+import PastPartnerLogos, { CommunityPartnerLogos } from "../ui/partner-logos";
 import { OldLogo } from "../ui/logo";
 
 import mic from "../public/icons/mic.png";
@@ -289,7 +289,7 @@ function Partners() {
         className="text-center justify-center"
       >
         <h1 className="color-bg">PAST PARTNERS</h1>
-        <PartnerLogos color="partner-logo-light" />
+        <PastPartnerLogos color="partner-logo-light" />
       </ColoredSection>
       <ColoredSection background="secondary" sectionClassName="mb-n2 md-mt-n2">
         <Divider type="sym" color="background" />
