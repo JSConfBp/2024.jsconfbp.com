@@ -526,6 +526,37 @@ But even better news: The great news is that we are comfortable with breaking do
   },
   {
     published: true,
+    slug: "pratim-bhosale",
+    speaker: {
+      name: "Pratim Bhosale",
+      pronouns: "She/Her",
+      profilePicturePath: "/speakers/pratim.png",
+      bio: "Pratim Bhosale is a Full Stack Developer and Developer advocate at SurrealDB. She is also the maintainer of the SurrealDB Go SDK. Pratim has worked with multiple DevTool companies and helped them with Developer Experience. She enjoys writing technical articles and building projects with SurrealDB. She actively supports Women in Tech and hosts multiple meetups/workshops for the community. Pratim enjoys baking and brewing kombucha in her leisure time. Pratim has spoken at conferences like GohperCon, Golab, DevBCN and JSconf.",
+      location: "Bengaluru, India",
+      socialMediaHandle: "@BhosalePratim",
+      socialMediaUrl: "https://twitter.com/BhosalePratim",
+      socialMediaType: "twitter",
+      website: "https://github.com/hibernationTheory/",
+      work: "SurrealDB",
+      role: "Developer Advocate",
+      workURL: "https://surrealdb.com/",
+      imageAlign: "right",
+    },
+    talk: {
+      title: "Building Privacy-Friendly Applications with Ollama, Vector Functions, and LangChainJS",
+      abstract: `Today, most AI applications send data to LLM cloud providers, raising privacy concerns. This talk introduces a new way to build AI applications that keep everything local on your computer. By running LLMs locally with Ollama, we avoid transmitting sensitive information to external cloud providers. We will highlight LangChain's ability to create versatile agents capable of handling tasks autonomously while protecting sensitive data.
+In this talk, we’ll see
+
+1. Overview of cloud-based AI privacy issues and the importance of local AI.
+2. Detailed insights into generating embeddings with Ollama for vector searches and demonstrating how LangChain agents can perform tasks such as document summarisation and API interactions, all while maintaining data privacy
+3. A practical demonstration of these tools and discussion of real-world use cases.`,
+      socialShareImage: "social-share/pratim.png",
+      youtubeId: "",
+      flickrAlbumId: "",
+    },
+  },
+  {
+    published: true,
     slug: "kevin-maes",
     speaker: {
       name: "Kevin Maes",
@@ -550,38 +581,43 @@ But even better news: The great news is that we are comfortable with breaking do
       flickrAlbumId: "",
     },
   },
+
   {
-    published: false,
-    slug: "pratim-bhosale",
+    published: true,
+    slug: "artem-and-dmitry",
     speaker: {
-      name: "Pratim Bhosale",
-      pronouns: "She/Her",
-      profilePicturePath: "/speakers/pratim.png",
-      bio: "Pratim Bhosale is a Full Stack Developer and Developer advocate at SurrealDB. She is also the maintainer of the SurrealDB Go SDK. Pratim has worked with multiple DevTool companies and helped them with Developer Experience. She enjoys writing technical articles and building projects with SurrealDB. She actively supports Women in Tech and hosts multiple meetups/workshops for the community. Pratim enjoys baking and brewing kombucha in her leisure time. Pratim has spoken at conferences like GohperCon, Golab, DevBCN and JSconf.",
-      location: "Bengaluru, India",
-      socialMediaHandle: "@BhosalePratim",
-      socialMediaUrl: "https://twitter.com/BhosalePratim",
+      name: "Artem Kobzar and Dmitry Makhnev",
+      pronouns: "He/Him",
+      profilePicturePath: "/speakers/artem-dimtry.png",
+      bio: `Artem is working for JetBrains on the compiler from Kotlin to WebAssembly. Also, he's helping with the SourceMap Specification as an invited expert in TC39.
+      At night (if he's not fixing production), he likes lifting heavy weights in the gym or/and drinking good Chinese tea.
+
+      Dmitry is a software developer at WebStorm. Before almost 14 years he was a frontend developer. Ex-member of HolyJS conference selection committee, co-organizer of JetBrains JavaScript Day.
+      He loves his son, Chinese tea, South Holland, bicycle rides, great technical talks and art (Impressionism++).
+      `,
+      location: "Netherlands",
+      socialMediaHandle: "",
+      socialMediaUrl: "",
       socialMediaType: "twitter",
-      website: "https://github.com/hibernationTheory/",
-      work: "SurrealDB",
+      website: "",
+      work: "JetBrains",
       role: "Developer Advocate",
-      workURL: "https://surrealdb.com/",
+      workURL: "https://www.jetbrains.com",
       imageAlign: "left",
     },
     talk: {
-      title: "Building Privacy-Friendly Applications with Ollama, Vector Functions, and LangChainJS",
-      abstract: `Today, most AI applications send data to LLM cloud providers, raising privacy concerns. This talk introduces a new way to build AI applications that keep everything local on your computer. By running LLMs locally with Ollama, we avoid transmitting sensitive information to external cloud providers. We will highlight LangChain's ability to create versatile agents capable of handling tasks autonomously while protecting sensitive data.
-In this talk, we’ll see
+      title: "Unexpected monad. Is safe error handling possible in JavaScript/TypeScript?",
+      abstract: `Error handling is an extremely hard part of every JavaScript project that can produce a lot of bugs. Usually, developers use just the try/catch as a standard approach for the error handling, which is not so ideal solution because this statement catches anything which was thrown by the “throw” statement, as results developer:
+      1. need extra conditions for handling restricted classes of exceptions;
+      2. should rethrow errors or it can be eaten up;
+      3. can’t separate errors and exceptions;
 
-1. Overview of cloud-based AI privacy issues and the importance of local AI.
-2. Detailed insights into generating embeddings with Ollama for vector searches and demonstrating how LangChain agents can perform tasks such as document summarisation and API interactions, all while maintaining data privacy
-3. A practical demonstration of these tools and discussion of real-world use cases.`,
-      socialShareImage: "social-share/pratim.png",
+      In this talk, you’ll learn how to implement safe error handling (without mentioned problems) in a project and with perks like typed errors inside handlers, errors documentation of functions/methods without JSDoc and comments, and the ability to log your errors without a break of the error handling flow.`,
+      socialShareImage: "social-share/artemdmitry.png",
       youtubeId: "",
       flickrAlbumId: "",
     },
   },
-
 ];
 
 export default TALKS;
