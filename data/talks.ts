@@ -284,12 +284,12 @@ We will look at security issues that are often found in pentests at all levels i
       profilePicturePath: "/speakers/isabela.png",
       bio: `Isabela is a software engineer at Microsoft, building a design system and component library to bring coherence to internal products. Previously at Google and various startups, she's found her home wearing many hats at Microsoft - from engineering, to design work, to community support and outreach.
 
-Isabela is a huge fan of the intersection of code and design and loves mechanical keyboards. As a Latina in tech, she's an advocate for other minorities and frequently speaks out on Twitter and provides tech resources on her blog.`,
+Isabela is a huge fan of the intersection of code and design and loves mechanical keyboards. As a Latina in tech, she's an advocate for other minorities and frequently speaks out and provides resources on Twitter.`,
       location: "Seattle, WA, USA",
       socialMediaHandle: "@isabelacmor",
       socialMediaUrl: "https://twitter.com/isabelacmor",
       socialMediaType: "twitter",
-      website: "https://github.com/fbmedina",
+      website: "",
       work: "Microsoft",
       role: "Software Engineer",
       workURL: "https://www.microsoft.com/",
