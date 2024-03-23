@@ -17,7 +17,7 @@ function SocialShare({
   const metaDescription =
     description ??
     "JSConf Budapest 2024, June 26-28, Budapest, Hungary. Tickets from €450, including free workshops, inclusive catering and barista coffee!";
-  const socialImgAbsoluteUrl = `https://jsconfbp.com/${socialShareImage ?? "social-share/default.png"}`;
+  const socialImgAbsoluteUrl = `https://jsconfbp.com/${socialShareImage ?? "social-share/index.png"}`;
   const titleSuffix = "26-28 June, JSConfBP 2024";
   const currentPageTitle = title ? `${title} | ${titleSuffix}` : titleSuffix;
   const url = `https://jsconfbp.com${router.asPath}`;
