@@ -68,7 +68,7 @@ const team = [
   {
     name: "Anikó Vera Fejes",
     image: aniko.src,
-    pronouns: "she/them",
+    pronouns: "she/they",
     role: "Access & Belonging",
     social: {
       label: "@hubudibu",
