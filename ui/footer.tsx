@@ -9,6 +9,8 @@ import x from "../public/icons/round-x.png";
 import instagram from "../public/icons/round-instagram.png";
 import linkedin from "../public/icons/round-linkedin.png";
 import mastodon from "../public/icons/round-mastodon.png";
+import threads from "../public/icons/round-threads.png";
+import bluesky from "../public/icons/round-bluesky.png";
 
 export function Footer() {
   return (
@@ -97,6 +99,16 @@ export function Footer() {
           <li>
             <Link href="https://twitter.com/jsconfbp" target="_blank">
               <Image src={x} alt="X" />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://www.threads.net/@jsconfbp" target="_blank">
+              <Image src={threads} alt="Threads" />
+            </Link>
+          </li>
+          <li>
+            <Link href="https://bsky.app/profile/jsconfbp.bsky.social" target="_blank">
+              <Image src={bluesky} alt="Bsky" />
             </Link>
           </li>
         </ul>
