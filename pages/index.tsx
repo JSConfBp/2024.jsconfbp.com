@@ -5,7 +5,11 @@ import TicketBanner from "../ui/ticket-banner";
 import Divider from "../ui/divider";
 import Link from "next/link";
 import MCList from "../ui/mc-list";
-import { CommunityPartnerLogos, PartnerLogos } from "../ui/partner-logos";
+import {
+  CommunityPartnerLogos,
+  PartnerLogos,
+  ScholarshipPartnerLogos,
+} from "../ui/partner-logos";
 import TALKS from "../data/talks";
 import SpeakerList from "../ui/speaker-list";
 
@@ -35,8 +39,34 @@ function Home() {
 
         <div className="col md-row gap-2p5 mb-2">
           <div className="col">
+            <h2 className="mt-0">Looking for Sponsors!</h2>
+            <h4 className="mt-n2 ml-0p25">March 27, 2024</h4>
+            <p>
+              We're seeking sponsoring partners to ensure JSConf Budapest 2024
+              is amazing!
+            </p>
+            <p>
+              <Link href="/partners">
+                Let's team up and create an unforgettable experience together!
+              </Link>
+            </p>
+          </div>
+
+          <div className="col">
+            <h2 className="mt-0">Scholarship Application Closed!</h2>
+            <h4 className="mt-n2 ml-0p25">March 24, 2024</h4>
+            <p>Application for our Scholarship program is closed!</p>
+            <p>
+              The evaluation of applications is currently in progress with the
+              help of our Scholarship partner,
+              <Link href="https://codecool.com/en/">Codecool</Link>
+            </p>
+            <p>Stay tuned for the results in early April!.</p>
+          </div>
+
+          <div className="col">
             <h2 className="mt-0">Our Call for Speakers is closed!</h2>
-            <h4 className="mt-n2 ml-0p25">January 27, 2027</h4>
+            <h4 className="mt-n2 ml-0p25">January 27, 2024</h4>
             <p>
               We've received 387 talk idea submissions from the developer
               community. Thank you so much!
@@ -45,37 +75,6 @@ function Home() {
               Stay tuned for the CFP voting results and the speaker selection
               process soon!
             </p>
-          </div>
-
-          <div className="col">
-            <h2 className="mt-0">Scholarship!</h2>
-            <h4 className="mt-n2 ml-0p25">December 18, 2023</h4>
-            <p>
-              📬 We have opened the application for our Scholarship program!
-            </p>
-            <p>
-              The details are on our{" "}
-              <Link href="/scholarship">🎓scholarship page</Link>
-            </p>
-            <p>
-              The application deadline is <strong>March 24, 2024</strong>.
-            </p>
-          </div>
-
-          <div className="col">
-            <h2 className="mt-0">We are so back!</h2>
-            <h4 className="mt-n2 ml-0p25">November 21, 2023</h4>
-            <p>🌟 JSConf Budapest 2024 is a GO!</p>
-            <p>
-              📆 Mark your calendars for <strong>June 26-28, 2024.</strong>
-            </p>
-            <p>
-              🎟️ Secure your early bird{" "}
-              <Link href="https://buff.ly/47nfPaB" target="_blank">
-                tickets now!
-              </Link>
-            </p>
-            <p>Join the JavaScript party – it’s going to be epic!</p>
           </div>
         </div>
       </section>
@@ -111,6 +110,12 @@ function Home() {
           <h1>Partners</h1>
         </Divider>
         <PartnerLogos />
+      </section>
+      <section id="scholarship-partners">
+        <Divider>
+          <h1>Scholarship Partners</h1>
+        </Divider>
+        <ScholarshipPartnerLogos />
       </section>
       <section id="community-partners">
         <Divider>

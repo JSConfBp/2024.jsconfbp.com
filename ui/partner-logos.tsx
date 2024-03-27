@@ -12,6 +12,7 @@ import RevoJsLogo from "../public/partner-logos/revo-js.svg";
 import ReactParisLogo from "../public/partner-logos/react-paris.png";
 
 import JetBrainsLogo from "../public/partner-logos/jetbrains.svg";
+import CodecoolLogo from "../public/partner-logos/codecool.svg";
 
 export function PartnerLogos() {
   return (
@@ -58,6 +59,18 @@ export function CommunityPartnerLogos() {
         </Link>
         <Link href="https://react.paris/" target="_blank">
           <Image src={ReactParisLogo} alt="Logo for the React Paris" fill />
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+export function ScholarshipPartnerLogos() {
+  return (
+    <div className="col justify-center x-fill">
+      <div className={styles.community_partners}>
+        <Link href="https://codecool.com/en/" target="_blank">
+          <Image src={CodecoolLogo} alt="Logo for Codecool" fill />
         </Link>
       </div>
     </div>
