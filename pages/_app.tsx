@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { GoogleTagManager } from "@next/third-parties/google";
 import { JetBrains_Mono, Shrikhand } from "next/font/google";
 
 import { CSSProperties } from "react";
@@ -72,6 +73,7 @@ export default function App({ Component, pageProps }) {
         </main>
         <Footer />
       </div>
+      <GoogleTagManager gtmId="GTM-PHXX3PH5" />
     </>
   );
 }
