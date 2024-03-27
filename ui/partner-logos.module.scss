@@ -16,6 +16,7 @@
 .community_partners {
   flex-direction: column;
   gap: 1.5rem;
+  margin-bottom: 2rem;
 
   a {
     width: 80vw;
@@ -29,7 +30,7 @@
 
   @media only screen and (min-width: 768px) {
     flex-direction: row;
-
+    margin-bottom: 0rem;
     a {
       width: 9vw;
       height: 9vw;
