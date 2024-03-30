@@ -38,6 +38,18 @@ function Home() {
         </Divider>
 
         <div className="col md-row gap-2p5 mb-2">
+
+          <div className="col">
+            <h2 className="mt-0">Convince your boss!</h2>
+            <h4 className="mt-n2 ml-0p25">April 2, 2024</h4>
+            <p>
+              Your employer have doubts why this conference worth attending?
+            </p>
+            <p>
+              <Link href="/convince-your-boss">Let's prepare to convince your boss so you can visit us in June!</Link>
+            </p>
+          </div>
+
           <div className="col">
             <h2 className="mt-0">Looking for Sponsors!</h2>
             <h4 className="mt-n2 ml-0p25">March 27, 2024</h4>
@@ -64,18 +76,6 @@ function Home() {
             <p>Stay tuned for the results in early April!.</p>
           </div>
 
-          <div className="col">
-            <h2 className="mt-0">Our Call for Speakers is closed!</h2>
-            <h4 className="mt-n2 ml-0p25">January 27, 2024</h4>
-            <p>
-              We've received 387 talk idea submissions from the developer
-              community. Thank you so much!
-            </p>
-            <p>
-              Stay tuned for the CFP voting results and the speaker selection
-              process soon!
-            </p>
-          </div>
         </div>
       </section>
       <section id="venue">
