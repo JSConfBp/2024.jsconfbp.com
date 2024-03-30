@@ -107,7 +107,10 @@ export function Footer() {
             </Link>
           </li>
           <li>
-            <Link href="https://bsky.app/profile/jsconfbp.bsky.social" target="_blank">
+            <Link
+              href="https://bsky.app/profile/jsconfbp.bsky.social"
+              target="_blank"
+            >
               <Image src={bluesky} alt="Bsky" />
             </Link>
           </li>
