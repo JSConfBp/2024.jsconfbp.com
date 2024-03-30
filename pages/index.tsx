@@ -38,7 +38,6 @@ function Home() {
         </Divider>
 
         <div className="col md-row gap-2p5 mb-2">
-
           <div className="col">
             <h2 className="mt-0">Convince your boss!</h2>
             <h4 className="mt-n2 ml-0p25">April 2, 2024</h4>
@@ -46,7 +45,9 @@ function Home() {
               Your employer have doubts why this conference worth attending?
             </p>
             <p>
-              <Link href="/convince-your-boss">Let's prepare to convince your boss so you can visit us in June!</Link>
+              <Link href="/convince-your-boss">
+                Let's prepare to convince your boss so you can visit us in June!
+              </Link>
             </p>
           </div>
 
@@ -75,7 +76,6 @@ function Home() {
             </p>
             <p>Stay tuned for the results in early April!.</p>
           </div>
-
         </div>
       </section>
       <section id="venue">
