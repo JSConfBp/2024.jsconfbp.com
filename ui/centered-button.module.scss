@@ -14,9 +14,17 @@
     text-decoration: none;
     cursor: pointer;
   }
+  &.disabled .button {
+    background-color: var(--light-section);
+    color: var(--light-text);
+  }
 
   .button:hover {
     background-color: var(--primary);
+  }
+
+  &.disabled .button:hover {
+    background-color: var(--light-section);
   }
 
   @media only screen and (min-width: 1024px) {

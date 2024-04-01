@@ -845,8 +845,94 @@ function SpeakerDetailsDecoration(elementType, className) {
         </svg>
       );
       break;
+    case "workshop-decor":
+      resultSvg = (
+        <svg
+          width="368"
+          height="320"
+          viewBox="0 0 368 320"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M367.138 318.81L61.5574 318.81L366.549 13.2305L367.138 318.81Z"
+            stroke="#9E19EF"
+          />
+          <path
+            d="M354.611 306.287L50.7381 306.287L354.026 2.41417L354.611 306.287Z"
+            fill="#9E19EF"
+            stroke="#9E19EF"
+            stroke-width="2"
+          />
+          <path
+            d="M312.732 42.3142L312.732 281.314L68.7324 42.3142L312.732 42.3142Z"
+            fill="#07BDBD"
+          />
+          <path
+            d="M148.549 162.47L84.6892 226.33L83.301 97.2227L148.549 162.47Z"
+            stroke="#07BDBD"
+          />
+          <path
+            d="M32.7871 276.818L1.19418 245.225L65.0668 244.538L32.7871 276.818Z"
+            stroke="#9E19EF"
+          />
+          <path
+            d="M35.0059 20.9783L56.0775 42.05L13.4761 42.5081L35.0059 20.9783Z"
+            stroke="#9E19EF"
+          />
+          <path
+            d="M41.8536 205.17L62.5372 184.486L62.9869 226.303L41.8536 205.17Z"
+            stroke="#9E19EF"
+          />
+        </svg>
+      );
+      break;
   }
   return resultSvg;
+}
+
+function WorkshopDecor(className) {
+  return (
+    <svg
+      width="300"
+      height="260"
+      viewBox="0 0 368 368"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path
+        d="M367.138 318.81L61.5574 318.81L366.549 13.2305L367.138 318.81Z"
+        stroke="#9E19EF"
+      />
+      <path
+        d="M354.611 306.287L50.7381 306.287L354.026 2.41417L354.611 306.287Z"
+        fill="#9E19EF"
+        stroke="#9E19EF"
+        stroke-width="2"
+      />
+      <path
+        d="M312.732 42.3142L312.732 281.314L68.7324 42.3142L312.732 42.3142Z"
+        fill="#07BDBD"
+      />
+      <path
+        d="M148.549 162.47L84.6892 226.33L83.301 97.2227L148.549 162.47Z"
+        stroke="#07BDBD"
+      />
+      <path
+        d="M32.7871 276.818L1.19418 245.225L65.0668 244.538L32.7871 276.818Z"
+        stroke="#9E19EF"
+      />
+      <path
+        d="M35.0059 20.9783L56.0775 42.05L13.4761 42.5081L35.0059 20.9783Z"
+        stroke="#9E19EF"
+      />
+      <path
+        d="M41.8536 205.17L62.5372 184.486L62.9869 226.303L41.8536 205.17Z"
+        stroke="#9E19EF"
+      />
+    </svg>
+  );
 }
 
 type PolygonsProps = {
@@ -859,7 +945,8 @@ type PolygonsProps = {
     | "speaker-background-right"
     | "speaker-background-left"
     | "speaker-details-bottom"
-    | "speaker-details-top";
+    | "speaker-details-top"
+    | "workshop-decor";
   breakpoint?: number;
   className?: string;
 };
@@ -892,6 +979,9 @@ function Polygons({ type: elementType, breakpoint, className }: PolygonsProps) {
       break;
     case "speaker-details-bottom":
       Element = () => SpeakerDetailsDecoration(elementType, className);
+      break;
+    case "workshop-decor":
+      Element = () => WorkshopDecor(className);
       break;
     default:
       throw new Error("Invalid type provided to Polygons component");
