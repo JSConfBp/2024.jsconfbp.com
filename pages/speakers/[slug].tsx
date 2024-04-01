@@ -27,7 +27,7 @@ export const getStaticProps = (async (context) => {
   // https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-paths#where-can-i-use-getstaticpaths
   //   - getStaticPaths must be used with getStaticProps
   const data = TALKS.find((t) => context.params.slug === t.slug);
-  console.log(data);
+
   return { props: { data } };
 }) satisfies GetStaticProps<{
   data: (typeof TALKS)[number];

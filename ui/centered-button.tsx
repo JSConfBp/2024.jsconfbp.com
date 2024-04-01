@@ -7,6 +7,7 @@ type CenteredButtonProps = {
   href?: string;
   className?: string;
   target?: "_blank" | "_self" | "_parent" | "_top";
+  disabled?: boolean;
   [propName: string]: any;
 };
 
@@ -15,6 +16,7 @@ function CenteredButton({
   className = "",
   href = "https://jsconfbp.com",
   target = "_blank",
+  disabled = false,
   ...props
 }: CenteredButtonProps) {
   const buttonText = "Simon says: click me!";
@@ -27,8 +29,15 @@ function CenteredButton({
   }
 
   return (
-    <div className={`${styles.main} ${className}`} {...props}>
-      <Link href={href} target={target} className={styles.button}>
+    <div
+      className={`${styles.main} ${className} ${disabled ? styles.disabled : ""}`}
+      {...props}
+    >
+      <Link
+        href={disabled ? "#" : href}
+        target={target}
+        className={styles.button}
+      >
         {children || buttonText}
       </Link>
     </div>

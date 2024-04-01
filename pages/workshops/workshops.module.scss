@@ -1,0 +1,58 @@
+.workshop-title {
+  max-width: 60vw;
+
+  @media only screen and (max-width: 1024px) {
+    max-width: 80vw;
+  }
+  @media only screen and (max-width: 375px) {
+    max-width: 90vw;
+  }
+}
+
+.workshop-metadata {
+  margin-bottom: 3rem;
+
+  @media (min-width: 426px) {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 3rem;
+  }
+}
+
+.venue-address {
+  white-space: nowrap;
+}
+
+.registration {
+  margin-bottom: 3rem;
+}
+
+.details {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  text-align: center;
+
+  @media (min-width: 426px) {
+    text-align: left;
+  }
+}
+
+.sponsor {
+  width: 90vw;
+  height: 20vw;
+  display: block;
+  position: relative;
+  margin-bottom: 3rem;
+
+  @media (min-width: 426px) {
+    width: 30%;
+    height: 6rem;
+    margin-bottom: 0;
+  }
+}
+
+.sponsor-logo {
+  width: 100%;
+}
