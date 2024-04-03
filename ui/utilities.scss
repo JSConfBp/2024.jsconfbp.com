@@ -70,6 +70,18 @@
   text-decoration-line: none;
 }
 
+.center-title {
+  max-width: 60vw;
+  text-align: center;
+
+  @media only screen and (max-width: 1024px) {
+    max-width: 80vw;
+  }
+  @media only screen and (max-width: 375px) {
+    max-width: 90vw;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .md-w-auto {
     width: auto;
