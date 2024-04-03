@@ -1,5 +1,4 @@
 import Link from "next/link";
-import CenteredButton from "../ui/centered-button";
 import Divider from "../ui/divider";
 import ColoredSection from "../ui/colored-section";
 import SocialShare from "../ui/social-share";
@@ -9,11 +8,13 @@ function CallForPapers() {
     <>
       <SocialShare
         title="Convince your boss!"
-        description=""
+        description="Your employer have doubts why this conference worth attending? Let's prepare to convince your boss so you can visit us in June!"
         socialShareImage="social-share/convince-your-boss.png"
       />
       <Divider>
-        <h1>Convincing Your Employer to Invest in Your Development</h1>
+        <h1 className="center-title">
+          Convincing Your Employer to Invest in Your Development
+        </h1>
       </Divider>
 
       <ColoredSection>
