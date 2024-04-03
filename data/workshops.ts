@@ -23,7 +23,7 @@ const WORKSHOPS = [
       name: "",
       link: "",
     },
-    socialShareImage: "",
+    socialShareImage: "social-share/workshop-risingstack.png",
     seats: 20,
   },
   {

@@ -7,7 +7,11 @@ import WorkshopList from "../ui/workshop-list";
 function Workshops() {
   return (
     <>
-      <SocialShare title="Workshops" />
+      <SocialShare
+        title="Workshops"
+        description="These workshops are FREE for every ticket holder of JSConf Budapest 2024!"
+        socialShareImage="social-share/workshops.png"
+      />
       <Divider>
         <h1>Workshops</h1>
       </Divider>

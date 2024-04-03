@@ -46,6 +46,7 @@ export default function WorkshopPage({
   const {
     published,
     title,
+    summary,
     abstract,
     socialShareImage,
     venue,
@@ -62,7 +63,11 @@ export default function WorkshopPage({
 
   return (
     <>
-      <SocialShare title={`${title}`} socialShareImage={socialShareImage} />
+      <SocialShare
+        title={title}
+        description={summary}
+        socialShareImage={socialShareImage}
+      />
       <Divider>
         <h1 className={classNames("text-center", styles["workshop-title"])}>
           {title}
