@@ -349,7 +349,7 @@ function Partners() {
               <li>Branding, logo on site, between sessions, on videos</li>
               <li>5% discount on ticket for your employees</li>
             </ul>
-            <p>€ 4,000</p>
+            <p>€ 3,000</p>
           </div>
           <div>
             <h3>Gold</h3>
@@ -358,7 +358,7 @@ function Partners() {
               <li>10% discount on ticket for your employees</li>
               <li>3m2 booth at the exhibition area</li>
             </ul>
-            <p>€ 8,000</p>
+            <p>€ 6,000</p>
           </div>
           <div>
             <h3>Workshops</h3>
@@ -398,12 +398,12 @@ function Partners() {
               <th></th>
               <th>
                 <p>Silver</p>
-                <p>€ 4,000</p>
+                <p>€ 3,000</p>
               </th>
               <th className={styles.spacer}></th>
               <th>
                 <p>Gold</p>
-                <p>€ 8,000</p>
+                <p>€ 6,000</p>
               </th>
               <th className={styles.spacer}></th>
               <th className={styles.workshops_header}>
