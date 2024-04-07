@@ -506,15 +506,15 @@ function Partners() {
             <tbody>
               <tr>
                 <td>Live captioning</td>
-                <td>€ 5,000</td>
+                <td>€ 3,000</td>
               </tr>
               <tr>
                 <td>Specialty coffee</td>
-                <td>€ 4,000</td>
+                <td>€ 3,000</td>
               </tr>
               <tr>
                 <td>First night party</td>
-                <td>€ 5,000</td>
+                <td>€ 4,000</td>
               </tr>
               <tr>
                 <td>Dinner</td>
@@ -522,15 +522,15 @@ function Partners() {
               </tr>
               <tr>
                 <td>JS closing party</td>
-                <td>€ 5,000</td>
+                <td>€ 4,000</td>
               </tr>
               <tr>
                 <td>WiFi pass</td>
-                <td>€ 3,000</td>
+                <td>€ 2,000</td>
               </tr>
               <tr>
                 <td>Guitar Hero</td>
-                <td>€ 2,000</td>
+                <td>€ 1,000</td>
               </tr>
               <tr>
                 <td>Sketch notes</td>
@@ -538,7 +538,7 @@ function Partners() {
               </tr>
               <tr>
                 <td>Lanyard</td>
-                <td>€ 2,000</td>
+                <td>€ 1,000</td>
               </tr>
             </tbody>
           </table>
