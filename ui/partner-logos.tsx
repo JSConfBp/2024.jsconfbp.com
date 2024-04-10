@@ -12,6 +12,7 @@ import RevoJsLogo from "../public/partner-logos/revo-js.svg";
 import ReactParisLogo from "../public/partner-logos/react-paris.png";
 
 import JetBrainsLogo from "../public/partner-logos/jetbrains.svg";
+import RisingStackLogo from "../public/partner-logos/risingstack.svg";
 import CodecoolLogo from "../public/partner-logos/codecool.svg";
 
 export function PartnerLogos() {
@@ -20,6 +21,10 @@ export function PartnerLogos() {
       <div className={styles.community_partners}>
         <Link href="https://www.jetbrains.com/" target="_blank">
           <Image src={JetBrainsLogo} alt="Logo for JetBrains" fill />
+        </Link>
+
+        <Link href="https://risingstack.com/" target="_blank">
+          <Image src={RisingStackLogo} alt="Logo for RisingStack" fill />
         </Link>
       </div>
     </div>
