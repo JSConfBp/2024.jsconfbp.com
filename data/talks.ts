@@ -97,9 +97,9 @@ In this talk I go through common patterns, explain how they can be implemented i
       socialMediaUrl: "https://www.instagram.com/frani.be/",
       socialMediaType: "instagram",
       website: "https://frani.be/",
-      work: "Cencosud S.A.",
+      work: "LATAM Airlines",
       role: "",
-      workURL: "https://www.cencosud.com/",
+      workURL: "https://www.latamairlines.com/cl/es",
       imageAlign: "right",
     },
     talk: {
