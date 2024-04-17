@@ -38,6 +38,15 @@ function Home() {
         </Divider>
 
         <div className="col md-row gap-2p5 mb-2">
+
+          <div className="col">
+            <h2 className="mt-0">Be a speaker at our Community Lounge</h2>
+            <h4 className="mt-n2 ml-0p25">April 17, 2024</h4>
+            <p>
+            Submit your <Link href="https://t.ly/v4-cu">Lightning Talk proposal</Link> by May 15, 2024!
+            </p>
+          </div>
+
           <div className="col">
             <h2 className="mt-0">Convince your boss!</h2>
             <h4 className="mt-n2 ml-0p25">April 2, 2024</h4>
@@ -65,17 +74,6 @@ function Home() {
             </p>
           </div>
 
-          <div className="col">
-            <h2 className="mt-0">Scholarship Application Closed!</h2>
-            <h4 className="mt-n2 ml-0p25">March 24, 2024</h4>
-            <p>Application for our Scholarship program is closed!</p>
-            <p>
-              The evaluation of applications is currently in progress with the
-              help of our Scholarship partner,
-              <Link href="https://codecool.com/en/">Codecool</Link>
-            </p>
-            <p>Stay tuned for the results in early April!.</p>
-          </div>
         </div>
       </section>
       <section id="venue">
