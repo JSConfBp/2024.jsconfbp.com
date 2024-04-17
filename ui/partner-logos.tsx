@@ -15,6 +15,8 @@ import JetBrainsLogo from "../public/partner-logos/jetbrains.svg";
 import RisingStackLogo from "../public/partner-logos/risingstack.svg";
 import CodecoolLogo from "../public/partner-logos/codecool.svg";
 
+import ApiumHubLogo from "../public/partner-logos/apiumhub_logo_black.png";
+
 export function PartnerLogos() {
   return (
     <div className="col justify-center x-fill">
@@ -76,6 +78,18 @@ export function ScholarshipPartnerLogos() {
       <div className={styles.community_partners}>
         <Link href="https://codecool.com/en/" target="_blank">
           <Image src={CodecoolLogo} alt="Logo for Codecool" fill />
+        </Link>
+      </div>
+    </div>
+  );
+}
+
+export function MediaPartnerLogos() {
+  return (
+    <div className="col justify-center x-fill">
+      <div className={styles.media_partners}>
+        <Link href="https://apiumhub.com/" target="_blank">
+          <Image src={ApiumHubLogo} alt="Logo for Apiumhub" fill />
         </Link>
       </div>
     </div>
