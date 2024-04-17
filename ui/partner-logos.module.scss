@@ -2,7 +2,8 @@
 .level_2,
 .level_3,
 .level_4,
-.community_partners {
+.community_partners,
+.media_partners {
   flex: 1;
   display: flex;
   flex-direction: row;
@@ -13,7 +14,8 @@
   padding: 0;
 }
 
-.community_partners {
+.community_partners,
+.media_partners {
   flex-direction: column;
   gap: 1.5rem;
   margin-bottom: 2rem;
