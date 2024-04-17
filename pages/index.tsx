@@ -9,6 +9,7 @@ import {
   CommunityPartnerLogos,
   PartnerLogos,
   ScholarshipPartnerLogos,
+  MediaPartnerLogos,
 } from "../ui/partner-logos";
 import TALKS from "../data/talks";
 import SpeakerList from "../ui/speaker-list";
@@ -122,6 +123,12 @@ function Home() {
           <h1>Community partners</h1>
         </Divider>
         <CommunityPartnerLogos />
+      </section>
+      <section id="media-partners">
+        <Divider>
+          <h1>Media partners</h1>
+        </Divider>
+        <MediaPartnerLogos />
       </section>
     </>
   );
