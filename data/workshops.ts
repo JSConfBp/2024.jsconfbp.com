@@ -27,6 +27,33 @@ const WORKSHOPS = [
     seats: 20,
   },
   {
+    slug: "api-first-stack",
+    published: true,
+    title: "API-first approach with no-code stack for fullstack development",
+    summary: `Learn the principles of the API-first approach, and how to implement API contracts using ChatGPT or Copilot and GitLab CI.`,
+    abstract: `If you are new to the API-first approach, this workshop will help you learn the principles of this method and provide a practical implementation strategy. With the stack we will present, we automate as many parts as possible to enhance efficiency and reduce errors, allowing our team to focus on the business cases they are working on. After a high-level presentation about the approach, you’ll learn how to use ChatGPT or Copilot to define the API contract, how to use GitLab CI to automate code generation for both backend and frontend libraries that implement the contract, and then you’ll start using these libraries to build your own real-world application.`,
+    startTime: "10:00",
+    endTime: "16:00",
+    mentors: [
+      {
+        name: "Attila Olah",
+        link: "",
+      },
+    ],
+    venue: {
+      address: "",
+      name: "SuperCharge Event space",
+      link: "",
+    },
+    sponsor: {
+      logo: "",
+      name: "",
+      link: "",
+    },
+    socialShareImage: "social-share/workshop-supercharge.png",
+    seats: 25,
+  },
+  {
     slug: "aha-stack-2",
     published: false,
     title: "AHA stack: Make web development easy again!",
