@@ -39,28 +39,29 @@ function Home() {
         </Divider>
 
         <div className={`${styles.updates_container} col md-row mb-2`}>
+          <>
+            <h2 className="mt-0">Venue Change</h2>
+            <h4 className="ml-0p25">April 26, 2024</h4>
+            <div id="update_content">
+              <p>
+                We're moving to the gorgeous{" "}
+                <Link href="/venue-change">
+                  <strong>Uránia National Film Theater</strong>
+                </Link>
+                ! It was the venue for the very first JSConf Budapest, and this
+                year we're going back.
+              </p>
+            </div>
+          </>
 
           <>
             <h2 className="mt-0">Be a speaker at our Community Lounge</h2>
             <h4 className="ml-0p25">April 17, 2024</h4>
             <div id="update_content">
               <p>
-              Submit your <Link href="https://t.ly/v4-cu">Lightning Talk proposal</Link> by May 15, 2024!
-              </p>
-            </div>
-          </>
-
-          <>
-            <h2 className="mt-0">Convince your boss!</h2>
-            <h4 className="ml-0p25">April 2, 2024</h4>
-            <div id="update_content">
-              <p>
-                Your employer have doubts why this conference worth attending?
-              </p>
-              <p>
-                <Link href="/convince-your-boss">
-                  Let's prepare to convince your boss so you can visit us in June!
-                </Link>
+                Submit your{" "}
+                <Link href="https://t.ly/v4-cu">Lightning Talk proposal</Link>{" "}
+                by May 15, 2024!
               </p>
             </div>
           </>
@@ -80,7 +81,6 @@ function Home() {
               </p>
             </div>
           </>
-
         </div>
       </section>
       <section id="venue">
