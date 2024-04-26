@@ -1,6 +1,4 @@
 import Divider from "../../ui/divider";
-import TalkAbstract from "../../ui/talk-abstract";
-import SpeakerDetails from "../../ui/speaker-details";
 
 import WORKSHOPS from "../../data/workshops";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
@@ -12,6 +10,8 @@ import SocialShare from "../../ui/social-share";
 import Link from "next/link";
 import CenteredButton from "../../ui/centered-button";
 import Image from "next/image";
+import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+import { serialize as MDXSerialize } from "next-mdx-remote/serialize";
 
 export const getStaticPaths = (async () => {
   // We want to generate the published speaker pages at build time
@@ -31,9 +31,20 @@ export const getStaticProps = (async (context) => {
   //   - getStaticPaths must be used with getStaticProps
   const data = WORKSHOPS.find((t) => context.params.slug === t.slug);
 
-  return { props: { data } };
+  const abstractMdxSerialized = await MDXSerialize(data.abstract);
+
+  return {
+    props: {
+      data: {
+        ...data,
+        abstractMdxSerialized,
+      },
+    },
+  };
 }) satisfies GetStaticProps<{
-  data: (typeof WORKSHOPS)[number];
+  data: (typeof WORKSHOPS)[number] & {
+    abstractMdxSerialized: MDXRemoteSerializeResult;
+  };
 }>;
 
 export default function WorkshopPage({
@@ -47,7 +58,7 @@ export default function WorkshopPage({
     published,
     title,
     summary,
-    abstract,
+    abstractMdxSerialized,
     socialShareImage,
     venue,
     sponsor,
@@ -116,7 +127,7 @@ export default function WorkshopPage({
         Registration Opens Soon!
       </CenteredButton>
 
-      <p>{abstract}</p>
+      <MDXRemote {...abstractMdxSerialized} />
     </>
   );
 }
