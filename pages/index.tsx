@@ -90,22 +90,27 @@ function Home() {
         <div className="x-container col md-row gap-1p5">
           <iframe
             title="Venue area map"
-            style={{ pointerEvents: "none" }}
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.565701968758!2d19.052097751378795!3d47.49837330333867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc402a04eee3%3A0x6869564cd433693c!2sAkv%C3%A1rium+Klub!5e0!3m2!1sen!2sus!4v1448264513121"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.7248156162027!2d19.06250307699919!3d47.49527397117969!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc5d3ede55ed%3A0x2b5d864f5b6ed083!2sUrania%20National%20Film%20Theater!5e0!3m2!1sen!2sno!4v1714113336771!5m2!1sen!2sno"
             width="100%"
             height="340"
           />
           <div>
             <p className="md-mt-0">
-              Akvárium Klub is more than a simple bar: it is a culture centre
-              with a wide musical repertoire from mainstream to underground.
-              There is always a good concert and a smashing exhibition,
-              performance, or other event happening here, in a friendly scene,
-              situated right in the city centre.
+              <Link href="/venue-change">Uránia theater</Link> is a historic
+              cinema located in Budapest, Hungary, known for its beautiful
+              architecture and unique atmosphere. The venue has a rich cultural
+              heritage and is a popular destination for film screenings,
+              concerts, and conferences. Uránia Filmszínház offers an intimate
+              and cozy setting, which can create a focused and engaging
+              atmosphere for conference attendees. The historic charm of the
+              venue also adds a unique and memorable element to the conference
+              experience.
             </p>
             <p>
-              Literally under a pool of water, this great club is our venue in
-              since 2016.
+              It's worth noting that Uránia mozi holds a special place in our
+              hearts, as it was the venue for the very first JSConf Budapest. We
+              have cherished memories of that time. Let us share the amazing
+              vibe of this place that we love so much!
             </p>
           </div>
         </div>
