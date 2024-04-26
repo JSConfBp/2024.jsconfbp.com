@@ -9,6 +9,8 @@ import { useRouter } from "next/router";
 import styles from "./speakers.module.scss";
 import classNames from "classnames";
 import SocialShare from "../../ui/social-share";
+import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
+import { serialize as MDXSerialize } from "next-mdx-remote/serialize";
 
 export const getStaticPaths = (async () => {
   // We want to generate the published speaker pages at build time
@@ -28,9 +30,33 @@ export const getStaticProps = (async (context) => {
   //   - getStaticPaths must be used with getStaticProps
   const data = TALKS.find((t) => context.params.slug === t.slug);
 
-  return { props: { data } };
+  const abstractMdxSerialized = await MDXSerialize(data.talk.abstract);
+  const bioMdxSerialized = await MDXSerialize(data.speaker.bio);
+
+  return {
+    props: {
+      data: {
+        ...data,
+        speaker: {
+          ...data.speaker,
+          bioMdxSerialized,
+        },
+        talk: {
+          ...data.talk,
+          abstractMdxSerialized,
+        },
+      },
+    },
+  };
 }) satisfies GetStaticProps<{
-  data: (typeof TALKS)[number];
+  data: (typeof TALKS)[number] & {
+    speaker: {
+      bioMdxSerialized: MDXRemoteSerializeResult;
+    };
+    talk: {
+      abstractMdxSerialized: MDXRemoteSerializeResult;
+    };
+  };
 }>;
 
 export default function SpeakerPage({
@@ -59,7 +85,9 @@ export default function SpeakerPage({
         </h1>
       </Divider>
 
-      <TalkAbstract>{talk.abstract}</TalkAbstract>
+      <TalkAbstract>
+        <MDXRemote {...talk.abstractMdxSerialized} />
+      </TalkAbstract>
 
       <SpeakerDetails
         name={speaker.name}
@@ -72,7 +100,7 @@ export default function SpeakerPage({
         work={speaker.work}
         workURL={speaker.workURL}
       >
-        {speaker.bio}
+        <MDXRemote {...speaker.bioMdxSerialized} />
       </SpeakerDetails>
     </>
   );
