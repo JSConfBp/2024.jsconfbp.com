@@ -121,23 +121,11 @@ function Home() {
         </Divider>
         <PartnerLogos />
       </section>
-      <section id="scholarship-partners">
-        <Divider>
-          <h1>Scholarship Partners</h1>
-        </Divider>
-        <ScholarshipPartnerLogos />
-      </section>
       <section id="community-partners">
         <Divider>
           <h1>Community partners</h1>
         </Divider>
         <CommunityPartnerLogos />
-      </section>
-      <section id="media-partners">
-        <Divider>
-          <h1>Media partners</h1>
-        </Divider>
-        <MediaPartnerLogos />
       </section>
     </>
   );
