@@ -20,10 +20,11 @@ import youtube from "../public/icons/youtube.png";
 import facebook from "../public/icons/facebook.png";
 
 import confVibe from "../public/conf-vibe.png";
-import partyVibe from "../public/party-vibe.png";
+import uraniaInsideImg from "../public/urania-inside.jpg";
 
 import nec from "../public/team/nec.png";
 import norbi from "../public/team/norbi.png";
+import WideImage from "../ui/wide-image";
 
 function Partners() {
   return (
@@ -304,7 +305,7 @@ function Partners() {
         <div className="col md-row align-center justify-center gap-1p5 md-gap-4p5">
           <OldLogo className="w-10rem" />
           <div className="min-h-10rem col align-center md-align-start justify-around">
-            {["Single track", "500+ attendees", "25 speakers", "2 parties"].map(
+            {["Single track", "400+ attendees", "23 speakers", "2 parties"].map(
               (line, index) => (
                 <p key={index} className="color-bg m-0">
                   {line}
@@ -320,21 +321,22 @@ function Partners() {
         className="text-center mt-n2"
       >
         <h1 className="color-bg">Venue</h1>
-        <p className="color-bg">Akvárium Klub</p>
+        <p className="color-bg">Urania Theater</p>
         <p className="color-bg text-center">
-          Center of the city, 580 square meters of exhibition space, literally
-          under a pool.
+          Uránia mozi is a historic cinema located in Budapest, Hungary, known
+          for its beautiful architecture and unique atmosphere. It's worth
+          noting that Uránia mozi holds a special place in our hearts, as it was
+          the venue for the very first JSConf Budapest!
         </p>
       </ColoredSection>
-      <Image
-        src={partyVibe}
-        alt="Picture a party at the conf."
-        sizes="100vw"
-        style={{ width: "100vw", height: "auto" }}
-        className="x-fill mb-n0p75"
-        placeholder="blur"
-        quality={50}
-      ></Image>
+      <WideImage
+        src={uraniaInsideImg}
+        alt="Inside the Urania Theatre auditorium"
+        priority
+        quality={75}
+        noMargin
+      />
+
       <ColoredSection
         id="packages"
         background="background"
@@ -527,10 +529,6 @@ function Partners() {
               <tr>
                 <td>WiFi pass</td>
                 <td>€ 2,000</td>
-              </tr>
-              <tr>
-                <td>Guitar Hero</td>
-                <td>€ 1,000</td>
               </tr>
               <tr>
                 <td>Sketch notes</td>
