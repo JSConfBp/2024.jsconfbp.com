@@ -28,6 +28,12 @@ export function PartnerLogos() {
         <Link href="https://risingstack.com/" target="_blank">
           <Image src={RisingStackLogo} alt="Logo for RisingStack" fill />
         </Link>
+        <Link href="https://codecool.com/en/" target="_blank">
+          <Image src={CodecoolLogo} alt="Logo for Codecool" fill />
+        </Link>
+        <Link href="https://apiumhub.com/" target="_blank">
+          <Image src={ApiumHubLogo} alt="Logo for Apiumhub" fill />
+        </Link>
       </div>
     </div>
   );
