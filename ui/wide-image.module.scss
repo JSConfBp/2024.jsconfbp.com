@@ -12,10 +12,14 @@
   }
 
   @media (min-width: 768px) {
-    height: calc(100vw / 2.8);
+    height: calc(100vw / 3);
   }
 
   img {
     object-fit: cover;
+  }
+
+  &.no_margin {
+    margin-block: 0;
   }
 }
