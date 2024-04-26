@@ -5,14 +5,14 @@
   margin: 2rem 0;
 
   width: 100vw;
-  height: calc(100vw / 3.5);
+  height: calc(100vw / 3.2);
 
   @media (max-width: 480px) {
     height: calc(100vw / 1.2);
   }
 
   @media (min-width: 768px) {
-    height: calc(100vw / 2.5);
+    height: calc(100vw / 2.8);
   }
 
   img {
