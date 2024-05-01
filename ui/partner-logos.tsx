@@ -16,6 +16,7 @@ import RisingStackLogo from "../public/partner-logos/risingstack.svg";
 import CodecoolLogo from "../public/partner-logos/codecool.svg";
 
 import ApiumHubLogo from "../public/partner-logos/apiumhub_logo_black.png";
+import DevITJobsLogo from "../public/partner-logos/devitjobs.png";
 
 export function PartnerLogos() {
   return (
@@ -33,6 +34,9 @@ export function PartnerLogos() {
         </Link>
         <Link href="https://apiumhub.com/" target="_blank">
           <Image src={ApiumHubLogo} alt="Logo for Apiumhub" fill />
+        </Link>
+        <Link href="https://devitjobs.uk/jobs/JavaScript/all" target="_blank">
+          <Image src={DevITJobsLogo} alt="Logo for DevITjobs UK" fill />
         </Link>
       </div>
     </div>
