@@ -8,8 +8,6 @@ import MCList from "../ui/mc-list";
 import {
   CommunityPartnerLogos,
   PartnerLogos,
-  ScholarshipPartnerLogos,
-  MediaPartnerLogos,
 } from "../ui/partner-logos";
 import TALKS from "../data/talks";
 import SpeakerList from "../ui/speaker-list";
