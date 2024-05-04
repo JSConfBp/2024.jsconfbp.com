@@ -242,8 +242,8 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     },
     talk: {
       title: "Picking the low-hanging fruit – easy pentest wins",
-      abstract: `"Penetration tests are a critical step in securing web services, but often much of their effort is wasted reporting simple things that can easily be avoided in advance.
-We will look at security issues that are often found in pentests at all levels in the deployment stack, concentrating on those that can be resolved quickly and easily in one place (in any language), and show how to fix them, freeing up expensive pentester resources for tackling more complex challenges."`,
+      abstract: `Penetration tests are a critical step in securing web services, but often much of their effort is wasted reporting simple things that can easily be avoided in advance.
+We will look at security issues that are often found in pentests at all levels in the deployment stack, concentrating on those that can be resolved quickly and easily in one place (in any language), and show how to fix them, freeing up expensive pentester resources for tackling more complex challenges.`,
       socialShareImage: "social-share/marcus.png",
       youtubeId: "",
       flickrAlbumId: "",
@@ -465,7 +465,9 @@ In my talk, I aim to introduce a fresh approach for generating and storing token
     talk: {
       title:
         "We're Not Robots: A Developer's Journey to Success, Creativity, and Avoiding Burnout",
-      abstract: `Ever pondered what it takes to unlock your full potential as a developer? Venture into the realm where hiring managers' expectations and social media buzz intersect. In a world that seemingly demands developers to live and breathe code 24/7, we will challenge the notion that perpetual coding is the sole path to success. In this session [speaker name] will explore [speaker gender] personal dev journey, challenging the notion that being a successful developer requires non-stop dedication.  Drawing from research insights, [speaker gender] will delve into the cognitive needs of our brains, emphasizing the importance of creating space for creativity and passion in every pursuit. We will also explore the developer workday, proposing strategies for both developers and managers to foster an environment that nurtures creativity and ensures a balanced and fulfilling professional life. Join us in reshaping the narrative around developer productivity, creativity, and burnout.`,
+      abstract: `Ever pondered what it takes to unlock your full potential as a developer? Venture into the realm where hiring managers' expectations and social media buzz intersect. In a world that seemingly demands developers to live and breathe code 24/7, we will challenge the notion that perpetual coding is the sole path to success.
+
+      In this session Amanda will explore her personal dev journey, challenging the notion that being a successful developer requires non-stop dedication.  Drawing from research insights, she will delve into the cognitive needs of our brains, emphasizing the importance of creating space for creativity and passion in every pursuit. We will also explore the developer workday, proposing strategies for both developers and managers to foster an environment that nurtures creativity and ensures a balanced and fulfilling professional life. Join us in reshaping the narrative around developer productivity, creativity, and burnout.`,
       socialShareImage: "social-share/amanda.png",
       youtubeId: "",
       flickrAlbumId: "",
@@ -617,9 +619,10 @@ In this talk, we’ll see
       title:
         "Unexpected monad. Is safe error handling possible in JavaScript/TypeScript?",
       abstract: `Error handling is an extremely hard part of every JavaScript project that can produce a lot of bugs. Usually, developers use just the try/catch as a standard approach for the error handling, which is not so ideal solution because this statement catches anything which was thrown by the “throw” statement, as results developer:
-      1. need extra conditions for handling restricted classes of exceptions;
-      2. should rethrow errors or it can be eaten up;
-      3. can’t separate errors and exceptions;
+
+      - need extra conditions for handling restricted classes of exceptions;
+      - should rethrow errors or it can be eaten up;
+      - can’t separate errors and exceptions;
 
       In this talk, you’ll learn how to implement safe error handling (without mentioned problems) in a project and with perks like typed errors inside handlers, errors documentation of functions/methods without JSDoc and comments, and the ability to log your errors without a break of the error handling flow.`,
       socialShareImage: "social-share/artemdmitry.png",
