@@ -21,7 +21,7 @@
   margin-bottom: 2rem;
 
   a {
-    width: 80vw;
+    width: 50vw;
     height: 20vw;
     position: relative;
 
@@ -41,37 +41,48 @@
 }
 
 .level_1 {
-  gap: 2rem;
+  gap: 4rem;
+  margin-bottom: 3rem;
 
-  svg {
-    width: 50vw;
+  a {
+    width: 60vw;
+    height: 20vw;
+    position: relative;
+
+    img {
+      object-fit: contain;
+    }
   }
 
   @media only screen and (min-width: 768px) {
-    width: 100vw;
-    gap: 2.5rem;
+    flex-direction: row;
 
-    svg {
-      width: 15vw;
+    a {
+      width: 17vw;
+      height: 10vw;
     }
   }
 }
 
 .level_2 {
-  width: 75vw;
-  column-gap: 3.5rem;
-  row-gap: 1.5rem;
+  gap: 1.5rem;
 
-  svg {
-    width: 25vw;
+  a {
+    width: 80vw;
+    height: 20vw;
+    position: relative;
+
+    img {
+      object-fit: contain;
+    }
   }
 
   @media only screen and (min-width: 768px) {
-    width: 100vw;
-    gap: 2rem;
-
-    svg {
-      width: 11.5vw;
+    flex-direction: row;
+    margin-bottom: 0rem;
+    a {
+      width: 22vw;
+      height: 10vw;
     }
   }
 }

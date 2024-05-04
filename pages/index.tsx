@@ -5,10 +5,7 @@ import TicketBanner from "../ui/ticket-banner";
 import Divider from "../ui/divider";
 import Link from "next/link";
 import MCList from "../ui/mc-list";
-import {
-  CommunityPartnerLogos,
-  PartnerLogos,
-} from "../ui/partner-logos";
+import { CommunityPartnerLogos, PartnerLogos } from "../ui/partner-logos";
 import TALKS from "../data/talks";
 import SpeakerList from "../ui/speaker-list";
 
