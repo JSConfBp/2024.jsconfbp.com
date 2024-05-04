@@ -13,6 +13,7 @@ import ReactParisLogo from "../public/partner-logos/react-paris.png";
 
 import JetBrainsLogo from "../public/partner-logos/jetbrains.svg";
 import RisingStackLogo from "../public/partner-logos/risingstack.svg";
+import SuperChargeNewLogo from "../public/partner-logos/supercharge.svg";
 import CodecoolLogo from "../public/partner-logos/codecool.svg";
 
 import ApiumHubLogo from "../public/partner-logos/apiumhub_logo_black.png";
@@ -21,14 +22,19 @@ import DevITJobsLogo from "../public/partner-logos/devitjobs.png";
 export function PartnerLogos() {
   return (
     <div className="col justify-center x-fill">
+      <div className={styles.level_1}>
+        <Link href="https://risingstack.com/" target="_blank">
+          <Image src={RisingStackLogo} alt="Logo for RisingStack" fill />
+        </Link>
+        <Link href="https://supercharge.io/" target="_blank">
+          <Image src={SuperChargeNewLogo} alt="Logo for SuperCharge" fill />
+        </Link>
+      </div>
       <div className={styles.community_partners}>
         <Link href="https://www.jetbrains.com/" target="_blank">
           <Image src={JetBrainsLogo} alt="Logo for JetBrains" fill />
         </Link>
 
-        <Link href="https://risingstack.com/" target="_blank">
-          <Image src={RisingStackLogo} alt="Logo for RisingStack" fill />
-        </Link>
         <Link href="https://codecool.com/en/" target="_blank">
           <Image src={CodecoolLogo} alt="Logo for Codecool" fill />
         </Link>
