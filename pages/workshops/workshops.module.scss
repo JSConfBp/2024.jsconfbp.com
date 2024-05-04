@@ -11,10 +11,13 @@
 
 .workshop-metadata {
   margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-  @media (min-width: 426px) {
-    display: flex;
-    justify-content: space-evenly;
+  @media (min-width: 431px) {
+    flex-direction: row;
+    justify-content: center;
     gap: 3rem;
   }
 }
@@ -34,7 +37,7 @@
 
   text-align: center;
 
-  @media (min-width: 426px) {
+  @media (min-width: 431px) {
     text-align: left;
   }
 }
@@ -44,12 +47,17 @@
   height: 20vw;
   display: block;
   position: relative;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  width: 60%;
 
-  @media (min-width: 426px) {
-    width: 30%;
+  @media (min-width: 431px) {
+    width: 40%;
     height: 6rem;
     margin-bottom: 0;
+  }
+
+  @media (min-width: 1280px) {
+    width: 25%;
   }
 }
 
