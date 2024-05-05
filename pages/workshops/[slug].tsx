@@ -12,6 +12,7 @@ import CenteredButton from "../../ui/centered-button";
 import Image from "next/image";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize as MDXSerialize } from "next-mdx-remote/serialize";
+import { SeatCount } from "../../ui/seat-count";
 
 export const getStaticPaths = (async () => {
   // We want to generate the published speaker pages at build time
@@ -65,7 +66,6 @@ export default function WorkshopPage({
     sponsor,
     startTime,
     endTime,
-    seats,
   } = data;
 
   if (!published) {
@@ -115,7 +115,10 @@ export default function WorkshopPage({
               </Link>
             )}
           </li>
-          <li>Seats available: {seats}</li>
+          <li>
+            Seats available:{" "}
+            <SeatCount workshopKey={sponsor.name.toUpperCase()} />
+          </li>
         </ul>
       </div>
 
