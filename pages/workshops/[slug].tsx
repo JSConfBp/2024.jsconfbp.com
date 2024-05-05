@@ -13,6 +13,7 @@ import Image from "next/image";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize as MDXSerialize } from "next-mdx-remote/serialize";
 import { SeatCount } from "../../ui/seat-count";
+import { useEffect, useState } from "react";
 
 export const getStaticPaths = (async () => {
   // We want to generate the published speaker pages at build time
@@ -55,9 +56,19 @@ export default function WorkshopPage({
   // not sure why we need this, but in dev mode, data is often undefined
   if (!data) return null;
 
+  const [registrationOpen, setRegistrationOpen] = useState(false);
+
+  useEffect(() => {
+    fetch("https://workshop-registration.herokuapp.com/api/seats")
+      .then((res) => res.json())
+      .then((data) => {
+        setRegistrationOpen(data[sponsor.name.toUpperCase()].open);
+      });
+  }, []);
+
   const {
     published,
-    registrationOpen,
+
     title,
     summary,
     abstractMdxSerialized,
@@ -128,10 +139,19 @@ export default function WorkshopPage({
         disabled={!registrationOpen}
         className={styles.registration}
       >
-        Registration Opens Soon!
+        {registrationOpen ? "Register here!" : "Registration Opens Soon!"}
       </CenteredButton>
 
       <MDXRemote {...abstractMdxSerialized} />
+
+      <p>
+        This workshop is FREE for every ticket holder of JSConf Budapest 2024.
+        Don't have a ticket yet?{" "}
+        <Link href="https://ti.to/jsconf-bp/jsconf-budapest-2024">
+          Get yours
+        </Link>{" "}
+        and secure your workshop seat!
+      </p>
     </>
   );
 }
