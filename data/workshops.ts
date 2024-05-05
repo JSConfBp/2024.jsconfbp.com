@@ -5,6 +5,7 @@ const WORKSHOPS = [
   {
     slug: "aha-stack",
     published: true,
+    registrationOpen: false,
     title: "AHA stack: Make web development easy again!",
     summary: `Meet the AHA stack, combining Astro, htmx, and Alpine.js to deliver rich, interactive sites in a surprisingly easy way. `,
     abstract: `
@@ -50,6 +51,7 @@ const WORKSHOPS = [
   {
     slug: "api-first-stack",
     published: true,
+    registrationOpen: false,
     title: "API-first approach with no-code stack for fullstack development",
     summary: `Learn the principles of the API-first approach, and how to implement API contracts using ChatGPT or Copilot and GitLab CI.`,
     abstract: `
@@ -89,6 +91,7 @@ const WORKSHOPS = [
   {
     slug: "aha-stack-2",
     published: false,
+    registrationOpen: false,
     title: "AHA stack: Make web development easy again!",
     summary: `Meet the AHA stack, combining Astro, htmx, and Alpine.js to deliver rich, interactive sites in a surprisingly easy way. `,
     abstract: `

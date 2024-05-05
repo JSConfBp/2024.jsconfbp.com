@@ -56,6 +56,7 @@ export default function WorkshopPage({
 
   const {
     published,
+    registrationOpen,
     title,
     summary,
     abstractMdxSerialized,
@@ -119,9 +120,9 @@ export default function WorkshopPage({
       </div>
 
       <CenteredButton
-        href="#"
+        href="https://workshop-registration.herokuapp.com/"
         target="_self"
-        disabled
+        disabled={!registrationOpen}
         className={styles.registration}
       >
         Registration Opens Soon!
