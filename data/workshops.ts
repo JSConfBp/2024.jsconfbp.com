@@ -46,7 +46,6 @@ const WORKSHOPS = [
       link: "https://risingstack.com/",
     },
     socialShareImage: "social-share/workshop-risingstack.png",
-    seats: 20,
   },
   {
     slug: "api-first-stack",
@@ -86,7 +85,6 @@ const WORKSHOPS = [
       link: "https://supercharge.io/",
     },
     socialShareImage: "social-share/workshop-supercharge.png",
-    seats: 25,
   },
   {
     slug: "aha-stack-2",
