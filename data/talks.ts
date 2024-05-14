@@ -360,7 +360,7 @@ We'll learn about the history of programming languages, why type systems exist, 
     },
   },
   {
-    published: true,
+    published: false,
     slug: "aleksandra-sikora",
     speaker: {
       name: "Aleksandra Sikora",
