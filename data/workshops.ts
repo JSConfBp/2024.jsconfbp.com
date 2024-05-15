@@ -4,6 +4,36 @@ import CrabNebulaLogo from "../public/partner-logos/crabnebula.svg";
 
 const WORKSHOPS = [
   {
+    slug: "desktop-app-with-tauri",
+    published: true,
+    title: "Tauri: Build, Debug, and Ship a Desktop App with Web Tech",
+    summary: `Create a desktop app with your web framework of choice using Tauri!`,
+    abstract: `
+      In this workshop we will create a Tauri app with our web framework of choice. Tauri exposes native APIs so
+      it’s possible to communicate with the system straight from the Frontend of our app. Lastly, we global distribution
+      and Auto-Updates with CrabNebula Cloud. Taking bundling and drafting releases straight from a GitHub Action.
+    `,
+    startTime: "10:00",
+    endTime: "15:00",
+    mentors: [
+      {
+        name: "Atila Fassina",
+        link: "https://twitter.com/AtilaFassina",
+      },
+    ],
+    venue: {
+      address: "",
+      name: "TBA",
+      link: "",
+    },
+    sponsor: {
+      logo: CrabNebulaLogo,
+      name: "CrabNebula",
+      link: "https://crabnebula.dev/",
+    },
+    socialShareImage: "social-share/workshop-crabnebula.png",
+  },
+  {
     slug: "aha-stack",
     published: true,
     title: "AHA stack: Make web development easy again!",
@@ -84,36 +114,6 @@ const WORKSHOPS = [
       link: "https://supercharge.io/",
     },
     socialShareImage: "social-share/workshop-supercharge.png",
-  },
-  {
-    slug: "desktop-app-with-tauri",
-    published: true,
-    title: "Tauri: Build, Debug, and Ship a Desktop App with Web Tech",
-    summary: `Create a desktop app with your web framework of choice using Tauri!`,
-    abstract: `
-      In this workshop we will create a Tauri app with our web framework of choice. Tauri exposes native APIs so
-      it’s possible to communicate with the system straight from the Frontend of our app. Lastly, we global distribution
-      and Auto-Updates with CrabNebula Cloud. Taking bundling and drafting releases straight from a GitHub Action.
-    `,
-    startTime: "10:00",
-    endTime: "15:00",
-    mentors: [
-      {
-        name: "Atila Fassina",
-        link: "",
-      },
-    ],
-    venue: {
-      address: "",
-      name: "TBA",
-      link: "",
-    },
-    sponsor: {
-      logo: CrabNebulaLogo,
-      name: "CrabNebula",
-      link: "https://crabnebula.dev/",
-    },
-    socialShareImage: "social-share/workshop-crabnebula.png",
   },
   {
     slug: "aha-stack-2",
