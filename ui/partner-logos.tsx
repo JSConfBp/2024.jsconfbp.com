@@ -14,6 +14,7 @@ import ReactParisLogo from "../public/partner-logos/react-paris.png";
 import JetBrainsLogo from "../public/partner-logos/jetbrains.svg";
 import RisingStackLogo from "../public/partner-logos/risingstack.svg";
 import SuperChargeNewLogo from "../public/partner-logos/supercharge.svg";
+import CrabNebulaLogo from "../public/partner-logos/crabnebula.svg";
 import CodecoolLogo from "../public/partner-logos/codecool.svg";
 
 import ApiumHubLogo from "../public/partner-logos/apiumhub_logo_black.png";
@@ -28,6 +29,9 @@ export function PartnerLogos() {
         </Link>
         <Link href="https://supercharge.io/" target="_blank">
           <Image src={SuperChargeNewLogo} alt="Logo for SuperCharge" fill />
+        </Link>
+        <Link href="https://crabnebula.dev/" target="_blank">
+          <Image src={CrabNebulaLogo} alt="Logo for CrabNebula" fill />
         </Link>
       </div>
       <div className={styles.community_partners}>
