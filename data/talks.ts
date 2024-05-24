@@ -330,7 +330,7 @@ What new features can we use in 2024, and what can we expect soon? What are some
     },
   },
   {
-    published: true,
+    published: false,
     slug: "leandro-ostera",
     speaker: {
       name: "Leandro Ostera",
