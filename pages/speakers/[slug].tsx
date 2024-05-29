@@ -2,7 +2,7 @@ import Divider from "../../ui/divider";
 import TalkAbstract from "../../ui/talk-abstract";
 import SpeakerDetails from "../../ui/speaker-details";
 
-import TALKS from "../../data/talks";
+import TALKS, { TalkData } from "../../data/talks";
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from "next";
 import { useRouter } from "next/router";
 
@@ -28,7 +28,9 @@ export const getStaticProps = (async (context) => {
   // The getStaticProps loads the full data based on the params sent by the getStaticPaths
   // https://nextjs.org/docs/pages/building-your-application/data-fetching/get-static-paths#where-can-i-use-getstaticpaths
   //   - getStaticPaths must be used with getStaticProps
-  const data = TALKS.find((t) => context.params.slug === t.slug);
+  const data = TALKS.find(
+    (t) => t.published && context.params.slug === t.slug,
+  ) as TalkData; // we have 2 shapes of data TalkData and ScheduleData, and all published talks have the shape of TalkData
 
   const abstractMdxSerialized = await MDXSerialize(data.talk.abstract);
   const bioMdxSerialized = await MDXSerialize(data.speaker.bio);
@@ -49,7 +51,7 @@ export const getStaticProps = (async (context) => {
     },
   };
 }) satisfies GetStaticProps<{
-  data: (typeof TALKS)[number] & {
+  data: TalkData & {
     speaker: {
       bioMdxSerialized: MDXRemoteSerializeResult;
     };

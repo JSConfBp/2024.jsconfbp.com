@@ -1,10 +1,57 @@
+type Speaker = {
+  name: string;
+  pronouns: string;
+  profilePicturePath: string;
+  bio: string;
+  location: string;
+  socialMediaHandle: string;
+  socialMediaUrl: string;
+  socialMediaType: string;
+  website: string;
+  work: string;
+  role: string;
+  workURL: string;
+  imageAlign: string;
+};
+
+type Talk = {
+  title: string;
+  abstract: string;
+  socialShareImage: string;
+  youtubeId: string;
+  flickrAlbumId: string;
+};
+
+type Schedule = {
+  day: number;
+  hours: string;
+};
+
+export type TalkData = {
+  published: boolean;
+  slug: string;
+  speaker: Speaker;
+  talk: Talk;
+  schedule: Schedule;
+};
+
+type ScheduleOnly = {
+  day: number;
+  hours: string;
+  title: string;
+  subTitle?: string;
+};
+
+export type ScheduleData = {
+  published: boolean;
+  scheduleOnly: boolean;
+  schedule: ScheduleOnly;
+};
+
 const TALKS = [
   {
     published: false,
-    scheduleOnly: true,
-    talk: {
-      title: "Registraion and breakfast",
-    },
+    slug: "scheduleOnly",
     schedule: {
       day: 1,
       hours: "08:00 - 09:15",
@@ -12,13 +59,7 @@ const TALKS = [
   },
   {
     published: false,
-    scheduleOnly: true,
-    talk: {
-      title: "Opening JSConf Budapest 2024",
-    },
-    speaker: {
-      name: "by the organizers & the MC",
-    },
+    slug: "scheduleOnly",
     schedule: {
       day: 1,
       hours: "09:15 - 09:30",
@@ -90,10 +131,7 @@ What new features can we use in 2024, and what can we expect soon? What are some
   },
   {
     published: false,
-    scheduleOnly: true,
-    talk: {
-      title: "Coffee Break",
-    },
+    slug: "scheduleOnly",
     schedule: {
       day: 1,
       hours: "10:30 - 11:30",
@@ -196,13 +234,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
 
   {
     published: false,
-    scheduleOnly: true,
-    talk: {
-      title: "Lunch",
-    },
-    speaker: {
-      name: "...",
-    },
+    slug: "scheduleOnly",
     schedule: {
       day: 1,
       hours: "13:00 - 14:30",
@@ -310,10 +342,7 @@ In this talk, we’ll see
   },
   {
     published: false,
-    scheduleOnly: true,
-    talk: {
-      title: "Coffee Break",
-    },
+    slug: "scheduleOnly",
     schedule: {
       day: 1,
       hours: "16:00 - 17:00",
@@ -421,13 +450,7 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
   },
   {
     published: false,
-    scheduleOnly: true,
-    talk: {
-      title: "Dinner",
-    },
-    speaker: {
-      name: "...",
-    },
+    slug: "scheduleOnly",
     schedule: {
       day: 1,
       hours: "18:30 - 20:45",
@@ -435,10 +458,7 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
   },
   {
     published: false,
-    scheduleOnly: true,
-    talk: {
-      title: "Breakfast",
-    },
+    slug: "scheduleOnly",
     schedule: {
       day: 2,
       hours: "08:00 - 09:30",
@@ -507,10 +527,7 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
   },
   {
     published: false,
-    scheduleOnly: true,
-    talk: {
-      title: "Coffee Break",
-    },
+    slug: "scheduleOnly",
     schedule: {
       day: 2,
       hours: "10:30 - 11:30",
@@ -612,13 +629,7 @@ We will look at security issues that are often found in pentests at all levels i
   },
   {
     published: false,
-    scheduleOnly: true,
-    talk: {
-      title: "Lunch",
-    },
-    speaker: {
-      name: "...",
-    },
+    slug: "scheduleOnly",
     schedule: {
       day: 2,
       hours: "13:00 - 14:30",
@@ -690,10 +701,7 @@ Time to find out.`,
   },
   {
     published: false,
-    scheduleOnly: true,
-    talk: {
-      title: "Coffee Break",
-    },
+    slug: "scheduleOnly",
     schedule: {
       day: 2,
       hours: "15:30 - 16:30",
@@ -777,16 +785,12 @@ Time to find out.`,
 
   {
     published: false,
-    scheduleOnly: true,
-    talk: {
-      title: "Closing JSConf Budapest 2024 & Family photo",
-    },
-    speaker: {
-      name: "by the organizers, the MCs and YOU",
-    },
+    slug: "scheduleOnly",
     schedule: {
       day: 2,
       hours: "17:30 - 18:00",
+      title: "Closing JSConf Budapest 2024 & Family photo",
+      subTitle: "by the organizers, the MCs and YOU",
     },
   },
   {
