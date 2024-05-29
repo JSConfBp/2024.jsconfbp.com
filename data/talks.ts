@@ -25,6 +25,10 @@ const TALKS = [
       youtubeId: "",
       flickrAlbumId: "",
     },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
+    },
   },
   {
     published: true,
@@ -53,6 +57,10 @@ const TALKS = [
       youtubeId: "",
       flickrAlbumId: "",
     },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
+    },
   },
   {
     published: true,
@@ -80,6 +88,10 @@ In this talk I go through common patterns, explain how they can be implemented i
       socialShareImage: "/social-share/kilian.png",
       youtubeId: "",
       flickrAlbumId: "",
+    },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
     },
   },
   {
@@ -110,6 +122,10 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       youtubeId: "",
       flickrAlbumId: "",
     },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
+    },
   },
   {
     published: true,
@@ -135,6 +151,10 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       socialShareImage: "social-share/david.png",
       youtubeId: "",
       flickrAlbumId: "",
+    },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
     },
   },
   {
@@ -164,6 +184,10 @@ Given these circumstances, efficient data usage with a good web performance beco
       youtubeId: "",
       flickrAlbumId: "",
     },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
+    },
   },
   {
     published: true,
@@ -189,6 +213,10 @@ Given these circumstances, efficient data usage with a good web performance beco
       socialShareImage: "social-share/daria.png",
       youtubeId: "",
       flickrAlbumId: "",
+    },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
     },
   },
   {
@@ -219,6 +247,10 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
       youtubeId: "",
       flickrAlbumId: "",
     },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
+    },
   },
   {
     published: true,
@@ -246,6 +278,10 @@ We will look at security issues that are often found in pentests at all levels i
       youtubeId: "",
       flickrAlbumId: "",
     },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
+    },
   },
   {
     published: true,
@@ -271,6 +307,10 @@ We will look at security issues that are often found in pentests at all levels i
       socialShareImage: "social-share/keren.png",
       youtubeId: "",
       flickrAlbumId: "",
+    },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
     },
   },
   {
@@ -300,6 +340,10 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       youtubeId: "",
       flickrAlbumId: "",
     },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
+    },
   },
   {
     published: true,
@@ -327,6 +371,10 @@ What new features can we use in 2024, and what can we expect soon? What are some
       socialShareImage: "social-share/nicolo.png",
       youtubeId: "",
       flickrAlbumId: "",
+    },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
     },
   },
   {
@@ -358,6 +406,10 @@ We'll learn about the history of programming languages, why type systems exist, 
       youtubeId: "",
       flickrAlbumId: "",
     },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
+    },
   },
   {
     published: false,
@@ -383,6 +435,10 @@ We'll learn about the history of programming languages, why type systems exist, 
       socialShareImage: "social-share/aleksandra.png",
       youtubeId: "",
       flickrAlbumId: "",
+    },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
     },
   },
   {
@@ -410,6 +466,10 @@ We'll learn about the history of programming languages, why type systems exist, 
       socialShareImage: "social-share/max.png",
       youtubeId: "",
       flickrAlbumId: "",
+    },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
     },
   },
   {
@@ -441,6 +501,10 @@ In my talk, I aim to introduce a fresh approach for generating and storing token
       youtubeId: "",
       flickrAlbumId: "",
     },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
+    },
   },
   {
     published: true,
@@ -470,6 +534,10 @@ In my talk, I aim to introduce a fresh approach for generating and storing token
       youtubeId: "",
       flickrAlbumId: "",
     },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
+    },
   },
   {
     published: true,
@@ -497,6 +565,10 @@ Time to find out.`,
       socialShareImage: "social-share/gyorgy.png",
       youtubeId: "",
       flickrAlbumId: "",
+    },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
     },
   },
   {
@@ -528,6 +600,10 @@ But even better news: The great news is that we are comfortable with breaking do
       socialShareImage: "social-share/toluwanimi.png",
       youtubeId: "",
       flickrAlbumId: "",
+    },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
     },
   },
   {
@@ -561,6 +637,10 @@ In this talk, we’ll see
       youtubeId: "",
       flickrAlbumId: "",
     },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
+    },
   },
   {
     published: true,
@@ -588,8 +668,11 @@ In this talk, we’ll see
       youtubeId: "",
       flickrAlbumId: "",
     },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
+    },
   },
-
   {
     published: true,
     slug: "artem-and-dmitry",
@@ -626,6 +709,10 @@ In this talk, we’ll see
       socialShareImage: "social-share/artemdmitry.png",
       youtubeId: "",
       flickrAlbumId: "",
+    },
+    schedule: {
+      day: 1,
+      hours: "08:00 - 09:15",
     },
   },
 ];
