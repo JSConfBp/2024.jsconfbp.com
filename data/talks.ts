@@ -416,10 +416,9 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
     },
     schedule: {
       day: 1,
-      hours: "18:00 - 18:30",
+      hours: "08:00 - 09:15",
     },
   },
-
   {
     published: false,
     scheduleOnly: true,
@@ -432,6 +431,17 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
     schedule: {
       day: 1,
       hours: "18:30 - 20:45",
+    },
+  },
+  {
+    published: false,
+    scheduleOnly: true,
+    talk: {
+      title: "Breakfast",
+    },
+    schedule: {
+      day: 2,
+      hours: "08:00 - 09:30",
     },
   },
   {
@@ -461,40 +471,8 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       flickrAlbumId: "",
     },
     schedule: {
-      day: 1,
-      hours: "08:00 - 09:15",
-    },
-  },
-  {
-    published: true,
-    slug: "aakansha-doshi",
-    speaker: {
-      name: "Aakansha Doshi",
-      pronouns: "she/her",
-      profilePicturePath: "/speakers/aakansha.png",
-      bio: "Aakansha is passionate about Free and open-source software (FOSS) and loves deep diving into the internals of Web and Javascript. She is a core maintainer of excalidraw, react-tags, mermaid-to-excalidraw, and more. She also leads the FOSS meetups in Bangalore, India. Beyond her tech interests, she is a big foodie, loves traveling, and spending quality time with her family.",
-      location: "India, Bangalore",
-      socialMediaHandle: "@aakansha1216",
-      socialMediaUrl: "https://twitter.com/aakansha1216",
-      socialMediaType: "twitter",
-      website: "https://aakansha.dev/",
-      work: "Open-source",
-      role: "",
-      workURL: "",
-      imageAlign: "left",
-    },
-    talk: {
-      title: "Encrypting data in the Browser - Exploring Web Crypto APIs",
-      abstract: `Have you ever considered securing your app data within the browser? Let’s understand how encrypting your data in the browser enhances overall security.
-
-      In this talk Aakansha will be deep-diving into the world of Web Crypto APIs, starting from key generation, various encryption algorithms, implementation techniques, and more. The session will include live demos, coding examples, and a fun side project that she created as a result of learning about the Web Crypto APIs. Let’s set out on a collaborative learning adventure and delve into the functionalities of Web Crypto APIs.`,
-      socialShareImage: "social-share/aakansha.png",
-      youtubeId: "",
-      flickrAlbumId: "",
-    },
-    schedule: {
-      day: 1,
-      hours: "08:00 - 09:15",
+      day: 2,
+      hours: "09:30 - 10:00",
     },
   },
   {
@@ -523,8 +501,19 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       flickrAlbumId: "",
     },
     schedule: {
-      day: 1,
-      hours: "08:00 - 09:15",
+      day: 2,
+      hours: "10:00 - 10:30",
+    },
+  },
+  {
+    published: false,
+    scheduleOnly: true,
+    talk: {
+      title: "Coffee Break",
+    },
+    schedule: {
+      day: 2,
+      hours: "10:30 - 11:30",
     },
   },
   {
@@ -555,8 +544,39 @@ Given these circumstances, efficient data usage with a good web performance beco
       flickrAlbumId: "",
     },
     schedule: {
-      day: 1,
-      hours: "08:00 - 09:15",
+      day: 2,
+      hours: "11:30 - 12:00",
+    },
+  },
+  {
+    published: true,
+    slug: "kevin-maes",
+    speaker: {
+      name: "Kevin Maes",
+      pronouns: "He/him/his",
+      profilePicturePath: "/speakers/kevin.png",
+      bio: "Kevin started programming back when Flash animation was the new hotness, working at startups in Tel Aviv. He’s done development, consulting, and engineering management at NYC companies like Giant Machines, NBC Universal, and Thomson Reuters. He is currently building Stately Studio as an engineer at Stately.ai. Kevin moved to Spain last year with his family where he enjoys good food and sunshine.",
+      location: "Malaga, Spain",
+      socialMediaHandle: "@kvmaes",
+      socialMediaUrl: "https://twitter.com/kvmaes",
+      socialMediaType: "twitter",
+      website: "https://stately.ai/blog",
+      work: "Stately.ai",
+      role: "Engineer",
+      workURL: "https://stately.ai/",
+      imageAlign: "right",
+    },
+    talk: {
+      title:
+        "Evolving JavaScript: Cultivating Genetic Algorithms for Creative Coding",
+      abstract: `When was the moment you first realized that coding was pure joy? We all need a well-deserved break from feature releases, meetings, bug fixes, tech debt, and 10X burnout! Join me in exploring delightful, interactive experiences, inspired by nature, that we as JavaScript developers can create with our everyday coding skills. We’ll learn about genetic algorithms, what they’re good for, and how to code with them, including a demo. Adding state machines and generative art into the mix, our small step into the world of AI programming will enable us to produce problem solving agents that are as intelligent as they are beautiful!`,
+      socialShareImage: "social-share/kevin.png",
+      youtubeId: "",
+      flickrAlbumId: "",
+    },
+    schedule: {
+      day: 2,
+      hours: "12:00 - 12:30",
     },
   },
   {
@@ -586,11 +606,189 @@ We will look at security issues that are often found in pentests at all levels i
       flickrAlbumId: "",
     },
     schedule: {
-      day: 1,
-      hours: "08:00 - 09:15",
+      day: 2,
+      hours: "12:30 - 13:00",
+    },
+  },
+  {
+    published: false,
+    scheduleOnly: true,
+    talk: {
+      title: "Lunch",
+    },
+    speaker: {
+      name: "...",
+    },
+    schedule: {
+      day: 2,
+      hours: "13:00 - 14:30",
+    },
+  },
+  {
+    published: true,
+    slug: "aakansha-doshi",
+    speaker: {
+      name: "Aakansha Doshi",
+      pronouns: "she/her",
+      profilePicturePath: "/speakers/aakansha.png",
+      bio: "Aakansha is passionate about Free and open-source software (FOSS) and loves deep diving into the internals of Web and Javascript. She is a core maintainer of excalidraw, react-tags, mermaid-to-excalidraw, and more. She also leads the FOSS meetups in Bangalore, India. Beyond her tech interests, she is a big foodie, loves traveling, and spending quality time with her family.",
+      location: "India, Bangalore",
+      socialMediaHandle: "@aakansha1216",
+      socialMediaUrl: "https://twitter.com/aakansha1216",
+      socialMediaType: "twitter",
+      website: "https://aakansha.dev/",
+      work: "Open-source",
+      role: "",
+      workURL: "",
+      imageAlign: "left",
+    },
+    talk: {
+      title: "Encrypting data in the Browser - Exploring Web Crypto APIs",
+      abstract: `Have you ever considered securing your app data within the browser? Let’s understand how encrypting your data in the browser enhances overall security.
+
+      In this talk Aakansha will be deep-diving into the world of Web Crypto APIs, starting from key generation, various encryption algorithms, implementation techniques, and more. The session will include live demos, coding examples, and a fun side project that she created as a result of learning about the Web Crypto APIs. Let’s set out on a collaborative learning adventure and delve into the functionalities of Web Crypto APIs.`,
+      socialShareImage: "social-share/aakansha.png",
+      youtubeId: "",
+      flickrAlbumId: "",
+    },
+    schedule: {
+      day: 2,
+      hours: "14:30 - 15:00",
+    },
+  },
+  {
+    published: true,
+    slug: "gyorgy-kovacs",
+    speaker: {
+      name: "György Kovács",
+      pronouns: "",
+      profilePicturePath: "/speakers/gyorgy.png",
+      bio: "I'm Gyuri, originally from Hungary, currently living in Austria and trying to get people to pronounce my name correctly. Eternally curious about all things programming, whether it's web frontends, CPU architectures, or hardcore database optimization. When away from a computer, I enjoy board games, bouldering, and books.",
+      location: "Graz, Austria",
+      socialMediaHandle: "@pkt_zer0",
+      socialMediaUrl: "https://twitter.com/pkt_zer0",
+      socialMediaType: "twitter",
+      website: "",
+      work: "DynaTrace",
+      role: "",
+      workURL: "https://www.dynatrace.com/",
+      imageAlign: "left",
+    },
+    talk: {
+      title: "Frameworkless, frictionless, free",
+      abstract: `You awaken in the barren wasteland of your mind. Released from the shackles of your NPM dependencies, you are alone, but free. With only your trusty TypeScript compiler at your side, how much can you build? How far can you go? And when you get there, will you find only despair... or joy?
+
+Time to find out.`,
+      socialShareImage: "social-share/gyorgy.png",
+      youtubeId: "",
+      flickrAlbumId: "",
+    },
+    schedule: {
+      day: 2,
+      hours: "15:00 - 15:30",
+    },
+  },
+  {
+    published: false,
+    scheduleOnly: true,
+    talk: {
+      title: "Coffee Break",
+    },
+    schedule: {
+      day: 2,
+      hours: "15:30 - 16:30",
+    },
+  },
+  {
+    published: true,
+    slug: "artem-and-dmitry",
+    speaker: {
+      name: "Artem Kobzar and Dmitry Makhnev",
+      pronouns: "He/Him",
+      profilePicturePath: "/speakers/artem-dimtry.png",
+      bio: `Artem is working for JetBrains on the compiler from Kotlin to WebAssembly. Also, he's helping with the SourceMap Specification as an invited expert in TC39.
+      At night (if he's not fixing production), he likes lifting heavy weights in the gym or/and drinking good Chinese tea.
+
+      Dmitry is a software developer at WebStorm. Before almost 14 years he was a frontend developer. Ex-member of HolyJS conference selection committee, co-organizer of JetBrains JavaScript Day.
+      He loves his son, Chinese tea, South Holland, bicycle rides, great technical talks and art (Impressionism++).
+      `,
+      location: "Netherlands",
+      socialMediaHandle: "",
+      socialMediaUrl: "",
+      socialMediaType: "twitter",
+      website: "",
+      work: "JetBrains",
+      role: "Developer Advocate",
+      workURL: "https://www.jetbrains.com",
+      imageAlign: "left",
+    },
+    talk: {
+      title:
+        "Unexpected monad. Is safe error handling possible in JavaScript/TypeScript?",
+      abstract: `Error handling is an extremely hard part of every JavaScript project that can produce a lot of bugs. Usually, developers use just the try/catch as a standard approach for the error handling, which is not so ideal solution because this statement catches anything which was thrown by the “throw” statement, as results developer:
+
+      - need extra conditions for handling restricted classes of exceptions;
+      - should rethrow errors or it can be eaten up;
+      - can’t separate errors and exceptions;
+
+      In this talk, you’ll learn how to implement safe error handling (without mentioned problems) in a project and with perks like typed errors inside handlers, errors documentation of functions/methods without JSDoc and comments, and the ability to log your errors without a break of the error handling flow.`,
+      socialShareImage: "social-share/artemdmitry.png",
+      youtubeId: "",
+      flickrAlbumId: "",
+    },
+    schedule: {
+      day: 2,
+      hours: "16:30 - 17:00",
+    },
+  },
+  {
+    published: true,
+    slug: "amanda-martin",
+    speaker: {
+      name: "Amanda Martin",
+      pronouns: "she/her",
+      profilePicturePath: "/speakers/amanda.png",
+      bio: "Amanda is a developer advocate for Wix and Open Source enthusiast supporting the EddieHub Community. She had worked previously in web and software development all over the stack. At her core, she is a creative problem solver and passionate about developer experience and success. In her free time you can find her spoiling her dogs, cycling, and testing new recipes.",
+      location: "Baltimore, MD USA",
+      socialMediaHandle: "@hey_amandam",
+      socialMediaUrl: "https://twitter.com/hey_amandam",
+      socialMediaType: "twitter",
+      website: "",
+      work: "Wix",
+      role: "Developer Advocate",
+      workURL: "https://www.wix.com/",
+      imageAlign: "right",
+    },
+    talk: {
+      title:
+        "We're Not Robots: A Developer's Journey to Success, Creativity, and Avoiding Burnout",
+      abstract: `Ever pondered what it takes to unlock your full potential as a developer? Venture into the realm where hiring managers' expectations and social media buzz intersect. In a world that seemingly demands developers to live and breathe code 24/7, we will challenge the notion that perpetual coding is the sole path to success.
+
+      In this session Amanda will explore her personal dev journey, challenging the notion that being a successful developer requires non-stop dedication.  Drawing from research insights, she will delve into the cognitive needs of our brains, emphasizing the importance of creating space for creativity and passion in every pursuit. We will also explore the developer workday, proposing strategies for both developers and managers to foster an environment that nurtures creativity and ensures a balanced and fulfilling professional life. Join us in reshaping the narrative around developer productivity, creativity, and burnout.`,
+      socialShareImage: "social-share/amanda.png",
+      youtubeId: "",
+      flickrAlbumId: "",
+    },
+    schedule: {
+      day: 2,
+      hours: "17:00 - 17:30",
     },
   },
 
+  {
+    published: false,
+    scheduleOnly: true,
+    talk: {
+      title: "Closing JSConf Budapest 2024 & Family photo",
+    },
+    speaker: {
+      name: "by the organizers, the MCs and YOU",
+    },
+    schedule: {
+      day: 2,
+      hours: "17:30 - 18:00",
+    },
+  },
   {
     published: false,
     slug: "leandro-ostera",
@@ -647,144 +845,6 @@ We'll learn about the history of programming languages, why type systems exist, 
       title: "Backend Essentials for Frontend Developers",
       abstract: `With the rise of full-stack frameworks and the blurred line between frontend and backend, it's becoming more and more important to have a good understanding of backend mechanics. In this talk, we'll be diving into some key backend concepts like webhooks, background jobs, cron jobs, and more. These concepts are really important for front-end developers, especially as their applications start getting more complex. This talk will provide you with guidance on when, how, and why you should integrate these components into your projects.`,
       socialShareImage: "social-share/aleksandra.png",
-      youtubeId: "",
-      flickrAlbumId: "",
-    },
-    schedule: {
-      day: 1,
-      hours: "08:00 - 09:15",
-    },
-  },
-  {
-    published: true,
-    slug: "amanda-martin",
-    speaker: {
-      name: "Amanda Martin",
-      pronouns: "she/her",
-      profilePicturePath: "/speakers/amanda.png",
-      bio: "Amanda is a developer advocate for Wix and Open Source enthusiast supporting the EddieHub Community. She had worked previously in web and software development all over the stack. At her core, she is a creative problem solver and passionate about developer experience and success. In her free time you can find her spoiling her dogs, cycling, and testing new recipes.",
-      location: "Baltimore, MD USA",
-      socialMediaHandle: "@hey_amandam",
-      socialMediaUrl: "https://twitter.com/hey_amandam",
-      socialMediaType: "twitter",
-      website: "",
-      work: "Wix",
-      role: "Developer Advocate",
-      workURL: "https://www.wix.com/",
-      imageAlign: "right",
-    },
-    talk: {
-      title:
-        "We're Not Robots: A Developer's Journey to Success, Creativity, and Avoiding Burnout",
-      abstract: `Ever pondered what it takes to unlock your full potential as a developer? Venture into the realm where hiring managers' expectations and social media buzz intersect. In a world that seemingly demands developers to live and breathe code 24/7, we will challenge the notion that perpetual coding is the sole path to success.
-
-      In this session Amanda will explore her personal dev journey, challenging the notion that being a successful developer requires non-stop dedication.  Drawing from research insights, she will delve into the cognitive needs of our brains, emphasizing the importance of creating space for creativity and passion in every pursuit. We will also explore the developer workday, proposing strategies for both developers and managers to foster an environment that nurtures creativity and ensures a balanced and fulfilling professional life. Join us in reshaping the narrative around developer productivity, creativity, and burnout.`,
-      socialShareImage: "social-share/amanda.png",
-      youtubeId: "",
-      flickrAlbumId: "",
-    },
-    schedule: {
-      day: 1,
-      hours: "08:00 - 09:15",
-    },
-  },
-  {
-    published: true,
-    slug: "gyorgy-kovacs",
-    speaker: {
-      name: "György Kovács",
-      pronouns: "",
-      profilePicturePath: "/speakers/gyorgy.png",
-      bio: "I'm Gyuri, originally from Hungary, currently living in Austria and trying to get people to pronounce my name correctly. Eternally curious about all things programming, whether it's web frontends, CPU architectures, or hardcore database optimization. When away from a computer, I enjoy board games, bouldering, and books.",
-      location: "Graz, Austria",
-      socialMediaHandle: "@pkt_zer0",
-      socialMediaUrl: "https://twitter.com/pkt_zer0",
-      socialMediaType: "twitter",
-      website: "",
-      work: "DynaTrace",
-      role: "",
-      workURL: "https://www.dynatrace.com/",
-      imageAlign: "left",
-    },
-    talk: {
-      title: "Frameworkless, frictionless, free",
-      abstract: `You awaken in the barren wasteland of your mind. Released from the shackles of your NPM dependencies, you are alone, but free. With only your trusty TypeScript compiler at your side, how much can you build? How far can you go? And when you get there, will you find only despair... or joy?
-
-Time to find out.`,
-      socialShareImage: "social-share/gyorgy.png",
-      youtubeId: "",
-      flickrAlbumId: "",
-    },
-    schedule: {
-      day: 1,
-      hours: "08:00 - 09:15",
-    },
-  },
-  {
-    published: true,
-    slug: "kevin-maes",
-    speaker: {
-      name: "Kevin Maes",
-      pronouns: "He/him/his",
-      profilePicturePath: "/speakers/kevin.png",
-      bio: "Kevin started programming back when Flash animation was the new hotness, working at startups in Tel Aviv. He’s done development, consulting, and engineering management at NYC companies like Giant Machines, NBC Universal, and Thomson Reuters. He is currently building Stately Studio as an engineer at Stately.ai. Kevin moved to Spain last year with his family where he enjoys good food and sunshine.",
-      location: "Malaga, Spain",
-      socialMediaHandle: "@kvmaes",
-      socialMediaUrl: "https://twitter.com/kvmaes",
-      socialMediaType: "twitter",
-      website: "https://stately.ai/blog",
-      work: "Stately.ai",
-      role: "Engineer",
-      workURL: "https://stately.ai/",
-      imageAlign: "right",
-    },
-    talk: {
-      title:
-        "Evolving JavaScript: Cultivating Genetic Algorithms for Creative Coding",
-      abstract: `When was the moment you first realized that coding was pure joy? We all need a well-deserved break from feature releases, meetings, bug fixes, tech debt, and 10X burnout! Join me in exploring delightful, interactive experiences, inspired by nature, that we as JavaScript developers can create with our everyday coding skills. We’ll learn about genetic algorithms, what they’re good for, and how to code with them, including a demo. Adding state machines and generative art into the mix, our small step into the world of AI programming will enable us to produce problem solving agents that are as intelligent as they are beautiful!`,
-      socialShareImage: "social-share/kevin.png",
-      youtubeId: "",
-      flickrAlbumId: "",
-    },
-    schedule: {
-      day: 1,
-      hours: "08:00 - 09:15",
-    },
-  },
-  {
-    published: true,
-    slug: "artem-and-dmitry",
-    speaker: {
-      name: "Artem Kobzar and Dmitry Makhnev",
-      pronouns: "He/Him",
-      profilePicturePath: "/speakers/artem-dimtry.png",
-      bio: `Artem is working for JetBrains on the compiler from Kotlin to WebAssembly. Also, he's helping with the SourceMap Specification as an invited expert in TC39.
-      At night (if he's not fixing production), he likes lifting heavy weights in the gym or/and drinking good Chinese tea.
-
-      Dmitry is a software developer at WebStorm. Before almost 14 years he was a frontend developer. Ex-member of HolyJS conference selection committee, co-organizer of JetBrains JavaScript Day.
-      He loves his son, Chinese tea, South Holland, bicycle rides, great technical talks and art (Impressionism++).
-      `,
-      location: "Netherlands",
-      socialMediaHandle: "",
-      socialMediaUrl: "",
-      socialMediaType: "twitter",
-      website: "",
-      work: "JetBrains",
-      role: "Developer Advocate",
-      workURL: "https://www.jetbrains.com",
-      imageAlign: "left",
-    },
-    talk: {
-      title:
-        "Unexpected monad. Is safe error handling possible in JavaScript/TypeScript?",
-      abstract: `Error handling is an extremely hard part of every JavaScript project that can produce a lot of bugs. Usually, developers use just the try/catch as a standard approach for the error handling, which is not so ideal solution because this statement catches anything which was thrown by the “throw” statement, as results developer:
-
-      - need extra conditions for handling restricted classes of exceptions;
-      - should rethrow errors or it can be eaten up;
-      - can’t separate errors and exceptions;
-
-      In this talk, you’ll learn how to implement safe error handling (without mentioned problems) in a project and with perks like typed errors inside handlers, errors documentation of functions/methods without JSDoc and comments, and the ability to log your errors without a break of the error handling flow.`,
-      socialShareImage: "social-share/artemdmitry.png",
       youtubeId: "",
       flickrAlbumId: "",
     },
