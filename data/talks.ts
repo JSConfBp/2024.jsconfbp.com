@@ -51,18 +51,21 @@ export type ScheduleData = {
 const TALKS = [
   {
     published: false,
-    slug: "scheduleOnly",
+    scheduleOnly: true,
     schedule: {
       day: 1,
       hours: "08:00 - 09:15",
+      title: "Registraion and breakfast",
     },
   },
   {
     published: false,
-    slug: "scheduleOnly",
+    scheduleOnly: true,
     schedule: {
       day: 1,
       hours: "09:15 - 09:30",
+      title: "Opening JSConf Budapest 2024",
+      subTitle: "by the organizers & the MC",
     },
   },
   {
@@ -131,10 +134,11 @@ What new features can we use in 2024, and what can we expect soon? What are some
   },
   {
     published: false,
-    slug: "scheduleOnly",
+    scheduleOnly: true,
     schedule: {
       day: 1,
       hours: "10:30 - 11:30",
+      title: "Coffee Break",
     },
   },
   {
@@ -234,10 +238,12 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
 
   {
     published: false,
-    slug: "scheduleOnly",
+    scheduleOnly: true,
     schedule: {
       day: 1,
       hours: "13:00 - 14:30",
+      title: "Lunch",
+      subTitle: "...",
     },
   },
   {
@@ -342,10 +348,11 @@ In this talk, we’ll see
   },
   {
     published: false,
-    slug: "scheduleOnly",
+    scheduleOnly: true,
     schedule: {
       day: 1,
       hours: "16:00 - 17:00",
+      title: "Coffee Break",
     },
   },
   {
@@ -450,18 +457,21 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
   },
   {
     published: false,
-    slug: "scheduleOnly",
+    scheduleOnly: true,
     schedule: {
       day: 1,
       hours: "18:30 - 20:45",
+      title: "Dinner",
+      subTitle: "...",
     },
   },
   {
     published: false,
-    slug: "scheduleOnly",
+    scheduleOnly: true,
     schedule: {
       day: 2,
       hours: "08:00 - 09:30",
+      title: "Breakfast",
     },
   },
   {
@@ -527,10 +537,11 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
   },
   {
     published: false,
-    slug: "scheduleOnly",
+    scheduleOnly: true,
     schedule: {
       day: 2,
       hours: "10:30 - 11:30",
+      title: "Coffee Break",
     },
   },
   {
@@ -629,10 +640,12 @@ We will look at security issues that are often found in pentests at all levels i
   },
   {
     published: false,
-    slug: "scheduleOnly",
+    scheduleOnly: true,
     schedule: {
       day: 2,
       hours: "13:00 - 14:30",
+      title: "Lunch",
+      subTitle: "...",
     },
   },
   {
@@ -701,10 +714,11 @@ Time to find out.`,
   },
   {
     published: false,
-    slug: "scheduleOnly",
+    scheduleOnly: true,
     schedule: {
       day: 2,
       hours: "15:30 - 16:30",
+      title: "Coffee Break",
     },
   },
   {
