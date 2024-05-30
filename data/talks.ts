@@ -39,7 +39,7 @@ type ScheduleOnly = {
   day: number;
   hours: string;
   title: string;
-  subTitle?: string;
+  subTitle: string;
 };
 
 export type ScheduleData = {
@@ -47,6 +47,14 @@ export type ScheduleData = {
   scheduleOnly: boolean;
   schedule: ScheduleOnly;
 };
+
+export function isTalkData(arg: unknown): arg is TalkData {
+  return typeof arg === "object" && arg !== null && !("scheduleOnly" in arg);
+}
+
+export function isScheduleData(arg: unknown): arg is ScheduleData {
+  return typeof arg === "object" && arg !== null && "scheduleOnly" in arg;
+}
 
 const TALKS = [
   {
@@ -56,6 +64,7 @@ const TALKS = [
       day: 1,
       hours: "08:00 - 09:15",
       title: "Registraion and breakfast",
+      subTitle: "",
     },
   },
   {
@@ -139,6 +148,7 @@ What new features can we use in 2024, and what can we expect soon? What are some
       day: 1,
       hours: "10:30 - 11:30",
       title: "Coffee Break",
+      subTitle: "",
     },
   },
   {
@@ -243,7 +253,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
       day: 1,
       hours: "13:00 - 14:30",
       title: "Lunch",
-      subTitle: "...",
+      subTitle: "",
     },
   },
   {
@@ -353,6 +363,7 @@ In this talk, we’ll see
       day: 1,
       hours: "16:00 - 17:00",
       title: "Coffee Break",
+      subTitle: "",
     },
   },
   {
@@ -462,7 +473,7 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       day: 1,
       hours: "18:30 - 20:45",
       title: "Dinner",
-      subTitle: "...",
+      subTitle: "",
     },
   },
   {
@@ -472,6 +483,7 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       day: 2,
       hours: "08:00 - 09:30",
       title: "Breakfast",
+      subTitle: "",
     },
   },
   {
@@ -542,6 +554,7 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       day: 2,
       hours: "10:30 - 11:30",
       title: "Coffee Break",
+      subTitle: "",
     },
   },
   {
@@ -645,7 +658,7 @@ We will look at security issues that are often found in pentests at all levels i
       day: 2,
       hours: "13:00 - 14:30",
       title: "Lunch",
-      subTitle: "...",
+      subTitle: "",
     },
   },
   {
@@ -719,6 +732,7 @@ Time to find out.`,
       day: 2,
       hours: "15:30 - 16:30",
       title: "Coffee Break",
+      subTitle: "",
     },
   },
   {
