@@ -10,6 +10,8 @@ import Divider from "../ui/divider";
 import SocialShare from "../ui/social-share";
 import Link from "next/link";
 
+import styles from "./schedule.module.scss";
+
 export const getStaticProps = async () => {
   const data = TALKS.filter((t) => t.published || t.scheduleOnly);
 
@@ -49,7 +51,7 @@ export default function SchedulePage({
         <h1>Schedule</h1>
       </Divider>
 
-      <h2 className="center-title">26 June, 2024</h2>
+      <h2 className={styles.title}>26 June, 2024</h2>
       <p>
         We offer{" "}
         <Link href="https://jsconfbp.com/workshops">
@@ -85,69 +87,75 @@ export default function SchedulePage({
         </li>
       </ul>
       <p>Note: these are possibly subject to further, small changes</p>
-      <h2 className="center-title">27 June, 2024 - Day #1</h2>
+
+      <h2 className={styles.title}>27 June, 2024 - Day #1</h2>
 
       {data
         .filter((e) => e.schedule.day === 1)
         .map((e) => {
           if (isTalkData(e)) {
             return (
-              <>
+              <div className={styles.line}>
                 <div>{e.schedule.hours}</div>
-                <div>{e.talk.title}</div>
-                <div>{e.slug}</div>
-                <div>{e.speaker.name}</div>
-              </>
+                <div className={styles.topic}>
+                  <h4><Link href={`/speakers/${e.slug}`} className={styles.link}>{e.talk.title}</Link></h4>
+                  <p>{e.speaker.name}</p>
+                </div>
+              </div>
             );
           } else if (isScheduleData(e)) {
             return (
-              <>
-                <div>{e.schedule.hours}</div>
-                <div>{e.schedule.title}</div>
-                {e.schedule.subTitleMdx.compiledSource.length !== 0 ? (
-                  <MDXRemote {...e.schedule.subTitleMdx} />
-                ) : (
-                  <></>
+              <div className={styles.line}>
+                <div>
+                  {e.schedule.hours}
+                </div>
+                <div className={styles.topic}>
+                  <h4>{e.schedule.title}</h4>
+                  {e.schedule.subTitleMdx.compiledSource.length !== 0 && (
+                    <MDXRemote {...e.schedule.subTitleMdx} />
                 )}
-              </>
+                </div>
+              </div>
             );
           } else {
             return <></>;
           }
         })}
 
-      <h2 className="center-title">28 June, 2024 - Day #2</h2>
+      <h2 className={styles.title}>28 June, 2024 - Day #2</h2>
 
       {data
         .filter((e) => e.schedule.day === 2)
         .map((e) => {
           if (isTalkData(e)) {
             return (
-              <>
+              <div className={styles.line}>
                 <div>{e.schedule.hours}</div>
-                <div>{e.talk.title}</div>
-                <div>{e.slug}</div>
-                <div>{e.speaker.name}</div>
-              </>
+                <div className={styles.topic}>
+                  <h4><Link href={`/speakers/${e.slug}`} className={styles.link}>{e.talk.title}</Link></h4>
+                  <p>{e.speaker.name}</p>
+                </div>
+              </div>
             );
           } else if (isScheduleData(e)) {
             return (
-              <>
+              <div className={styles.line}>
                 <div>{e.schedule.hours}</div>
-                <div>{e.schedule.title}</div>
-                {e.schedule.subTitleMdx.compiledSource.length !== 0 ? (
-                  <MDXRemote {...e.schedule.subTitleMdx} />
-                ) : (
-                  <></>
-                )}
-              </>
+                <div className={styles.topic}>
+                  <h4>{e.schedule.title}</h4>
+
+                  <p>{e.schedule.subTitleMdx.compiledSource.length !== 0 && (
+                    <MDXRemote {...e.schedule.subTitleMdx} />
+                  )}</p>
+                </div>
+              </div>
             );
           } else {
             return <></>;
           }
         })}
 
-      <h2 className="center-title">29 June, 2024</h2>
+      <h2 className={styles.title}>29 June, 2024</h2>
 
       <p>
         <strong>Community Hike</strong>

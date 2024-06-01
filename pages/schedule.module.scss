@@ -1,0 +1,31 @@
+
+.title {
+  text-align: center;
+}
+
+.line {
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+
+  padding-inline: 1rem;
+  padding-block: 1rem;
+
+  &:nth-child(even) {
+    background-color: var(--light-section);
+  }
+
+  .topic {
+    p {
+      margin-top: .5rem;
+    }
+
+    .link {
+      color: var(--text-color);
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
