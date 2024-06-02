@@ -144,9 +144,9 @@ export default function SchedulePage({
                 <div className={styles.topic}>
                   <h4>{e.schedule.title}</h4>
 
-                  <p>{e.schedule.subTitleMdx.compiledSource.length !== 0 && (
+                  {e.schedule.subTitleMdx.compiledSource.length !== 0 && (
                     <MDXRemote {...e.schedule.subTitleMdx} />
-                  )}</p>
+                  )}
                 </div>
               </div>
             );
