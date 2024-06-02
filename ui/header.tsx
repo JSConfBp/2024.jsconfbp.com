@@ -10,7 +10,7 @@ function MenuItems({ onClick = () => undefined, className = "", ...props }) {
   const router = useRouter();
 
   const menuItems = [
-    { href: "/scholarship", title: "Scholarship" },
+    { href: "/schedule", title: "Schedule" },
     { href: "/partners", title: "Partners" },
     {
       href: "https://ti.to/jsconf-bp/jsconf-budapest-2024",
