@@ -96,7 +96,7 @@ const TALKS = [
       imageAlign: "right",
     },
     talk: {
-      title: "What's coming next to JavaScript?",
+      title: "What's Coming Next to JavaScript?",
       abstract: `JavaScript is continuously evolving, with new features coming every year. Some say that it happens to fast, but everybody wishes some specific proposal would be implemented by browser _right now_.
 
 What new features can we use in 2024, and what can we expect soon? What are some more long-term proposed features that will have a potential huge impact of the ecosystem? We'll go together through these questions, while learning at the same time how JavaScript gets standardized!`,
@@ -130,7 +130,7 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       imageAlign: "left",
     },
     talk: {
-      title: "Building empathy and accessible apps",
+      title: "Building Empathy and Accessible Apps",
       abstract: `Everyone knows accessibility is important, but even with the best of intentions, we still might not be achieving an accessible design in our apps. In this talk, I'll help the audience build their empathy for disabled users through the eyes of someone in the disabled community (myself), while giving them the tools they need to tackle accessibility both from a design and implementation standpoint.`,
       socialShareImage: "social-share/isabela.png",
       youtubeId: "",
@@ -173,7 +173,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     },
     talk: {
       title:
-        "Hear! Hear! An accessibility tale from a hearing-impaired Senior Software Engineer",
+        "Hear! Hear! An Accessibility Tale from a Hearing-Impaired Senior Software Engineer",
       abstract: `If someone is talking to you, you can hear them well, but what if you couldn’t? Explore the world of a hearing-impaired developers and understand the struggles, triumphs, and tips for inclusivity in this inspirational and experiential session. Join to hear an experiential story and an unique journey that shows that dability is no barrier to success in tech. Discover how to make your applications and content accessible to those with hearing loss, and learn how to collaborate effectively with hearing-impaired developers and support them. Don't miss this exciting opportunity to break down barriers and unlock the potential of inclusive development.`,
       socialShareImage: "social-share/ante.png",
       youtubeId: "",
@@ -234,7 +234,7 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
     },
     talk: {
       title:
-        "Safeguarding web applications against token theft: Fortifying security and trust in web browsers",
+        "Safeguarding Web Applications Against Token Theft: Fortifying Security and Trust in Web Browsers",
       abstract: `While standards such as OAuth 2.0 have effectively established a robust framework for addressing the complexities of Authentication and Authorization, web developers all over the world often grapple with the challenge of securely storing and retrieving the tokens essential for these purposes, particularly in browsers.
 
 In my talk, I aim to introduce a fresh approach for generating and storing tokens known as DPoP (Demonstrating Proof of Possession). DPoP is an emerging standard that extends the current OAuth 2.0 framework, offering an innovative solution to the challenges faced by web developers in token management. This approach is a potential game changer, that can significantly elevate the security of prevalent authentication and authorization mechanisms on the web today.
@@ -277,7 +277,7 @@ In my talk, I aim to introduce a fresh approach for generating and storing token
       imageAlign: "left",
     },
     talk: {
-      title: "Oh no I'm stuck! A guide to detangling a complex codebase",
+      title: "Oh No I'm Stuck! A Guide to Detangling a Complex Codebase",
       abstract: `Good news: You are a new joiner in your dream company or picking up an exciting new JS project.
 
 Bad news: You are stuck trying to comprehend the whole system. Much like an actual spider web, complex codebases are intricate systems made up of lines of code, each telling their own story. Cue doubts and imposter syndrome.
@@ -312,7 +312,7 @@ But even better news: The great news is that we are comfortable with breaking do
       imageAlign: "right",
     },
     talk: {
-      title: "The actor model, behind the scenes",
+      title: "The Actor Model, Behind the Scenes",
       abstract: `Let's set the stage. You have a complicated application with many parts that need to work together, and you want to avoid making your code an unscripted mess. Enter the Actor Model, a very old concept that is relevant now more than ever. In this talk, you'll learn how the actor model orchestrates tasks, ensuring each actor knows its part, communicates effectively, and remains isolated from potential mishaps. We'll rehearse with some practical, visual demos showing how actors can be useful in the frontend, backstage (er, backend), and everywhere in-between, so that your code can give its very best performance.`,
       socialShareImage: "social-share/david.png",
       youtubeId: "",
@@ -352,7 +352,7 @@ But even better news: The great news is that we are comfortable with breaking do
       imageAlign: "left",
     },
     talk: {
-      title: "Don't use JS for that: Moving features to CSS and HTML",
+      title: "Don't Use JS for That: Moving Features to CSS and HTML",
       abstract: `If you've been building websites for a while you ""know"" that some things require JS and that's just the way it is. Turns out, spec writers and browser makers both are working hard to find common JS patterns and implementing them in CSS and HTML. Things like accordions, auto-suggest, smooth scrolling, dialogs are all available without JS. Looking a little ahead, things like parallax scrolling, styleable selects and component-dependent styling are expected to make their CSS-debut as well.
 
 In this talk I go through common patterns, explain how they can be implemented in CSS and HTML, how that's better and what accessibility implications they have, both for features available today and feature available soon™️.`,
@@ -470,7 +470,7 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       imageAlign: "right",
     },
     talk: {
-      title: "Are Signals worth the hype?",
+      title: "Are Signals Worth the Hype?",
       abstract:
         "From basically every framework across the board to TC39, signals are all the rage nowadays. A lot has been said about the performance benefits, but that's not all it is. Let's talk about how signals provides a better mental model to render user interfaces, and how they make developing apps more predictable and, likely, error-free.",
       socialShareImage: "social-share/atila.png",
@@ -513,7 +513,7 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       hours: "10:00 - 10:30",
     },
   },
-{
+  {
     published: false,
     scheduleOnly: true,
     schedule: {
@@ -523,7 +523,7 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       subTitle: "",
     },
   },
- {
+  {
     published: true,
     slug: "artem-and-dmitry",
     speaker: {
@@ -548,7 +548,7 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
     },
     talk: {
       title:
-        "Unexpected monad. Is safe error handling possible in JavaScript/TypeScript?",
+        "Unexpected Monad. Is Safe Error Handling Possible in JavaScript/TypeScript?",
       abstract: `Error handling is an extremely hard part of every JavaScript project that can produce a lot of bugs. Usually, developers use just the try/catch as a standard approach for the error handling, which is not so ideal solution because this statement catches anything which was thrown by the “throw” statement, as results developer:
 
       - need extra conditions for handling restricted classes of exceptions;
@@ -584,7 +584,7 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       imageAlign: "right",
     },
     talk: {
-      title: "Picking the low-hanging fruit – easy pentest wins",
+      title: "Picking the Low-Hanging Fruit – Easy Pentest Wins",
       abstract: `Penetration tests are a critical step in securing web services, but often much of their effort is wasted reporting simple things that can easily be avoided in advance.
 We will look at security issues that are often found in pentests at all levels in the deployment stack, concentrating on those that can be resolved quickly and easily in one place (in any language), and show how to fix them, freeing up expensive pentester resources for tackling more complex challenges.`,
       socialShareImage: "social-share/marcus.png",
@@ -691,7 +691,7 @@ In this talk, we’ll see
       imageAlign: "left",
     },
     talk: {
-      title: "Encrypting data in the Browser - Exploring Web Crypto APIs",
+      title: "Encrypting Data in the Browser - Exploring Web Crypto APIs",
       abstract: `Have you ever considered securing your app data within the browser? Let’s understand how encrypting your data in the browser enhances overall security.
 
       In this talk Aakansha will be deep-diving into the world of Web Crypto APIs, starting from key generation, various encryption algorithms, implementation techniques, and more. The session will include live demos, coding examples, and a fun side project that she created as a result of learning about the Web Crypto APIs. Let’s set out on a collaborative learning adventure and delve into the functionalities of Web Crypto APIs.`,
@@ -764,7 +764,7 @@ In this talk, we’ll see
       imageAlign: "left",
     },
     talk: {
-      title: "Frameworkless, frictionless, free",
+      title: "Frameworkless, Frictionless, Free",
       abstract: `You awaken in the barren wasteland of your mind. Released from the shackles of your NPM dependencies, you are alone, but free. With only your trusty TypeScript compiler at your side, how much can you build? How far can you go? And when you get there, will you find only despair... or joy?
 
 Time to find out.`,
