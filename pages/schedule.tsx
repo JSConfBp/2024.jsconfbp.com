@@ -47,6 +47,35 @@ export default function SchedulePage({
     <>
       <SocialShare title="Schedule" />
 
+      <p>
+        This is the most final, and up-to date schedule for JSConf Budapest. You
+        can access this schedule on this site, or:
+      </p>
+      <ul>
+{/*         <li>
+          an{" "}
+          <a href="https://schedule-2022.jsconfbp.com/">
+            offline-first mobile webapp
+          </a>
+        </li>
+ */}       {/*  <li>
+          <a href="https://docs.google.com/spreadsheets/d/1PTEAA79nUXK1ZbL5TcUIkNkVlWTKsbcmLwjKdjWqp8g/edit?usp=sharing">
+            Google Spreadsheet
+          </a>
+        </li> */}
+        <li>
+          Calendar entries:{" "}
+          <a href="https://calendar.google.com/calendar/embed?src=c_874a5ea8d0c1be662927d3faf0749943b8d880b53ecb5c34b3dad706da2b36c7%40group.calendar.google.com&ctz=Europe%2FBudapest">
+            gcal
+          </a>
+          ,{" "}
+          <a href="https://calendar.google.com/calendar/ical/c_874a5ea8d0c1be662927d3faf0749943b8d880b53ecb5c34b3dad706da2b36c7%40group.calendar.google.com/public/basic.ics">
+            ical
+          </a>
+        </li>
+      </ul>
+      <p>Note: these are possibly subject to further, small changes</p>
+
       <Divider>
         <h1>Schedule</h1>
       </Divider>
@@ -59,34 +88,7 @@ export default function SchedulePage({
         </Link>
         . Check them out and pick one if you already have your ticket!
       </p>
-      <p>
-        This is the most final, and up-to date schedule for JSConf Budapest. You
-        can access this schedule on this site, or:
-      </p>
-      <ul>
-        <li>
-          an{" "}
-          <a href="https://schedule-2022.jsconfbp.com/">
-            offline-first mobile webapp
-          </a>
-        </li>
-        <li>
-          <a href="https://docs.google.com/spreadsheets/d/1PTEAA79nUXK1ZbL5TcUIkNkVlWTKsbcmLwjKdjWqp8g/edit?usp=sharing">
-            Google Spreadsheet
-          </a>
-        </li>
-        <li>
-          Calendar entries:{" "}
-          <a href="https://calendar.google.com/calendar/embed?src=c_fq457u3pan7k9hn4c98q657gc4%40group.calendar.google.com&amp;ctz=Europe%2FBudapest">
-            gcal
-          </a>
-          ,{" "}
-          <a href="https://calendar.google.com/calendar/ical/c_fq457u3pan7k9hn4c98q657gc4%40group.calendar.google.com/public/basic.ics">
-            ical
-          </a>
-        </li>
-      </ul>
-      <p>Note: these are possibly subject to further, small changes</p>
+
 
       <h2 className={styles.title}>27 June, 2024 - Day #1</h2>
 
@@ -165,7 +167,7 @@ export default function SchedulePage({
         everybody is welcome to join!
       </p>
       <p>
-        <a href="https://ti.to/jsconf-bp/community-trip-2022">
+        <a href="https://ti.to/jsconf-bp/community-trip-2024">
           You can register for the trip here.
         </a>
       </p>

@@ -440,7 +440,16 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       subTitle: "",
     },
   },
-
+  {
+    published: false,
+    scheduleOnly: true,
+    schedule: {
+      day: 1,
+      hours: "19:00 - 24:00",
+      title: "Afterparty at Akvárium Lokál",
+      subTitle: "",
+    },
+  },
   {
     published: false,
     scheduleOnly: true,
