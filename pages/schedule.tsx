@@ -45,7 +45,7 @@ export default function SchedulePage({
 }) {
   return (
     <>
-      <SocialShare title="Schedule" />
+      <SocialShare title="Schedule" description="Plan your days for JSConf Buadpest 2024!" socialShareImage="social-share/schedule.png" />
 
       <p>
         This is the most final, and up-to date schedule for JSConf Budapest. You
