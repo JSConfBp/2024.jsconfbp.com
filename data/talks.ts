@@ -63,7 +63,7 @@ const TALKS = [
     schedule: {
       day: 1,
       hours: "08:00 - 09:15",
-      title: "Registraion and breakfast",
+      title: "Registration and breakfast",
       subTitle: "",
     },
   },
