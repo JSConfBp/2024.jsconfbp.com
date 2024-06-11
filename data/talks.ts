@@ -148,7 +148,13 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       day: 1,
       hours: "10:30 - 11:30",
       title: "Coffee Break",
-      subTitle: "",
+      subTitle: `Community Lounge program:
+
+       - Dev Quiz
+       - Retro eSports League
+       - Discussion Panel: TBA
+       - Networking
+      `,
     },
   },
   {
@@ -255,7 +261,16 @@ In my talk, I aim to introduce a fresh approach for generating and storing token
       day: 1,
       hours: "13:00 - 14:30",
       title: "Lunch",
-      subTitle: "",
+      subTitle: `Community Lounge program:
+
+      - align-self: strech;
+      - Dev Quiz
+      - lightning talk: Navigating the Microservices Landscape with JavaScript by Serghei Culesov
+      - Discussion Panel: TBA
+      - Retro eSports League
+      - lightning talk: The machines have not taken our jobs (yet) by Tamas Kokeny
+      - Networking
+      `,
     },
   },
   {
@@ -330,7 +345,13 @@ But even better news: The great news is that we are comfortable with breaking do
       day: 1,
       hours: "15:30 - 16:30",
       title: "Coffee Break",
-      subTitle: "",
+      subTitle: `Community Lounge program:
+
+      - Dev Quiz
+      - lightning talk: Navigating towards Production-Grade TypeScript at Scale: How Effect Helps You Reach Your Goals Without Drowning in Complexity by Milad Vafaeifard
+      - Retro eSports League
+      - Networking
+      - Rave`,
     },
   },
   {
@@ -529,7 +550,12 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       day: 2,
       hours: "10:30 - 11:30",
       title: "Coffee Break",
-      subTitle: "",
+      subTitle: `Community Lounge program:
+
+      - Dev Quiz
+      - Retro eSports League
+      - Networking
+      - Rave`,
     },
   },
   {
@@ -648,7 +674,14 @@ In this talk, we’ll see
       day: 2,
       hours: "13:00 - 14:30",
       title: "Lunch",
-      subTitle: "",
+      subTitle: `Community Lounge program:
+
+      - align-self: strech;
+      - Dev Quiz
+      - Discussion Panel: TBA
+      - Retro eSports League
+      - lightning talk: The machines have not taken our jobs (yet) by Tamas Kokeny
+      - Networking`
     },
   },
   {
@@ -720,7 +753,15 @@ In this talk, we’ll see
       day: 2,
       hours: "15:30 - 16:30",
       title: "Coffee Break",
-      subTitle: "",
+      subTitle: `Community Lounge program:
+
+      - align-self: strech;
+      - Dev Quiz Finals
+      - Discussion Panel: TBA
+      - Retro eSports League finals
+      - lightning talk: Inaccessible "Accessible" Tech: Real-life Stories by Milad Vafaeifard
+      - Closing remarks
+      - Rave`
     },
   },
   {
