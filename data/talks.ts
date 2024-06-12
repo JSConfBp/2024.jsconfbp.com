@@ -680,7 +680,6 @@ In this talk, we’ll see
       - Dev Quiz
       - Discussion Panel: TBA
       - Retro eSports League
-      - lightning talk: The machines have not taken our jobs (yet) by Tamas Kokeny
       - Networking`
     },
   },
@@ -755,7 +754,6 @@ In this talk, we’ll see
       title: "Coffee Break",
       subTitle: `Community Lounge program:
 
-      - align-self: strech;
       - Dev Quiz Finals
       - Discussion Panel: TBA
       - Retro eSports League finals
