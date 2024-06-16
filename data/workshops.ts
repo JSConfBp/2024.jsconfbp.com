@@ -13,8 +13,8 @@ const WORKSHOPS = [
       it’s possible to communicate with the system straight from the Frontend of our app. Lastly, we global distribution
       and Auto-Updates with CrabNebula Cloud. Taking bundling and drafting releases straight from a GitHub Action.
     `,
-    startTime: "10:00",
-    endTime: "15:00",
+    startTime: "14:00", 
+    endTime: "17:00",
     mentors: [
       {
         name: "Atila Fassina",
@@ -58,7 +58,7 @@ const WORKSHOPS = [
       modern Single-Page Applications, using the techniques we got used to.
     `,
     startTime: "10:00",
-    endTime: "16:00",
+    endTime: "18:00",
     mentors: [
       {
         name: "Tamás Kadlecsik",
@@ -104,9 +104,9 @@ const WORKSHOPS = [
       },
     ],
     venue: {
-      address: "",
+      address: "Budapest, Károly krt. 9, 1075 Hungary",
       name: "SuperCharge Event space",
-      link: "",
+      link: "https://maps.app.goo.gl/rxmbHyf3AUFc1N618",
     },
     sponsor: {
       logo: SuperChargeLogo,
