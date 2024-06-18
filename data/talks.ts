@@ -148,12 +148,14 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       day: 1,
       hours: "10:30 - 11:30",
       title: "Coffee Break",
-      subTitle: `Community Lounge program:
+      subTitle: `Community Lounge:
 
-       - Dev Quiz
-       - Retro eSports League
-       - Discussion Panel: TBA
-       - Networking
+        - 10:30 - 10:40: 🎶 Deerfeeder & NERDDISCO
+        - 10:40 - 10:50: ❓ Dev Quiz #1
+        - 10:50 - 11:00: 🎮 Retro eSports League (RSL) #1
+        - 11:00 - 11:10: 🎙️ Discussion Panel: Digital Art (with Francisca Beatriz Medina Concha, Kevin Maes, György Kovács)
+        - 11:10 - 11:20: 🤗 Networking
+        - 11:20 - 11:30: 🎶 Deerfeeder & NERDDISCO
       `,
     },
   },
