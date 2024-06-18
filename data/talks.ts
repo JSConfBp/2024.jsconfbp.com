@@ -472,7 +472,7 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       day: 1,
       hours: "19:00 - 24:00",
       title: "Afterparty at Akvárium Lokál",
-      subTitle: "",
+      subTitle: "Chill in the Lokál with the attendees, speakers or watch the UEFA Euro games on the terraces, and later let out your voice during karaoke!",
     },
   },
   {
@@ -876,6 +876,16 @@ Time to find out.`,
       hours: "18:00 - 18:30",
       title: "Closing JSConf Budapest 2024 & Family photo",
       subTitle: "by the organizers, the MCs and YOU",
+    },
+  },
+  {
+    published: false,
+    scheduleOnly: true,
+    schedule: {
+      day: 2,
+      hours: "19:00 - 22:00",
+      title: "Farewell party at Akvarium Lokál",
+      subTitle: "",
     },
   },
   {
