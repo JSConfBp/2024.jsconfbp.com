@@ -263,15 +263,16 @@ In my talk, I aim to introduce a fresh approach for generating and storing token
       day: 1,
       hours: "13:00 - 14:30",
       title: "Lunch",
-      subTitle: `Community Lounge program:
+      subTitle: `Community Lounge:
 
-      - align-self: strech;
-      - Dev Quiz
-      - lightning talk: Navigating the Microservices Landscape with JavaScript by Serghei Culesov
-      - Discussion Panel: TBA
-      - Retro eSports League
-      - lightning talk: The machines have not taken our jobs (yet) by Tamas Kokeny
-      - Networking
+      - 13:00 - 13:25: 🎶 Deerfeeder & NERDDISCO
+      - 13:25 - 13:30: ↔️ alignSelf: stretch; content: "Tim";
+      - 13:30 - 13:40: ❓ Dev Quiz #2
+      - 13:40 - 13:50: 🗣️ Navigating the Microservices Landscape with JavaScript - Culesov Serghei
+      - 13:50 - 14:00: 🎙️ Discussion Panel: Web Technologies and Performance (with Aakansha Doshi, David Khourshid, Kilian Valkhof)
+      - 14:00 - 14:10: 🎮 Retro eSports League (RSL) #2
+      - 14:10 - 14:20: 🗣️ The machines have not taken our jobs (yet) - Tamas Kokeny
+      - 14:20 - 14:30: 🤗 Networking
       `,
     },
   },
@@ -347,13 +348,14 @@ But even better news: The great news is that we are comfortable with breaking do
       day: 1,
       hours: "15:30 - 16:30",
       title: "Coffee Break",
-      subTitle: `Community Lounge program:
+      subTitle: `Community Lounge:
 
-      - Dev Quiz
-      - lightning talk: Navigating towards Production-Grade TypeScript at Scale: How Effect Helps You Reach Your Goals Without Drowning in Complexity by Milad Vafaeifard
-      - Retro eSports League
-      - Networking
-      - Rave`,
+      - 15:30 - 15:40: 🎶 Deerfeeder & NERDDISCO
+      - 15:40 - 15:50: ❓ Dev Quiz #3
+      - 15:50 - 16:00: 🗣️ Navigating towards Production-Grade TypeScript at Scale: How Effect Helps You Reach Your Goals Without Drowning in Complexity - Milad Vafaeifard
+      - 16:00 - 16:10: 🎮 Retro eSports League (RSL) #3
+      - 16:10 - 16:20: 🤗 Networking
+      `,
     },
   },
   {
@@ -552,12 +554,13 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       day: 2,
       hours: "10:30 - 11:30",
       title: "Coffee Break",
-      subTitle: `Community Lounge program:
+      subTitle: `Community Lounge:
 
-      - Dev Quiz
-      - Retro eSports League
-      - Networking
-      - Rave`,
+      - 10:30 - 11:00: 🎶 Skør & NERDDISCO
+      - 11:00 - 11:10: 🎮 Retro eSports League (RSL) #4
+      - 11:10 - 11:20: ❓ Dev Quiz #4
+      - 11:20 - 11:30: 🎶 Skør (live) & NERDDISCO
+      `,
     },
   },
   {
@@ -676,13 +679,17 @@ In this talk, we’ll see
       day: 2,
       hours: "13:00 - 14:30",
       title: "Lunch",
-      subTitle: `Community Lounge program:
+      subTitle: `Community Lounge:
 
-      - align-self: strech;
-      - Dev Quiz
-      - Discussion Panel: TBA
-      - Retro eSports League
-      - Networking`
+      - 13:00 - 13:25: 🎶 Skør & NERDDISCO
+      - 13:25 - 13:30: ↔️ alignSelf: stretch; content: “Kriszti”
+      - 13:30 - 13:40: 🎙️ Discussion Panel: Modern JavaScript Ecosystem (with Nicolò Ribaudo, Marcus Bointon, Atila Fassina)
+      - 13:40 - 13:50: ❓ Dev Quiz #5
+      - 13:50 - 14:00: Q&A: The Future of Vite. Scaling a large OSS project by Matias Capeletto aka Patak
+      - 14:00 - 14:10: 🎮 Retro eSports League (RSL) #5
+      - 14:10 - 14:20: 🎙️ Discussion Panel: Accessibility and Inclusive Design (with Isabela Moreira, Milad Vafaeifard, Ante Tomić & Leandro Ostera)
+      - 14:20 - 14:30: 🤗 Networking
+      `
     },
   },
   {
@@ -754,14 +761,15 @@ In this talk, we’ll see
       day: 2,
       hours: "15:30 - 16:30",
       title: "Coffee Break",
-      subTitle: `Community Lounge program:
+      subTitle: `Community Lounge:
 
-      - Dev Quiz Finals
-      - Discussion Panel: TBA
-      - Retro eSports League finals
-      - lightning talk: Inaccessible "Accessible" Tech: Real-life Stories by Milad Vafaeifard
-      - Closing remarks
-      - Rave`
+      - 15:30 - 15:40: 🎶 Skør & NERDDISCO
+      - 15:40 - 15:50: 🗣️ Inaccessible "Accessibility:" Real-life Stories - Milad Vafaeifard
+      - 15:50 - 16:00: ❓ Dev Quiz Finals
+      - 16:00 - 16:10: 🎮 Retro eSports League (RSL) Finals
+      - 16:10 - 16:15: 👋 Closing Remarks
+      - 16:15 - 16:30: 🎶 Skør & NERDDISCO
+      `
     },
   },
   {
