@@ -56,17 +56,11 @@ export default function SchedulePage({
         can access this schedule on this site, or:
       </p>
       <ul>
-{/*         <li>
-          an{" "}
-          <a href="https://schedule-2022.jsconfbp.com/">
-            offline-first mobile webapp
-          </a>
-        </li>
- */}       {/*  <li>
+       <li>
           <a href="https://docs.google.com/spreadsheets/d/1PTEAA79nUXK1ZbL5TcUIkNkVlWTKsbcmLwjKdjWqp8g/edit?usp=sharing">
             Google Spreadsheet
           </a>
-        </li> */}
+        </li>
         <li>
           Calendar entries:{" "}
           <a href="https://calendar.google.com/calendar/embed?src=c_874a5ea8d0c1be662927d3faf0749943b8d880b53ecb5c34b3dad706da2b36c7%40group.calendar.google.com&ctz=Europe%2FBudapest">
