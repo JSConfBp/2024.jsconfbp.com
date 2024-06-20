@@ -22,9 +22,9 @@ const WORKSHOPS = [
       },
     ],
     venue: {
-      address: "",
-      name: "TBA",
-      link: "",
+      address: "Déri Miksa u. 6. 1084 Budapest",
+      name: "LOFFICE Budapest",
+      link: "https://maps.app.goo.gl/WVhp6YkKizZ25DEB6",
     },
     sponsor: {
       logo: CrabNebulaLogo,
@@ -66,9 +66,9 @@ const WORKSHOPS = [
       },
     ],
     venue: {
-      address: "",
-      name: "TBA",
-      link: "",
+      address: "Budapest, Rákóczi út 42, 1072",
+      name: "EMKE office building",
+      link: "https://maps.app.goo.gl/shxMqiULExsbYEW18",
     },
     sponsor: {
       logo: RisingStackLogo,
