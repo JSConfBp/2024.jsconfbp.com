@@ -22,9 +22,9 @@ const WORKSHOPS = [
       },
     ],
     venue: {
-      address: "Déri Miksa u. 6. 1084 Budapest",
-      name: "LOFFICE Budapest",
-      link: "https://maps.app.goo.gl/WVhp6YkKizZ25DEB6",
+      address: "4. Révay köz, 1065 Budapest",
+      name: "KAPTÁR - room WS 2",
+      link: "https://maps.app.goo.gl/irikn7vAhjR3sYeC6",
     },
     sponsor: {
       logo: CrabNebulaLogo,
