@@ -355,6 +355,7 @@ But even better news: The great news is that we are comfortable with breaking do
       - 15:50 - 16:00: 🗣️ Navigating towards Production-Grade TypeScript at Scale: How Effect Helps You Reach Your Goals Without Drowning in Complexity - Milad Vafaeifard
       - 16:00 - 16:10: 🎮 Retro eSports League (RSL) #3
       - 16:10 - 16:20: 🤗 Networking
+      - 16:20 - 16:30: 🎶 Deerfeeder & NERDDISCO
       `,
     },
   },
@@ -556,9 +557,10 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       title: "Coffee Break",
       subTitle: `Community Lounge:
 
-      - 10:30 - 11:00: 🎶 Skør & NERDDISCO
-      - 11:00 - 11:10: 🎮 Retro eSports League (RSL) #4
-      - 11:10 - 11:20: ❓ Dev Quiz #4
+      - 10:30 - 10:50: 🎶 Skør & NERDDISCO
+      - 10:50 - 11:00: 🎮 Retro eSports League (RSL) #4
+      - 11:00 - 11:10: ❓ Dev Quiz #4
+      - 11:10 - 11:20: 🎮 Retro eSports League (RSL) #5
       - 11:20 - 11:30: 🎶 Skør (live) & NERDDISCO
       `,
     },
@@ -682,9 +684,9 @@ In this talk, we’ll see
       subTitle: `Community Lounge:
 
       - 13:00 - 13:25: 🎶 Skør & NERDDISCO
-      - 13:25 - 13:30: ↔️ alignSelf: stretch; content: “Kriszti”
+      - 13:25 - 13:30: ↔️ alignSelf: stretch; content: "Kriszti"
       - 13:30 - 13:40: 🎙️ Discussion Panel: Modern JavaScript Ecosystem (with Nicolò Ribaudo, Marcus Bointon, Atila Fassina)
-      - 13:40 - 13:50: ❓ Dev Quiz #5
+      - 13:40 - 13:50: 🗣️ Testing UI components with Storybook - Miguel Rubio Jimenez
       - 13:50 - 14:00: Q&A: The Future of Vite. Scaling a large OSS project by Matias Capeletto aka Patak
       - 14:00 - 14:10: 🎮 Retro eSports League (RSL) #5
       - 14:10 - 14:20: 🎙️ Discussion Panel: Accessibility and Inclusive Design (with Isabela Moreira, Milad Vafaeifard, Ante Tomić & Leandro Ostera)
@@ -765,10 +767,9 @@ In this talk, we’ll see
 
       - 15:30 - 15:40: 🎶 Skør & NERDDISCO
       - 15:40 - 15:50: 🗣️ Inaccessible "Accessibility:" Real-life Stories - Milad Vafaeifard
-      - 15:50 - 16:00: ❓ Dev Quiz Finals
-      - 16:00 - 16:10: 🎮 Retro eSports League (RSL) Finals
-      - 16:10 - 16:15: 👋 Closing Remarks
-      - 16:15 - 16:30: 🎶 Skør & NERDDISCO
+      - 15:50 - 16:15: 🎮 Retro eSports League (RSL) Finals
+      - 16:15 - 16:20: 👋 Closing Remarks
+      - 16:20 - 16:30: 🎶 Skør & NERDDISCO
       `
     },
   },
