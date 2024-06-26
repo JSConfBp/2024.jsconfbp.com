@@ -268,7 +268,7 @@ In my talk, I aim to introduce a fresh approach for generating and storing token
       - 13:00 - 13:25: 🎶 Deerfeeder & NERDDISCO
       - 13:25 - 13:30: ↔️ alignSelf: stretch; content: "Tim";
       - 13:30 - 13:40: ❓ Dev Quiz #2
-      - 13:40 - 13:50: 🗣️ Navigating the Microservices Landscape with JavaScript - Culesov Serghei
+      - 13:40 - 13:50: 🗣️ Navigating the Microservices Landscape with JavaScript - Serghei Culesov
       - 13:50 - 14:00: 🎙️ Discussion Panel: Web Technologies and Performance (with Aakansha Doshi, David Khourshid, Kilian Valkhof)
       - 14:00 - 14:10: 🎮 Retro eSports League (RSL) #2
       - 14:10 - 14:20: 🗣️ The machines have not taken our jobs (yet) - Tamas Kokeny
