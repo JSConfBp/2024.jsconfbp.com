@@ -689,7 +689,7 @@ In this talk, we’ll see
       - 13:40 - 13:50: 🗣️ Testing UI components with Storybook - Miguel Rubio Jimenez
       - 13:50 - 14:00: Q&A: The Future of Vite. Scaling a large OSS project by Matias Capeletto aka Patak
       - 14:00 - 14:10: 🎮 Retro eSports League (RSL) #5
-      - 14:10 - 14:20: 🎙️ Discussion Panel: Accessibility and Inclusive Design (with Isabela Moreira, Milad Vafaeifard, Ante Tomić & Leandro Ostera)
+      - 14:10 - 14:20: 🎙️ Discussion Panel: Accessibility and Inclusive Design (with Isabela Moreira, Milad Vafaeifard, Ante Tomić)
       - 14:20 - 14:30: 🤗 Networking
       `
     },
