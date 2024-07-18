@@ -1,0 +1,10 @@
+.flickr_embed {
+  width: 100%;
+  position: relative;
+  margin-bottom: 6rem;
+
+  iframe {
+    position: absolute;
+    width: 100% !important;
+  }
+}
