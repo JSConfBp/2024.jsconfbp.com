@@ -11,6 +11,7 @@ import classNames from "classnames";
 import SocialShare from "../../ui/social-share";
 import { MDXRemote, MDXRemoteSerializeResult } from "next-mdx-remote";
 import { serialize as MDXSerialize } from "next-mdx-remote/serialize";
+import Youtube from "../../ui/youtube";
 
 export const getStaticPaths = (async () => {
   // We want to generate the published speaker pages at build time
@@ -87,9 +88,12 @@ export default function SpeakerPage({
         </h1>
       </Divider>
 
+      <Youtube videoId={data.talk.youtubeId} title={`${data.talk.title} by ${data.speaker.name}`} />
+
       <TalkAbstract>
         <MDXRemote {...talk.abstractMdxSerialized} />
       </TalkAbstract>
+
 
       <SpeakerDetails
         name={speaker.name}

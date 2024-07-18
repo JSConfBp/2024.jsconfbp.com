@@ -101,8 +101,8 @@ const TALKS = [
 
 What new features can we use in 2024, and what can we expect soon? What are some more long-term proposed features that will have a potential huge impact of the ecosystem? We'll go together through these questions, while learning at the same time how JavaScript gets standardized!`,
       socialShareImage: "social-share/nicolo.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "tKHdASf_OOI",
+      flickrAlbumId: "72177720318507503",
     },
     schedule: {
       day: 1,
@@ -133,8 +133,8 @@ Isabela is a huge fan of the intersection of code and design and loves mechanica
       title: "Building Empathy and Accessible Apps",
       abstract: `Everyone knows accessibility is important, but even with the best of intentions, we still might not be achieving an accessible design in our apps. In this talk, I'll help the audience build their empathy for disabled users through the eyes of someone in the disabled community (myself), while giving them the tools they need to tackle accessibility both from a design and implementation standpoint.`,
       socialShareImage: "social-share/isabela.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "WVaXMPK-z74",
+      flickrAlbumId: "72177720318497286",
     },
     schedule: {
       day: 1,
@@ -184,8 +184,8 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
         "Hear! Hear! An Accessibility Tale from a Hearing-Impaired Senior Software Engineer",
       abstract: `If someone is talking to you, you can hear them well, but what if you couldn’t? Explore the world of a hearing-impaired developers and understand the struggles, triumphs, and tips for inclusivity in this inspirational and experiential session. Join to hear an experiential story and an unique journey that shows that dability is no barrier to success in tech. Discover how to make your applications and content accessible to those with hearing loss, and learn how to collaborate effectively with hearing-impaired developers and support them. Don't miss this exciting opportunity to break down barriers and unlock the potential of inclusive development.`,
       socialShareImage: "social-share/ante.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "kzQ9dQsU4_k",
+      flickrAlbumId: "72177720318497241",
     },
     schedule: {
       day: 1,
@@ -214,8 +214,8 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
       title: "Decoding Perplexing TypeScript",
       abstract: `Have you ever come across a TypeScript type that made you go “nope” and close the file? Have you ever seen a type definition that had so many generic letters and nested statements, it felt utterly incomprehensible? In this talk, I will break down and decode some of the most perplexing TypeScript type definitions I have found in real life. You will learn how to make sense of these complex types and the TypeScript building blocks that compose them.`,
       socialShareImage: "social-share/daria.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "T7kG5cQb2As",
+      flickrAlbumId: "72177720318497216",
     },
     schedule: {
       day: 1,
@@ -248,8 +248,8 @@ When he steps away from coding, Ante enjoys discovering new music, long and scen
 In my talk, I aim to introduce a fresh approach for generating and storing tokens known as DPoP (Demonstrating Proof of Possession). DPoP is an emerging standard that extends the current OAuth 2.0 framework, offering an innovative solution to the challenges faced by web developers in token management. This approach is a potential game changer, that can significantly elevate the security of prevalent authentication and authorization mechanisms on the web today.
 `,
       socialShareImage: "social-share/shikhar.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "o9829nSzpEc",
+      flickrAlbumId: "72177720318492245",
     },
     schedule: {
       day: 1,
@@ -303,8 +303,8 @@ Bad news: You are stuck trying to comprehend the whole system. Much like an actu
 But even better news: The great news is that we are comfortable with breaking down complex problems and systems into smithereens as engineers, with a codebase being no exception. In this talk, we will discuss some strategies that are essential to understanding and finding clarity in complex codebases.
 `,
       socialShareImage: "social-share/toluwanimi.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "p4io1rMp2Ck",
+      flickrAlbumId: "72177720318492472",
     },
     schedule: {
       day: 1,
@@ -333,8 +333,8 @@ But even better news: The great news is that we are comfortable with breaking do
       title: "The Actor Model, Behind the Scenes",
       abstract: `Let's set the stage. You have a complicated application with many parts that need to work together, and you want to avoid making your code an unscripted mess. Enter the Actor Model, a very old concept that is relevant now more than ever. In this talk, you'll learn how the actor model orchestrates tasks, ensuring each actor knows its part, communicates effectively, and remains isolated from potential mishaps. We'll rehearse with some practical, visual demos showing how actors can be useful in the frontend, backstage (er, backend), and everywhere in-between, so that your code can give its very best performance.`,
       socialShareImage: "social-share/david.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "GhAl0EiXmaY",
+      flickrAlbumId: "72177720318497506",
     },
     schedule: {
       day: 1,
@@ -383,8 +383,8 @@ But even better news: The great news is that we are comfortable with breaking do
 
 In this talk I go through common patterns, explain how they can be implemented in CSS and HTML, how that's better and what accessibility implications they have, both for features available today and feature available soon™️.`,
       socialShareImage: "/social-share/kilian.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "IP_rtWEMR0o",
+      flickrAlbumId: "72177720318492407",
     },
     schedule: {
       day: 1,
@@ -415,8 +415,8 @@ In this talk I go through common patterns, explain how they can be implemented i
 
 Given these circumstances, efficient data usage with a good web performance becomes a priority. So our session will focus on the challenges faced by African users and developers, and how downloading large amounts of JavaScript is exacerbating data consumption and performance issues. We will explore how existing frameworks tried to solve the problem and how Qwik did with its innovative approach to resumability, presents a transformative solution to these challenges. Unlike traditional SPAs, Qwik's resumability drastically reduces the initial JavaScript payload, enabling applications to become interactive more quickly, even on slow connections.`,
       socialShareImage: "social-share/ayoub.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "M6lGKtA37uE",
+      flickrAlbumId: "72177720318513244",
     },
     schedule: {
       day: 1,
@@ -448,8 +448,8 @@ Given these circumstances, efficient data usage with a good web performance beco
 
 We'll journey through the evolution of algorithmic art, showcasing how JavaScript enables the creation of intricate patterns and complex visual compositions. The presentation will feature engaging examples and demonstrations, illuminating the power of JavaScript in crafting interactive, ever-evolving art pieces. Concluding with practical insights and resources, this talk is a gateway for anyone eager to explore the fusion of art and code in the digital age.`,
       socialShareImage: "social-share/francisca.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "nvmTOjKm2RY",
+      flickrAlbumId: "72177720318507643",
     },
     schedule: {
       day: 1,
@@ -509,8 +509,8 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       abstract:
         "From basically every framework across the board to TC39, signals are all the rage nowadays. A lot has been said about the performance benefits, but that's not all it is. Let's talk about how signals provides a better mental model to render user interfaces, and how they make developing apps more predictable and, likely, error-free.",
       socialShareImage: "social-share/atila.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "N1Ho-4fhYxY",
+      flickrAlbumId: "72177720318492075",
     },
     schedule: {
       day: 2,
@@ -540,8 +540,8 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
         "The Platonic Paradox in Software Development: Ideal Forms vs. Practical Realities in JavaScript",
       abstract: `This talk explores the intriguing parallels between Plato’s Theory of Forms and modern JavaScript software development practices. It critically examines how the pursuit of 'ideal' coding practices and architectures, inspired by Platonic philosophy, can both enhance and hinder practical software engineering.`,
       socialShareImage: "social-share/max.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "S8Tz2fkKi2M",
+      flickrAlbumId: "72177720318497156",
     },
     schedule: {
       day: 2,
@@ -599,8 +599,8 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
 
       In this talk, you’ll learn how to implement safe error handling (without mentioned problems) in a project and with perks like typed errors inside handlers, errors documentation of functions/methods without JSDoc and comments, and the ability to log your errors without a break of the error handling flow.`,
       socialShareImage: "social-share/artemdmitry.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "SLOhXSeNKCM",
+      flickrAlbumId: "72177720318492100",
     },
     schedule: {
       day: 2,
@@ -630,8 +630,8 @@ We'll journey through the evolution of algorithmic art, showcasing how JavaScrip
       abstract: `Penetration tests are a critical step in securing web services, but often much of their effort is wasted reporting simple things that can easily be avoided in advance.
 We will look at security issues that are often found in pentests at all levels in the deployment stack, concentrating on those that can be resolved quickly and easily in one place (in any language), and show how to fix them, freeing up expensive pentester resources for tackling more complex challenges.`,
       socialShareImage: "social-share/marcus.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "bxBdzRGlTHI",
+      flickrAlbumId: "72177720318497011",
     },
     schedule: {
       day: 2,
@@ -666,8 +666,8 @@ In this talk, we’ll see
 2. Detailed insights into generating embeddings with Ollama for vector searches and demonstrating how LangChain agents can perform tasks such as document summarisation and API interactions, all while maintaining data privacy
 3. A practical demonstration of these tools and discussion of real-world use cases.`,
       socialShareImage: "social-share/pratim.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "5beXUcNXTSo",
+      flickrAlbumId: "72177720318506853",
     },
     schedule: {
       day: 2,
@@ -716,8 +716,8 @@ In this talk, we’ll see
       title: "Applied Psychology: Psychology-based UI improvements",
       abstract: `As frontend developers, we implement given UI designs. But wouldn’t it be great if we could provide input and suggest psychology-based improvement ideas? And thus, making the product better and taking a more proactive role in the development process. In this talk, I will share with you knowledge from the field of cognitive psychology that you can apply to UI designs to improve them.`,
       socialShareImage: "social-share/keren.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "u-xQ0zqNik0",
+      flickrAlbumId: "72177720318507178",
     },
     schedule: {
       day: 2,
@@ -748,8 +748,8 @@ In this talk, we’ll see
 
       In this talk Aakansha will be deep-diving into the world of Web Crypto APIs, starting from key generation, various encryption algorithms, implementation techniques, and more. The session will include live demos, coding examples, and a fun side project that she created as a result of learning about the Web Crypto APIs. Let’s set out on a collaborative learning adventure and delve into the functionalities of Web Crypto APIs.`,
       socialShareImage: "social-share/aakansha.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "cZTHGPn1jdU",
+      flickrAlbumId: "72177720318496536",
     },
     schedule: {
       day: 2,
@@ -796,8 +796,8 @@ In this talk, we’ll see
         "Evolving JavaScript: Cultivating Genetic Algorithms for Creative Coding",
       abstract: `When was the moment you first realized that coding was pure joy? We all need a well-deserved break from feature releases, meetings, bug fixes, tech debt, and 10X burnout! Join me in exploring delightful, interactive experiences, inspired by nature, that we as JavaScript developers can create with our everyday coding skills. We’ll learn about genetic algorithms, what they’re good for, and how to code with them, including a demo. Adding state machines and generative art into the mix, our small step into the world of AI programming will enable us to produce problem solving agents that are as intelligent as they are beautiful!`,
       socialShareImage: "social-share/kevin.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "OBI87TdFXwc",
+      flickrAlbumId: "72177720318497491",
     },
     schedule: {
       day: 2,
@@ -828,8 +828,8 @@ In this talk, we’ll see
 
 Time to find out.`,
       socialShareImage: "social-share/gyorgy.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "DqNxNh-6AuQ",
+      flickrAlbumId: "72177720318513344",
     },
     schedule: {
       day: 2,
@@ -861,8 +861,8 @@ Time to find out.`,
 
       In this session Amanda will explore her personal dev journey, challenging the notion that being a successful developer requires non-stop dedication.  Drawing from research insights, she will delve into the cognitive needs of our brains, emphasizing the importance of creating space for creativity and passion in every pursuit. We will also explore the developer workday, proposing strategies for both developers and managers to foster an environment that nurtures creativity and ensures a balanced and fulfilling professional life. Join us in reshaping the narrative around developer productivity, creativity, and burnout.`,
       socialShareImage: "social-share/amanda.png",
-      youtubeId: "",
-      flickrAlbumId: "",
+      youtubeId: "fOuybJCR-S0",
+      flickrAlbumId: "72177720318507768",
     },
     schedule: {
       day: 2,
