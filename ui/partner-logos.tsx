@@ -19,6 +19,7 @@ import CodecoolLogo from "../public/partner-logos/codecool.svg";
 
 import ApiumHubLogo from "../public/partner-logos/apiumhub_logo_black.png";
 import DevITJobsLogo from "../public/partner-logos/devitjobs.png";
+import PhonePeLogo from "../public/partner-logos/PhonePe.png";
 
 export function PartnerLogos() {
   return (
@@ -35,6 +36,9 @@ export function PartnerLogos() {
         </Link>
       </div>
       <div className={styles.community_partners}>
+        <Link href="https://www.phonepe.com/" target="_blank">
+          <Image src={PhonePeLogo} alt="Logo for PhonePe" fill />
+        </Link>
         <Link href="https://www.jetbrains.com/" target="_blank">
           <Image src={JetBrainsLogo} alt="Logo for JetBrains" fill />
         </Link>
